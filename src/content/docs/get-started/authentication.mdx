@@ -1,0 +1,81 @@
+---
+title: Authentication
+description: Set up API keys and manage secure access to the Peaking AI API.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+All API requests to Peaking AI require authentication via an API key. This guide covers how to create, manage, and secure your keys.
+
+## API keys
+
+API keys are created in the [Peaking AI Console](https://console.peaking.ai/api-keys). Each key is scoped to a specific project and can be configured with fine-grained permissions.
+
+### Key format
+
+Peaking AI keys follow this format:
+
+```
+pk-a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4
+```
+
+### Using your key
+
+Include your API key in the `Authorization` header of every request:
+
+<Tabs>
+  <TabItem label="Python">
+  ```python
+  from peaking import PeakingAI
+
+  # Reads PEAKING_API_KEY from environment by default
+  client = PeakingAI()
+
+  # Or pass it explicitly
+  client = PeakingAI(api_key="pk-your-api-key")
+  ```
+  </TabItem>
+  <TabItem label="JavaScript">
+  ```javascript
+  import PeakingAI from 'peaking-ai';
+
+  // Reads PEAKING_API_KEY from environment by default
+  const client = new PeakingAI();
+
+  // Or pass it explicitly
+  const client = new PeakingAI({ apiKey: 'pk-your-api-key' });
+  ```
+  </TabItem>
+  <TabItem label="cURL">
+  ```bash
+  curl https://api.peaking.ai/v1/chat/completions \
+    -H "Authorization: Bearer pk-your-api-key"
+  ```
+  </TabItem>
+</Tabs>
+
+## Security best practices
+
+:::caution
+Never commit API keys to version control or expose them in client-side code.
+:::
+
+| Practice | Description |
+|----------|-------------|
+| **Environment variables** | Store keys in `PEAKING_API_KEY` env vars, never in source code |
+| **Key rotation** | Rotate keys every 90 days via the Console |
+| **Least privilege** | Create separate keys per environment (dev, staging, prod) |
+| **Monitoring** | Enable usage alerts to detect unauthorized access |
+
+## Key permissions
+
+Each key can be scoped to specific capabilities:
+
+| Scope | Access |
+|-------|--------|
+| `chat` | Chat completion endpoints |
+| `embeddings` | Embedding generation |
+| `agents` | Managed agent endpoints |
+| `admin` | Full access including key management |
+
+Configure permissions in the Console under **Settings > API Keys > Create Key**.

@@ -1,0 +1,48 @@
+---
+title: Introduction to Peaking AI
+description: Learn what Peaking AI is and how it can help you build intelligent applications.
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+Peaking AI is a high-performance AI platform designed for developers building intelligent applications. Our models are optimized for speed, accuracy, and reliability at scale.
+
+## Why Peaking AI?
+
+| Feature | Description |
+|---------|-------------|
+| **Fast inference** | Sub-200ms response times for most requests |
+| **Multiple models** | Choose the right model for your task and budget |
+| **Enterprise ready** | SOC 2 compliant with 99.9% uptime SLA |
+| **Developer first** | Intuitive APIs, comprehensive SDKs, detailed docs |
+
+## Two ways to build
+
+Peaking AI offers two primary interfaces depending on your use case:
+
+<CardGrid>
+  <Card title="REST API" icon="rocket">
+    Direct model access via HTTP. Full control over prompts, parameters, and response handling. Best for custom integrations and fine-grained workflows.
+  </Card>
+  <Card title="Managed Agents" icon="puzzle">
+    Pre-built agent infrastructure that handles planning, tool use, and multi-step reasoning. Best for complex tasks that require autonomous execution.
+  </Card>
+</CardGrid>
+
+## Platform architecture
+
+The Peaking AI platform consists of three layers:
+
+1. **Model Layer** — The foundation. A family of models ranging from ultra-fast (Peak-1 Flash) to deeply intelligent (Peak-1 Pro), each optimized for specific workloads.
+
+2. **Orchestration Layer** — Agents and Workflows that compose multiple model calls into coherent, multi-step operations with built-in error handling and monitoring.
+
+3. **Infrastructure Layer** — Global edge network, automatic scaling, request routing, and observability. You focus on your application; we handle the rest.
+
+## Next steps
+
+<CardGrid>
+  <LinkCard title="Quickstart" description="Make your first API call in under 5 minutes." href="/get-started/quickstart/" />
+  <LinkCard title="Authentication" description="Set up API keys and manage access." href="/get-started/authentication/" />
+  <LinkCard title="Models" description="Compare models and choose the right one." href="/core-concepts/models/" />
+</CardGrid>

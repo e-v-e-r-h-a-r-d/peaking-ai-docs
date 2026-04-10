@@ -1,0 +1,92 @@
+---
+title: Code Generation
+description: Generate, review, and refactor code across 20+ programming languages.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Peaking AI models are trained on extensive code repositories and can generate, explain, debug, and refactor code across all major programming languages.
+
+## Recommended models
+
+| Task | Model | Why |
+|------|-------|-----|
+| Complex generation, architecture | Peak-1 Pro | Deepest reasoning, best code quality |
+| General coding, scripts, utilities | Peak-1 | Fast and capable for most tasks |
+| Code review, linting, classification | Peak-1 Flash | Low latency, cost effective |
+
+## Code generation
+
+<Tabs>
+  <TabItem label="Python">
+  ```python
+  response = client.chat.create(
+      model="peak-1-pro",
+      messages=[
+          {"role": "system", "content": "Write clean, well-documented Python code."},
+          {"role": "user", "content": "Implement a thread-safe LRU cache with TTL support."}
+      ],
+      temperature=0
+  )
+  ```
+  </TabItem>
+  <TabItem label="JavaScript">
+  ```javascript
+  const response = await client.chat.create({
+    model: 'peak-1-pro',
+    messages: [
+      { role: 'system', content: 'Write clean, well-documented TypeScript code.' },
+      { role: 'user', content: 'Implement a thread-safe LRU cache with TTL support.' }
+    ],
+    temperature: 0
+  });
+  ```
+  </TabItem>
+</Tabs>
+
+## Code review
+
+Analyze existing code for bugs, performance issues, and improvements:
+
+```python
+code = """
+def process_data(items):
+    results = []
+    for item in items:
+        if item['status'] == 'active':
+            result = expensive_computation(item)
+            results.append(result)
+    return sorted(results, key=lambda x: x['score'], reverse=True)[:10]
+"""
+
+response = client.chat.create(
+    model="peak-1-pro",
+    messages=[
+        {"role": "system", "content": "You are an expert code reviewer. Identify bugs, performance issues, and suggest improvements."},
+        {"role": "user", "content": f"Review this code:\n\n```python\n{code}\n```"}
+    ]
+)
+```
+
+## Code transformation
+
+Refactor, translate between languages, or modernize codebases:
+
+```python
+response = client.chat.create(
+    model="peak-1",
+    messages=[
+        {"role": "system", "content": "Convert code between programming languages. Preserve logic and use idiomatic patterns in the target language."},
+        {"role": "user", "content": "Convert this Python to Rust:\n\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)\n```"}
+    ]
+)
+```
+
+## Best practices
+
+:::tip
+- Set `temperature: 0` for deterministic, reproducible code generation
+- Use system prompts to enforce coding standards and style guides
+- Provide context about the broader codebase when asking for integration code
+- Use Peak-1 Pro for complex tasks; Peak-1 Flash for simple completions
+:::

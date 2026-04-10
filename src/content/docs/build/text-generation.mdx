@@ -1,0 +1,98 @@
+---
+title: Text Generation
+description: Generate, summarize, translate, and transform text with Peaking AI models.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Text generation is the core capability of the Peaking AI platform. Use the Chat Completions API to generate text for any use case — from creative writing to structured data extraction.
+
+## Basic usage
+
+```python
+from peaking import PeakingAI
+
+client = PeakingAI()
+
+response = client.chat.create(
+    model="peak-1",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Write a product description for wireless headphones."}
+    ]
+)
+```
+
+## Multi-turn conversations
+
+Maintain context by passing the full message history:
+
+```python
+messages = [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "What is photosynthesis?"},
+    {"role": "assistant", "content": "Photosynthesis is the process by which plants..."},
+    {"role": "user", "content": "How does it relate to cellular respiration?"}
+]
+
+response = client.chat.create(model="peak-1", messages=messages)
+```
+
+## System prompts
+
+System prompts set the behavior and persona of the model:
+
+```python
+response = client.chat.create(
+    model="peak-1",
+    messages=[
+        {
+            "role": "system",
+            "content": "You are a senior software engineer. Respond with concise, "
+                       "production-ready code. Include error handling. No explanations "
+                       "unless asked."
+        },
+        {"role": "user", "content": "Write a rate limiter in Python."}
+    ]
+)
+```
+
+## Structured outputs
+
+Force the model to return JSON matching a schema:
+
+```python
+response = client.chat.create(
+    model="peak-1",
+    messages=[{"role": "user", "content": "Extract entities from: 'John works at Acme Corp in NYC'"}],
+    response_format={
+        "type": "json_schema",
+        "json_schema": {
+            "name": "entities",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "people": {"type": "array", "items": {"type": "string"}},
+                    "organizations": {"type": "array", "items": {"type": "string"}},
+                    "locations": {"type": "array", "items": {"type": "string"}}
+                },
+                "required": ["people", "organizations", "locations"]
+            }
+        }
+    }
+)
+```
+
+:::tip
+Structured outputs guarantee valid JSON conforming to your schema. Use them for data extraction, form filling, and any pipeline where downstream code parses the response.
+:::
+
+## Temperature and sampling
+
+Control the randomness and creativity of outputs:
+
+| Temperature | Use case |
+|------------|----------|
+| 0.0 | Deterministic tasks: classification, extraction, code |
+| 0.3 - 0.7 | Balanced: summarization, Q&A, analysis |
+| 0.8 - 1.0 | Creative: storytelling, brainstorming, marketing copy |

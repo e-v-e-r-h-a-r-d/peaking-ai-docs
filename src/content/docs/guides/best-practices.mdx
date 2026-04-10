@@ -1,0 +1,63 @@
+---
+title: Best Practices
+description: Production patterns, optimization tips, and architectural guidance for Peaking AI.
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+These best practices are distilled from teams running Peaking AI at scale in production environments.
+
+## Model selection
+
+**Match the model to the task, not the other way around.**
+
+| Scenario | Recommended model |
+|----------|-------------------|
+| Customer-facing chat | Peak-1 |
+| Complex data analysis | Peak-1 Pro |
+| Intent classification / routing | Peak-1 Flash |
+| Semantic search | Peak-1 Embed |
+
+:::tip
+Start with Peak-1 for prototyping. Once you've validated the use case, optimize: upgrade to Pro where quality matters, downgrade to Flash where speed matters.
+:::
+
+## Prompt engineering
+
+<Steps>
+1. **Be specific** — Vague prompts produce vague outputs. Tell the model exactly what you want, in what format, and how long.
+2. **Use system prompts** — Set behavior, persona, and constraints in the system message. Keep user messages focused on the actual task.
+3. **Provide examples** — Few-shot prompting dramatically improves consistency. Include 2-3 examples of ideal input/output pairs.
+4. **Constrain the output** — Use `response_format` for structured data. Use `stop` sequences to prevent over-generation.
+</Steps>
+
+## Cost optimization
+
+- **Cache responses** — Cache identical requests to avoid duplicate API calls. Use a hash of the messages array as the cache key.
+- **Use streaming** — Streaming doesn't reduce costs, but it reduces perceived latency for users.
+- **Minimize tokens** — Trim unnecessary context from messages. Use concise system prompts.
+- **Choose the right model** — Peak-1 Flash is 5x cheaper than Peak-1 and 15x cheaper than Peak-1 Pro.
+
+## Error handling
+
+- Always handle `429 Rate Limited` with exponential backoff
+- Set reasonable `max_tokens` to prevent runaway costs
+- Implement circuit breakers for downstream dependencies
+- Log `usage` from every response for cost monitoring
+
+## Security
+
+- Never expose API keys in client-side code
+- Validate and sanitize all user inputs before passing to the API
+- Use the principle of least privilege for API key permissions
+- Implement content filtering on both inputs and outputs for user-facing applications
+
+## Latency optimization
+
+| Technique | Impact |
+|-----------|--------|
+| Use Peak-1 Flash | 3-5x faster than Peak-1 |
+| Enable streaming | Reduces time-to-first-token |
+| Reduce context length | Fewer input tokens = faster processing |
+| Use regional endpoints | Minimize network latency |
+| Parallel requests | Process independent tasks concurrently |

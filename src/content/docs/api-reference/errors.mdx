@@ -1,0 +1,111 @@
+---
+title: Error Codes
+description: Understanding and handling errors from the Peaking AI API.
+---
+
+The Peaking AI API uses standard HTTP status codes and returns detailed error objects to help you diagnose and handle failures.
+
+## Error response format
+
+All errors return a JSON object with this structure:
+
+```json
+{
+  "error": {
+    "type": "invalid_request_error",
+    "message": "The 'model' parameter is required.",
+    "code": "missing_required_parameter",
+    "param": "model"
+  }
+}
+```
+
+| Field | Description |
+|-------|-------------|
+| `type` | Error category |
+| `message` | Human-readable description |
+| `code` | Machine-readable error code |
+| `param` | The parameter that caused the error (if applicable) |
+
+## HTTP status codes
+
+| Status | Meaning | Action |
+|--------|---------|--------|
+| `400` | Bad Request | Check your request body and parameters |
+| `401` | Unauthorized | Verify your API key |
+| `403` | Forbidden | Your key lacks permission for this operation |
+| `404` | Not Found | Check the endpoint URL or resource ID |
+| `429` | Rate Limited | Back off and retry after `Retry-After` seconds |
+| `500` | Server Error | Retry with exponential backoff |
+| `503` | Service Unavailable | The API is temporarily overloaded |
+
+## Error types
+
+### `invalid_request_error`
+
+The request was malformed or missing required fields.
+
+```json
+{
+  "error": {
+    "type": "invalid_request_error",
+    "message": "Invalid value for 'temperature': must be between 0 and 2.",
+    "code": "invalid_parameter_value",
+    "param": "temperature"
+  }
+}
+```
+
+### `authentication_error`
+
+The API key is missing, invalid, or expired.
+
+```json
+{
+  "error": {
+    "type": "authentication_error",
+    "message": "Invalid API key provided.",
+    "code": "invalid_api_key"
+  }
+}
+```
+
+### `rate_limit_error`
+
+You've exceeded your rate limit. Check the `Retry-After` header.
+
+### `model_error`
+
+The model encountered an error during generation.
+
+### `server_error`
+
+An internal error occurred. These are rare and typically transient.
+
+## Handling errors
+
+Implement retry logic with exponential backoff for transient errors:
+
+```python
+import time
+from peaking import PeakingAI, APIError, RateLimitError
+
+client = PeakingAI()
+
+def call_with_retry(messages, max_retries=3):
+    for attempt in range(max_retries):
+        try:
+            return client.chat.create(model="peak-1", messages=messages)
+        except RateLimitError as e:
+            wait = e.retry_after or (2 ** attempt)
+            time.sleep(wait)
+        except APIError as e:
+            if e.status_code >= 500 and attempt < max_retries - 1:
+                time.sleep(2 ** attempt)
+                continue
+            raise
+```
+
+:::tip
+The Python and JavaScript SDKs include automatic retry logic for `429` and `5xx` errors. You only need custom retry logic if you're calling the API directly.
+:::

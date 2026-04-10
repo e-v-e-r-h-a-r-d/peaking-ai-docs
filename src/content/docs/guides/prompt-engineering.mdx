@@ -1,0 +1,116 @@
+---
+title: Prompt Engineering
+description: Master the art of crafting effective prompts for consistent, high-quality results.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Prompt engineering is the practice of designing inputs that guide AI models toward producing the desired output. A well-crafted prompt can be the difference between a mediocre and exceptional result.
+
+## Fundamentals
+
+### System prompts
+
+The system message sets the model's behavior for the entire conversation:
+
+```python
+messages = [
+    {
+        "role": "system",
+        "content": (
+            "You are a senior financial analyst. "
+            "Provide data-driven insights with specific numbers. "
+            "Always cite your reasoning. "
+            "Format responses with headers and bullet points."
+        )
+    },
+    {"role": "user", "content": "Analyze Q3 revenue trends."}
+]
+```
+
+### Be specific
+
+Compare these two prompts:
+
+<Tabs>
+  <TabItem label="Vague">
+  ```
+  Summarize this article.
+  ```
+  </TabItem>
+  <TabItem label="Specific">
+  ```
+  Summarize this article in exactly 3 bullet points.
+  Each bullet should be one sentence, max 20 words.
+  Focus on the key findings, not background context.
+  ```
+  </TabItem>
+</Tabs>
+
+The specific prompt produces dramatically more consistent results.
+
+## Techniques
+
+### Few-shot prompting
+
+Provide examples of ideal input/output pairs:
+
+```python
+messages = [
+    {"role": "system", "content": "Classify support tickets into categories."},
+    {"role": "user", "content": "I can't log into my account"},
+    {"role": "assistant", "content": "auth"},
+    {"role": "user", "content": "The page loads too slowly"},
+    {"role": "assistant", "content": "performance"},
+    {"role": "user", "content": "How do I export my data?"},
+    {"role": "assistant", "content": "feature_question"},
+    {"role": "user", "content": "I was charged twice this month"}
+]
+```
+
+### Chain of thought
+
+Ask the model to reason step by step:
+
+```python
+messages = [
+    {
+        "role": "system",
+        "content": "Solve problems step by step. Show your reasoning before giving the final answer."
+    },
+    {
+        "role": "user",
+        "content": "A store has 150 items. 40% are electronics, 25% of electronics are on sale. How many electronics are on sale?"
+    }
+]
+```
+
+### Role-based prompting
+
+Assign a specific expert role to improve domain accuracy:
+
+```python
+messages = [
+    {
+        "role": "system",
+        "content": "You are a board-certified cardiologist with 20 years of experience. "
+                   "Explain medical concepts accurately but in terms a patient can understand."
+    },
+    {"role": "user", "content": "What does my echocardiogram result mean?"}
+]
+```
+
+## Anti-patterns
+
+| Problem | Solution |
+|---------|----------|
+| Responses are too long | Add "Be concise. Max 3 sentences." to the system prompt |
+| Inconsistent format | Use `response_format` with a JSON schema |
+| Model makes up facts | Add "If you're unsure, say so. Do not guess." |
+| Ignores instructions | Move critical instructions to the end of the prompt |
+
+## Testing prompts
+
+:::tip
+Always test prompts with at least 10 diverse inputs before deploying to production. A prompt that works for one example may fail on edge cases. Use `temperature: 0` during testing for reproducible results.
+:::
