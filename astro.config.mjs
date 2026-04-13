@@ -40,44 +40,42 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Get Started',
-					items: [
-						{ label: 'Introduction', slug: 'get-started' },
-						{ label: 'Quickstart', slug: 'get-started/quickstart' },
-						{ label: 'Authentication', slug: 'get-started/authentication' },
-					],
+					label: 'Primeros pasos',
+					autogenerate: { directory: '01-primeros-pasos' },
 				},
 				{
-					label: 'Core Concepts',
-					items: [
-						{ label: 'Models', slug: 'core-concepts/models' },
-						{ label: 'Agents', slug: 'core-concepts/agents' },
-						{ label: 'Workflows', slug: 'core-concepts/workflows' },
-					],
+					label: 'Conecta tus canales',
+					autogenerate: { directory: '02-canales' },
 				},
 				{
-					label: 'Build with Peaking',
-					items: [
-						{ label: 'Text Generation', slug: 'build/text-generation' },
-						{ label: 'Vision & Multimodal', slug: 'build/vision' },
-						{ label: 'Code Generation', slug: 'build/code-generation' },
-					],
+					label: 'Tu agente de IA — Prompt Studio',
+					autogenerate: { directory: '03-prompt-studio' },
 				},
 				{
-					label: 'API Reference',
-					items: [
-						{ label: 'Overview', slug: 'api-reference/overview' },
-						{ label: 'Endpoints', slug: 'api-reference/endpoints' },
-						{ label: 'Error Codes', slug: 'api-reference/errors' },
-					],
+					label: 'Base de Conocimientos',
+					autogenerate: { directory: '04-base-conocimientos' },
 				},
 				{
-					label: 'Guides',
-					items: [
-						{ label: 'Best Practices', slug: 'guides/best-practices' },
-						{ label: 'Prompt Engineering', slug: 'guides/prompt-engineering' },
-					],
+					label: 'Conversaciones y Mensajes',
+					autogenerate: { directory: '05-conversaciones' },
 				},
+				{
+					label: 'CRM, Contactos y Audiencias',
+					autogenerate: { directory: '06-crm-audiencias' },
+				},
+				{
+					label: 'Productos, Órdenes y Pagos',
+					autogenerate: { directory: '07-productos-pagos' },
+				},
+				{
+					label: 'Analytics e Insights',
+					autogenerate: { directory: '08-analytics' },
+				},
+				{
+					label: 'Integraciones y Partner Portal',
+					autogenerate: { directory: '09-integraciones-partner' },
+				},
+				// admin-interno: NO incluido aquí — oculto con sidebar.hidden: true en cada página
 			],
 		}),
 	],
