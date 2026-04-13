@@ -49,15 +49,15 @@ Peaking tiene módulos separados para cada parte de tu operación. Todos accesib
 
 | Módulo | Para qué sirve |
 |--------|----------------|
-| **Dashboard** | Vista rápida de métricas: conversaciones, mensajes, % de IA y contactos nuevos |
-| **Conversaciones** | Bandeja unificada de mensajes de todos los canales |
-| **Prompt Studio** | Donde configuras el comportamiento y personalidad de tu agente de IA |
+| **Panel de Control** | Vista rápida de métricas: conversaciones, mensajes, % de IA y contactos nuevos |
+| **Mensajes** | Bandeja unificada de mensajes de todos los canales |
+| **Estudio de Prompts** | Donde configuras el comportamiento y personalidad de tu agente de IA |
 | **Base de Conocimientos** | Sube documentos, PDFs y URLs para que tu IA responda con precisión |
-| **CRM** | Gestión de contactos, oportunidades y seguimiento de clientes |
-| **Audiencias** | Segmentación de contactos y envío de campañas de mensajería |
+| **CRM** | Pipeline de ventas, oportunidades y seguimiento comercial por etapas |
+| **Contactos** | Base de datos de tus clientes con historial de conversaciones, etiquetas y campañas de mensajería |
 | **Productos** | Catálogo de productos y gestión de órdenes |
-| **Pagos** | Integración con Stripe y Mercado Pago |
-| **Analytics** | Reportes detallados de conversaciones, IA y rendimiento del equipo |
+| **Pedidos y Carritos** | Seguimiento de órdenes en curso y carritos activos de tus clientes |
+| **Insights** | Reportes detallados de conversaciones, IA y rendimiento del equipo |
 | **Integraciones** | Conecta Zapier, Odoo, HubSpot y otras herramientas |
 | **Configuración** | Equipo, roles, facturación, privacidad y módulos activos |
 
