@@ -13,8 +13,8 @@ Una vez que conectas un canal a Peaking, la sección **Canales de Mensajería** 
 
 Para acceder:
 
-1. En el panel lateral izquierdo, haz clic en **Configuración**.
-2. Selecciona la pestaña **Canales**.
+1. En el panel lateral izquierdo, haz clic en **Integraciones**.
+2. Haz scroll hacia abajo.
 
 Verás la sección **Estado de Conexión** con un listado de los tres canales de Meta disponibles: **WhatsApp Business**, **Instagram Business** y **Facebook Messenger**.
 
