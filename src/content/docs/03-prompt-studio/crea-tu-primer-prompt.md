@@ -42,7 +42,6 @@ Define en qué idioma responderá tu agente a los clientes.
 |--------|-------------|
 | **Español** | El agente responde siempre en español |
 | **Inglés** | Respuestas siempre en inglés |
-| **Automático** | El agente detecta el idioma del cliente y responde en el mismo |
 
 :::tip[Recomendación]
 Si la mayoría de tus clientes escriben en español, selecciona **Español** directamente. La detección automática puede generar inconsistencias cuando el cliente mezcla idiomas.
