@@ -83,27 +83,82 @@ Usa el ícono de **Kanban / Lista** en la esquina superior del panel para cambia
 
 ---
 
-## Qué información tiene cada oportunidad
+## Qué ves al abrir una oportunidad
 
-Al abrir una oportunidad desde el Kanban o la lista, verás:
+Al hacer clic en una tarjeta del Kanban o en una fila de la lista, se abre el panel de detalle de la oportunidad. El panel tiene dos áreas:
 
-| Sección | Contenido |
+**Lado izquierdo — ficha del lead**, con tres pestañas:
+
+| Pestaña | Contenido |
 |---------|-----------|
-| **Datos del contacto** | Nombre, empresa, canal de origen, teléfono, correo |
-| **Etapa y estado** | En qué parte del pipeline está y su estado actual |
-| **Asignación** | Vendedor responsable |
-| **Historial de actividad** | Notas, mensajes, cambios de etapa con fecha y autor |
-| **Conversación vinculada** | Link directo a la conversación de origen en Peaking |
-| **TODOs vinculados** | Tareas de seguimiento pendientes o completadas |
+| **Detalles** | Nombre, empresa, industria, email, teléfono, etapa, prioridad, fuente, campaña, asignado a, notas |
+| **Financiero** | Revenue esperado, probabilidad de cierre |
+| **Dirección** | Datos de ubicación del lead |
+
+El campo **Fuente** registra el origen del lead — cuando el agente de IA lo creó, aparece `ai_agent`. Si vino de una campaña, aparece el nombre de la campaña.
+
+**Lado derecho — contexto y comunicación**, con dos pestañas:
+
+### Pestaña Timeline
+
+Registro cronológico de todo lo que ha ocurrido con la oportunidad. Tiene dos sub-pestañas:
+
+| Sub-pestaña | Qué contiene |
+|-------------|-------------|
+| **Comentario** | Campo de texto libre para dejar notas internas. Escribe y haz clic en **Comentar** para guardar. Los comentarios quedan visibles para todo el equipo. |
+| **Actividad** | Log automático de eventos: cuándo se creó la oportunidad, cambios de etapa, actividades registradas (llamadas, correos, reuniones), con fecha y autor. |
+
+### Pestaña Conversación
+
+Muestra el **hilo de mensajes completo** con el lead — el mismo hilo que ves en el Panel de Mensajes, pero sin salir del CRM. Desde aquí puedes:
+
+- Ver toda la conversación en contexto.
+- **Escribir y enviar mensajes** directamente al lead (campo "Escribe tu mensaje al visitante…").
+- Responder con Ctrl+Enter.
+
+:::tip[Todo en un solo lugar]
+No necesitas ir al Panel de Mensajes para atender al lead. Desde la tarjeta del CRM tienes la ficha completa, la conversación activa y el historial de actividad — todo sin cambiar de módulo.
+:::
+
+---
+
+## Tipos de actividad
+
+El CRM permite registrar distintos tipos de actividad en la pestaña **Timeline › Actividad** de cada oportunidad. Puedes gestionar y crear tus propios tipos desde el botón **Gestionar Tipos de Actividad** dentro del CRM.
+
+Los tipos predeterminados disponibles son:
+
+| Tipo | Cuándo usarlo |
+|------|---------------|
+| **Cierre** | Para documentar el avance o acuerdo final de la negociación |
+| **Demostración** | Cuando se coordinó o realizó una demo del producto |
+| **Email** | Para registrar correos enviados o recibidos con el lead |
+| **Llamada** | Cuando tuviste contacto telefónico con el prospecto |
+| **Nota** | Para observaciones internas sobre el lead |
+| **Propuesta** | Cuando se envió o discutió una propuesta comercial |
+
+Puedes crear tipos adicionales con **Crear Nuevo Tipo** (botón + en la pantalla de gestión).
+
+Para agregar una actividad a una oportunidad:
+
+1. Abre la oportunidad desde el Kanban o la lista.
+2. Selecciona la pestaña **Timeline** en el panel derecho.
+3. Usa la sub-pestaña **Actividad** y selecciona el tipo correspondiente.
+4. Agrega el detalle o nota.
+5. Guarda.
+
+La actividad queda en el log con fecha y autor.
 
 ---
 
 ## Cómo se crean las oportunidades
 
-Las oportunidades en el CRM pueden originarse de tres maneras:
+La principal fuente de oportunidades es el **agente de IA** — detecta intención de compra durante las conversaciones y crea la oportunidad automáticamente. El pipeline del CRM está diseñado principalmente para **consultar y dar seguimiento** a lo que el agente ya calificó, no para la captura manual de cada lead.
 
-1. **Automáticamente desde el agente de IA** — si el prompt incluye una instrucción para crear oportunidades cuando se detecta intención de compra.
-2. **Manualmente por el equipo** — cualquier miembro puede crear una oportunidad desde el CRM o desde una conversación activa.
+Sin embargo, las oportunidades pueden originarse de tres maneras:
+
+1. **Automáticamente desde el agente de IA** — si el prompt incluye una instrucción para crear oportunidades cuando se detecta intención de compra (la forma más común). El campo Fuente queda como `ai_agent`.
+2. **Manualmente por el equipo** — cualquier miembro puede crear una oportunidad haciendo clic en **+ Nueva Oportunidad**. El formulario incluye: nombre, empresa, industria, email, teléfono, etapa, asignado a, prioridad, revenue esperado, probabilidad de cierre (%), fuente, campaña y notas.
 3. **Por asignación automática** — cuando la asignación del CRM está activa, las nuevas oportunidades se distribuyen en Round Robin entre los vendedores habilitados.
 
 :::tip[Conecta el agente con el CRM]
