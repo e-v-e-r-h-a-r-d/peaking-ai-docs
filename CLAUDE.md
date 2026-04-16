@@ -20,7 +20,7 @@ src/content/docs/
 ├── 02-canales/                  ← WhatsApp, Instagram, Messenger, Widget web
 ├── 03-prompt-studio/            ← Configuración del agente de IA
 ├── 04-base-conocimientos/       ← Knowledge Base
-├── 05-conversaciones/           ← Panel, mensajes, escalamiento, TODOs
+├── 05-conversaciones/           ← Mensajes (sidebar label), panel, escalamiento, TODOs
 ├── 06-crm-audiencias/           ← CRM, contactos, audiencias, campañas
 ├── 07-productos-pagos/          ← Catálogo, Stripe, Mercado Pago, Orders
 ├── 08-analytics/                ← Dashboard, KPIs, reportería
@@ -34,25 +34,26 @@ Cada sección tiene un `index.md` y entre 4–6 artículos específicos. Total: 
 
 ---
 
-## Estado actual (2026-04-13)
+## Estado actual (2026-04-16)
 
 ### Comprometido en git
 - `Initial commit` (2026-04-10): estructura base Astro + Starlight, tema oscuro personalizado con branding Peaking, `custom.css` (glassmorphism, 806 líneas), `ThemeSelect.astro`, `astro.config.mjs` con las 9 secciones públicas.
 
-### Cambios pendientes de commit (working tree)
+### Cambios aplicados (pendientes de commit)
 | Cambio | Descripción |
 |--------|-------------|
-| `M astro.config.mjs` | Reconfigurado: sidebar de 9 secciones en español, eliminadas secciones de API developer |
-| `D src/content/docs/api-reference/`, `build/`, `core-concepts/`, `get-started/`, `guides/` | Eliminadas las docs técnicas en inglés (17 archivos) |
+| `M astro.config.mjs` | Sidebar: label de sección 05 cambiado a "Mensajes"; 9 secciones en español |
+| `D src/content/docs/api-reference/`, `build/`, etc. | Eliminadas docs técnicas en inglés (17 archivos) |
 | `M src/content/docs/index.mdx` | Reescrita como landing page del Help Center en español |
+| `M guardar-screenshot.ps1` | Actualizado: guarda como JPEG comprimido (85% calidad, max 1440px) para mantener archivos <2MB; flag `-png` para forzar PNG; flag `-calidad` para ajustar compresión |
 | `?? src/content/docs/01-primeros-pasos/` ... `09-...` | 9 secciones nuevas + admin-interno (57 archivos) |
 | `?? .claude/` | Skill `generate-docs` para generar artículos desde screenshots |
 | `?? .github/` | GitHub Actions workflow `deploy.yml` |
-| `?? guardar-screenshot.ps1` | Script PowerShell para guardar screenshots desde clipboard |
 
 ### Estado del contenido por artículo
-- **Con contenido real (no placeholder):** `tour-del-dashboard.md`, `configuraciones-iniciales.md`, todos los artículos de `admin-interno/` (6)
-- **Placeholders** (`:::note[Artículo en construcción]`): 38 de 46 artículos públicos
+- **Con contenido real completo:** `crm-vista-general.md` (CRM completo con panel de detalle, Timeline, tipos de actividad), `todos-y-tareas.md` (TODOs completo con 4 etapas, KPIs, gestión de etapas y tipos), `tour-del-dashboard.md`, `configuraciones-iniciales.md`, todos los artículos de `admin-interno/` (6)
+- **Sección 05-conversaciones:** label del sidebar cambiado a "Mensajes"; `panel-de-conversaciones.md` completo (contenido correcto, título pendiente de renombrar a "Panel de Mensajes")
+- **Placeholders** (`:::note[Artículo en construcción]`): ~36 de 46 artículos públicos
 
 ---
 
@@ -63,7 +64,7 @@ Cada sección tiene un `index.md` y entre 4–6 artículos específicos. Total: 
 3. El skill genera el `.md` listo para Starlight y lo guarda en la carpeta correcta
 4. Revisar, hacer commit y push a `max's-branch` → GitHub Actions despliega automáticamente
 
-**Script de screenshots:** `guardar-screenshot.ps1` — guarda el clipboard como PNG.
+**Script de screenshots:** `guardar-screenshot.ps1` — guarda el clipboard como JPEG comprimido (85% calidad, redimensiona a max 1440px). Parámetros opcionales: `-calidad 90` (ajusta compresión), `-png` (fuerza PNG sin compresión), `-maxAncho 1920` (cambia el ancho máximo).
 
 ---
 

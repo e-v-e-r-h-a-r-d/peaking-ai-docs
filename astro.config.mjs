@@ -56,7 +56,7 @@ export default defineConfig({
 					autogenerate: { directory: '04-base-conocimientos' },
 				},
 				{
-					label: 'Conversaciones y Mensajes',
+					label: 'Mensajes',
 					autogenerate: { directory: '05-conversaciones' },
 				},
 				{
