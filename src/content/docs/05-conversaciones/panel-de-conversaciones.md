@@ -1,17 +1,17 @@
 ---
-title: Panel de Conversaciones
+title: Panel de Mensajes
 description: Cómo navegar el panel principal de conversaciones, filtrar chats, ver el estado de cada interacción y tomar control desde el equipo humano.
 sidebar:
   order: 1
 ---
 
-El **Panel de Conversaciones** es el centro de operaciones de tu equipo. Aquí llegan todos los mensajes entrantes de todos los canales conectados — WhatsApp, Instagram, Messenger y Widget — organizados en una sola vista. El agente de IA responde automáticamente, pero tu equipo puede monitorear, intervenir y tomar control en cualquier momento.
+El **Panel de Mensajes** es el centro de operaciones de tu equipo. Aquí llegan todos los mensajes entrantes de todos los canales conectados — WhatsApp, Instagram, Messenger y Widget — organizados en una sola vista. El agente de IA responde automáticamente, pero tu equipo puede monitorear, intervenir y tomar control en cualquier momento.
 
 ---
 
-## Acceder al Panel de Conversaciones
+## Acceder al Panel de Mensajes
 
-En el panel lateral izquierdo, haz clic en **Conversaciones**. Verás la lista de todas las conversaciones activas, ordenadas por la más reciente.
+En el panel lateral izquierdo, haz clic en **Mensajes**. Verás la lista de todas las conversaciones activas, ordenadas por la más reciente.
 
 ---
 
