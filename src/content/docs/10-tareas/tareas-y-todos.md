@@ -1,8 +1,8 @@
 ---
-title: TODOs y tareas del equipo
-description: Cómo usar el módulo de TODOs para gestionar tareas internas del equipo vinculadas a contactos y conversaciones.
+title: Tareas (TODOs)
+description: Cómo usar el módulo de Tareas para gestionar el trabajo interno del equipo vinculado a clientes y conversaciones.
 sidebar:
-  order: 5
+  order: 1
 ---
 
 El módulo de **TODOs** es el centro de tareas internas de tu equipo. A diferencia del CRM (que gestiona el pipeline de ventas), los TODOs son para el trabajo del equipo: hacer seguimiento de compromisos internos, coordinar entre miembros y asegurarse de que nada quede sin atender.
