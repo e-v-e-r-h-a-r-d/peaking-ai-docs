@@ -48,7 +48,7 @@ export default defineConfig({
 					autogenerate: { directory: '02-canales' },
 				},
 				{
-					label: 'Tu agente de IA — Prompt Studio',
+					label: 'Estudio de Prompts',
 					autogenerate: { directory: '03-prompt-studio' },
 				},
 				{
@@ -60,19 +60,31 @@ export default defineConfig({
 					autogenerate: { directory: '05-conversaciones' },
 				},
 				{
-					label: 'CRM, Contactos y Audiencias',
+					label: 'CRM y Contactos',
 					autogenerate: { directory: '06-crm-audiencias' },
 				},
 				{
-					label: 'Productos, Órdenes y Pagos',
+					label: 'Productos',
 					autogenerate: { directory: '07-productos-pagos' },
 				},
 				{
-					label: 'Analytics e Insights',
+					label: 'Tareas',
+					autogenerate: { directory: '10-tareas' },
+				},
+				{
+					label: 'Workflows',
+					autogenerate: { directory: '11-workflows' },
+				},
+				{
+					label: 'Pedidos y Carritos',
+					autogenerate: { directory: '12-pedidos-carritos' },
+				},
+				{
+					label: 'Insights',
 					autogenerate: { directory: '08-analytics' },
 				},
 				{
-					label: 'Integraciones y Partner Portal',
+					label: 'Integraciones',
 					autogenerate: { directory: '09-integraciones-partner' },
 				},
 				// admin-interno: NO incluido aquí — oculto con sidebar.hidden: true en cada página

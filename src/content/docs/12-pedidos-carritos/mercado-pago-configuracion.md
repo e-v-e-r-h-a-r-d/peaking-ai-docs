@@ -2,7 +2,7 @@
 title: Conexión con Mercado Pago
 description: Cómo conectar Mercado Pago a Peaking para procesar pagos en Latinoamérica directamente desde el chat.
 sidebar:
-  order: 4
+  order: 3
 ---
 
 **Mercado Pago** es la pasarela de pago líder en Latinoamérica. Integrarla con Peaking permite que tu agente de IA procese cobros, genere links de pago y gestione órdenes en los mismos canales donde ya conversas con tus clientes — sin redirigirlos a otra plataforma.

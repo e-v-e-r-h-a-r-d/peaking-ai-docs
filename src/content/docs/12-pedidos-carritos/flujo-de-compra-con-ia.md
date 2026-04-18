@@ -1,8 +1,8 @@
 ---
-title: Orders & Carts
-description: Cómo consultar órdenes de compra y carritos abandonados desde el módulo de Orders & Carts.
+title: Flujo de compra con IA
+description: "Cómo funciona el flujo de compra asistido por IA: desde el catálogo hasta el pago confirmado."
 sidebar:
-  order: 2
+  order: 4
 ---
 
 :::note[Artículo en construcción]

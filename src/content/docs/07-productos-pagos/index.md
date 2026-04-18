@@ -1,14 +1,16 @@
 ---
-title: Productos, Órdenes y Pagos
-description: Gestiona tu catálogo de productos, consulta órdenes y carritos, y configura pasarelas de pago con Stripe y Mercado Pago.
+title: Productos
+description: Gestiona el catálogo de productos que el agente de IA usa para vender, cotizar y responder preguntas durante las conversaciones.
 ---
 
-Peaking te permite vender directamente desde el chat. En esta sección encontrarás todo lo relacionado con tu catálogo de productos, el seguimiento de órdenes y la configuración de pasarelas de pago.
+El módulo de **Productos** centraliza tu catálogo de ventas. El agente de IA consulta este catálogo en tiempo real durante las conversaciones para dar precios exactos, verificar disponibilidad y generar cotizaciones u órdenes.
 
 ## En esta sección
 
-- **[Catálogo de Productos](/07-productos-pagos/catalogo-de-productos/)** — Crea y gestiona los productos disponibles para venta conversacional.
-- **[Orders & Carts](/07-productos-pagos/orders-y-carts/)** — Consulta órdenes de compra y carritos abandonados.
-- **[Stripe — configuración](/07-productos-pagos/stripe-configuracion/)** — Conecta Stripe para procesar pagos con tarjeta desde el chat.
-- **[Mercado Pago — configuración](/07-productos-pagos/mercado-pago-configuracion/)** — Conecta Mercado Pago para mercados latinoamericanos.
-- **[Flujo de compra con IA](/07-productos-pagos/flujo-de-compra-con-ia/)** — Cómo funciona el proceso de compra asistido por IA de principio a fin.
+- **[Catálogo de Productos](/07-productos-pagos/catalogo-de-productos/)** — Crea, organiza y gestiona todos tus productos con precios, inventario y categorías.
+
+---
+
+:::note[Pagos y pedidos]
+La configuración de pasarelas de pago (Stripe y Mercado Pago) y la gestión de órdenes se encuentra en la sección **[Pedidos y Carritos](/12-pedidos-carritos/)**.
+:::

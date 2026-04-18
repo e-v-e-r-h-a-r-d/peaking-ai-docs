@@ -2,7 +2,7 @@
 title: Conexión con Stripe
 description: Cómo conectar Stripe a Peaking para procesar pagos desde el chat y transformar conversaciones en ingresos.
 sidebar:
-  order: 3
+  order: 2
 ---
 
 **Stripe** es la pasarela de pago internacional que te permite cobrar desde WhatsApp, Instagram y cualquier canal conectado a Peaking. El agente de IA puede guiar al cliente a través del proceso de compra y generar el cobro sin que el cliente salga del chat.
