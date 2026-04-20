@@ -17,54 +17,97 @@ Help Center de **Peaking AI** — documentación orientada al usuario final (en 
 src/content/docs/
 ├── index.mdx                    ← Landing page del Help Center
 ├── 01-primeros-pasos/           ← Onboarding (bienvenida, dashboard, config, glosario)
-├── 02-canales/                  ← WhatsApp, Instagram, Messenger, Widget web
-├── 03-prompt-studio/            ← Configuración del agente de IA
+├── 02-canales/                  ← WhatsApp, Instagram, Messenger, Widget web, Plantillas WA
+├── 03-prompt-studio/            ← Prompt Studio: prompt, variables, herramientas, test
 ├── 04-base-conocimientos/       ← Knowledge Base
-├── 05-conversaciones/           ← Mensajes (sidebar label), panel, escalamiento, TODOs
+├── 05-conversaciones/           ← Mensajes (sidebar label), panel, escalamiento, bandeja
 ├── 06-crm-audiencias/           ← CRM, contactos, audiencias, campañas
-├── 07-productos-pagos/          ← Catálogo, Stripe, Mercado Pago, Orders
-├── 08-analytics/                ← Dashboard, KPIs, reportería
-├── 09-integraciones-partner/    ← Zapier, Odoo, API, Partner Portal
+├── 07-productos-pagos/          ← Solo catálogo de productos (Stripe/MP/Orders movidos)
+├── 08-analytics/                ← Dashboard, KPIs, reportería (sidebar label: Insights)
+├── 09-integraciones-partner/    ← HubSpot, Odoo, Zapier, GCal, API, Partner Portal
+├── 10-tareas/                   ← Tareas/TODOs como sección independiente
+├── 11-workflows/                ← Automatización de flujos de trabajo
+├── 12-pedidos-carritos/         ← Pedidos, Carritos, Stripe, Mercado Pago, Flujo de compra
 └── admin-interno/               ← Solo equipo Peaking (sidebar.hidden: true)
 ```
 
-Cada sección tiene un `index.md` y entre 4–6 artículos específicos. Total: 57 archivos.
+**Total:** ~70 archivos. Cada sección tiene un `index.md` y artículos específicos.
 
 **Regla crítica:** Toda sección nueva debe registrarse también en `astro.config.mjs` con `autogenerate: { directory: 'XX-nombre' }`.
 
 ---
 
-## Estado actual (2026-04-16)
+## Sidebar actual (astro.config.mjs)
 
-### Comprometido en git
-- `Initial commit` (2026-04-10): estructura base Astro + Starlight, tema oscuro personalizado con branding Peaking, `custom.css` (glassmorphism, 806 líneas), `ThemeSelect.astro`, `astro.config.mjs` con las 9 secciones públicas.
+| Label | Directorio |
+|-------|------------|
+| Primeros pasos | `01-primeros-pasos` |
+| Conecta tus canales | `02-canales` |
+| Estudio de Prompts | `03-prompt-studio` |
+| Base de Conocimientos | `04-base-conocimientos` |
+| Mensajes | `05-conversaciones` |
+| CRM y Contactos | `06-crm-audiencias` |
+| Productos | `07-productos-pagos` |
+| Tareas | `10-tareas` |
+| Workflows | `11-workflows` |
+| Pedidos y Carritos | `12-pedidos-carritos` |
+| Insights | `08-analytics` |
+| Integraciones | `09-integraciones-partner` |
 
-### Cambios aplicados (pendientes de commit)
-| Cambio | Descripción |
-|--------|-------------|
-| `M astro.config.mjs` | Sidebar: label de sección 05 cambiado a "Mensajes"; 9 secciones en español |
-| `D src/content/docs/api-reference/`, `build/`, etc. | Eliminadas docs técnicas en inglés (17 archivos) |
-| `M src/content/docs/index.mdx` | Reescrita como landing page del Help Center en español |
-| `M guardar-screenshot.ps1` | Actualizado: guarda como JPEG comprimido (85% calidad, max 1440px) para mantener archivos <2MB; flag `-png` para forzar PNG; flag `-calidad` para ajustar compresión |
-| `?? src/content/docs/01-primeros-pasos/` ... `09-...` | 9 secciones nuevas + admin-interno (57 archivos) |
-| `?? .claude/` | Skill `generate-docs` para generar artículos desde screenshots |
-| `?? .github/` | GitHub Actions workflow `deploy.yml` |
+`admin-interno/` no aparece en el sidebar — artículos ocultos con `sidebar.hidden: true`.
 
-### Estado del contenido por artículo
-- **Con contenido real completo:** `crm-vista-general.md` (CRM completo con panel de detalle, Timeline, tipos de actividad), `todos-y-tareas.md` (TODOs completo con 4 etapas, KPIs, gestión de etapas y tipos), `tour-del-dashboard.md`, `configuraciones-iniciales.md`, todos los artículos de `admin-interno/` (6)
-- **Sección 05-conversaciones:** label del sidebar cambiado a "Mensajes"; `panel-de-conversaciones.md` completo (contenido correcto, título pendiente de renombrar a "Panel de Mensajes")
-- **Placeholders** (`:::note[Artículo en construcción]`): ~36 de 46 artículos públicos
+---
+
+## Estado del contenido (2026-04-18)
+
+### Todo en git — rama `max's-branch`
+
+El working tree está limpio. Todos los cambios están commiteados y pusheados.
+
+### Artículos con contenido real completo
+
+| Archivo | Sección | Notas |
+|---------|---------|-------|
+| `06-crm-audiencias/crm-vista-general.md` | CRM | Panel detalle, Timeline, Conversación, tipos de actividad, Nueva oportunidad |
+| `06-crm-audiencias/audiencias-y-segmentos.md` | CRM | Segmentos dinámicos/estáticos, flujo de creación, buenas prácticas |
+| `10-tareas/tareas-y-todos.md` | Tareas | 4 etapas reales, KPIs, Gestionar Etapas, Tipos de Actividad, detalle del TODO |
+| `07-productos-pagos/catalogo-de-productos.md` | Productos | Panel, creación manual, campos dinámicos, categorías, declaración en Prompt |
+| `11-workflows/como-funcionan-los-workflows.md` | Workflows | Triggers, condiciones, acciones, 3 ejemplos prácticos |
+| `12-pedidos-carritos/pedidos-y-carritos.md` | Pedidos | Órdenes, carritos abandonados, filtros, recuperación |
+| `12-pedidos-carritos/stripe-configuracion.md` | Pedidos | Conexión, productos, dashboard ventas, métodos, carrito, tarifas |
+| `12-pedidos-carritos/mercado-pago-configuracion.md` | Pedidos | Autenticación MP, IVA, dashboard, métodos por país, tarifas |
+| `09-integraciones-partner/odoo-hubspot-zoho.md` | Integraciones | HubSpot, Odoo, Zoho — conexión y declaración en Prompt |
+| `09-integraciones-partner/google-calendar.md` | Integraciones | Conexión, autenticación Google, declaración en Prompt Studio |
+| `02-canales/plantillas-whatsapp.md` | Canales | WABA, sincronización, envío desde Panel de Mensajes |
+| `03-prompt-studio/declarar-herramientas.md` | Prompt Studio | Configuración de Herramientas, ejemplo HubSpot, FAQ |
+| `05-conversaciones/panel-de-conversaciones.md` | Mensajes | Panel de Mensajes (renombrado), filtros, estados, intervención humana |
+| `01-primeros-pasos/tour-del-dashboard.md` | Primeros pasos | Completo |
+| `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Completo |
+| `admin-interno/` (7 archivos) | Interno | Todos con `sidebar.hidden: true` |
+
+### Placeholders activos (`:::note[Artículo en construcción]`)
+
+Aprox. 30 artículos públicos aún en placeholder. Pendientes principales:
+- `01-primeros-pasos/` — bienvenido, activa-tus-modulos, glosario
+- `02-canales/` — conexion-whatsapp, instagram, messenger, widget
+- `03-prompt-studio/` — variables-y-funciones-avanzadas, mejores-practicas
+- `05-conversaciones/` — tags-y-etiquetas, escalamiento-a-humano, bandeja-de-mensajes
+- `06-crm-audiencias/` — gestion-de-contactos, campanas-y-broadcasts
+- `08-analytics/` — todos
+- `09-integraciones-partner/` — zapier-make-n8n, api-de-peaking, partner-portal
+- `12-pedidos-carritos/flujo-de-compra-con-ia.md`
 
 ---
 
 ## Flujo de trabajo para generar contenido
 
-1. Tomar screenshot de la plataforma Peaking
-2. Ejecutar `/generate-docs` (invoca el skill en `.claude/skills/generate-docs/SKILL.md`)
-3. El skill genera el `.md` listo para Starlight y lo guarda en la carpeta correcta
-4. Revisar, hacer commit y push a `max's-branch` → GitHub Actions despliega automáticamente
+1. Tomar screenshot de la plataforma Peaking (Win+Shift+S → clipboard)
+2. Guardar con `.\guardar-screenshot.ps1 -seccion "XX-nombre" -nombre "descripcion"`
+3. Ejecutar `/generate-docs` en Claude Code con el screenshot como contexto
+4. Revisar el `.md` generado, hacer commit y push a `max's-branch`
+5. GitHub Actions despliega automáticamente
 
-**Script de screenshots:** `guardar-screenshot.ps1` — guarda el clipboard como JPEG comprimido (85% calidad, redimensiona a max 1440px). Parámetros opcionales: `-calidad 90` (ajusta compresión), `-png` (fuerza PNG sin compresión), `-maxAncho 1920` (cambia el ancho máximo).
+**Script de screenshots:** `guardar-screenshot.ps1` — guarda como JPEG comprimido (85% calidad, max 1440px). Parámetros: `-calidad 90`, `-png` (fuerza PNG), `-maxAncho 1920`.
 
 ---
 
@@ -72,16 +115,38 @@ Cada sección tiene un `index.md` y entre 4–6 artículos específicos. Total: 
 
 - **Idioma:** Español neutro latinoamericano
 - **Voz:** "Experto empático" — directo, orientado a tareas, sin jerga innecesaria
-- **Frontmatter:** `title`, `description`, `sidebar.order` en todos los artículos públicos
+- **Frontmatter obligatorio:** `title`, `description`, `sidebar.order` en todos los artículos públicos
 - **Admin interno:** añadir `sidebar.hidden: true` en el frontmatter
-- **Imágenes:** URL pública GitHub Raw → `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/main/screenshots/[seccion]/[imagen.png]`
-- **Nombres propios respetados:** Prompt Studio, Command Center, Knowledge Base, Orders & Carts, TODOs, Stripe (nunca "Stipe")
+- **Imágenes:** URL pública GitHub Raw → `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots/[seccion]/[imagen.jpg]`
+- **Extensión de imágenes:** `.jpg` por defecto (el script guarda JPEG). Usar `.png` solo si se pasó el flag `-png`
+- **Nombres propios respetados:** Prompt Studio, Command Center, Knowledge Base, Pedidos y Carritos, TODOs, Tareas, Stripe (nunca "Stipe"), Mercado Pago, Workflows
+
+---
+
+## Secciones internas (admin-interno)
+
+Estos artículos existen pero **no son visibles en el sidebar público**. Son documentación interna del equipo Peaking:
+
+| Archivo | Propósito |
+|---------|-----------|
+| `command-center.md` | Panel maestro de operaciones internas |
+| `admin-organizations.md` | Gestión de organizaciones desde el lado admin |
+| `sales-trials.md` | Gestión de trials y demos de ventas |
+| `data-editor.md` | Editor de datos internos |
+| `announcements.md` | Sistema de anuncios internos |
+| `settings-internos.md` | Configuraciones solo visibles para el equipo |
+
+También son documentación interna (aunque están en `09-integraciones-partner/`):
+- `api-de-peaking.md` — API pública (pero técnica, no para usuarios finales)
+- `partner-portal-que-es.md` y `gestion-de-clientes-como-partner.md` — para resellers
 
 ---
 
 ## Próximos pasos
 
-1. Hacer commit de todos los cambios pendientes del working tree
-2. Redactar artículos reales en `01-primeros-pasos/` (empezar por `bienvenido-a-peaking.md`)
-3. Avanzar sección por sección siguiendo el orden numerado
-4. Subir screenshots de la plataforma para usar el skill `generate-docs`
+1. Completar artículos de `02-canales/` (conexión WhatsApp, Instagram, Messenger, Widget)
+2. Completar `01-primeros-pasos/` (bienvenido, activa-tus-modulos, glosario)
+3. Completar `06-crm-audiencias/` (gestion-de-contactos, campanas-y-broadcasts)
+4. Completar `08-analytics/` (todos los artículos de Insights)
+5. Completar `12-pedidos-carritos/flujo-de-compra-con-ia.md`
+6. Subir screenshots de la plataforma para usar el skill `generate-docs`
