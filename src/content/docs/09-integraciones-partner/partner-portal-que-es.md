@@ -3,6 +3,7 @@ title: Partner Portal — qué es
 description: Qué es el Partner Portal de Peaking y cómo acceder si eres agencia o reseller.
 sidebar:
   order: 4
+  hidden: true
 ---
 
 :::note[Artículo en construcción]

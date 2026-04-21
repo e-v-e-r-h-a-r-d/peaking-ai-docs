@@ -3,6 +3,7 @@ title: API de Peaking
 description: Documentación de la API de Peaking para integraciones personalizadas y automatizaciones avanzadas.
 sidebar:
   order: 3
+  hidden: true
 ---
 
 :::note[Artículo en construcción]

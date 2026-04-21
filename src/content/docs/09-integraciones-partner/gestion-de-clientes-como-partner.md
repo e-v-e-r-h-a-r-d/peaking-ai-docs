@@ -3,6 +3,7 @@ title: Gestión de clientes como partner
 description: Cómo gestionar las cuentas de tus clientes desde el Partner Portal de Peaking.
 sidebar:
   order: 5
+  hidden: true
 ---
 
 :::note[Artículo en construcción]
