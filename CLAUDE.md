@@ -21,13 +21,15 @@ src/content/docs/
 ├── 03-prompt-studio/            ← Prompt Studio: prompt, variables, herramientas, test
 ├── 04-base-conocimientos/       ← Knowledge Base
 ├── 05-conversaciones/           ← Mensajes (sidebar label), panel, escalamiento, bandeja
-├── 06-crm-audiencias/           ← CRM, contactos, audiencias, campañas
+├── 06-crm-audiencias/           ← Solo CRM (pipeline). Contactos y Audiencias movidos
 ├── 07-productos-pagos/          ← Solo catálogo de productos (Stripe/MP/Orders movidos)
 ├── 08-analytics/                ← Dashboard, KPIs, reportería (sidebar label: Insights)
 ├── 09-integraciones-partner/    ← HubSpot, Odoo, Zapier, GCal, API, Partner Portal
 ├── 10-tareas/                   ← Tareas/TODOs como sección independiente
 ├── 11-workflows/                ← Automatización de flujos de trabajo
 ├── 12-pedidos-carritos/         ← Pedidos, Carritos, Stripe, Mercado Pago, Flujo de compra
+├── 13-contactos/                ← Contactos (sección propia, separada del CRM)
+├── 14-audiencias/               ← Audiencias y Campañas (sección propia)
 └── admin-interno/               ← Solo equipo Peaking (sidebar.hidden: true)
 ```
 
@@ -39,20 +41,24 @@ src/content/docs/
 
 ## Sidebar actual (astro.config.mjs)
 
+Orden del sidebar tal como aparece en la navegación de Peaking:
+
 | Label | Directorio |
 |-------|------------|
 | Primeros pasos | `01-primeros-pasos` |
-| Conecta tus canales | `02-canales` |
-| Estudio de Prompts | `03-prompt-studio` |
 | Base de Conocimientos | `04-base-conocimientos` |
 | Mensajes | `05-conversaciones` |
-| CRM y Contactos | `06-crm-audiencias` |
-| Productos | `07-productos-pagos` |
+| Insights | `08-analytics` |
+| CRM | `06-crm-audiencias` |
+| Contactos | `13-contactos` |
 | Tareas | `10-tareas` |
+| Estudio de Prompts | `03-prompt-studio` |
+| Integraciones | `09-integraciones-partner` |
+| Productos | `07-productos-pagos` |
 | Workflows | `11-workflows` |
 | Pedidos y Carritos | `12-pedidos-carritos` |
-| Insights | `08-analytics` |
-| Integraciones | `09-integraciones-partner` |
+| Audiencias y Campañas | `14-audiencias` |
+| Conecta tus canales | `02-canales` |
 
 `admin-interno/` no aparece en el sidebar — artículos ocultos con `sidebar.hidden: true`.
 
@@ -144,8 +150,6 @@ También son documentación interna (aunque están en `09-integraciones-partner/
 
 ## Próximos pasos
 
-1. Completar artículos de `02-canales/` (conexión WhatsApp, Instagram, Messenger, Widget)
-2. Completar `01-primeros-pasos/` (bienvenido, activa-tus-modulos, glosario)
 3. Completar `06-crm-audiencias/` (gestion-de-contactos, campanas-y-broadcasts)
 4. Completar `08-analytics/` (todos los artículos de Insights)
 5. Completar `12-pedidos-carritos/flujo-de-compra-con-ia.md`

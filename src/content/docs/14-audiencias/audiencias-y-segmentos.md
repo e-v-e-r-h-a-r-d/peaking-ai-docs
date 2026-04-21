@@ -2,7 +2,7 @@
 title: Audiencias y segmentos
 description: Cómo crear grupos de contactos basados en atributos para dirigir campañas de mensajería saliente y broadcasts personalizados.
 sidebar:
-  order: 3
+  order: 1
 ---
 
 Las **Audiencias** son grupos de contactos que comparten una característica en común — canal de entrada, etiqueta asignada, nivel de actividad, atributo personalizado, entre otros. Se usan como destino de las **Campañas y Broadcasts**: en lugar de escribirle a cada contacto uno por uno, defines una audiencia y le envías el mensaje a todos sus miembros de una sola vez.
