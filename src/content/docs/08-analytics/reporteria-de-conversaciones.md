@@ -3,6 +3,7 @@ title: Reportería de conversaciones
 description: Cómo generar y exportar reportes de conversaciones para analizar el desempeño de tu equipo.
 sidebar:
   order: 4
+  hidden: true
 ---
 
 :::note[Artículo en construcción]

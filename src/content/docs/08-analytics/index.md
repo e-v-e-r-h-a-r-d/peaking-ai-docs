@@ -1,13 +1,12 @@
 ---
-title: Analytics e Insights
-description: Mide el rendimiento de tu agente de IA, tus canales de atención y tu equipo con dashboards y reportes en tiempo real.
+title: Insights
+description: Mide el rendimiento de tu agente de IA y analiza las conversaciones de tus clientes con el dashboard y el agente de análisis de Peaking.
 ---
 
-Analytics e Insights te da visibilidad completa de tu operación: cuántas conversaciones resuelve la IA, cuántas escalan a humanos, cuáles son los temas más frecuentes y cómo está rindiendo tu equipo.
+**Insights** centraliza la inteligencia operativa de tu cuenta: métricas de rendimiento del agente, análisis de conversaciones y tendencias de tus clientes — todo en un solo lugar.
 
 ## En esta sección
 
-- **[Dashboard overview](/08-analytics/dashboard-overview/)** — Recorrido por el dashboard principal y cómo interpretar sus métricas.
-- **[Peaking Insights](/08-analytics/peaking-insights/)** — Análisis avanzados para optimizar el rendimiento de tu IA.
-- **[Métricas clave y KPIs](/08-analytics/metricas-clave-y-kpis/)** — Definición e interpretación de los indicadores más importantes.
-- **[Reportería de conversaciones](/08-analytics/reporteria-de-conversaciones/)** — Genera y exporta reportes detallados de tus conversaciones.
+- **[Dashboard overview](/08-analytics/dashboard-overview/)** — Los cinco KPIs principales, la gráfica de conversaciones, asistencia requerida y conversaciones recientes.
+- **[Información de Conversaciones](/08-analytics/peaking-insights/)** — Agente de IA que responde preguntas sobre tendencias, quejas y patrones en tus conversaciones.
+- **[Métricas clave y KPIs](/08-analytics/metricas-clave-y-kpis/)** — Definición e interpretación de cada indicador y cómo leerlos en conjunto.
