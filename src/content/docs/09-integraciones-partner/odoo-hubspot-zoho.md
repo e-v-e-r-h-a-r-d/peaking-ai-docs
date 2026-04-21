@@ -1,30 +1,71 @@
 ---
-title: Integraciones — HubSpot, Odoo y más
-description: Cómo conectar Peaking con HubSpot, Odoo y otras plataformas externas para sincronizar clientes, leads y datos de negocio.
+title: Herramientas — CRM, Pagos y más
+description: Cómo conectar Peaking con Go HighLevel, HubSpot, Odoo, Stripe y otras herramientas externas desde la pestaña Herramientas de Integraciones.
 sidebar:
   order: 1
 ---
 
-Peaking se integra con las principales plataformas de CRM y ERP del mercado. Cuando conectas una integración, el agente de IA puede **leer y escribir datos** en esas plataformas durante las conversaciones — creando leads en HubSpot, consultando órdenes en Odoo, o actualizando registros sin que el equipo tenga que hacerlo manualmente.
-
----
-
-## Cómo funcionan las integraciones
-
-Las integraciones en Peaking se gestionan desde **Configuración › Integraciones**. Cada integración conecta Peaking con un sistema externo y expone sus funciones como **herramientas disponibles para el agente de IA**.
+La pestaña **Herramientas (CRM, Mesa de Ayuda, Calendarios)** de Integraciones centraliza los conectores que permiten al agente de IA interactuar con sistemas externos en tiempo real — CRMs, pasarelas de pago, calendarios y cualquier herramienta propia.
 
 Para que el agente use una integración activa, debes **declarar la herramienta en el Estudio de Prompts** — indicarle cuándo y cómo usarla. Ver [Declarar herramientas](/03-prompt-studio/declarar-herramientas/).
 
-### Tipos de integraciones disponibles
+---
 
-| Integración | Categoría | Qué permite |
-|-------------|-----------|-------------|
-| **HubSpot** | CRM | Crear/actualizar contactos y deals desde el chat |
-| **Odoo** | ERP | Consultar inventario, crear cotizaciones y órdenes |
-| **Zoho CRM** | CRM | Sincronizar leads y actividades de ventas |
-| **Zapier / Make / n8n** | Automatización | Disparar flujos en miles de apps externas |
-| **Google Calendar** | Productividad | Agendar citas y verificar disponibilidad |
-| **API de Peaking** | Desarrollo | Integración personalizada con cualquier sistema |
+## Integraciones nativas disponibles
+
+| Herramienta | Categoría | Estado |
+|-------------|-----------|--------|
+| **Stripe Connect** | Pagos | Disponible |
+| **Mercado Pago** | Pagos | Próximamente |
+| **Google Calendar** | Calendario | Disponible |
+| **Go HighLevel** | CRM | Disponible |
+| **Integraciones Personalizadas** | Cualquier API | Disponible |
+
+---
+
+## Stripe Connect
+
+Conecta tu cuenta de Stripe para que el agente de IA pueda generar links de pago, consultar el estado de transacciones y procesar cobros directamente desde la conversación.
+
+### Cómo conectar Stripe
+
+1. Ve a **Configuración › Integraciones › Herramientas**.
+2. Localiza la tarjeta de **Stripe Connect**.
+3. En **Tipo de Cuenta**, selecciona **OAuth (Recomendado)** para conectar tu cuenta existente de forma segura.
+4. Haz clic en **Conectar con OAuth**.
+5. Inicia sesión en Stripe y autoriza el acceso.
+
+:::tip[Stripe en Pedidos y Carritos]
+Para la configuración completa de Stripe — productos, dashboard de ventas, métodos de pago y flujo de carritos — consulta [Stripe — Configuración](/12-pedidos-carritos/stripe-configuracion/).
+:::
+
+---
+
+## Go HighLevel
+
+Go HighLevel es un CRM completo. Con la integración, el agente puede gestionar oportunidades y sincronizar contactos automáticamente durante las conversaciones.
+
+### Qué puedes hacer con la integración
+
+- **Gestión de oportunidades** — crear y actualizar deals en el pipeline de Go HighLevel.
+- **Sincronización de contactos** — crear o actualizar contactos desde la conversación.
+
+### Cómo conectar Go HighLevel
+
+1. Ve a **Configuración › Integraciones › Herramientas**.
+2. Localiza la tarjeta de **Go HighLevel** (etiquetada como CRM).
+3. Haz clic en **Conectar Go HighLevel**.
+4. Serás redirigido para autorizar el acceso desde tu cuenta de Go HighLevel.
+5. Una vez autorizado, el estado cambiará a **Conectado**.
+
+### Configura la herramienta en el Prompt
+
+```
+Usa la herramienta Go HighLevel para crear o actualizar un contacto
+cuando el cliente proporcione su nombre y correo electrónico.
+Si el cliente expresa interés en comprar, crea una oportunidad en
+el pipeline con el valor estimado y la etapa "Interesado".
+```
 
 ---
 
@@ -39,15 +80,13 @@ Para que el agente use una integración activa, debes **declarar la herramienta 
 
 ### Cómo conectar HubSpot
 
-1. Ve a **Configuración › Integraciones**.
-2. Localiza la tarjeta de **HubSpot** y haz clic en **Conectar**.
-3. Inicia sesión en tu cuenta de HubSpot y autoriza el acceso.
-4. Selecciona el portal de HubSpot que quieres usar (si tienes varios).
-5. La integración aparecerá como **Activa**.
+1. Ve a **Configuración › Integraciones › Herramientas**.
+2. Haz clic en **+ Añadir Integración**.
+3. Selecciona **HubSpot** del listado de tipos de integración disponibles.
+4. Ingresa tu **API Key** de HubSpot y el **Account Identifier**.
+5. Haz clic en **Crear Integración**.
 
 ### Configura la herramienta en el Prompt
-
-Una vez conectado, declara la herramienta HubSpot en el Estudio de Prompts. Ejemplo de instrucción:
 
 ```
 Usa la herramienta HubSpot para crear un nuevo lead cuando el cliente
@@ -72,12 +111,11 @@ Instrúyele al agente que consulte si el contacto ya existe en HubSpot antes de 
 
 ### Cómo conectar Odoo
 
-1. Ve a **Configuración › Integraciones**.
-2. Localiza la tarjeta de **Odoo** y haz clic en **Conectar**.
-3. Ingresa la **URL de tu instancia de Odoo** (ej. `https://miempresa.odoo.com`).
-4. Ingresa tu **API Key de Odoo** (la encuentras en Odoo › Configuración › Usuarios › tu usuario › API Keys).
-5. Selecciona la base de datos si tu instancia tiene múltiples.
-6. Haz clic en **Guardar**. La integración aparecerá como **Activa**.
+1. Ve a **Configuración › Integraciones › Herramientas › + Añadir Integración**.
+2. Selecciona **Odoo** como tipo de integración.
+3. Ingresa la **API Key de Odoo** (la encuentras en Odoo › Configuración › Usuarios › tu usuario › API Keys).
+4. En **API URL**, ingresa la URL de tu instancia (ej. `https://miempresa.odoo.com`).
+5. Haz clic en **Crear Integración**.
 
 ### Configura la herramienta en el Prompt
 
@@ -100,16 +138,44 @@ Cuando el cliente solicite una cotización, usa la herramienta Odoo para:
 
 ### Cómo conectar Zoho CRM
 
-1. Ve a **Configuración › Integraciones › Zoho CRM**.
-2. Haz clic en **Conectar** y autoriza el acceso con tu cuenta de Zoho.
-3. Selecciona el módulo de Zoho que quieres usar (Leads, Contactos, o ambos).
-4. Guarda la configuración.
+1. Ve a **Configuración › Integraciones › Herramientas › + Añadir Integración**.
+2. Selecciona **Zoho CRM** como tipo de integración.
+3. Ingresa tu **API Key** y el identificador de tu cuenta de Zoho.
+4. Haz clic en **Crear Integración**.
+
+---
+
+## Integraciones Personalizadas
+
+Si tu herramienta no está en la lista de conectores nativos, puedes crear una **Integración Personalizada** conectando cualquier API externa.
+
+### Cómo agregar una integración personalizada
+
+1. Ve a **Configuración › Integraciones › Herramientas**.
+2. Desplázate hasta la sección **Integraciones Personalizadas** y haz clic en **+ Añadir Integración**.
+3. Completa el formulario:
+
+| Campo | Descripción |
+|-------|-------------|
+| **Nombre de Integración** | Nombre identificador (ej. "Mi ERP interno") |
+| **Tipo de Integración** | Selecciona la categoría que más se acerque |
+| **API Key** | Clave de autenticación de la API externa |
+| **Account Identifier** | Correo o ID de la cuenta en el sistema externo |
+| **API Secret** *(opcional)* | Clave adicional si la API requiere doble autenticación |
+| **API URL** | Endpoint base de la API (ej. `https://api.example.com/v1`) |
+| **Descripción** *(opcional)* | Describe qué hace esta integración para documentación interna |
+
+4. Haz clic en **Crear Integración**.
+
+Una vez creada, la integración aparecerá en la lista de herramientas disponibles para declarar en el Estudio de Prompts.
+
+:::caution[Permisos necesarios]
+La API Key que configures debe tener permisos suficientes en el sistema externo para las acciones que el agente ejecutará (crear registros, leer datos, actualizar campos).
+:::
 
 ---
 
 ## Consideraciones generales
-
-**Permisos necesarios** — La cuenta que uses para autorizar cada integración debe tener permisos suficientes en el sistema externo para las acciones que el agente ejecutará (crear registros, leer datos, actualizar campos).
 
 **Herramientas activas vs. declaradas** — Conectar una integración la hace *disponible*, pero el agente no la usa hasta que la declares explícitamente en el Estudio de Prompts con instrucciones sobre cuándo y cómo usarla.
 
@@ -121,7 +187,7 @@ Cuando el cliente solicite una cotización, usa la herramienta Odoo para:
 
 **¿Puedo tener varias integraciones activas al mismo tiempo?**
 
-Sí. Puedes tener HubSpot, Odoo y otras integraciones activas simultáneamente. El agente usará la que corresponda según las instrucciones del prompt.
+Sí. Puedes tener Go HighLevel, Google Calendar y una integración personalizada activas simultáneamente. El agente usará la que corresponda según las instrucciones del prompt.
 
 **¿Qué pasa si la integración falla durante una conversación?**
 
@@ -133,4 +199,4 @@ No automáticamente. Peaking opera en tiempo real — el agente lee y escribe da
 
 **¿Cómo sé si una integración está funcionando correctamente?**
 
-En **Configuración › Integraciones** cada tarjeta muestra el estado (Activo/Error) y la fecha de la última sincronización exitosa. Si hay errores frecuentes, revisa los permisos de la cuenta conectada.
+En **Configuración › Integraciones › Herramientas** cada tarjeta muestra el estado (Conectado / No Conectado) y el botón para desconectar si es necesario.

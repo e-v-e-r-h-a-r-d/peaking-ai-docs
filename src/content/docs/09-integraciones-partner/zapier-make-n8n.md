@@ -3,6 +3,7 @@ title: Zapier / Make / n8n
 description: Cómo conectar Peaking con Zapier, Make o n8n para automatizar flujos de trabajo con miles de aplicaciones externas.
 sidebar:
   order: 3
+  hidden: true
 ---
 
 Las integraciones con **Zapier**, **Make** (antes Integromat) y **n8n** te permiten conectar Peaking con miles de aplicaciones sin necesidad de código. Cuando ocurre un evento en Peaking — una nueva conversación, un contacto creado, una oportunidad actualizada — puedes disparar automáticamente una acción en cualquier herramienta: enviar un email en Gmail, crear una tarea en Notion, notificar a tu equipo en Slack, registrar una fila en Google Sheets, entre otros.
