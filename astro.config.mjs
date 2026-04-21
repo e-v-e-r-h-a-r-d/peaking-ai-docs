@@ -56,16 +56,21 @@ export default defineConfig({
 					autogenerate: { directory: '08-analytics' },
 				},
 				{
-					label: 'CRM',
-					autogenerate: { directory: '06-crm-audiencias' },
-				},
-				{
-					label: 'Contactos',
-					autogenerate: { directory: '13-contactos' },
-				},
-				{
-					label: 'Tareas',
-					autogenerate: { directory: '10-tareas' },
+					label: 'CRM y Gestión',
+					items: [
+						{
+							label: 'CRM',
+							autogenerate: { directory: '06-crm-audiencias' },
+						},
+						{
+							label: 'Contactos',
+							autogenerate: { directory: '13-contactos' },
+						},
+						{
+							label: 'Tareas',
+							autogenerate: { directory: '10-tareas' },
+						},
+					],
 				},
 				{
 					label: 'Estudio de Prompts',
