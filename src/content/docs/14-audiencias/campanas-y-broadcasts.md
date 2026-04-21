@@ -2,7 +2,7 @@
 title: Campañas y broadcasts
 description: Cómo crear y enviar campañas de mensajería masiva a segmentos específicos de tu base de contactos.
 sidebar:
-  order: 4
+  order: 2
 ---
 
 :::note[Artículo en construcción]

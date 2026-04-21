@@ -44,14 +44,6 @@ export default defineConfig({
 					autogenerate: { directory: '01-primeros-pasos' },
 				},
 				{
-					label: 'Conecta tus canales',
-					autogenerate: { directory: '02-canales' },
-				},
-				{
-					label: 'Estudio de Prompts',
-					autogenerate: { directory: '03-prompt-studio' },
-				},
-				{
 					label: 'Base de Conocimientos',
 					autogenerate: { directory: '04-base-conocimientos' },
 				},
@@ -60,16 +52,32 @@ export default defineConfig({
 					autogenerate: { directory: '05-conversaciones' },
 				},
 				{
-					label: 'CRM y Contactos',
+					label: 'Insights',
+					autogenerate: { directory: '08-analytics' },
+				},
+				{
+					label: 'CRM',
 					autogenerate: { directory: '06-crm-audiencias' },
 				},
 				{
-					label: 'Productos',
-					autogenerate: { directory: '07-productos-pagos' },
+					label: 'Contactos',
+					autogenerate: { directory: '13-contactos' },
 				},
 				{
 					label: 'Tareas',
 					autogenerate: { directory: '10-tareas' },
+				},
+				{
+					label: 'Estudio de Prompts',
+					autogenerate: { directory: '03-prompt-studio' },
+				},
+				{
+					label: 'Integraciones',
+					autogenerate: { directory: '09-integraciones-partner' },
+				},
+				{
+					label: 'Productos',
+					autogenerate: { directory: '07-productos-pagos' },
 				},
 				{
 					label: 'Workflows',
@@ -80,12 +88,12 @@ export default defineConfig({
 					autogenerate: { directory: '12-pedidos-carritos' },
 				},
 				{
-					label: 'Insights',
-					autogenerate: { directory: '08-analytics' },
+					label: 'Audiencias y Campañas',
+					autogenerate: { directory: '14-audiencias' },
 				},
 				{
-					label: 'Integraciones',
-					autogenerate: { directory: '09-integraciones-partner' },
+					label: 'Conecta tus canales',
+					autogenerate: { directory: '02-canales' },
 				},
 				// admin-interno: NO incluido aquí — oculto con sidebar.hidden: true en cada página
 			],
