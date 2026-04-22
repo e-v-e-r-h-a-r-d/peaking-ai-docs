@@ -2,12 +2,35 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // ← reemplaza con tu Measurement ID de GA4
+
 export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Peaking AI',
 			favicon: '/favicon.svg',
 			head: [
+				// Google Analytics 4
+				{
+					tag: 'script',
+					attrs: {
+						src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`,
+						async: true,
+					},
+				},
+				{
+					tag: 'script',
+					content: `
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', '${GA_MEASUREMENT_ID}', {
+							page_title: document.title,
+							page_location: window.location.href,
+						});
+					`,
+				},
+				// Google Fonts
 				{
 					tag: 'link',
 					attrs: {
