@@ -5,6 +5,7 @@ import starlight from '@astrojs/starlight';
 const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // ← reemplaza con tu Measurement ID de GA4
 
 export default defineConfig({
+	site: 'https://docs.peaking.ai',
 	integrations: [
 		starlight({
 			title: 'Peaking AI',
