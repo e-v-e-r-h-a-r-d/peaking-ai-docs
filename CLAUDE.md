@@ -21,19 +21,17 @@ src/content/docs/
 ├── 03-prompt-studio/            ← Prompt Studio: prompt, variables, herramientas, test
 ├── 04-base-conocimientos/       ← Knowledge Base
 ├── 05-conversaciones/           ← Mensajes (sidebar label), panel, escalamiento, bandeja
-├── 06-crm-audiencias/           ← Solo CRM (pipeline). Contactos y Audiencias movidos
-├── 07-productos-pagos/          ← Solo catálogo de productos (Stripe/MP/Orders movidos)
-├── 08-analytics/                ← Dashboard, KPIs, reportería (sidebar label: Insights)
-├── 09-integraciones-partner/    ← HubSpot, Odoo, Zapier, GCal, API, Partner Portal
+├── 06-crm-audiencias/           ← Solo CRM (pipeline). Contactos y Audiencias en secciones propias
+├── 07-productos-pagos/          ← Solo catálogo de productos (Stripe/MP/Orders en 12-pedidos)
+├── 08-analytics/                ← Dashboard, KPIs, Información de Conversaciones (sidebar: Insights)
+├── 09-integraciones-partner/    ← 3 tabs reales: Canales (→02-canales), Catálogos de Datos, Herramientas
 ├── 10-tareas/                   ← Tareas/TODOs como sección independiente
-├── 11-workflows/                ← Automatización de flujos de trabajo
+├── 11-workflows/                ← Editor visual de flujos por nodos
 ├── 12-pedidos-carritos/         ← Pedidos, Carritos, Stripe, Mercado Pago, Flujo de compra
 ├── 13-contactos/                ← Contactos (sección propia, separada del CRM)
 ├── 14-audiencias/               ← Audiencias y Campañas (sección propia)
 └── admin-interno/               ← Solo equipo Peaking (sidebar.hidden: true)
 ```
-
-**Total:** ~70 archivos. Cada sección tiene un `index.md` y artículos específicos.
 
 **Regla crítica:** Toda sección nueva debe registrarse también en `astro.config.mjs` con `autogenerate: { directory: 'XX-nombre' }`.
 
@@ -41,17 +39,16 @@ src/content/docs/
 
 ## Sidebar actual (astro.config.mjs)
 
-Orden del sidebar tal como aparece en la navegación de Peaking:
-
-| Label | Directorio |
-|-------|------------|
+| Label | Directorio / Estructura |
+|-------|------------------------|
 | Primeros pasos | `01-primeros-pasos` |
 | Base de Conocimientos | `04-base-conocimientos` |
 | Mensajes | `05-conversaciones` |
 | Insights | `08-analytics` |
-| CRM | `06-crm-audiencias` |
-| Contactos | `13-contactos` |
-| Tareas | `10-tareas` |
+| **CRM y Gestión** *(grupo anidado)* | — |
+| → CRM | `06-crm-audiencias` |
+| → Contactos | `13-contactos` |
+| → Tareas | `10-tareas` |
 | Estudio de Prompts | `03-prompt-studio` |
 | Integraciones | `09-integraciones-partner` |
 | Productos | `07-productos-pagos` |
@@ -62,9 +59,16 @@ Orden del sidebar tal como aparece en la navegación de Peaking:
 
 `admin-interno/` no aparece en el sidebar — artículos ocultos con `sidebar.hidden: true`.
 
+**Artículos ocultos dentro de secciones públicas** (sidebar.hidden: true):
+- `09-integraciones-partner/zapier-make-n8n.md` — desactualizado, guardado por si se necesita
+- `09-integraciones-partner/api-de-peaking.md` — interno/técnico
+- `09-integraciones-partner/partner-portal-que-es.md` — para resellers
+- `09-integraciones-partner/gestion-de-clientes-como-partner.md` — para resellers
+- `08-analytics/reporteria-de-conversaciones.md` — cubierto en 05-conversaciones
+
 ---
 
-## Estado del contenido (2026-04-18)
+## Estado del contenido (2026-04-22)
 
 ### Todo en git — rama `max's-branch`
 
@@ -75,33 +79,49 @@ El working tree está limpio. Todos los cambios están commiteados y pusheados.
 | Archivo | Sección | Notas |
 |---------|---------|-------|
 | `06-crm-audiencias/crm-vista-general.md` | CRM | Panel detalle, Timeline, Conversación, tipos de actividad, Nueva oportunidad |
-| `06-crm-audiencias/audiencias-y-segmentos.md` | CRM | Segmentos dinámicos/estáticos, flujo de creación, buenas prácticas |
+| `14-audiencias/audiencias-y-segmentos.md` | Audiencias | Segmentos dinámicos/estáticos, flujo de creación, buenas prácticas |
+| `14-audiencias/campanas-y-broadcasts.md` | Audiencias | Flujo de creación, variables en plantillas, estados, métricas, FAQ |
 | `10-tareas/tareas-y-todos.md` | Tareas | 4 etapas reales, KPIs, Gestionar Etapas, Tipos de Actividad, detalle del TODO |
 | `07-productos-pagos/catalogo-de-productos.md` | Productos | Panel, creación manual, campos dinámicos, categorías, declaración en Prompt |
-| `11-workflows/como-funcionan-los-workflows.md` | Workflows | Triggers, condiciones, acciones, 3 ejemplos prácticos |
+| `11-workflows/como-funcionan-los-workflows.md` | Workflows | 7 tipos de nodo (Trigger/Agent/Condition/Outbound/Delay/Webhook/Contact Lookup), Projects, versiones, Execution Runs, Test |
 | `12-pedidos-carritos/pedidos-y-carritos.md` | Pedidos | Órdenes, carritos abandonados, filtros, recuperación |
-| `12-pedidos-carritos/stripe-configuracion.md` | Pedidos | Conexión, productos, dashboard ventas, métodos, carrito, tarifas |
+| `12-pedidos-carritos/stripe-configuracion.md` | Pedidos | Conexión OAuth, productos, dashboard ventas, métodos, carrito, tarifas |
 | `12-pedidos-carritos/mercado-pago-configuracion.md` | Pedidos | Autenticación MP, IVA, dashboard, métodos por país, tarifas |
-| `09-integraciones-partner/odoo-hubspot-zoho.md` | Integraciones | HubSpot, Odoo, Zoho — conexión y declaración en Prompt |
+| `09-integraciones-partner/odoo-hubspot-zoho.md` | Integraciones | Go HighLevel nativo, HubSpot, Odoo, Zoho, Integraciones Personalizadas, Stripe OAuth |
 | `09-integraciones-partner/google-calendar.md` | Integraciones | Conexión, autenticación Google, declaración en Prompt Studio |
+| `09-integraciones-partner/catalogos-de-datos.md` | Integraciones | Catálogos de Datos Externos — form completo, declaración en Prompt, FAQ |
 | `02-canales/plantillas-whatsapp.md` | Canales | WABA, sincronización, envío desde Panel de Mensajes |
 | `03-prompt-studio/declarar-herramientas.md` | Prompt Studio | Configuración de Herramientas, ejemplo HubSpot, FAQ |
-| `05-conversaciones/panel-de-conversaciones.md` | Mensajes | Panel de Mensajes (renombrado), filtros, estados, intervención humana |
+| `05-conversaciones/panel-de-conversaciones.md` | Mensajes | Panel de Mensajes, filtros, estados, intervención humana |
+| `08-analytics/dashboard-overview.md` | Insights | 5 KPIs, badges, gráfica Análisis de Conversaciones, Asistencia Requerida |
+| `08-analytics/peaking-insights.md` | Insights | Información de Conversaciones — agente IA, preguntas de ejemplo, preguntas avanzadas |
+| `08-analytics/metricas-clave-y-kpis.md` | Insights | Definición e interpretación de los 5 KPIs, 3 escenarios de lectura combinada |
+| `13-contactos/gestion-de-contactos.md` | Contactos | Panel KPIs, tabla, ficha con 5 pestañas, Nuevo Contacto, editar, etiquetas |
 | `01-primeros-pasos/tour-del-dashboard.md` | Primeros pasos | Completo |
 | `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Completo |
 | `admin-interno/` (7 archivos) | Interno | Todos con `sidebar.hidden: true` |
 
 ### Placeholders activos (`:::note[Artículo en construcción]`)
 
-Aprox. 30 artículos públicos aún en placeholder. Pendientes principales:
-- `01-primeros-pasos/` — bienvenido, activa-tus-modulos, glosario
-- `02-canales/` — conexion-whatsapp, instagram, messenger, widget
-- `03-prompt-studio/` — variables-y-funciones-avanzadas, mejores-practicas
-- `05-conversaciones/` — tags-y-etiquetas, escalamiento-a-humano, bandeja-de-mensajes
-- `06-crm-audiencias/` — gestion-de-contactos, campanas-y-broadcasts
-- `08-analytics/` — todos
-- `09-integraciones-partner/` — zapier-make-n8n, api-de-peaking, partner-portal
+- `01-primeros-pasos/` — bienvenido-a-peaking.md, activa-tus-modulos.md, glosario.md
+- `02-canales/` — conexion-whatsapp.md, conexion-instagram.md, conexion-messenger.md, widget-sitio-web.md
+- `03-prompt-studio/` — variables-y-funciones-avanzadas.md, mejores-practicas-y-ejemplos.md
+- `05-conversaciones/` — tags-y-etiquetas.md, escalamiento-a-humano.md, bandeja-de-mensajes.md
 - `12-pedidos-carritos/flujo-de-compra-con-ia.md`
+
+---
+
+## Google Analytics 4
+
+GA4 está configurado en `astro.config.mjs`. El Measurement ID está en la variable:
+
+```js
+const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // ← pendiente reemplazar con ID real
+```
+
+**Cómo obtener el ID:** Google Analytics → Admin → Data Streams → tu stream web → Measurement ID (formato `G-XXXXXXXXXX`).
+
+**Panel de GA4:** analytics.google.com — ver Pages and screens para artículos más visitados.
 
 ---
 
@@ -115,6 +135,8 @@ Aprox. 30 artículos públicos aún en placeholder. Pendientes principales:
 
 **Script de screenshots:** `guardar-screenshot.ps1` — guarda como JPEG comprimido (85% calidad, max 1440px). Parámetros: `-calidad 90`, `-png` (fuerza PNG), `-maxAncho 1920`.
 
+**Mapa completo de screenshots pendientes:** ver `SCREENSHOTS-PENDIENTES.md` en la raíz del proyecto.
+
 ---
 
 ## Convenciones de contenido
@@ -125,13 +147,13 @@ Aprox. 30 artículos públicos aún en placeholder. Pendientes principales:
 - **Admin interno:** añadir `sidebar.hidden: true` en el frontmatter
 - **Imágenes:** URL pública GitHub Raw → `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots/[seccion]/[imagen.jpg]`
 - **Extensión de imágenes:** `.jpg` por defecto (el script guarda JPEG). Usar `.png` solo si se pasó el flag `-png`
-- **Nombres propios respetados:** Prompt Studio, Command Center, Knowledge Base, Pedidos y Carritos, TODOs, Tareas, Stripe (nunca "Stipe"), Mercado Pago, Workflows
+- **Nombres propios respetados:** Prompt Studio, Command Center, Knowledge Base, Pedidos y Carritos, TODOs, Tareas, Stripe (nunca "Stipe"), Mercado Pago, Workflows, Go HighLevel
 
 ---
 
 ## Secciones internas (admin-interno)
 
-Estos artículos existen pero **no son visibles en el sidebar público**. Son documentación interna del equipo Peaking:
+Estos artículos existen pero **no son visibles en el sidebar público**:
 
 | Archivo | Propósito |
 |---------|-----------|
@@ -142,15 +164,21 @@ Estos artículos existen pero **no son visibles en el sidebar público**. Son do
 | `announcements.md` | Sistema de anuncios internos |
 | `settings-internos.md` | Configuraciones solo visibles para el equipo |
 
-También son documentación interna (aunque están en `09-integraciones-partner/`):
-- `api-de-peaking.md` — API pública (pero técnica, no para usuarios finales)
-- `partner-portal-que-es.md` y `gestion-de-clientes-como-partner.md` — para resellers
+También ocultos (en `09-integraciones-partner/`):
+- `api-de-peaking.md`, `partner-portal-que-es.md`, `gestion-de-clientes-como-partner.md`, `zapier-make-n8n.md`
 
 ---
 
 ## Próximos pasos
 
-3. Completar `06-crm-audiencias/` (gestion-de-contactos, campanas-y-broadcasts)
-4. Completar `08-analytics/` (todos los artículos de Insights)
-5. Completar `12-pedidos-carritos/flujo-de-compra-con-ia.md`
-6. Subir screenshots de la plataforma para usar el skill `generate-docs`
+### Inmediato
+1. **Reemplazar GA4 Measurement ID** en `astro.config.mjs` línea 5 cuando esté disponible
+2. **Tomar screenshots** siguiendo `SCREENSHOTS-PENDIENTES.md` — empezar por Workflows (🔴 alta prioridad)
+3. **Insertar imágenes** en artículos usando el skill `/generate-docs` o manualmente con la URL de GitHub Raw
+
+### Contenido pendiente
+4. Completar placeholders de `02-canales/` — requieren screenshots para poder escribirse
+5. Completar `03-prompt-studio/variables-y-funciones-avanzadas.md`
+6. Completar `05-conversaciones/` — tags, escalamiento, bandeja
+7. Completar `12-pedidos-carritos/flujo-de-compra-con-ia.md`
+8. Completar `01-primeros-pasos/` — bienvenido, activa-tus-modulos, glosario
