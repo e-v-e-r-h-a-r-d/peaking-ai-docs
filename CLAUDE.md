@@ -113,13 +113,11 @@ El working tree está limpio. Todos los cambios están commiteados y pusheados.
 
 ## Google Analytics 4
 
-GA4 está configurado en `astro.config.mjs`. El Measurement ID está en la variable:
+GA4 está configurado en `astro.config.mjs` con el ID real:
 
 ```js
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // ← pendiente reemplazar con ID real
+const GA_MEASUREMENT_ID = 'G-XTN1FD69HK';
 ```
-
-**Cómo obtener el ID:** Google Analytics → Admin → Data Streams → tu stream web → Measurement ID (formato `G-XXXXXXXXXX`).
 
 **Panel de GA4:** analytics.google.com — ver Pages and screens para artículos más visitados.
 
@@ -172,9 +170,8 @@ También ocultos (en `09-integraciones-partner/`):
 ## Próximos pasos
 
 ### Inmediato
-1. **Reemplazar GA4 Measurement ID** en `astro.config.mjs` línea 5 cuando esté disponible
-2. **Tomar screenshots** siguiendo `SCREENSHOTS-PENDIENTES.md` — empezar por Workflows (🔴 alta prioridad)
-3. **Insertar imágenes** en artículos usando el skill `/generate-docs` o manualmente con la URL de GitHub Raw
+1. **Tomar screenshots** siguiendo `SCREENSHOTS-PENDIENTES.md` — empezar por Workflows (🔴 alta prioridad)
+2. **Insertar imágenes** en artículos usando el skill `/generate-docs` o manualmente con la URL de GitHub Raw
 
 ### Contenido pendiente
 4. Completar placeholders de `02-canales/` — requieren screenshots para poder escribirse
