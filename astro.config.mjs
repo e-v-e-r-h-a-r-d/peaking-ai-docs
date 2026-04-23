@@ -10,6 +10,11 @@ export default defineConfig({
 		starlight({
 			title: 'Peaking AI',
 			favicon: '/favicon.svg',
+			logo: {
+				light: './src/assets/logo-light.png',
+				dark: './src/assets/logo-dark.png',
+				replacesTitle: true,
+			},
 			head: [
 				// Google Analytics 4
 				{
