@@ -9,7 +9,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Peaking AI',
-			favicon: '/favicon.svg',
+			favicon: '/favicon.png',
 			logo: {
 				light: './src/assets/logo-light.png',
 				dark: './src/assets/logo-dark.png',
