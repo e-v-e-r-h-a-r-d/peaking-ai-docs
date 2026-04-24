@@ -7,6 +7,8 @@ sidebar:
 
 Los **Workflows** de Peaking son flujos de conversación construidos visualmente con un editor de nodos. Defines qué ocurre paso a paso cuando un cliente escribe: qué agente de IA responde, qué condición evalúa la intención, cuánto tiempo espera antes de hacer seguimiento, y cuándo se pasa a otro nodo del flujo.
 
+![Vista general del canvas de Workflows con nodos conectados](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-canvas-overview.png)
+
 ---
 
 ## Proyectos y Flows
@@ -17,6 +19,8 @@ La sección de Workflows está organizada en dos niveles:
 - **Flow** — es el workflow en sí. Un proyecto puede tener múltiples flows, siempre que cada uno esté conectado a un **canal diferente** en el nodo Trigger.
 
 Para agregar un flow dentro de un proyecto, haz clic en **+ Add flow** bajo el nombre del proyecto.
+
+![Panel de Proyectos con múltiples flows](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-projects.png)
 
 :::tip[Cuándo crear múltiples flows]
 Si tienes WhatsApp y Messenger activos, puedes tener un flow por canal. Esto te permite personalizar el comportamiento de cada canal por separado sin mezclar lógica en un solo flujo.
@@ -45,10 +49,12 @@ A la derecha de los íconos de nodos:
 | **Undo / Redo** | Deshacer o rehacer el último cambio en el canvas |
 | **Save** | Guarda el estado actual como borrador |
 | **Publish** | Publica el flow — a partir de este momento el workflow está activo |
-| **v36** *(badge azul)* | Versión publicada actualmente |
+| **v51** *(badge azul)* | Versión publicada actualmente |
 | **Historial** *(ícono reloj)* | Abre el historial de versiones anteriores |
 | **Test** | Abre el panel de prueba del flujo completo |
 | **Ejecuciones** *(ícono pulso)* | Abre el panel de Execution Runs |
+
+![Barra de herramientas del editor de Workflows](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-toolbar.png)
 
 ---
 
@@ -80,13 +86,15 @@ El nodo **Agent** ejecuta un agente de IA — lee el mensaje del usuario, proces
 | **Label** | Nombre del nodo |
 | **Silent mode** | Si está activo, el agente procesa y usa herramientas pero **no envía respuesta visible al usuario**. Útil para nodos intermedios que solo recopilan o clasifican información |
 | **Prompt** | Selector del prompt del Estudio de Prompts que usará este agente |
-| **Available Tools** | Herramientas activas para este agente. Cada herramienta tiene su propia instrucción de uso (ej. "SIEMPRE que el cliente solicite precios") y puede tener parámetros fijos (Fixed params) |
+| **Available Tools** | Herramientas activas para este agente. Cada herramienta tiene su propia instrucción de uso y puede tener parámetros fijos (Fixed params) |
 | **Custom Tools** | Agrega herramientas personalizadas adicionales con **+ Add Custom Tool** |
-| **Variables to Collect** | Define las variables que el agente puede guardar durante la conversación. Si el campo está vacío, el agente puede guardar cualquier variable. Si defines claves, solo acepta esas |
+| **Variables to Collect** | Define las variables que el agente puede guardar durante la conversación. Si el campo está vacío, el agente puede guardar cualquier variable |
 | **Mensaje mientras se ejecuta** | Texto que se envía al usuario si el nodo tarda más de lo esperado (solo aplica en WhatsApp e Instagram, no en widget ni en Test) |
 
+![Configuración del nodo Agent — prompt, herramientas disponibles y modo silencioso](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-agent-config.png)
+
 :::note[Silent mode para clasificar intención]
-Un patrón común es usar un agente en silent mode al inicio del flujo para que detecte la intención del usuario y guarde una variable (ej. `intencion = bioestimuladores`). El siguiente nodo Condition lee esa variable para ramificar el flujo.
+Un patrón común es usar un agente en silent mode al inicio del flujo para que detecte la intención del usuario y guarde una variable (ej. `tipo_cliente = Existente`). El siguiente nodo Condition lee esa variable para ramificar el flujo.
 :::
 
 ---
@@ -104,13 +112,13 @@ El nodo **Condition** evalúa una expresión y ramifica el flow según el result
 | **Variable (exact match)** | Compara el valor de una variable guardada por un agente con un valor definido |
 
 **Configuración (ejemplo con Variable exact match):**
-- Campo: `intencion`
+- Campo: `tipo_cliente`
 - Operador: `equals`
-- Valor: `informacion_general`
+- Valor: `Existente`
 
-El nodo se activa cuando la variable `intencion` tiene exactamente el valor `informacion_general`.
+El nodo se activa cuando la variable `tipo_cliente` tiene exactamente el valor `Existente`. Puedes agregar múltiples condiciones con **+ Add condition**.
 
-Puedes agregar múltiples condiciones con **+ Add condition**.
+![Configuración del nodo Condition con los tres modos de evaluación](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-condition-modos.png)
 
 ---
 
@@ -140,10 +148,12 @@ El nodo **Delay** pausa el flujo por un tiempo definido antes de continuar al si
 | **Label** | Nombre del nodo |
 | **Delay (minutes)** | Tiempo de espera en minutos. Mínimo: 1 min · Máximo: 10,080 min (7 días) |
 | **Cancel if user replies** | Si está activo, el delay se cancela automáticamente si el usuario envía un mensaje antes de que se cumpla el tiempo |
-| **Fallback Template ID** | Plantilla de WhatsApp que se envía si la ventana de 24h de Meta expiró mientras el flujo estaba en pausa. Esto evita que el mensaje falle por restricciones de WhatsApp |
+| **Fallback Template ID** | Plantilla de WhatsApp que se envía si la ventana de 24h de Meta expiró mientras el flujo estaba en pausa |
+
+![Configuración del nodo Delay con "Cancel if user replies" activo](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-delay-config.png)
 
 :::tip[Cuándo usar Delay]
-Combina Delay + Outbound para flujos de seguimiento: si el cliente no responde en 30 minutos, el flow continúa y envía un recordatorio automático.
+Combina Delay + Outbound para flujos de seguimiento: si el cliente no responde en el tiempo configurado, el flow continúa y envía un recordatorio automático.
 :::
 
 ---
@@ -169,6 +179,8 @@ El nodo **Contact Lookup** busca un contacto en la base de datos de Peaking y ca
 | **Reference** | Código de referencia interna |
 | **Name** | Nombre del contacto |
 
+![Configuración del nodo Contact Lookup con el dropdown de búsqueda](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-contact-lookup.png)
+
 ---
 
 ## Publicar y versiones
@@ -176,7 +188,7 @@ El nodo **Contact Lookup** busca un contacto en la base de datos de Peaking y ca
 ### Guardar vs. Publicar
 
 - **Save** guarda el estado actual como borrador. El flow activo en producción no cambia.
-- **Publish** publica el flow. A partir de ese momento, todas las nuevas conversaciones usan la versión publicada. El badge de versión (ej. v36) se actualiza con cada publicación.
+- **Publish** publica el flow. A partir de ese momento, todas las nuevas conversaciones usan la versión publicada. El badge de versión (ej. v51) se actualiza con cada publicación.
 
 ### Historial de versiones
 
@@ -192,49 +204,19 @@ El botón **Test** abre un panel de prueba donde puedes simular una conversació
 
 ## Execution Runs
 
-El panel de **Execution Runs** muestra el historial reciente de ejecuciones del flow:
+El panel de **Execution Runs** muestra el historial reciente de ejecuciones del flow. Haz clic en el ícono de pulso (📈) en la barra de herramientas para abrirlo.
 
 | Columna | Descripción |
 |---------|-------------|
 | **Estado** | `Completed` (el flow terminó) · `Paused` (el flow está en espera, ej. dentro de un Delay) |
-| **Versión** | Qué versión del flow procesó esa ejecución (ej. v35) |
+| **Versión** | Qué versión del flow procesó esa ejecución |
 | **Tiempo** | Hace cuánto ocurrió la ejecución |
 | **Mensaje** | Primer mensaje del cliente que disparó la ejecución |
 | **Duration** | Tiempo total que tardó en completarse el flujo |
 
-Haz clic en cualquier ejecución para expandir el detalle y ver qué nodos se ejecutaron, en qué orden y cuánto tardó cada uno. Útil para detectar cuellos de botella o nodos que fallan.
+Haz clic en cualquier ejecución para expandir el detalle y ver qué nodos se ejecutaron, en qué orden y cuánto tardó cada uno.
 
----
-
-## Ejemplo: flujo de atención en clínica
-
-El siguiente es un ejemplo real del tipo de flujo que puedes construir:
-
-```
-TRIGGER
-└─ Canal: Messenger
-
-AGENT (Recepcionista de intención) [Silent mode]
-└─ Detecta la intención del cliente y guarda variable "intencion"
-
-OUTBOUND → Send Response
-└─ Mensaje de bienvenida
-
-CONDITION → "Informacion General"
-   ├─ (verde) intencion = informacion_general → AGENT Información General
-   └─ (rojo) → CONDITION "Bioestimuladores"
-                  ├─ (verde) intencion = bioestimuladores → AGENT Bioestimuladores
-                  └─ (rojo) → ...más condiciones
-
-AGENT (nodo de atención)
-└─ Responde con el prompt especializado
-└─ Tools: Catálogo de Productos + Tareas Peaking (para agendar cita)
-
-DELAY → Wait 30 min (cancel if user replies)
-└─ Si no hay respuesta en 30 min:
-
-OUTBOUND → Mensaje de seguimiento
-```
+![Panel de Execution Runs con ejecuciones Completed y Paused](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-execution-runs.png)
 
 ---
 
@@ -246,7 +228,7 @@ No hay un límite documentado. Puedes crear tantos flows como necesites, siempre
 
 **¿Puedo tener el mismo agente en varios nodos del flow?**
 
-Sí. Puedes asignar el mismo prompt a múltiples nodos Agent — por ejemplo, un agente "Información General" que aparece en varias ramas del flujo. Cada nodo puede tener sus propias herramientas activas aunque compartan el mismo prompt.
+Sí. Puedes asignar el mismo prompt a múltiples nodos Agent — por ejemplo, un agente especializado que aparece en varias ramas del flujo. Cada nodo puede tener sus propias herramientas activas aunque compartan el mismo prompt.
 
 **¿Qué pasa si el flujo llega a un Condition y ninguna rama es verdadera?**
 
@@ -254,7 +236,7 @@ Si ninguna condición se cumple, el flujo puede quedar sin continuar. Asegúrate
 
 **¿Los delays se cuentan en tiempo real?**
 
-Sí. Si configuras un Delay de 30 minutos, el flujo espera exactamente 30 minutos desde que llega a ese nodo. Si el usuario responde antes (con "Cancel if user replies" activo), el delay se cancela y el flujo continúa por la salida correspondiente.
+Sí. Si configuras un Delay de 2 minutos, el flujo espera exactamente ese tiempo desde que llega a ese nodo. Si el usuario responde antes (con "Cancel if user replies" activo), el delay se cancela y el flujo continúa.
 
 **¿Publish afecta conversaciones que ya están en curso?**
 
