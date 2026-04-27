@@ -1,3 +1,67 @@
 ---
-// Dark-only mode — theme toggle disabled for Peaking AI brand consistency
+// Light / dark theme toggle — replaces Starlight's default ThemeSelect
 ---
+<button id="pk-theme-toggle" aria-label="Cambiar entre tema claro y oscuro">
+  <!-- Moon: shown in light mode to switch to dark -->
+  <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+  <!-- Sun: shown in dark mode to switch to light -->
+  <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+  </svg>
+</button>
+
+<script>
+  const btn = document.getElementById('pk-theme-toggle');
+
+  function getTheme() {
+    return document.documentElement.getAttribute('data-theme') ?? 'light';
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem('starlight-theme', theme); } catch {}
+    btn.setAttribute('data-current', theme);
+  }
+
+  // Sync button state on load
+  applyTheme(getTheme());
+
+  btn.addEventListener('click', () => {
+    applyTheme(getTheme() === 'dark' ? 'light' : 'dark');
+  });
+</script>
+
+<style>
+  #pk-theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: 1px solid var(--pk-glass-border);
+    border-radius: var(--pk-radius-sm);
+    background: var(--pk-glass-bg);
+    cursor: pointer;
+    color: var(--sl-color-gray-2);
+    transition: var(--pk-transition);
+    flex-shrink: 0;
+  }
+
+  #pk-theme-toggle:hover {
+    background: var(--pk-glass-bg-hover);
+    border-color: var(--pk-glass-border-hover);
+    color: var(--sl-color-accent);
+  }
+
+  /* Default (light mode): show moon, hide sun */
+  .icon-moon { display: block; }
+  .icon-sun  { display: none; }
+
+  /* Dark mode: show sun, hide moon */
+  #pk-theme-toggle[data-current='dark'] .icon-moon { display: none; }
+  #pk-theme-toggle[data-current='dark'] .icon-sun  { display: block; }
+</style>
