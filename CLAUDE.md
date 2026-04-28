@@ -99,15 +99,28 @@ El working tree está limpio. Todos los cambios están commiteados y pusheados.
 | `13-contactos/gestion-de-contactos.md` | Contactos | Panel KPIs, tabla, ficha con 5 pestañas, Nuevo Contacto, editar, etiquetas |
 | `01-primeros-pasos/tour-del-dashboard.md` | Primeros pasos | Completo |
 | `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Completo |
-| `admin-interno/` (7 archivos) | Interno | Todos con `sidebar.hidden: true` |
+| `01-primeros-pasos/bienvenido-a-peaking.md` | Primeros pasos | Completo |
+| `02-canales/conexion-whatsapp.md` | Canales | Completo (sin screenshots aún) |
+| `02-canales/conexion-instagram.md` | Canales | Verificar estado |
+| `02-canales/conexion-messenger.md` | Canales | Verificar estado |
+| `02-canales/widget-sitio-web.md` | Canales | Verificar estado |
+| `03-prompt-studio/variables-y-funciones-avanzadas.md` | Prompt Studio | Completo (renombrado a Plantillas de Prompt) |
+| `05-conversaciones/tags-y-etiquetas.md` | Mensajes | Completo |
+| `05-conversaciones/escalamiento-a-humano.md` | Mensajes | Completo |
+| `05-conversaciones/bandeja-de-mensajes.md` | Mensajes | Completo |
+| `admin-interno/` (7 archivos) | Interno | Todos con `sidebar.hidden: true` + admin gate de contraseña |
 
-### Placeholders activos (`:::note[Artículo en construcción]`)
+### Único placeholder real público (`:::note[Artículo en construcción]`)
 
-- `01-primeros-pasos/` — bienvenido-a-peaking.md, activa-tus-modulos.md, glosario.md
-- `02-canales/` — conexion-whatsapp.md, conexion-instagram.md, conexion-messenger.md, widget-sitio-web.md
-- `03-prompt-studio/` — variables-y-funciones-avanzadas.md, mejores-practicas-y-ejemplos.md
-- `05-conversaciones/` — tags-y-etiquetas.md, escalamiento-a-humano.md, bandeja-de-mensajes.md
-- `12-pedidos-carritos/flujo-de-compra-con-ia.md`
+- `12-pedidos-carritos/flujo-de-compra-con-ia.md` — pendiente de screenshots y contenido
+
+### Admin gate (contraseña)
+
+- Implementado en `src/components/MarkdownContent.astro`
+- Páginas de `admin-interno/` requieren contraseña para ver el contenido
+- **Contraseña actual:** `peaking2026` — editar la constante `PASSWORD` en el componente
+- Token almacenado en `localStorage` (o `sessionStorage` si no se activa "Recordar")
+- Botón "Bloquear" visible en páginas admin para cerrar sesión
 
 ---
 
@@ -169,35 +182,25 @@ También ocultos (en `09-integraciones-partner/`):
 
 ## Roadmap de ejecución
 
+> **Revisado 2026-04-27** — La auditoría de contenido confirmó que la mayoría de artículos listados como placeholders ya están completos. Solo queda 1 placeholder público real.
+
 ### Abril 27-30 (cierre del mes)
-- [x] Light/dark toggle implementado y afinado (UX harmonics, sombras, transiciones)
-- [ ] Tomar screenshots de Workflows y Prompt Studio (SCREENSHOTS-PENDIENTES.md — 🔴 alta prioridad)
-- [ ] Insertar imágenes en artículos usando URL de GitHub Raw
+- [x] Light/dark toggle implementado y afinado (sombras, transiciones, tokens por tema)
+- [x] Admin gate con contraseña para sección `admin-interno/`
+- [ ] Auditoría de `02-canales/`: verificar instagram, messenger, widget (pueden ya estar completos)
+- [ ] Verificar `01-primeros-pasos/activa-tus-modulos.md` y `glosario.md`
+- [ ] Tomar screenshots de Workflows y Prompt Studio (SCREENSHOTS-PENDIENTES.md — 🔴)
 
-### Mayo Semana 1 (1–9) — Canales
-- [ ] `02-canales/conexion-whatsapp.md` — requiere screenshots de flujo OAuth Meta
-- [ ] `02-canales/conexion-instagram.md`
-- [ ] `02-canales/conexion-messenger.md`
-- [ ] `02-canales/widget-sitio-web.md`
+### Mayo Semana 1-2 (1–16) — Único pendiente real + screenshots
+- [ ] Completar `12-pedidos-carritos/flujo-de-compra-con-ia.md` — único placeholder público
+- [ ] Insertar screenshots disponibles en artículos de Workflows y Prompt Studio
+- [ ] Insertar screenshots en `02-canales/` cuando se tomen
 
-### Mayo Semana 2 (10–16) — Mensajes y Primeros Pasos
-- [ ] `05-conversaciones/tags-y-etiquetas.md`
-- [ ] `05-conversaciones/escalamiento-a-humano.md`
-- [ ] `05-conversaciones/bandeja-de-mensajes.md`
-- [ ] `01-primeros-pasos/bienvenido-a-peaking.md`
-
-### Mayo Semana 3 (17–23) — Prompt Studio y Pedidos
-- [ ] `03-prompt-studio/variables-y-funciones-avanzadas.md`
-- [ ] `03-prompt-studio/mejores-practicas-y-ejemplos.md`
-- [ ] `12-pedidos-carritos/flujo-de-compra-con-ia.md`
-- [ ] `01-primeros-pasos/activa-tus-modulos.md`
-- [ ] `01-primeros-pasos/glosario.md`
-
-### Mayo Semana 4 (24–31) — Calidad y Preparación
-- [ ] Auditoría de calidad: links rotos, FAQs consistentes, sidebar.order completo
+### Mayo Semana 3-4 (17–31) — Calidad y preparación de skin
+- [ ] Auditoría completa: links internos, sidebar.order, FAQs consistentes
 - [ ] Revisión GA4: páginas más visitadas, tiempo en página, fuentes de tráfico
-- [ ] Preparación para nuevo skin / design refresh — NO tomar screenshots antes del cambio
+- [ ] Preparar lista de ajustes para nuevo skin — NO tomar más screenshots antes del cambio de diseño
 
 ### Continuo (post-skin)
 - 40 screenshots documentados en `SCREENSHOTS-PENDIENTES.md`
-- Tomar cuando el nuevo skin esté publicado para evitar retrabajar imágenes
+- Tomar y actualizar imágenes cuando el nuevo skin esté publicado
