@@ -167,15 +167,37 @@ También ocultos (en `09-integraciones-partner/`):
 
 ---
 
-## Próximos pasos
+## Roadmap de ejecución
 
-### Inmediato
-1. **Tomar screenshots** siguiendo `SCREENSHOTS-PENDIENTES.md` — empezar por Workflows (🔴 alta prioridad)
-2. **Insertar imágenes** en artículos usando el skill `/generate-docs` o manualmente con la URL de GitHub Raw
+### Abril 27-30 (cierre del mes)
+- [x] Light/dark toggle implementado y afinado (UX harmonics, sombras, transiciones)
+- [ ] Tomar screenshots de Workflows y Prompt Studio (SCREENSHOTS-PENDIENTES.md — 🔴 alta prioridad)
+- [ ] Insertar imágenes en artículos usando URL de GitHub Raw
 
-### Contenido pendiente
-4. Completar placeholders de `02-canales/` — requieren screenshots para poder escribirse
-5. Completar `03-prompt-studio/variables-y-funciones-avanzadas.md`
-6. Completar `05-conversaciones/` — tags, escalamiento, bandeja
-7. Completar `12-pedidos-carritos/flujo-de-compra-con-ia.md`
-8. Completar `01-primeros-pasos/` — bienvenido, activa-tus-modulos, glosario
+### Mayo Semana 1 (1–9) — Canales
+- [ ] `02-canales/conexion-whatsapp.md` — requiere screenshots de flujo OAuth Meta
+- [ ] `02-canales/conexion-instagram.md`
+- [ ] `02-canales/conexion-messenger.md`
+- [ ] `02-canales/widget-sitio-web.md`
+
+### Mayo Semana 2 (10–16) — Mensajes y Primeros Pasos
+- [ ] `05-conversaciones/tags-y-etiquetas.md`
+- [ ] `05-conversaciones/escalamiento-a-humano.md`
+- [ ] `05-conversaciones/bandeja-de-mensajes.md`
+- [ ] `01-primeros-pasos/bienvenido-a-peaking.md`
+
+### Mayo Semana 3 (17–23) — Prompt Studio y Pedidos
+- [ ] `03-prompt-studio/variables-y-funciones-avanzadas.md`
+- [ ] `03-prompt-studio/mejores-practicas-y-ejemplos.md`
+- [ ] `12-pedidos-carritos/flujo-de-compra-con-ia.md`
+- [ ] `01-primeros-pasos/activa-tus-modulos.md`
+- [ ] `01-primeros-pasos/glosario.md`
+
+### Mayo Semana 4 (24–31) — Calidad y Preparación
+- [ ] Auditoría de calidad: links rotos, FAQs consistentes, sidebar.order completo
+- [ ] Revisión GA4: páginas más visitadas, tiempo en página, fuentes de tráfico
+- [ ] Preparación para nuevo skin / design refresh — NO tomar screenshots antes del cambio
+
+### Continuo (post-skin)
+- 40 screenshots documentados en `SCREENSHOTS-PENDIENTES.md`
+- Tomar cuando el nuevo skin esté publicado para evitar retrabajar imágenes
