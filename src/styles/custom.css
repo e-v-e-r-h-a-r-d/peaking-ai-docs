@@ -532,43 +532,32 @@ nav.sidebar {
 
 /* ===== TABLES ===== */
 
-/* Wrapper provides border-radius + clip (border-collapse: collapse ignores radius on the table itself) */
-.sl-markdown-content :where(table) {
+.sl-markdown-content table {
   border-collapse: collapse !important;
   width: 100% !important;
-  font-size: 0.9rem;
   margin: 1.5rem 0 !important;
-}
-
-/* Outer border via box-shadow so it works with border-collapse */
-.sl-markdown-content :where(table) {
-  box-shadow: 0 0 0 1px var(--pk-table-divider);
-  border-radius: var(--pk-radius);
-  overflow: hidden;
-}
-
-.sl-markdown-content :where(th, td) {
   border: 1px solid var(--pk-table-divider) !important;
-  padding: 0.7rem 1rem !important;
-  text-align: left !important;
-  vertical-align: top !important;
-  line-height: 1.55;
 }
 
-.sl-markdown-content :where(th) {
+.sl-markdown-content table th,
+.sl-markdown-content table td {
+  border: 1px solid var(--pk-table-divider) !important;
+  padding: 0.65rem 1rem !important;
+  text-align: left !important;
+}
+
+.sl-markdown-content table th {
   background: var(--pk-table-header-bg) !important;
   font-weight: 600 !important;
-  font-size: 0.85rem;
-  letter-spacing: 0.01em;
   color: var(--sl-color-white) !important;
   border-bottom: 2px solid var(--pk-table-divider) !important;
 }
 
-.sl-markdown-content :where(tbody tr) {
+.sl-markdown-content table tbody tr {
   transition: background 0.15s ease;
 }
 
-.sl-markdown-content :where(tbody tr:hover) td {
+.sl-markdown-content table tbody tr:hover td {
   background: var(--pk-table-row-hover) !important;
 }
 
