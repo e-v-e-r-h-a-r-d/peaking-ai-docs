@@ -63,6 +63,7 @@ export default defineConfig({
 			customCss: ['./src/styles/custom.css'],
 			components: {
 				ThemeSelect: './src/components/ThemeSelect.astro',
+				MarkdownContent: './src/components/MarkdownContent.astro',
 			},
 			expressiveCode: {
 				themes: ['github-dark-dimmed'],
