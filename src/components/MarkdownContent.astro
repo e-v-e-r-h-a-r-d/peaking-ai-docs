@@ -4,7 +4,7 @@
 import type { Props } from '@astrojs/starlight/props';
 const { entry } = Astro.props;
 
-const isAdmin = entry.id.startsWith('admin-interno/');
+const isAdmin = entry?.id?.startsWith('admin-interno/') ?? false;
 ---
 
 {isAdmin ? (
