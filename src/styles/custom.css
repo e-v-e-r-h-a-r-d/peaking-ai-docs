@@ -88,6 +88,15 @@
   --pk-active-link-bg: rgba(37, 99, 235, 0.1);
   --pk-active-link-color: #2563EB;
 
+  /* Sidebar link hover */
+  --pk-sidebar-link-hover: rgba(37, 99, 235, 0.05);
+
+  /* Blockquote */
+  --pk-blockquote-bg: rgba(37, 99, 235, 0.04);
+
+  /* Image */
+  --pk-img-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 8px 32px rgba(0, 0, 0, 0.06);
+
   color-scheme: light dark;
 }
 
@@ -153,6 +162,10 @@
   --pk-header-shadow: none;
   --pk-active-link-bg: var(--pk-gradient-subtle);
   --pk-active-link-color: var(--sl-color-accent);
+
+  --pk-sidebar-link-hover: rgba(255, 255, 255, 0.04);
+  --pk-blockquote-bg: rgba(255, 255, 255, 0.03);
+  --pk-img-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 8px 32px rgba(0, 0, 0, 0.15);
 
   color-scheme: dark;
 }
@@ -903,6 +916,89 @@ header.header {
 .landing-section:nth-of-type(1) { animation-delay: 0.1s; }
 .landing-section:nth-of-type(2) { animation-delay: 0.2s; }
 .landing-section:nth-of-type(3) { animation-delay: 0.3s; }
+
+/* ===== CONTENT TYPOGRAPHY REFINEMENTS ===== */
+
+/* Paragraphs — slightly more generous line height */
+.sl-markdown-content p {
+  line-height: 1.78;
+}
+
+/* Bold — inherit white/dark so it pops from body text */
+.sl-markdown-content strong {
+  color: var(--sl-color-white);
+  font-weight: 700;
+}
+
+/* Blockquotes — accent left border + glass bg */
+.sl-markdown-content blockquote {
+  border-inline-start: 3px solid var(--sl-color-accent);
+  background: var(--pk-blockquote-bg);
+  backdrop-filter: var(--pk-glass-blur);
+  border-radius: 0 var(--pk-radius-sm) var(--pk-radius-sm) 0;
+  padding: 0.85rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--sl-color-gray-2);
+  font-style: italic;
+}
+
+/* List markers — accent color */
+.sl-markdown-content ul li::marker {
+  color: var(--sl-color-accent);
+}
+
+.sl-markdown-content ol li::marker {
+  color: var(--sl-color-accent);
+  font-weight: 600;
+}
+
+/* List spacing */
+.sl-markdown-content li {
+  margin-bottom: 0.3rem;
+}
+
+/* Keyboard shortcut <kbd> */
+.sl-markdown-content kbd {
+  background: var(--pk-glass-bg);
+  border: 1px solid var(--pk-glass-border);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  padding: 0.1em 0.4em;
+  font-family: var(--sl-font-mono);
+  font-size: 0.8em;
+  color: var(--sl-color-white);
+  white-space: nowrap;
+}
+
+/* ===== IMAGES ===== */
+
+.sl-markdown-content img {
+  border-radius: var(--pk-radius);
+  border: 1px solid var(--pk-glass-border);
+  box-shadow: var(--pk-img-shadow);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.75rem auto;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.sl-markdown-content img:hover {
+  border-color: var(--pk-glass-border-hover);
+  box-shadow: var(--pk-shadow-card);
+}
+
+/* ===== SIDEBAR HOVER ===== */
+
+.sidebar-content a:hover:not([aria-current='page']) {
+  background: var(--pk-sidebar-link-hover);
+}
+
+/* ===== TABLE OF CONTENTS — active highlight ===== */
+
+starlight-toc a[aria-current='true'] {
+  background: var(--pk-active-link-bg);
+}
 
 /* ===== RESPONSIVE ===== */
 
