@@ -60,10 +60,10 @@
   --pk-orb-2-color: rgba(139, 92, 246, 0.02);
   --pk-code-pre-bg: rgba(15, 14, 13, 0.92);
   --pk-code-header-bg: rgba(0, 0, 0, 0.06);
-  --pk-table-header-bg: #eff6ff;
-  --pk-table-row-hover: #f8faff;
-  --pk-table-divider: #d0d7e2;
-  --pk-hr-color: #d0d7e2;
+  --pk-table-header-bg: #eef3fb;
+  --pk-table-row-hover: #f6f9ff;
+  --pk-table-divider: #c8d3e0;
+  --pk-hr-color: #c8d3e0;
   --pk-scrollbar-thumb: rgba(0, 0, 0, 0.12);
   --pk-scrollbar-thumb-hover: rgba(0, 0, 0, 0.22);
   --pk-selection-bg: rgba(37, 99, 235, 0.18);
@@ -140,10 +140,10 @@
   --pk-orb-2-color: rgba(233, 30, 99, 0.035);
   --pk-code-pre-bg: rgba(12, 11, 10, 0.85);
   --pk-code-header-bg: rgba(255, 255, 255, 0.025);
-  --pk-table-header-bg: rgba(255, 255, 255, 0.08);
+  --pk-table-header-bg: rgba(255, 255, 255, 0.09);
   --pk-table-row-hover: rgba(255, 255, 255, 0.04);
-  --pk-table-divider: rgba(255, 255, 255, 0.13);
-  --pk-hr-color: rgba(255, 255, 255, 0.13);
+  --pk-table-divider: rgba(255, 255, 255, 0.22);
+  --pk-hr-color: rgba(255, 255, 255, 0.18);
   --pk-scrollbar-thumb: rgba(255, 255, 255, 0.08);
   --pk-scrollbar-thumb-hover: rgba(255, 255, 255, 0.15);
   --pk-selection-bg: rgba(255, 92, 43, 0.3);
@@ -532,39 +532,44 @@ nav.sidebar {
 
 /* ===== TABLES ===== */
 
-.sl-markdown-content table {
-  border-collapse: collapse;
-  width: 100%;
+/* Wrapper provides border-radius + clip (border-collapse: collapse ignores radius on the table itself) */
+.sl-markdown-content :where(table) {
+  border-collapse: collapse !important;
+  width: 100% !important;
   font-size: 0.9rem;
-  margin: 1.5rem 0;
-  border: 1px solid var(--pk-table-divider);
+  margin: 1.5rem 0 !important;
+}
+
+/* Outer border via box-shadow so it works with border-collapse */
+.sl-markdown-content :where(table) {
+  box-shadow: 0 0 0 1px var(--pk-table-divider);
   border-radius: var(--pk-radius);
   overflow: hidden;
 }
 
-.sl-markdown-content th,
-.sl-markdown-content td {
-  border: 1px solid var(--pk-table-divider);
-  padding: 0.7rem 1rem;
-  text-align: left;
-  vertical-align: top;
+.sl-markdown-content :where(th, td) {
+  border: 1px solid var(--pk-table-divider) !important;
+  padding: 0.7rem 1rem !important;
+  text-align: left !important;
+  vertical-align: top !important;
+  line-height: 1.55;
 }
 
-.sl-markdown-content th {
-  background: var(--pk-table-header-bg);
-  font-weight: 600;
+.sl-markdown-content :where(th) {
+  background: var(--pk-table-header-bg) !important;
+  font-weight: 600 !important;
   font-size: 0.85rem;
   letter-spacing: 0.01em;
-  color: var(--sl-color-white);
-  border-bottom: 2px solid var(--pk-table-divider);
+  color: var(--sl-color-white) !important;
+  border-bottom: 2px solid var(--pk-table-divider) !important;
 }
 
-.sl-markdown-content tbody tr {
+.sl-markdown-content :where(tbody tr) {
   transition: background 0.15s ease;
 }
 
-.sl-markdown-content tbody tr:hover td {
-  background: var(--pk-table-row-hover);
+.sl-markdown-content :where(tbody tr:hover) td {
+  background: var(--pk-table-row-hover) !important;
 }
 
 /* ===== TABS (Starlight <Tabs>) ===== */
