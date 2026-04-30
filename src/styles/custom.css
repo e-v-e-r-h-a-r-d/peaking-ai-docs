@@ -531,23 +531,40 @@ nav.sidebar {
 }
 
 /* ===== TABLES ===== */
-/* Starlight forces display:block on <table> for overflow-scroll — this breaks
-   border-collapse. We override to display:table so border rendering is correct. */
+/* border-collapse: separate + border-spacing: 0 is the only combination that
+   supports both border-radius (rounded corners) and overflow: hidden clipping.
+   border-collapse: collapse ignores border-radius on the table element. */
 
 .sl-markdown-content table {
   display: table !important;
-  border-collapse: collapse !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
   width: 100% !important;
   max-width: 100%;
   margin: 1.5rem 0 !important;
   border: 1px solid var(--pk-table-divider) !important;
+  border-radius: var(--pk-radius) !important;
+  overflow: hidden !important;
 }
 
+/* All cells: right + bottom borders only (avoids double borders with separate) */
 .sl-markdown-content table th,
 .sl-markdown-content table td {
-  border: 1px solid var(--pk-table-divider) !important;
+  border-right: 1px solid var(--pk-table-divider) !important;
+  border-bottom: 1px solid var(--pk-table-divider) !important;
   padding: 0.65rem 1rem !important;
   text-align: left !important;
+}
+
+/* Last column: no right border (table outer border covers it) */
+.sl-markdown-content table th:last-child,
+.sl-markdown-content table td:last-child {
+  border-right: none !important;
+}
+
+/* Last row: no bottom border (table outer border covers it) */
+.sl-markdown-content table tbody tr:last-child td {
+  border-bottom: none !important;
 }
 
 .sl-markdown-content table th {
