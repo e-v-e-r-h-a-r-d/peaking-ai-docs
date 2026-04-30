@@ -1,5 +1,5 @@
 ---
-title: Dashboard overview
+title: Resumen del Panel de Insights
 description: Recorrido por el Resumen del Panel de Insights — KPIs principales, gráfica de conversaciones, asistencia requerida y conversaciones recientes.
 sidebar:
   order: 1

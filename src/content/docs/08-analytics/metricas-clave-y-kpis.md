@@ -2,7 +2,7 @@
 title: Métricas clave y KPIs
 description: Definición e interpretación de los cinco indicadores principales del dashboard de Insights de Peaking.
 sidebar:
-  order: 3
+  order: 2
 ---
 
 El dashboard de Insights muestra cinco KPIs principales que miden la efectividad de tu agente de IA y la salud de tu operación de atención al cliente. Esta guía explica qué mide cada uno y cómo interpretarlo.
