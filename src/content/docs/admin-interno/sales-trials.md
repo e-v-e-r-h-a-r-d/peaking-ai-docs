@@ -2,7 +2,6 @@
 title: Sales Trials
 description: Gestión de períodos de prueba y proceso de ventas desde el panel de administración.
 sidebar:
-  hidden: true
   order: 2
 ---
 

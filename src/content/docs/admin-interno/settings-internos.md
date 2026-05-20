@@ -2,7 +2,6 @@
 title: Settings internos
 description: Configuraciones internas del sistema Peaking accesibles solo para el equipo.
 sidebar:
-  hidden: true
   order: 5
 ---
 

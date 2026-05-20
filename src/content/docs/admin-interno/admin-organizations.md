@@ -2,7 +2,6 @@
 title: Admin Organizations
 description: Gestión de organizaciones y cuentas de clientes en el panel de administración interno de Peaking.
 sidebar:
-  hidden: true
   order: 1
 ---
 
