@@ -59,9 +59,13 @@ Meta rechaza plantillas con contenido promocional agresivo, palabras sensibles o
 Una vez que tus plantillas estén aprobadas en Meta:
 
 1. Inicia sesión en tu cuenta de Peaking.
-2. Ve a **Configuración › Integraciones › Plantillas de WhatsApp**.
+2. Ve a **Canales › Plantillas de WhatsApp** en el panel lateral.
 3. Haz clic en **Sincronizar Plantillas** (botón en la esquina superior derecha de la pantalla).
 4. Peaking cargará automáticamente todas las plantillas aprobadas de tu cuenta de WABA.
+
+![Lista de Plantillas de WhatsApp sincronizadas con estado Aprobado](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/plantillas-wa-lista.png)
+
+La tabla muestra el nombre, idioma, categoría, estado (Aprobado / Pendiente / Rechazado) y fecha de actualización de cada plantilla. Desde la columna **Acciones** puedes previsualizar la plantilla (👁) o enviarla directamente (✈).
 
 ---
 

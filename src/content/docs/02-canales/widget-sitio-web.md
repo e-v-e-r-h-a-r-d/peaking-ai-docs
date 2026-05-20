@@ -23,9 +23,9 @@ El **Widget de Peaking** es un botón de chat que se instala en tu sitio web y c
 
 ### 1. Accede a la configuración del Widget
 
-1. En el panel lateral izquierdo de Peaking, haz clic en **Configuración**.
-2. Selecciona la pestaña **Canales**.
-3. Haz clic en **Widget**.
+1. En el panel lateral izquierdo de Peaking, haz clic en **Integraciones**.
+2. Selecciona la pestaña **Canales de Mensajería**.
+3. Haz clic en **Widget** (Sitio Web).
 
 ---
 
@@ -48,39 +48,60 @@ Si activas WhatsApp en el Widget pero no has conectado ningún número de WhatsA
 
 ### 3. Personaliza la apariencia del Widget
 
-En la sección **Personalización** puedes ajustar cómo se ve el Widget en tu sitio:
+En la sección de configuración puedes ajustar cómo se ve el Widget en tu sitio:
 
 | Opción | Descripción |
 |--------|-------------|
-| **Color principal** | Color del botón flotante y del encabezado del chat |
-| **Texto de bienvenida** | Mensaje que aparece al abrir el Widget (ej. "¿Cómo podemos ayudarte?") |
-| **Nombre del negocio** | Nombre que se muestra en la cabecera del Widget |
-| **Posición** | Esquina inferior derecha o izquierda de la pantalla |
+| **Idioma del widget** | Idioma de los elementos de interfaz (botones y etiquetas). No modifica el mensaje de bienvenida ni el nombre del bot |
+| **Logo (opcional)** | Imagen de tu marca que aparece en el encabezado del chat. Recomendado: 200×200px, PNG o JPG |
+| **Color primario** | Color del botón flotante y de los mensajes enviados |
+| **Color de fondo** | Color del fondo del chat |
+| **Mensaje de bienvenida** | Texto que aparece al abrir el Widget |
+| **Nombre del bot** | Nombre que se muestra en la cabecera del Widget |
 
-Los cambios se reflejan en la **vista previa** en tiempo real del lado derecho — verás exactamente cómo quedará el Widget antes de instalarlo.
+Los cambios se reflejan en la **Vista previa** en tiempo real del lado derecho — verás exactamente cómo quedará el Widget antes de instalarlo.
+
+![Configuración del Widget con vista previa en tiempo real](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/personliazación-widget.web.png)
 
 ---
 
 ### 4. Copia el código de instalación
 
-1. Una vez configurado, baja hasta la sección de **Código de instalación**.
-2. Haz clic en **Copiar código**.
-3. El código es un fragmento de `<script>` similar a este:
+1. Una vez configurado, baja hasta la sección de **Código de Instalación**.
+2. Copia el snippet y pégalo antes de `</body>` en el HTML de tu sitio.
+
+Peaking ofrece dos modos de instalación:
+
+**Modo Flotante** — un botón flotante en la esquina de la pantalla:
 
 ```html
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://widget.peaking.ai/loader.js";
-    js.setAttribute('data-token', 'TU_TOKEN_AQUI');
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'peaking-widget'));
+<!-- Peaking AI Chat Widget (Modo Flotante) -->
+<script
+  src="https://wqicfalgufotrnruyumk.supabase.co/functions/v1/widget-script"
+  data-widget-key="TU_WIDGET_KEY"
+  async>
 </script>
 ```
 
-Cada cuenta tiene un **token único** — no compartas este código públicamente, ya que identifica tu cuenta de Peaking.
+**Modo Embebido** — el chat se integra dentro de un contenedor HTML de tu página:
+
+```html
+<!-- Contenedor del chat (ajusta el tamaño según necesites) -->
+<div id="peaking-chat" style="width: 400px; height: 600px;"></div>
+
+<!-- Peaking AI Chat Widget (Modo Embebido) -->
+<script
+  src="https://wqicfalgufotrnruyumk.supabase.co/functions/v1/widget-script"
+  data-widget-key="TU_WIDGET_KEY"
+  data-mode="embedded"
+  data-container="peaking-chat"
+  async>
+</script>
+```
+
+Cada cuenta tiene un **Widget Key único** visible en la configuración — no compartas este código públicamente, ya que identifica tu cuenta de Peaking.
+
+![Sección de Código de Instalación con modo Flotante y modo Embebido](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/canal-widget-codigo.png)
 
 ---
 

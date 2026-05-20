@@ -5,7 +5,9 @@ sidebar:
   order: 1
 ---
 
-El **Panel de Mensajes** es el centro de operaciones de tu equipo. Aquí llegan todos los mensajes entrantes de todos los canales conectados — WhatsApp, Instagram, Messenger y Widget — organizados en una sola vista. El agente de IA responde automáticamente, pero tu equipo puede monitorear, intervenir y tomar control en cualquier momento.
+El **Panel de Mensajes** es el centro de operaciones de tu equipo. Aquí llegan todos los mensajes entrantes de todos los canales conectados — WhatsApp, Instagram, Messenger y Sitio Web — organizados en una sola vista. El agente de IA responde automáticamente, pero tu equipo puede monitorear, intervenir y tomar control en cualquier momento.
+
+![Vista completa del Panel de Mensajes con lista de conversaciones, hilo activo y Contexto del Lead](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-panel-completo.png)
 
 ---
 
@@ -32,14 +34,21 @@ Muestra todas las conversaciones en una lista compacta. Cada fila incluye:
 | **Indicador de no leído** | Punto de color cuando hay mensajes nuevos sin revisar |
 | **Tag / etiqueta** | Si la conversación tiene una etiqueta asignada, aparece visible |
 
-### Panel de conversación (área derecha)
+### Panel de conversación (área central)
 
-Al hacer clic en cualquier conversación de la lista, se abre el hilo completo a la derecha. Aquí puedes:
+Al hacer clic en cualquier conversación de la lista, se abre el hilo completo en el centro. Aquí puedes:
 
 - Leer el historial completo de mensajes
 - Ver si el agente de IA está activo o si la conversación fue escalada a humano
 - Escribir y enviar mensajes directamente
 - Asignar tags, agregar notas o crear TODOs
+- Ver el tiempo restante de la ventana de WhatsApp (ej. "Ventana de WhatsApp: 11h 29m restante")
+
+### Contexto del Lead (panel derecho)
+
+A la derecha del hilo aparece el panel de **Contexto del Lead** — el perfil del contacto vinculado a esa conversación. Muestra datos del contacto, su historial de oportunidades y la información relevante para el agente.
+
+Si la conversación aún no tiene un contacto vinculado, verás el botón **Crear contacto** — que permite crear el perfil directamente desde el hilo sin salir del panel.
 
 ---
 
@@ -49,11 +58,14 @@ En la parte superior del panel encontrarás las opciones de filtrado para encont
 
 | Filtro | Opciones |
 |--------|----------|
-| **Canal** | Todos · WhatsApp · Instagram · Messenger · Widget |
+| **Canal** | Todos los Canales · WhatsApp · Instagram · Messenger · Sitio Web |
+| **Vista rápida** | Todos · Leads · Escalados |
 | **Estado** | Todas · Activas · Resueltas · En espera |
 | **Asignación** | Todas · Sin asignar · Asignadas a mí · Por miembro |
 | **Tag** | Filtra por etiqueta aplicada |
-| **Búsqueda** | Busca por nombre de contacto o texto dentro del mensaje |
+| **Búsqueda** | Busca por nombre, tag, lead o tipo de escalamiento |
+
+![Filtros de canal en la parte superior del Panel de Mensajes](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-filtros.png)
 
 ---
 
