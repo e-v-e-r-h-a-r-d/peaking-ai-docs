@@ -5,22 +5,39 @@ sidebar:
   order: 1
 ---
 
-El módulo de **Pedidos y Carritos** centraliza todas las transacciones generadas durante las conversaciones — desde que el cliente agrega el primer producto hasta que el pago se confirma. También muestra los carritos incompletos para que el equipo pueda hacer seguimiento.
+El módulo de **Comercio** centraliza todas las transacciones generadas durante las conversaciones — desde que el cliente agrega el primer producto hasta que el pago se confirma. También muestra los carritos incompletos para que el equipo pueda hacer seguimiento.
 
 ---
 
 ## Acceder al módulo
 
-En el panel lateral, haz clic en **Pedidos y Carritos**. Verás dos vistas principales:
+En el panel lateral, haz clic en **Pedidos y Carritos**. Verás dos pestañas:
 
-| Vista | Contenido |
-|-------|-----------|
-| **Pedidos** | Todas las órdenes de compra: completadas, pendientes de pago, canceladas |
-| **Carritos** | Carritos activos e incompletos — clientes que iniciaron el proceso pero no pagaron |
+| Pestaña | Contenido |
+|---------|-----------|
+| **Órdenes Stripe** | Todas las órdenes de compra: completadas, pendientes, canceladas, con revenue total |
+| **Carritos** | Carritos activos e incompletos — clientes que iniciaron el proceso pero no completaron el pago |
 
 ---
 
-## Vista de Pedidos
+## Vista de Órdenes Stripe
+
+La pestaña **Órdenes Stripe** muestra el resumen financiero y la lista de órdenes procesadas a través de Stripe.
+
+![Vista de Órdenes Stripe con KPIs de revenue y tabla de Customer Orders](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/12-pedidos-carritos/ordenes-stripe.png)
+
+### KPIs principales
+
+| Métrica | Descripción |
+|---------|-------------|
+| **Total Revenue** | Ingresos totales del período. Incluye detalle de "Platform fees" |
+| **Paid Orders** | Órdenes pagadas exitosamente |
+| **Pending Orders** | Órdenes en espera de pago (Awaiting payment) |
+| **Expired/Cancelled** | Órdenes vencidas o canceladas (desglosadas: expired + cancelled) |
+
+### Filtros
+
+Puedes filtrar por **Estado**, **Canal** y rango de fechas (**From date** / **To date**).
 
 ### Columnas de la tabla
 
@@ -47,7 +64,18 @@ Al hacer clic en una orden verás:
 
 ## Vista de Carritos
 
+![Vista de Carritos con KPIs de carritos activos, completados, abandonados y valor potencial](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/12-pedidos-carritos/carrito-compras.png)
+
 Los carritos representan sesiones de compra que el cliente inició pero no completó.
+
+### KPIs de carritos
+
+| Métrica | Descripción |
+|---------|-------------|
+| **Carritos Activos** | Carritos con actividad reciente que aún no han expirado |
+| **Completados** | Carritos que terminaron en una orden de compra exitosa |
+| **Abandonados** | Carritos sin actividad que el sistema marcó como abandonados |
+| **Valor Potencial** | Suma total del valor de todos los carritos activos y abandonados |
 
 ### Información del carrito
 
