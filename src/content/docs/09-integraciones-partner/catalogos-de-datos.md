@@ -22,9 +22,11 @@ A diferencia de las integraciones de herramientas (que crean registros o ejecuta
 
 ## Acceder a Catálogos de Datos
 
-1. Ve a **Configuración › Integraciones**.
+1. En el panel lateral, haz clic en **Integraciones**.
 2. Selecciona la pestaña **Catálogos de Datos**.
 3. Verás la lista de catálogos conectados (vacía si aún no has agregado ninguno).
+
+![Panel de Catálogos de Datos con formulario de conexión a API externa](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/catalogo-datos-externo.png)
 
 ---
 
