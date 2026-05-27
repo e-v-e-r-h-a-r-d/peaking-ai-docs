@@ -13,6 +13,8 @@ Conecta y gestiona los canales por donde tus clientes te escriben: **WhatsApp Bu
 
 Consulta la sección **[Conecta tus canales](/02-canales/)** para las instrucciones de conexión de cada canal.
 
+- **[Reconexión de tokens](/09-integraciones-partner/reconexion-tokens/)** — Qué hacer cuando Instagram o Facebook Messenger muestran "Token expirado - Reconectar".
+
 ---
 
 ## Catálogos de Datos
