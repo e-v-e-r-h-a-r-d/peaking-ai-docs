@@ -2,7 +2,7 @@
 title: Información de Conversaciones
 description: El agente de IA de Peaking analiza todas tus conversaciones y responde preguntas sobre tendencias, quejas, productos mencionados y puntos de dolor de tus clientes.
 sidebar:
-  order: 2
+  order: 3
 ---
 
 **Información de Conversaciones** es un agente de IA especializado en tu negocio. Tiene acceso a todo el historial de conversaciones de tu cuenta y puede responder preguntas en lenguaje natural sobre lo que están diciendo tus clientes — tendencias, quejas frecuentes, productos más mencionados, temas recurrentes y más.

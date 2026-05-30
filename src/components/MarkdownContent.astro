@@ -1,0 +1,310 @@
+---
+// Overrides Starlight's MarkdownContent to add a password gate for admin-interno pages.
+import type { Props } from '@astrojs/starlight/props';
+import '@astrojs/starlight/style/markdown.css';
+const { entry } = Astro.props;
+
+const isAdmin = entry?.id?.startsWith('admin-interno/') ?? false;
+---
+
+{isAdmin ? (
+  <div id="pk-admin-wrapper">
+
+    <!-- ===== GATE: shown when locked ===== -->
+    <div id="pk-admin-gate">
+      <div class="gate-box">
+
+        <div class="gate-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+
+        <h2 class="gate-title">Área restringida</h2>
+        <p class="gate-subtitle">Esta sección es exclusiva para el equipo Peaking.</p>
+
+        <form id="pk-admin-form" novalidate>
+          <div class="gate-field">
+            <input
+              id="pk-admin-input"
+              type="password"
+              placeholder="Contraseña de acceso"
+              autocomplete="current-password"
+              required
+            />
+            <button type="submit" id="pk-admin-btn" aria-label="Entrar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+
+          <p id="pk-admin-error" role="alert">Contraseña incorrecta. Inténtalo de nuevo.</p>
+
+          <label class="gate-remember">
+            <input type="checkbox" id="pk-admin-remember" checked />
+            Recordar en este dispositivo
+          </label>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- ===== CONTENT: shown when unlocked ===== -->
+    <div id="pk-admin-content" class="sl-markdown-content" style="display:none; position:relative;">
+
+      <!-- Floating lock button for authenticated sessions -->
+      <button id="pk-admin-lock-btn" title="Cerrar sesión admin" aria-label="Bloquear sección admin">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+        Bloquear
+      </button>
+
+      <slot />
+    </div>
+
+  </div>
+) : (
+  <div class="sl-markdown-content"><slot /></div>
+)}
+
+<script>
+  (function () {
+    const gate    = document.getElementById('pk-admin-gate');
+    const content = document.getElementById('pk-admin-content');
+    if (!gate || !content) return; // not an admin page
+
+    // ──────────────────────────────────────────────────────────
+    // ⚙️  CONFIGURACIÓN — cambiar contraseña aquí
+    const PASSWORD  = 'peaking2026';
+    // ──────────────────────────────────────────────────────────
+    const TOKEN_KEY = 'pk-admin-auth';
+    const TOKEN_VAL = 'pk-7f3a8b2c9d1e4f6ab5c8e2f1d0a3b6c9'; // token interno (no es la contraseña)
+
+    function unlock() {
+      gate.style.display  = 'none';
+      content.style.display = 'block';
+    }
+
+    function lock() {
+      localStorage.removeItem(TOKEN_KEY);
+      sessionStorage.removeItem(TOKEN_KEY);
+      content.style.display = 'none';
+      gate.style.display    = 'flex';
+      const input = document.getElementById('pk-admin-input');
+      if (input) { input.value = ''; input.focus(); }
+    }
+
+    // ── Check existing session ──
+    if (
+      localStorage.getItem(TOKEN_KEY)   === TOKEN_VAL ||
+      sessionStorage.getItem(TOKEN_KEY) === TOKEN_VAL
+    ) {
+      unlock();
+    }
+
+    // ── Handle form submit ──
+    const form     = document.getElementById('pk-admin-form');
+    const input    = document.getElementById('pk-admin-input');
+    const errorEl  = document.getElementById('pk-admin-error');
+    const remember = document.getElementById('pk-admin-remember');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (input.value.trim() === PASSWORD) {
+        const store = remember.checked ? localStorage : sessionStorage;
+        store.setItem(TOKEN_KEY, TOKEN_VAL);
+        errorEl.style.display = 'none';
+        unlock();
+      } else {
+        errorEl.style.display = 'block';
+        input.value = '';
+        input.focus();
+        input.classList.add('pk-shake');
+        setTimeout(() => input.classList.remove('pk-shake'), 500);
+      }
+    });
+
+    // ── Lock button ──
+    const lockBtn = document.getElementById('pk-admin-lock-btn');
+    if (lockBtn) lockBtn.addEventListener('click', lock);
+  })();
+</script>
+
+<style>
+  /* ── Gate container ── */
+  #pk-admin-gate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 55vh;
+    padding: 3rem 1rem;
+  }
+
+  /* ── Gate card ── */
+  .gate-box {
+    background: var(--pk-glass-bg);
+    border: 1px solid var(--pk-glass-border);
+    border-radius: var(--pk-radius-lg);
+    box-shadow: var(--pk-shadow-base), var(--pk-shadow-card);
+    backdrop-filter: var(--pk-glass-blur);
+    -webkit-backdrop-filter: var(--pk-glass-blur);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+  }
+
+  /* ── Icon ── */
+  .gate-icon {
+    color: var(--sl-color-accent);
+    margin-bottom: 1.25rem;
+    opacity: 0.9;
+  }
+
+  /* ── Headings ── */
+  .gate-title {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: var(--sl-color-white) !important;
+    margin: 0 0 0.45rem 0 !important;
+    letter-spacing: -0.02em;
+  }
+
+  .gate-subtitle {
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-3);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.55;
+  }
+
+  /* ── Input row ── */
+  .gate-field {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  #pk-admin-input {
+    flex: 1;
+    background: var(--pk-glass-bg-hover);
+    border: 1px solid var(--pk-glass-border);
+    border-radius: var(--pk-radius-sm);
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+    font-family: var(--sl-font);
+    color: var(--sl-color-white);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  #pk-admin-input::placeholder {
+    color: var(--sl-color-gray-4);
+  }
+
+  #pk-admin-input:focus {
+    border-color: var(--sl-color-accent);
+    box-shadow: 0 0 0 3px var(--pk-selection-bg);
+  }
+
+  /* ── Submit button ── */
+  #pk-admin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    flex-shrink: 0;
+    background: var(--sl-color-accent);
+    border: none;
+    border-radius: var(--pk-radius-sm);
+    color: #fff;
+    cursor: pointer;
+    transition: var(--pk-transition);
+  }
+
+  #pk-admin-btn:hover {
+    opacity: 0.85;
+    transform: translateX(2px);
+  }
+
+  /* ── Error message ── */
+  #pk-admin-error {
+    display: none;
+    font-size: 0.82rem;
+    color: #E91E63;
+    margin: 0 0 0.8rem 0;
+    animation: fadeIn 0.2s ease;
+  }
+
+  /* ── Remember checkbox ── */
+  .gate-remember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    color: var(--sl-color-gray-3);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .gate-remember input[type='checkbox'] {
+    accent-color: var(--sl-color-accent);
+    cursor: pointer;
+  }
+
+  /* ── Shake animation on wrong password ── */
+  @keyframes pk-shake {
+    0%, 100% { transform: translateX(0); }
+    20%       { transform: translateX(-7px); }
+    40%       { transform: translateX(7px); }
+    60%       { transform: translateX(-4px); }
+    80%       { transform: translateX(4px); }
+  }
+
+  .pk-shake {
+    animation: pk-shake 0.4s ease;
+  }
+
+  /* ── Floating lock button (authenticated state) ── */
+  #pk-admin-lock-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.65rem;
+    font-size: 0.75rem;
+    font-family: var(--sl-font);
+    font-weight: 500;
+    color: var(--sl-color-gray-3);
+    background: var(--pk-glass-bg);
+    border: 1px solid var(--pk-glass-border);
+    border-radius: var(--pk-radius-sm);
+    cursor: pointer;
+    transition: var(--pk-transition);
+    z-index: 10;
+  }
+
+  #pk-admin-lock-btn:hover {
+    color: var(--sl-color-white);
+    background: var(--pk-glass-bg-hover);
+    border-color: var(--pk-glass-border-hover);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
