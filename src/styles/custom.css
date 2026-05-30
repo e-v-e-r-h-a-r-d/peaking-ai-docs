@@ -4,17 +4,112 @@
    Structure: Stripe Docs + Claude API Docs
    ============================================ */
 
-/* ===== COLOR TOKENS & FORCED DARK THEME ===== */
+/* ===== COLOR TOKENS ===== */
 
-:root,
-:root[data-theme='light'],
+/* --- Light mode (default) --- */
+:root {
+  /* Accent — Blue */
+  --sl-color-accent-low: #dbeafe;
+  --sl-color-accent: #2563EB;
+  --sl-color-accent-high: #1d4ed8;
+
+  /* Neutral scale — light (Starlight convention: white=light end, black=dark end) */
+  --sl-color-white: #0f172a;
+  --sl-color-gray-1: #1e293b;
+  --sl-color-gray-2: #334155;
+  --sl-color-gray-3: #64748b;
+  --sl-color-gray-4: #94a3b8;
+  --sl-color-gray-5: #cbd5e1;
+  --sl-color-gray-6: #e2e8f0;
+  --sl-color-black: #f8fafc;
+
+  /* Typography */
+  --sl-font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --sl-font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', ui-monospace, monospace;
+  --__sl-font: var(--sl-font);
+  --__sl-font-mono: var(--sl-font-mono);
+
+  /* Brand gradient — shared decorative (orange-pink stays for hero/buttons) */
+  --pk-gradient: linear-gradient(135deg, #FF8A3D, #E91E63);
+  --pk-gradient-text: linear-gradient(135deg, #FF8A3D 0%, #FF5C2B 40%, #E91E63 100%);
+  --pk-gradient-subtle: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0.04));
+
+  /* Glass — light (white-tinted cards que "flotan" sobre el fondo gris) */
+  --pk-glass-bg: rgba(255, 255, 255, 0.88);
+  --pk-glass-bg-hover: rgba(255, 255, 255, 0.98);
+  --pk-glass-border: rgba(0, 0, 0, 0.07);
+  --pk-glass-border-hover: rgba(37, 99, 235, 0.35);
+  --pk-glass-blur: blur(16px);
+
+  /* Sizing / motion */
+  --pk-radius: 12px;
+  --pk-radius-sm: 8px;
+  --pk-radius-lg: 16px;
+  --pk-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --pk-transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows */
+  --pk-shadow-glow: 0 0 40px rgba(37, 99, 235, 0.08);
+  --pk-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+
+  /* Theme-specific tokens — light */
+  --pk-body-bg: #f1f5f9;
+  --pk-header-bg: rgba(241, 245, 249, 0.92);
+  --pk-sidebar-pane-bg: rgba(226, 232, 240, 0.72);
+  --pk-orb-1-color: rgba(37, 99, 235, 0.04);
+  --pk-orb-2-color: rgba(139, 92, 246, 0.02);
+  --pk-code-pre-bg: rgba(15, 14, 13, 0.92);
+  --pk-code-header-bg: rgba(0, 0, 0, 0.06);
+  --pk-table-header-bg: #eef3fb;
+  --pk-table-row-hover: #f6f9ff;
+  --pk-table-divider: #c8d3e0;
+  --pk-hr-color: #c8d3e0;
+  --pk-scrollbar-thumb: rgba(0, 0, 0, 0.12);
+  --pk-scrollbar-thumb-hover: rgba(0, 0, 0, 0.22);
+  --pk-selection-bg: rgba(37, 99, 235, 0.18);
+  --pk-inline-code-bg: rgba(37, 99, 235, 0.06);
+  --pk-inline-code-border: rgba(37, 99, 235, 0.12);
+  --pk-inline-code-color: #1d4ed8;
+  --pk-link-underline: rgba(37, 99, 235, 0.3);
+  --pk-tabs-list-bg: rgba(0, 0, 0, 0.02);
+  --pk-minimal-btn-border: rgba(0, 0, 0, 0.14);
+  --pk-minimal-btn-bg: rgba(0, 0, 0, 0.03);
+  --pk-minimal-btn-border-hover: rgba(0, 0, 0, 0.35);
+  --pk-minimal-btn-bg-hover: rgba(0, 0, 0, 0.06);
+  --pk-feature-card-hover-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.08),
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  --pk-step-hover-border: rgba(0, 0, 0, 0.12);
+
+  /* Elevación y sombras base (solo visibles en light) */
+  --pk-shadow-base: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 20px rgba(0, 0, 0, 0.03);
+  --pk-header-shadow: 0 1px 0 rgba(0, 0, 0, 0.07), 0 2px 16px rgba(0, 0, 0, 0.04);
+
+  /* Active sidebar link */
+  --pk-active-link-bg: rgba(37, 99, 235, 0.1);
+  --pk-active-link-color: #2563EB;
+
+  /* Sidebar link hover */
+  --pk-sidebar-link-hover: rgba(37, 99, 235, 0.05);
+
+  /* Blockquote */
+  --pk-blockquote-bg: rgba(37, 99, 235, 0.04);
+
+  /* Image */
+  --pk-img-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 8px 32px rgba(0, 0, 0, 0.06);
+
+  color-scheme: light dark;
+}
+
+/* --- Dark mode override --- */
 :root[data-theme='dark'] {
   /* Accent — Peaking Orange */
   --sl-color-accent-low: #1f0d05;
   --sl-color-accent: #FF5C2B;
   --sl-color-accent-high: #ffb299;
 
-  /* Warm gray scale (from Peaking brand) */
+  /* Neutral scale — dark */
   --sl-color-white: #F5F3F0;
   --sl-color-gray-1: #e8e6e1;
   --sl-color-gray-2: #b8b4ad;
@@ -24,28 +119,57 @@
   --sl-color-gray-6: #1c1a17;
   --sl-color-black: #0A0908;
 
-  /* Typography */
-  --sl-font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --sl-font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', ui-monospace, monospace;
-  --__sl-font: var(--sl-font);
-  --__sl-font-mono: var(--sl-font-mono);
-
-  /* Peaking Design Tokens */
-  --pk-gradient: linear-gradient(135deg, #FF8A3D, #E91E63);
-  --pk-gradient-text: linear-gradient(135deg, #FF8A3D 0%, #FF5C2B 40%, #E91E63 100%);
+  /* Brand gradient subtle — warm for dark */
   --pk-gradient-subtle: linear-gradient(135deg, rgba(255, 138, 61, 0.12), rgba(233, 30, 99, 0.08));
+
+  /* Glass — dark */
   --pk-glass-bg: rgba(255, 255, 255, 0.025);
   --pk-glass-bg-hover: rgba(255, 255, 255, 0.055);
   --pk-glass-border: rgba(255, 255, 255, 0.07);
   --pk-glass-border-hover: rgba(255, 92, 43, 0.3);
-  --pk-glass-blur: blur(16px);
-  --pk-radius: 12px;
-  --pk-radius-sm: 8px;
-  --pk-radius-lg: 16px;
-  --pk-ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --pk-transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows */
   --pk-shadow-glow: 0 0 40px rgba(255, 92, 43, 0.06);
   --pk-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.25);
+
+  /* Theme-specific tokens — dark */
+  --pk-body-bg: #0A0908;
+  --pk-header-bg: rgba(10, 9, 8, 0.78);
+  --pk-sidebar-pane-bg: rgba(10, 9, 8, 0.35);
+  --pk-orb-1-color: rgba(255, 92, 43, 0.055);
+  --pk-orb-2-color: rgba(233, 30, 99, 0.035);
+  --pk-code-pre-bg: rgba(12, 11, 10, 0.85);
+  --pk-code-header-bg: rgba(255, 255, 255, 0.025);
+  --pk-table-header-bg: rgba(255, 255, 255, 0.07);
+  --pk-table-row-hover: rgba(255, 255, 255, 0.04);
+  --pk-table-divider: rgba(255, 255, 255, 0.4);
+  --pk-hr-color: rgba(255, 255, 255, 0.18);
+  --pk-scrollbar-thumb: rgba(255, 255, 255, 0.08);
+  --pk-scrollbar-thumb-hover: rgba(255, 255, 255, 0.15);
+  --pk-selection-bg: rgba(255, 92, 43, 0.3);
+  --pk-inline-code-bg: rgba(255, 92, 43, 0.07);
+  --pk-inline-code-border: rgba(255, 92, 43, 0.1);
+  --pk-inline-code-color: #ffb299;
+  --pk-link-underline: rgba(255, 92, 43, 0.25);
+  --pk-tabs-list-bg: rgba(255, 255, 255, 0.02);
+  --pk-minimal-btn-border: rgba(255, 255, 255, 0.14);
+  --pk-minimal-btn-bg: rgba(255, 255, 255, 0.025);
+  --pk-minimal-btn-border-hover: rgba(255, 255, 255, 0.35);
+  --pk-minimal-btn-bg-hover: rgba(255, 255, 255, 0.06);
+  --pk-feature-card-hover-shadow:
+    0 0 0 1px rgba(255, 92, 43, 0.08),
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --pk-step-hover-border: rgba(255, 255, 255, 0.12);
+
+  --pk-shadow-base: none;
+  --pk-header-shadow: none;
+  --pk-active-link-bg: var(--pk-gradient-subtle);
+  --pk-active-link-color: var(--sl-color-accent);
+
+  --pk-sidebar-link-hover: rgba(255, 255, 255, 0.04);
+  --pk-blockquote-bg: rgba(255, 255, 255, 0.03);
+  --pk-img-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 8px 32px rgba(0, 0, 0, 0.15);
 
   color-scheme: dark;
 }
@@ -64,7 +188,7 @@ html {
 }
 
 body {
-  background: var(--sl-color-black) !important;
+  background: var(--pk-body-bg) !important;
 }
 
 /* Ambient glow orbs — light source behind glass elements */
@@ -82,7 +206,7 @@ body::before {
   left: -15%;
   width: 50vw;
   height: 50vh;
-  background: radial-gradient(circle, rgba(255, 92, 43, 0.055) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--pk-orb-1-color) 0%, transparent 70%);
 }
 
 body::after {
@@ -90,7 +214,7 @@ body::after {
   right: -15%;
   width: 55vw;
   height: 55vh;
-  background: radial-gradient(circle, rgba(233, 30, 99, 0.035) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--pk-orb-2-color) 0%, transparent 70%);
 }
 
 /* ===== SCROLLBAR ===== */
@@ -105,28 +229,29 @@ body::after {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--pk-scrollbar-thumb);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--pk-scrollbar-thumb-hover);
 }
 
 /* ===== SELECTION ===== */
 
 ::selection {
-  background: rgba(255, 92, 43, 0.3);
+  background: var(--pk-selection-bg);
   color: var(--sl-color-white);
 }
 
 /* ===== HEADER / TOP NAV ===== */
 
 header.header {
-  background: rgba(10, 9, 8, 0.78) !important;
+  background: var(--pk-header-bg) !important;
   backdrop-filter: blur(24px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
   border-bottom: 1px solid var(--pk-glass-border) !important;
+  box-shadow: var(--pk-header-shadow) !important;
 }
 
 /* Site title — gradient brand treatment */
@@ -158,7 +283,7 @@ nav.sidebar {
 }
 
 .sidebar-pane {
-  background: rgba(10, 9, 8, 0.35) !important;
+  background: var(--pk-sidebar-pane-bg) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border-inline-end: 1px solid var(--pk-glass-border) !important;
@@ -169,6 +294,7 @@ nav.sidebar {
   background: var(--pk-glass-bg);
   border: 1px solid var(--pk-glass-border);
   border-radius: var(--pk-radius);
+  box-shadow: var(--pk-shadow-base);
   padding: 0.5rem 0.6rem;
   margin-bottom: 0.5rem;
   transition: var(--pk-transition);
@@ -199,8 +325,8 @@ nav.sidebar {
 /* Active page indicator */
 [aria-current='page'],
 [aria-current='page']:hover {
-  background: var(--pk-gradient-subtle) !important;
-  color: var(--sl-color-accent-high) !important;
+  background: var(--pk-active-link-bg) !important;
+  color: var(--pk-active-link-color) !important;
   font-weight: 600;
 }
 
@@ -232,14 +358,16 @@ nav.sidebar {
 
 /* Horizontal rules */
 .sl-markdown-content hr {
-  border-color: var(--pk-glass-border);
+  border: none;
+  border-top: 1px solid var(--pk-hr-color);
+  margin: 2rem 0;
 }
 
 /* Links */
 .sl-markdown-content a:not([class]) {
   color: var(--sl-color-accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(255, 92, 43, 0.25);
+  border-bottom: 1px solid var(--pk-link-underline);
   transition: var(--pk-transition);
 }
 
@@ -250,12 +378,12 @@ nav.sidebar {
 
 /* Inline code */
 .sl-markdown-content :not(pre) > code {
-  background: rgba(255, 92, 43, 0.07) !important;
-  border: 1px solid rgba(255, 92, 43, 0.1);
+  background: var(--pk-inline-code-bg) !important;
+  border: 1px solid var(--pk-inline-code-border);
   border-radius: 6px;
   padding: 0.12em 0.35em;
   font-size: 0.88em;
-  color: var(--sl-color-accent-high);
+  color: var(--pk-inline-code-color);
 }
 
 /* ===== CARDS (Starlight <Card> / <CardGrid>) ===== */
@@ -266,6 +394,7 @@ nav.sidebar {
   -webkit-backdrop-filter: var(--pk-glass-blur) !important;
   border: 1px solid var(--pk-glass-border) !important;
   border-radius: var(--pk-radius) !important;
+  box-shadow: var(--pk-shadow-base) !important;
   transition: var(--pk-transition) !important;
   position: relative;
   overflow: hidden;
@@ -312,6 +441,7 @@ nav.sidebar {
   -webkit-backdrop-filter: var(--pk-glass-blur) !important;
   border: 1px solid var(--pk-glass-border) !important;
   border-radius: var(--pk-radius) !important;
+  box-shadow: var(--pk-shadow-base) !important;
   transition: var(--pk-transition) !important;
   position: relative;
   overflow: hidden;
@@ -354,12 +484,12 @@ nav.sidebar {
 }
 
 .expressive-code pre {
-  background: rgba(12, 11, 10, 0.85) !important;
+  background: var(--pk-code-pre-bg) !important;
   backdrop-filter: blur(8px);
 }
 
 .expressive-code .header {
-  background: rgba(255, 255, 255, 0.025) !important;
+  background: var(--pk-code-header-bg) !important;
   border-bottom: 1px solid var(--pk-glass-border) !important;
 }
 
@@ -401,35 +531,55 @@ nav.sidebar {
 }
 
 /* ===== TABLES ===== */
+/* border-collapse: separate + border-spacing: 0 is the only combination that
+   supports both border-radius (rounded corners) and overflow: hidden clipping.
+   border-collapse: collapse ignores border-radius on the table element. */
 
 .sl-markdown-content table {
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 1px solid var(--pk-glass-border);
-  border-radius: var(--pk-radius);
-  overflow: hidden;
-  width: 100%;
+  display: table !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  max-width: 100%;
+  margin: 1.5rem 0 !important;
+  border: 1px solid var(--pk-table-divider) !important;
+  border-radius: var(--pk-radius) !important;
+  overflow: hidden !important;
 }
 
-.sl-markdown-content th {
-  background: rgba(255, 255, 255, 0.035);
-  font-weight: 600;
-  color: var(--sl-color-white);
-  text-align: left;
+/* All cells: right + bottom borders only (avoids double borders with separate) */
+.sl-markdown-content table th,
+.sl-markdown-content table td {
+  border-right: 1px solid var(--pk-table-divider) !important;
+  border-bottom: 1px solid var(--pk-table-divider) !important;
+  padding: 0.65rem 1rem !important;
+  text-align: left !important;
 }
 
-.sl-markdown-content td,
-.sl-markdown-content th {
-  border-color: var(--pk-glass-border);
-  padding: 0.65rem 1rem;
+/* Last column: no right border (table outer border covers it) */
+.sl-markdown-content table th:last-child,
+.sl-markdown-content table td:last-child {
+  border-right: none !important;
 }
 
-.sl-markdown-content tbody tr {
+/* Last row: no bottom border (table outer border covers it) */
+.sl-markdown-content table tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+.sl-markdown-content table th {
+  background: var(--pk-table-header-bg) !important;
+  font-weight: 600 !important;
+  color: var(--sl-color-white) !important;
+  border-bottom: 2px solid var(--pk-table-divider) !important;
+}
+
+.sl-markdown-content table tbody tr {
   transition: background 0.15s ease;
 }
 
-.sl-markdown-content tbody tr:hover td {
-  background: rgba(255, 255, 255, 0.018);
+.sl-markdown-content table tbody tr:hover td {
+  background: var(--pk-table-row-hover) !important;
 }
 
 /* ===== TABS (Starlight <Tabs>) ===== */
@@ -441,7 +591,7 @@ starlight-tabs {
 }
 
 starlight-tabs [role='tablist'] {
-  background: rgba(255, 255, 255, 0.02) !important;
+  background: var(--pk-tabs-list-bg) !important;
   border-bottom: 1px solid var(--pk-glass-border) !important;
 }
 
@@ -482,19 +632,19 @@ a[data-type='primary']:hover {
 /* Minimal / secondary */
 .hero .action.minimal,
 a[data-type='minimal'] {
-  border: 1.5px solid rgba(255, 255, 255, 0.14) !important;
+  border: 1.5px solid var(--pk-minimal-btn-border) !important;
   border-radius: 10px !important;
   padding: 0.7rem 1.5rem !important;
   backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.025) !important;
+  background: var(--pk-minimal-btn-bg) !important;
   transition: var(--pk-transition);
   text-decoration: none !important;
 }
 
 .hero .action.minimal:hover,
 a[data-type='minimal']:hover {
-  border-color: rgba(255, 255, 255, 0.35) !important;
-  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: var(--pk-minimal-btn-border-hover) !important;
+  background: var(--pk-minimal-btn-bg-hover) !important;
   transform: translateY(-1px);
 }
 
@@ -520,6 +670,7 @@ starlight-toc a[aria-current='true'] {
   background: var(--pk-glass-bg) !important;
   border: 1px solid var(--pk-glass-border) !important;
   border-radius: var(--pk-radius) !important;
+  box-shadow: var(--pk-shadow-base) !important;
   transition: var(--pk-transition) !important;
   backdrop-filter: var(--pk-glass-blur);
 }
@@ -621,10 +772,7 @@ starlight-toc a[aria-current='true'] {
   background: var(--pk-glass-bg-hover);
   border-color: var(--pk-glass-border-hover);
   transform: translateY(-3px);
-  box-shadow:
-    0 0 0 1px rgba(255, 92, 43, 0.08),
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow: var(--pk-feature-card-hover-shadow);
 }
 
 .feature-card:hover::before {
@@ -669,7 +817,7 @@ starlight-toc a[aria-current='true'] {
 
 .step-card:hover {
   background: var(--pk-glass-bg-hover);
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--pk-step-hover-border);
   transform: translateY(-2px);
 }
 
@@ -757,6 +905,19 @@ starlight-toc a[aria-current='true'] {
   border: 1px solid rgba(233, 30, 99, 0.2);
 }
 
+/* ===== SMOOTH THEME TRANSITIONS ===== */
+/* Aplican solo a contenedores que no tienen hover animation */
+
+body,
+.sidebar-pane,
+.main-frame {
+  transition: background-color 0.25s ease;
+}
+
+header.header {
+  transition: background-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+
 /* ===== ANIMATIONS ===== */
 
 @keyframes fadeInUp {
@@ -781,6 +942,89 @@ starlight-toc a[aria-current='true'] {
 .landing-section:nth-of-type(1) { animation-delay: 0.1s; }
 .landing-section:nth-of-type(2) { animation-delay: 0.2s; }
 .landing-section:nth-of-type(3) { animation-delay: 0.3s; }
+
+/* ===== CONTENT TYPOGRAPHY REFINEMENTS ===== */
+
+/* Paragraphs — slightly more generous line height */
+.sl-markdown-content p {
+  line-height: 1.78;
+}
+
+/* Bold — inherit white/dark so it pops from body text */
+.sl-markdown-content strong {
+  color: var(--sl-color-white);
+  font-weight: 700;
+}
+
+/* Blockquotes — accent left border + glass bg */
+.sl-markdown-content blockquote {
+  border-inline-start: 3px solid var(--sl-color-accent);
+  background: var(--pk-blockquote-bg);
+  backdrop-filter: var(--pk-glass-blur);
+  border-radius: 0 var(--pk-radius-sm) var(--pk-radius-sm) 0;
+  padding: 0.85rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--sl-color-gray-2);
+  font-style: italic;
+}
+
+/* List markers — accent color */
+.sl-markdown-content ul li::marker {
+  color: var(--sl-color-accent);
+}
+
+.sl-markdown-content ol li::marker {
+  color: var(--sl-color-accent);
+  font-weight: 600;
+}
+
+/* List spacing */
+.sl-markdown-content li {
+  margin-bottom: 0.3rem;
+}
+
+/* Keyboard shortcut <kbd> */
+.sl-markdown-content kbd {
+  background: var(--pk-glass-bg);
+  border: 1px solid var(--pk-glass-border);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  padding: 0.1em 0.4em;
+  font-family: var(--sl-font-mono);
+  font-size: 0.8em;
+  color: var(--sl-color-white);
+  white-space: nowrap;
+}
+
+/* ===== IMAGES ===== */
+
+.sl-markdown-content img {
+  border-radius: var(--pk-radius);
+  border: 1px solid var(--pk-glass-border);
+  box-shadow: var(--pk-img-shadow);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.75rem auto;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.sl-markdown-content img:hover {
+  border-color: var(--pk-glass-border-hover);
+  box-shadow: var(--pk-shadow-card);
+}
+
+/* ===== SIDEBAR HOVER ===== */
+
+.sidebar-content a:hover:not([aria-current='page']) {
+  background: var(--pk-sidebar-link-hover);
+}
+
+/* ===== TABLE OF CONTENTS — active highlight ===== */
+
+starlight-toc a[aria-current='true'] {
+  background: var(--pk-active-link-bg);
+}
 
 /* ===== RESPONSIVE ===== */
 

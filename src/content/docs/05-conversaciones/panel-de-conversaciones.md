@@ -108,3 +108,17 @@ Todas aparecen en la lista. El agente de IA atiende todas en paralelo de forma a
 **¿Puedo resolver una conversación mientras el agente sigue activo?**
 
 Sí. Marcar una conversación como resuelta la mueve fuera de la vista de activas. Si el cliente vuelve a escribir, la conversación se reactiva automáticamente.
+
+---
+
+## Panel de Mensajes vs. Bandeja de Mensajes
+
+| | Panel de Mensajes | Bandeja de Mensajes |
+|--|-------------------|---------------------|
+| **¿Qué muestra?** | Todas las conversaciones de la organización | Solo las conversaciones asignadas a ti |
+| **¿Para quién?** | Supervisores y administradores | Agentes de atención humana |
+| **Uso principal** | Monitoreo general, filtros, auditoría | Atender y responder conversaciones propias |
+
+:::tip[Tip]
+Si eres parte del equipo de atención, trabaja desde la **Bandeja** para enfocarte solo en tus casos. Usa el **Panel** cuando necesites ver el estado general de todas las conversaciones.
+:::
