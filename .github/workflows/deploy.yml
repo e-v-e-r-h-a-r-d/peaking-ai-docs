@@ -8,6 +8,12 @@ on:
 
   workflow_dispatch:
 
+# Fuerza a Node 24 cualquier action JS que aún empaquete Node 20
+# (configure-pages, upload-pages-artifact, deploy-pages todavía no tienen
+# release nativo en Node 24). Quitar cuando todas publiquen versión Node 24.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: read
   pages: write
@@ -23,10 +29,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "22"
           cache: npm
