@@ -29,7 +29,7 @@ Conecta tu cuenta de Stripe para que el agente de IA pueda generar links de pago
 
 ### Cómo conectar Stripe
 
-1. Ve a **Configuración › Integraciones › Herramientas**.
+1. Ve a **Integraciones › Herramientas**.
 2. Localiza la tarjeta de **Stripe Connect**.
 3. En **Tipo de Cuenta**, selecciona **OAuth (Recomendado)** para conectar tu cuenta existente de forma segura.
 4. Haz clic en **Conectar con OAuth**.
@@ -52,7 +52,7 @@ Go HighLevel es un CRM completo. Con la integración, el agente puede gestionar 
 
 ### Cómo conectar Go HighLevel
 
-1. Ve a **Configuración › Integraciones › Herramientas**.
+1. Ve a **Integraciones › Herramientas**.
 2. Localiza la tarjeta de **Go HighLevel** (etiquetada como CRM).
 3. Haz clic en **Conectar Go HighLevel**.
 4. Serás redirigido para autorizar el acceso desde tu cuenta de Go HighLevel.
@@ -80,7 +80,7 @@ el pipeline con el valor estimado y la etapa "Interesado".
 
 ### Cómo conectar HubSpot
 
-1. Ve a **Configuración › Integraciones › Herramientas**.
+1. Ve a **Integraciones › Herramientas**.
 2. Haz clic en **+ Añadir Integración**.
 3. Selecciona **HubSpot** del listado de tipos de integración disponibles.
 4. Ingresa tu **API Key** de HubSpot y el **Account Identifier**.
@@ -111,7 +111,7 @@ Instrúyele al agente que consulte si el contacto ya existe en HubSpot antes de 
 
 ### Cómo conectar Odoo
 
-1. Ve a **Configuración › Integraciones › Herramientas › + Añadir Integración**.
+1. Ve a **Integraciones › Herramientas › + Añadir Integración**.
 2. Selecciona **Odoo** como tipo de integración.
 3. Ingresa la **API Key de Odoo** (la encuentras en Odoo › Configuración › Usuarios › tu usuario › API Keys).
 4. En **API URL**, ingresa la URL de tu instancia (ej. `https://miempresa.odoo.com`).
@@ -138,7 +138,7 @@ Cuando el cliente solicite una cotización, usa la herramienta Odoo para:
 
 ### Cómo conectar Zoho CRM
 
-1. Ve a **Configuración › Integraciones › Herramientas › + Añadir Integración**.
+1. Ve a **Integraciones › Herramientas › + Añadir Integración**.
 2. Selecciona **Zoho CRM** como tipo de integración.
 3. Ingresa tu **API Key** y el identificador de tu cuenta de Zoho.
 4. Haz clic en **Crear Integración**.
@@ -151,7 +151,7 @@ Si tu herramienta no está en la lista de conectores nativos, puedes crear una *
 
 ### Cómo agregar una integración personalizada
 
-1. Ve a **Configuración › Integraciones › Herramientas**.
+1. Ve a **Integraciones › Herramientas**.
 2. Desplázate hasta la sección **Integraciones Personalizadas** y haz clic en **+ Añadir Integración**.
 3. Completa el formulario:
 
@@ -166,6 +166,8 @@ Si tu herramienta no está en la lista de conectores nativos, puedes crear una *
 | **Descripción** *(opcional)* | Describe qué hace esta integración para documentación interna |
 
 4. Haz clic en **Crear Integración**.
+
+![Panel de Integraciones Personalizadas con formulario de configuración de API](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/integraciones-personalizados.png)
 
 Una vez creada, la integración aparecerá en la lista de herramientas disponibles para declarar en el Estudio de Prompts.
 
@@ -199,4 +201,4 @@ No automáticamente. Peaking opera en tiempo real — el agente lee y escribe da
 
 **¿Cómo sé si una integración está funcionando correctamente?**
 
-En **Configuración › Integraciones › Herramientas** cada tarjeta muestra el estado (Conectado / No Conectado) y el botón para desconectar si es necesario.
+En **Integraciones › Herramientas** cada tarjeta muestra el estado (Conectado / No Conectado) y el botón para desconectar si es necesario.

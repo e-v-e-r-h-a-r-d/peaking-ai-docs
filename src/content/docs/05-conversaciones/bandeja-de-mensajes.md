@@ -7,6 +7,8 @@ sidebar:
 
 La **Bandeja de Mensajes** es la vista personal de cada miembro del equipo — el lugar donde aparecen las conversaciones que le han sido asignadas y las que requieren su atención directa. Mientras el Panel de Conversaciones muestra el panorama completo de la organización, la Bandeja filtra solo lo que es relevante para cada usuario.
 
+![Bandeja de Mensajes con conversaciones por atender, incluyendo leads y escalados](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-bandeja.png)
+
 ---
 
 ## Acceder a la Bandeja

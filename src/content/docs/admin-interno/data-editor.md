@@ -2,7 +2,6 @@
 title: Data Editor
 description: Herramienta de edición directa de datos en la base de datos de Peaking.
 sidebar:
-  hidden: true
   order: 3
 ---
 

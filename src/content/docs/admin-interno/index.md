@@ -2,7 +2,8 @@
 title: Command Center & Admin
 description: Panel de herramientas internas para el equipo de Peaking. No visible en la navegación pública del sitio.
 sidebar:
-  hidden: true
+  order: 0
+  label: 'Índice'
 ---
 
 :::caution[Sección interna — Solo equipo Peaking]

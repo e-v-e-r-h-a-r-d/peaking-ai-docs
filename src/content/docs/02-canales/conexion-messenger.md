@@ -17,9 +17,9 @@ Para conectar Messenger necesitas una **Página de Facebook** (no un perfil pers
 
 ### 1. Accede a la configuración de canales
 
-1. En el panel lateral izquierdo de Peaking, haz clic en **Configuración**.
-2. Selecciona la pestaña **Canales**.
-3. Haz clic en el canal **Messenger**.
+1. En el panel lateral izquierdo de Peaking, haz clic en **Integraciones**.
+2. Selecciona la pestaña **Canales de Mensajería**.
+3. Haz clic en **Facebook Messenger**.
 
 ### 2. Inicia la autenticación con Facebook
 

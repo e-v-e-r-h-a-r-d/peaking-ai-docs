@@ -24,7 +24,9 @@ Peaking Lab es una ventana de chat de prueba que:
 
 1. En el panel lateral izquierdo, haz clic en **Estudio de Prompts**.
 2. En la esquina inferior derecha de la pantalla verás un ícono de **matraz** (🧪).
-3. Haz clic en él — se abrirá el panel de **Peaking Lab**.
+3. Haz clic en él — se abrirá el panel de **Peaking Lab** sobre la Biblioteca de Prompts.
+
+![Panel de Peaking Lab abierto sobre la Biblioteca de Prompts](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/03-prompt-studio/prompt-studio-lab.png)
 
 ---
 
