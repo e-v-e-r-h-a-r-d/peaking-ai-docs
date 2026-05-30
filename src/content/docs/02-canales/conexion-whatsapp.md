@@ -25,9 +25,11 @@ Para conectar WhatsApp necesitas un **número de teléfono dedicado** que no est
 
 ### 1. Accede a la configuración de canales
 
-1. En el panel lateral izquierdo de Peaking, haz clic en **Configuración**.
-2. Selecciona la pestaña **Canales**.
-3. Haz clic en el canal **WhatsApp**.
+1. En el panel lateral izquierdo de Peaking, haz clic en **Integraciones**.
+2. Selecciona la pestaña **Canales de Mensajería**.
+3. Haz clic en el canal **WhatsApp Business**.
+
+![Panel de Integraciones mostrando el estado de conexión de WhatsApp, Instagram y Messenger](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/canal-wa-conectado.png)
 
 ### 2. Inicia la conexión con Meta
 

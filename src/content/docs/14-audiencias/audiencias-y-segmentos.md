@@ -90,7 +90,7 @@ Una vez guardada, la audiencia está disponible como destinatario al crear una C
 4. Configura el mensaje, plantilla y canal.
 5. Programa o envía la campaña.
 
-Consulta el artículo [Campañas y broadcasts](/06-crm-audiencias/campanas-y-broadcasts/) para los detalles de envío.
+Consulta el artículo [Campañas y broadcasts](/14-audiencias/campanas-y-broadcasts/) para los detalles de envío.
 
 ---
 

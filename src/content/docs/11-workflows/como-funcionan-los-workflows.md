@@ -20,7 +20,7 @@ La sección de Workflows está organizada en dos niveles:
 
 Para agregar un flow dentro de un proyecto, haz clic en **+ Add flow** bajo el nombre del proyecto.
 
-![Panel de Proyectos con múltiples flows](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-projects.png)
+![Panel de Proyectos con múltiples flows](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-proyects.png)
 
 :::tip[Cuándo crear múltiples flows]
 Si tienes WhatsApp y Messenger activos, puedes tener un flow por canal. Esto te permite personalizar el comportamiento de cada canal por separado sin mezclar lógica en un solo flujo.
@@ -41,6 +41,8 @@ Al abrir un flow, verás el **canvas** — un espacio infinito donde conectas lo
 | 🌐 Webhook | Llama a una URL externa |
 | ⏱ Delay | Pausa el flujo por un tiempo definido |
 | 🔍 Contact Lookup | Busca un contacto en la base de datos |
+| 📞 Voice Agent | Inicia o recibe una llamada de voz con un agente de IA |
+| ⚙ Manage Variables | Manipula variables del flujo: asignar, copiar o resetear valores |
 
 A la derecha de los íconos de nodos:
 
@@ -180,6 +182,57 @@ El nodo **Contact Lookup** busca un contacto en la base de datos de Peaking y ca
 | **Name** | Nombre del contacto |
 
 ![Configuración del nodo Contact Lookup con el dropdown de búsqueda](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-contact-lookup.png)
+
+---
+
+### Voice Agent
+
+El nodo **Voice Agent** conecta el flujo a un agente de IA de voz, permitiendo iniciar o recibir llamadas telefónicas como parte del workflow. Es el puente entre los flujos de mensajería y las llamadas gestionadas por la IA.
+
+**Configuración:**
+
+| Campo | Descripción |
+|-------|-------------|
+| **Etiqueta** | Nombre del nodo en el canvas |
+| **Voice Agent** | Selector del agente de voz configurado en Integraciones. El agente de voz define la voz, el prompt y el comportamiento de la llamada |
+| **Dirección** | **Inbound** (la llamada la inicia el cliente hacia tu negocio) · **Outbound** (el sistema llama al cliente) |
+| **Duración máxima (minutos)** | Tiempo máximo de la llamada. Por defecto: 10 minutos |
+| **Herramientas Disponibles** | Herramientas que el agente de voz puede usar durante la llamada: Tareas Peaking, Catálogo de Productos, Odoo, Peaking CRM |
+| **Variables a Recolectar** | Variables que el agente debe capturar durante la llamada (ej. `customer_id`, `motivo_llamada`). Si el campo está vacío, el agente puede guardar cualquier variable |
+
+![Configuración del nodo Voice Agent — agente, dirección y duración máxima](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-voice-agent.png)
+
+:::tip[Agentes de Voz en Integraciones]
+Los agentes de voz se crean y configuran en **Integraciones › Agentes de Voz**, no en el canvas. Desde el canvas solo seleccionas cuál usar. Crea primero el agente de voz antes de agregar este nodo al flow.
+:::
+
+---
+
+### Manage Variables
+
+El nodo **Manage Variables** manipula las variables del flujo de forma explícita: puedes asignar un valor fijo, copiar el valor de una variable a otra, o resetear (borrar) el valor de una variable.
+
+**Configuración:**
+
+| Campo | Descripción |
+|-------|-------------|
+| **Etiqueta** | Nombre del nodo |
+| **Operaciones** | Lista de operaciones a ejecutar. Cada operación tiene tres partes: tipo de operación (Custom/Resetear), nombre de la variable y el valor o acción |
+
+**Tipos de operación disponibles:**
+
+| Operación | Qué hace |
+|-----------|---------|
+| **Custom** | Asigna un valor específico a una variable (ej. `tipo = premium`) |
+| **Resetear** | Borra el valor de una variable, dejándola vacía o en su estado por defecto |
+
+Haz clic en **+ Agregar operación** para añadir múltiples operaciones en un mismo nodo — todas se ejecutan en orden cuando el flujo pasa por él.
+
+![Configuración del nodo Manage Variables con operaciones de reset y custom](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-manage-variables.png)
+
+:::note[Cuándo usar Manage Variables]
+Úsalo después de una rama de Condition para "limpiar" variables de estado antes de reiniciar un tramo del flujo, o para forzar valores conocidos antes de un nodo Agent que depende de esas variables.
+:::
 
 ---
 

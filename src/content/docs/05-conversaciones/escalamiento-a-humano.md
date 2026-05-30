@@ -9,6 +9,19 @@ El **escalamiento** es el proceso mediante el cual una conversación pasa del ag
 
 ---
 
+## Cómo se configura el criterio de escalamiento
+
+El criterio que define cuándo el agente escala se configura en el **Estudio de Prompts**, dentro de cada prompt. Encontrarás la sección **Escalación a humano** con un campo de criterio personalizado.
+
+- Si lo dejas vacío, aplica el comportamiento por defecto: "escalar si el usuario pide explícitamente hablar con un humano o la consulta es muy compleja o sensible".
+- Puedes personalizarlo para que el agente escale en situaciones específicas de tu negocio.
+
+Haz clic en **Guardar criterio** después de editarlo.
+
+![Sección de Auto-tagging y criterio de Escalación en la configuración del Prompt Studio](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/escalamiento-a-humano.png)
+
+---
+
 ## Cuándo ocurre el escalamiento
 
 El escalamiento puede ocurrirse de tres maneras:

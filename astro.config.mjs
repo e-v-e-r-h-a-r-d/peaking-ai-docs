@@ -131,7 +131,11 @@ export default defineConfig({
 					label: 'Conecta tus canales',
 					autogenerate: { directory: '02-canales' },
 				},
-				// admin-interno: NO incluido aquí — oculto con sidebar.hidden: true en cada página
+				{
+					label: '🔒 Interno',
+					collapsed: true,
+					autogenerate: { directory: 'admin-interno' },
+				},
 			],
 		}),
 	],

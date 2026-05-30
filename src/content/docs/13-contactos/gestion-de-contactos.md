@@ -21,6 +21,8 @@ Al hacer clic en **Contactos** en el panel lateral verás tres métricas en la p
 
 Debajo, la **barra de búsqueda** permite encontrar contactos por nombre, email o teléfono en tiempo real.
 
+![Panel principal de Contactos con KPIs y tabla de contactos](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/13-contactos/panel-contactos.png)
+
 ### Tabla de contactos
 
 | Columna | Descripción |
@@ -37,17 +39,19 @@ Haz clic en los tres puntos (⋮) al final de cada fila para acceder a acciones 
 
 ## Detalle de un contacto
 
-Al hacer clic en cualquier contacto se abre su ficha completa. En la parte superior verás el nombre, email y el botón **Editar**.
+Al hacer clic en cualquier contacto se abre su ficha completa. En la parte superior verás el nombre, email y el botón **Editar**. Desde aquí también puedes **Enviar plantilla** directamente al contacto o **Agregar a audiencia**.
 
 ### Pestañas del historial
 
 | Pestaña | Contenido |
 |---------|-----------|
-| **Oportunidades** | Oportunidades de venta vinculadas a este contacto en el CRM |
 | **Conversaciones** | Historial de todos los chats en cualquier canal |
-| **Carritos** | Carritos de compra activos o abandonados |
+| **Oportunidades** | Oportunidades de venta vinculadas a este contacto en el CRM |
+| **Cotizaciones** | Cotizaciones generadas para este contacto |
 | **Órdenes** | Órdenes de compra completadas o en proceso |
-| **Time Blocks** | Bloques de tiempo o citas agendadas |
+| **Tareas** | TODOs y tareas de seguimiento asociadas a este contacto |
+
+![Ficha de contacto con pestañas de historial y acciones](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/13-contactos/carta-contacto.png)
 
 ### Campos del contacto
 
@@ -80,6 +84,8 @@ Las etiquetas asignadas al contacto aparecen al final de la ficha como chips de 
 
 **Dirección**
 - Calle · Calle 2 · Ciudad · Código Postal
+
+![Formulario de nuevo contacto con campos de información básica y dirección](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/13-contactos/nuevo-contacto.png)
 
 3. Haz clic en **Crear**.
 
@@ -120,6 +126,8 @@ Haz clic en **Gestionar Etiquetas** (esquina superior derecha del panel). Desde 
 - **Ver** todas las etiquetas existentes con su color asignado.
 - **Eliminar** las que ya no uses.
 
+![Panel de gestión de etiquetas de contactos](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/13-contactos/gestion-etiquetas-contactos.png)
+
 Los colores disponibles van de neutros (gris, blanco) a tonos pastel (lila, verde, amarillo, rosa, azul, morado, rojo, durazno, menta).
 
 ### Asignar etiquetas a un contacto
@@ -139,6 +147,22 @@ Las etiquetas aparecen como chips de color debajo del nombre del contacto en la 
 | `proveedor` | Proveedores del negocio |
 | `Interno` | Contactos del propio equipo |
 | `Popular` | Clientes de alto volumen o frecuentes |
+
+---
+
+## Cómo se crean los contactos automáticamente
+
+Cada vez que alguien escribe a un canal conectado de Peaking — WhatsApp, Instagram, Messenger o Widget — el sistema crea un contacto automáticamente con el número de teléfono o identificador del canal. No necesitas hacer nada manual.
+
+El agente de IA también **recopila datos durante la conversación** (nombre, email, RFC, preferencias) y los asocia al contacto en tiempo real. Esto garantiza que todo lo que el cliente diga quede vinculado a su perfil para futuras interacciones.
+
+### Contexto del Lead en el Panel de Conversaciones
+
+Cuando abres una conversación en el Panel de Mensajes, el panel derecho muestra el **Contexto del Lead** — el perfil del contacto vinculado a esa conversación. Si la conversación aún no tiene un contacto vinculado, verás el botón **Crear contacto**, que te permite crearlo directamente desde el hilo sin salir del Panel de Mensajes.
+
+:::tip[Vincula siempre un contacto]
+Vincular un contacto a la conversación activa el resumen de IA — el agente puede tomar en cuenta el historial y el perfil completo del cliente para dar respuestas más coherentes y personalizadas.
+:::
 
 ---
 

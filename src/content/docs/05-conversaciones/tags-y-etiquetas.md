@@ -39,9 +39,14 @@ Un sistema de 5–8 tags bien definidos es más poderoso que una lista de 30 que
 ## Cómo aplicar un tag a una conversación
 
 1. Abre la conversación en el Panel de Conversaciones.
-2. En el panel lateral derecho (o menú de opciones de la conversación), busca la sección **Tags**.
-3. Haz clic en el campo de tags y selecciona el o los tags que aplican.
-4. El tag queda guardado de inmediato y aparece visible en la lista de conversaciones.
+2. Haz clic en el ícono de etiqueta (🏷) en la fila de la conversación o en el menú de opciones dentro del hilo.
+3. Se abre el panel de **Gestionar Etiquetas de Conversación**.
+4. Selecciona el tag usando el campo de búsqueda o elige de la lista de **Etiquetas Populares** o **Usadas Recientemente**.
+5. El tag queda guardado de inmediato y aparece visible en la lista de conversaciones.
+
+Desde el mismo panel puedes también hacer clic en **Convertir a Lead** para registrar la conversación como una oportunidad en el CRM.
+
+![Panel de Gestionar Etiquetas de Conversación con etiquetas populares y opción Lead Conversion](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/gestion-etiquetas-conversacion.png)
 
 Una conversación puede tener **múltiples tags** simultáneamente.
 
@@ -80,7 +85,7 @@ Para que los datos de Analytics sean confiables, el equipo debe aplicar los tags
 
 **¿El agente de IA puede aplicar tags automáticamente?**
 
-No de forma nativa desde el panel de tags. Sin embargo, puedes instruir al agente en el prompt para que identifique el tipo de consulta, y luego un miembro del equipo aplica el tag correspondiente durante la revisión.
+Sí — mediante la función **Auto-tagging** del Estudio de Prompts. Dentro de cada prompt puedes configurar una regla en lenguaje natural (ej. "cuando el cliente mencione un problema con su envío") y la IA aplicará la etiqueta correspondiente de forma automática cuando la conversación cumpla ese criterio. Consulta la sección de [Auto-tagging en el Estudio de Prompts](/03-prompt-studio/crea-tu-primer-prompt/#configuración-avanzada-auto-tagging-y-escalación) para más detalles.
 
 **¿Hay un límite de tags por conversación?**
 
