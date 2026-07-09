@@ -132,6 +132,10 @@ export default defineConfig({
 					autogenerate: { directory: '02-canales' },
 				},
 				{
+					label: 'Guía para Devs',
+					autogenerate: { directory: '16-guia-devs' },
+				},
+				{
 					label: '🔒 Interno',
 					collapsed: true,
 					autogenerate: { directory: 'admin-interno' },
