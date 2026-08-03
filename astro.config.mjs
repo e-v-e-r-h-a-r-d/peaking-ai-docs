@@ -144,6 +144,10 @@ export default defineConfig({
 					autogenerate: { directory: '17-soporte' },
 				},
 				{
+					label: 'How To',
+					autogenerate: { directory: '18-how-to' },
+				},
+				{
 					label: '🔒 Interno',
 					collapsed: true,
 					autogenerate: { directory: 'admin-interno' },
