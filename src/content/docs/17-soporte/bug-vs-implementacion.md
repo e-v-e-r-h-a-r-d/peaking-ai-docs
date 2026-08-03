@@ -92,4 +92,8 @@ Nuestro equipo siempre te responderá con honestidad sobre qué tipo de caso es 
 
 ## Contactar al equipo de soporte
 
-Para reportar un bug o consultar sobre una solicitud de implementación, contáctanos a través de nuestro portal de soporte oficial. Nuestro equipo te responderá lo antes posible con los próximos pasos.
+Para reportar un bug o consultar sobre una solicitud de implementación, usa nuestro portal de soporte oficial:
+
+**[Abrir portal de soporte →](https://peakingai.odoo.com/helpdesk/atencion-al-cliente-1)**
+
+Nuestro equipo te responderá lo antes posible con los próximos pasos.
