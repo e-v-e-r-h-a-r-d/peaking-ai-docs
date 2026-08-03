@@ -17,45 +17,34 @@ En el panel lateral izquierdo, haz clic en **Base de Conocimientos**.
 
 ### Paso 2 — Haz clic en "+ Añadir Documento"
 
-El botón azul **+ Añadir Documento** está en la esquina superior derecha. Al hacer clic se abrirá el formulario de creación.
+El botón naranja **+ Añadir Documento** está en la esquina superior derecha. Al hacer clic se abrirá el formulario de creación.
 
-### Paso 3 — Elige el tipo de documento
+![Modal Crear Nuevo Documento con campos de título, estado, categorías y editor de contenido](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/crear-nuevo-documento-kb.png)
 
-Selecciona el tipo de contenido que vas a agregar. Cada tipo tiene su propio formato de entrada:
+### Paso 3 — Completa el formulario
 
-| Tipo | Cuándo usarlo | Cómo se ingresa |
-|------|---------------|-----------------|
-| **Preguntas y Respuestas** | Preguntas frecuentes con su respuesta exacta | Campo de pregunta + campo de respuesta |
-| **Guía de Productos** | Fichas de producto con nombre, descripción, precio y SKU | Formulario estructurado por producto |
-| **Documento de texto** | Políticas, procedimientos, guías o cualquier texto libre | Editor de texto libre |
-| **URL** | Páginas web públicas de tu negocio (sitio web, menú, catálogo online) | Campo de URL — Peaking extrae el contenido automáticamente |
+| Campo | Descripción |
+|-------|-------------|
+| **Title** | Nombre del documento — úsalo para identificarlo fácilmente en la lista |
+| **Status** | Estado inicial: **Active** (disponible para el agente inmediatamente) o **Borrador** (en revisión) |
+| **Categories** | Organiza el documento en una categoría temática (ej. Productos, Políticas, FAQ). Escribe el nombre y presiona **+** para crearla |
 
-:::tip[Preguntas y Respuestas es el tipo más efectivo]
-Para información que recibes frecuentemente (preguntas sobre precios, horarios, políticas), el formato **Preguntas y Respuestas** produce los mejores resultados porque el agente puede mapear directamente la pregunta del cliente con la respuesta correcta.
+### Paso 4 — Elige el modo de contenido
+
+El formulario tiene dos modos:
+
+| Modo | Cuándo usarlo |
+|------|---------------|
+| **Text Editor** | Escribe o pega el contenido directamente en el editor enriquecido (negrita, listas, código, links) |
+| **File Upload** | Sube un archivo PDF, Word u otro documento — Peaking extrae el contenido automáticamente |
+
+:::tip[Texto directo = mejores respuestas]
+El **Text Editor** produce los mejores resultados porque el agente puede buscar fragmentos exactos. El File Upload es útil para documentos extensos que ya tienes listos, pero el texto estructurado y directo siempre es preferible para FAQs, políticas y catálogos.
 :::
 
-### Paso 4 — Completa el contenido
+### Paso 5 — Guarda el documento
 
-Rellena los campos según el tipo de documento elegido. Sé específico y usa el mismo vocabulario que usan tus clientes cuando preguntan. Cuanto más claro y directo sea el texto, mejores serán las respuestas del agente.
-
-### Paso 5 — Asigna una categoría
-
-Las **categorías** te ayudan a organizar tu Base de Conocimientos a medida que crece. Puedes crear categorías como: *Productos*, *Preguntas Frecuentes*, *Políticas*, *Servicios*, *Horarios*, etc.
-
-Si no asignas una categoría, el documento quedará en **All Documents**.
-
-### Paso 6 — Define el estado
-
-Elige si el documento debe estar disponible para el agente de inmediato o guardarlo como borrador:
-
-| Estado | Cuándo usarlo |
-|--------|---------------|
-| **Activo** | El documento está listo y quieres que el agente lo use de inmediato |
-| **Borrador** | El contenido todavía está en revisión — el agente no lo consulta |
-
-### Paso 7 — Guarda el documento
-
-Haz clic en **Guardar**. El documento aparecerá en la lista con el estado que definiste.
+Haz clic en **Create Document**. El documento aparecerá en la lista con el estado que definiste y el agente podrá usarlo de inmediato si está en estado **Active**.
 
 ---
 
@@ -113,7 +102,7 @@ El límite depende del plan de Peaking que tengas contratado. Consulta la secci�
 
 **¿Puedo subir un archivo PDF directamente?**
 
-El método principal para añadir contenido es a través de los tipos de documento disponibles en el formulario. Para documentos extensos en PDF, copia el contenido relevante en un documento de texto dentro de la Base de Conocimientos o usa la URL si el PDF está publicado en línea.
+Sí. En el formulario de creación, selecciona el modo **File Upload** y arrastra o selecciona tu PDF. Peaking extrae el contenido automáticamente. Para documentos extensos, considera también copiar el contenido clave en el **Text Editor** para mayor control sobre qué fragmentos consulta el agente.
 
 **¿Cuánto tiempo tarda el agente en usar un documento recién añadido?**
 
@@ -126,3 +115,37 @@ Sí. El agente puede consultar documentos en inglés y responder al cliente en e
 **¿Qué pasa si añado una URL que después cambia su contenido?**
 
 Peaking extrae el contenido en el momento en que añades la URL. Los cambios posteriores en la página no se reflejan automáticamente — tendrás que actualizar el documento manualmente o volver a añadir la URL.
+
+---
+
+## Agregar adjuntos
+
+Los **Adjuntos** son archivos (imágenes o PDFs) que el agente puede enviar al cliente directamente en el chat de WhatsApp — por ejemplo, una ficha técnica, un catálogo en PDF o una foto del producto.
+
+![Pestaña Adjuntos con un adjunto PNG de ejemplo y botón Agregar adjunto](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/adjuntos-kb.png)
+
+Para agregar un adjunto:
+
+1. Ve a **Base de Conocimientos** y selecciona la pestaña **Adjuntos**.
+2. Haz clic en **+ Agregar adjunto**.
+
+![Modal Agregar adjunto con zona de carga, campos Nombre, Descripción y Cuándo enviar](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/menu-subir-adjuntos-kb.png)
+
+3. Completa el formulario:
+
+| Campo | Descripción |
+|-------|-------------|
+| **Archivo** | Arrastra o selecciona el archivo (JPG, PNG, WEBP, GIF o PDF · máx. 50 MB) |
+| **Nombre** *(requerido)* | Identificador del adjunto — ej. "Frasco OBS pastillas" |
+| **Descripción** | Breve descripción del contenido del archivo |
+| **Cuándo enviar** *(requerido)* | Instrucción en lenguaje natural que le indica al agente cuándo enviar este archivo — ej. *"Cuando el cliente pregunte cómo se ve el frasco o pida foto del producto"* |
+
+4. Haz clic en **Guardar adjunto**.
+
+:::tip[La instrucción "Cuándo enviar" es la clave]
+El agente usa este campo para decidir si enviar o no el adjunto en cada conversación. Sé específico: en lugar de "cuando pregunte por el producto", escribe "cuando el cliente pida una foto, imagen o ficha del producto X".
+:::
+
+:::note[Solo WhatsApp]
+Los adjuntos solo funcionan en canales de **WhatsApp**. No están disponibles en Instagram, Messenger o el Widget.
+:::

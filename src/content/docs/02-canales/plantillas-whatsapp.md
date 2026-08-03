@@ -63,9 +63,11 @@ Una vez que tus plantillas estén aprobadas en Meta:
 3. Haz clic en **Sincronizar Plantillas** (botón en la esquina superior derecha de la pantalla).
 4. Peaking cargará automáticamente todas las plantillas aprobadas de tu cuenta de WABA.
 
-![Lista de Plantillas de WhatsApp sincronizadas con estado Aprobado](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/plantillas-wa-lista.png)
+![Panel de Plantillas de WhatsApp con filtros por idioma y categoría, mostrando plantilla aprobada](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/plantillas-whatsapp.png)
 
-La tabla muestra el nombre, idioma, categoría, estado (Aprobado / Pendiente / Rechazado) y fecha de actualización de cada plantilla. Desde la columna **Acciones** puedes previsualizar la plantilla (👁) o enviarla directamente (✈).
+La tabla muestra las columnas: **Nombre**, **Idioma** (badge con código de idioma, ej. `es_MX`), **Categoría** (MARKETING, UTILITY, AUTHENTICATION), **Estado** (Aprobado / Pendiente / Rechazado), **Actualizado** y **Acciones** — desde donde puedes previsualizar la plantilla (👁) o enviarla directamente (✈).
+
+Usa los filtros **Todos los idiomas** y **Todas las categorías** en la parte superior para encontrar plantillas específicas cuando tienes varias activas.
 
 ---
 

@@ -81,11 +81,37 @@ Para que los datos de Analytics sean confiables, el equipo debe aplicar los tags
 
 ---
 
+## Auto-tagging — etiquetas aplicadas automáticamente por la IA
+
+El **Auto-tagging** permite que el agente aplique etiquetas de forma automática cuando una conversación cumple un criterio definido en lenguaje natural, sin que ningún agente humano tenga que hacerlo manualmente.
+
+Las reglas de auto-tagging se configuran dentro del panel **Gestionar Etiquetas de Conversación**, en la sección **Auto-tagging**:
+
+![Panel Gestionar Etiquetas de Conversación mostrando la sección Auto-tagging con etiquetas configuradas y sus criterios](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/autotagging.png)
+
+Cada etiqueta de auto-tagging tiene:
+- **Nombre** — el tag que se aplicará (ej. "Cliente listo para comprar")
+- **Cuándo aplicar** — instrucción en lenguaje natural que la IA usa para decidir cuándo poner la etiqueta
+- **Toggle Activo** — puedes desactivar temporalmente una regla sin eliminarla
+
+**Ejemplos reales de criterios bien definidos:**
+- *"Aplicar cuando el cliente expresa intención clara y explícita de proceder con la compra (ej. 'lo quiero', 'envíenme la factura', 'procedan')"*
+- *"Aplicar cuando el cliente pide precios, cotización o presupuesto, aunque todavía no haya enviado la lista completa de ítems"*
+- *"Aplicar cuando faltan datos importantes (cantidades, modelo, especificaciones, dirección de entrega, RFC)"*
+
+:::tip[La instrucción define la precisión]
+Cuanto más específico sea el criterio, más preciso será el auto-tagging. Evita criterios vagos como "cuando hable de productos" — mejor usa "cuando el cliente pida el precio o disponibilidad de un producto específico por nombre o SKU".
+:::
+
+También puedes configurar las reglas de auto-tagging desde el **Estudio de Prompts**. Ver [Auto-tagging y Escalación en el Prompt Studio](/03-prompt-studio/crea-tu-primer-prompt/#configuración-avanzada-auto-tagging-y-escalación).
+
+---
+
 ## Preguntas frecuentes
 
 **¿El agente de IA puede aplicar tags automáticamente?**
 
-Sí — mediante la función **Auto-tagging** del Estudio de Prompts. Dentro de cada prompt puedes configurar una regla en lenguaje natural (ej. "cuando el cliente mencione un problema con su envío") y la IA aplicará la etiqueta correspondiente de forma automática cuando la conversación cumpla ese criterio. Consulta la sección de [Auto-tagging en el Estudio de Prompts](/03-prompt-studio/crea-tu-primer-prompt/#configuración-avanzada-auto-tagging-y-escalación) para más detalles.
+Sí — mediante la función **Auto-tagging**. Configura los criterios en el panel de **Gestionar Etiquetas de Conversación** (sección Auto-tagging) o desde el Estudio de Prompts. La IA aplica la etiqueta de forma automática cada vez que una conversación cumple el criterio definido.
 
 **¿Hay un límite de tags por conversación?**
 

@@ -33,17 +33,20 @@ El prompt define la personalidad, el tono y el objetivo del agente. La Base de C
 
 Para acceder: en el panel lateral izquierdo, haz clic en **Base de Conocimientos**.
 
-La pantalla está dividida en tres secciones:
+![Panel principal de la Base de Conocimientos con pestañas Documentos y Adjuntos, filtros de categoría y estado](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/panel-documentos-kb.png)
 
-### Barra de búsqueda
+La pantalla tiene dos pestañas principales en la parte superior: **Documentos** y **Adjuntos**.
 
-En la parte superior encontrarás un campo de búsqueda: **"Buscar por título, categoría o contenido..."**. Úsalo para encontrar documentos específicos cuando la biblioteca crece.
+### Pestaña Documentos
 
-### Panel izquierdo — Filtros
+La pestaña activa por defecto. Está dividida en tres áreas:
 
-**Categorías:** organiza tus documentos en grupos temáticos (por ejemplo: Productos, Políticas, Preguntas Frecuentes). La categoría **All Documents** siempre muestra todos los documentos sin importar la categoría.
+**Barra de búsqueda** — campo "Buscar por título, categoría o contenido..." para encontrar documentos específicos cuando la biblioteca crece.
 
-**Estado del Documento:** filtra por el estado actual de cada documento:
+**Panel izquierdo — Filtros:**
+
+- **Categorías:** organiza tus documentos en grupos temáticos (Productos, Políticas, Preguntas Frecuentes, etc.). La categoría **All Documents** muestra todos sin filtro.
+- **Estado del Documento:** filtra por el estado actual de cada documento:
 
 | Estado | Badge | Descripción |
 |--------|-------|-------------|
@@ -52,11 +55,21 @@ En la parte superior encontrarás un campo de búsqueda: **"Buscar por título, 
 | **Borradores** | Naranja "Borrador" | En edición, el agente no lo usa todavía |
 | **Archivado** | Gris "Archivado" | Desactivado, el agente no lo consulta |
 
-### Panel derecho — Documentos
+**Panel derecho — Documentos:** lista todos los documentos según los filtros activos. El contador en la esquina superior derecha muestra cuántos documentos hay en la vista actual.
 
-Lista todos los documentos según los filtros activos. Cuando la base está vacía muestra el mensaje: *"No se encontraron documentos. Haz clic en 'Añadir Documento' para crear tu primer documento."*
+### Pestaña Adjuntos
 
-El contador en la esquina superior derecha (**"0 documentos"**) muestra cuántos documentos hay en la categoría o filtro activo.
+![Pestaña Adjuntos con el banner explicativo y un adjunto PNG de ejemplo](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/adjuntos-kb.png)
+
+Los **Adjuntos** son archivos (imágenes o PDFs) que el agente puede enviar al cliente durante una conversación. A diferencia de los documentos de texto —que el agente consulta para formular respuestas—, los adjuntos se envían directamente como archivos adjuntos en el chat.
+
+:::note[Solo WhatsApp]
+Los adjuntos solo funcionan en conversaciones de **WhatsApp**. No están disponibles en Instagram, Messenger o el Widget.
+:::
+
+Los adjuntos están disponibles para **todos los agentes** de la organización. El agente decide cuándo enviarlos según el campo **"Cuándo enviar"** que configuras al subirlos.
+
+Consulta [Añadir y gestionar documentos](/04-base-conocimientos/subir-documentos-y-urls/) para ver cómo agregar adjuntos.
 
 ---
 

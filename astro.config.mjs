@@ -128,12 +128,20 @@ export default defineConfig({
 					autogenerate: { directory: '14-audiencias' },
 				},
 				{
+					label: 'Envíos WhatsApp',
+					autogenerate: { directory: '15-envios-whatsapp' },
+				},
+				{
 					label: 'Conecta tus canales',
 					autogenerate: { directory: '02-canales' },
 				},
 				{
 					label: 'Guía para Devs',
 					autogenerate: { directory: '16-guia-devs' },
+				},
+				{
+					label: 'Soporte',
+					autogenerate: { directory: '17-soporte' },
 				},
 				{
 					label: '🔒 Interno',
