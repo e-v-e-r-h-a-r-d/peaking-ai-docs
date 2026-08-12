@@ -24,19 +24,23 @@ Cada fila representa un envío masivo individual. Las columnas son:
 | Columna | Descripción |
 |---------|-------------|
 | **Fecha** | Cuándo se realizó el envío (fecha y hora exacta) |
-| **Plantilla** | Nombre de la plantilla usada e idioma (ej. `expotransporte_2026 · ES_MX`) |
+| **Plantilla** | Nombre de la plantilla usada e idioma (ej. `estancia_mayo · ES_MX`) |
 | **Status** | **Completado** (verde) · **Fallido** (rojo) |
-| **Destinatarios** | Formato `X / Y` — enviados exitosamente / total de destinatarios |
-| **Fallidos** | Número de contactos que no recibieron el mensaje (en naranja si hay fallos) |
+| **Entregados** | Formato `X / Y` — mensajes entregados / total de destinatarios |
+| **No entregados** | Número de contactos que no recibieron el mensaje |
 | **Acción** | 👁 vista previa · **Detalle** — abre el desglose contacto por contacto |
+
+:::note[El asterisco (*) marca datos históricos limitados]
+Los envíos realizados antes de julio de 2026 muestran un asterisco junto al número de **Entregados** (ej. `612* / 612`). Para esos envíos, el sistema solo registró cuántos mensajes **aceptó Meta**, no cuántos llegaron realmente — WhatsApp puede aceptar un mensaje y descartarlo después sin avisar. Los envíos posteriores a julio de 2026 reflejan la entrega real confirmada.
+:::
 
 ### Interpretar el status
 
-- **Completado** — el proceso de envío terminó. Puede haber fallidos individuales (revisa la columna Fallidos y el Detalle).
+- **Completado** — el proceso de envío terminó. Puede haber fallidos individuales (revisa la columna **No entregados** y el Detalle).
 - **Fallido** — el envío completo no pudo procesarse. Generalmente por un error de configuración o de la plantilla.
 
 :::tip[Completado ≠ 100% entregado]
-Un envío puede tener status "Completado" pero con fallidos parciales — por ejemplo, 57/97 enviados y 40 fallidos. Siempre revisa la columna **Fallidos** y entra al Detalle para ver las razones.
+Un envío puede tener status "Completado" pero con entregas parciales — por ejemplo, 57/97 entregados y 40 no entregados. Siempre revisa la columna **No entregados** y entra al Detalle para ver las razones.
 :::
 
 ---
@@ -52,15 +56,15 @@ Haz clic en **Detalle** para abrir el desglose completo de ese envío.
 | Métrica | Descripción |
 |---------|-------------|
 | **Total** | Número total de destinatarios del envío |
-| **Enviados** | Contactos que recibieron el mensaje exitosamente |
-| **Fallidos** | Contactos que no recibieron el mensaje |
+| **Enviados** (o **Aceptados por Meta** en envíos anteriores a julio 2026) | Contactos que recibieron el mensaje — o, para envíos históricos, contactos cuyo mensaje fue aceptado por Meta |
+| **Fallidos** (o **Rechazados** en envíos anteriores a julio 2026) | Contactos que no recibieron el mensaje |
 
 ### Tabla de contactos
 
 Muestra cada destinatario con:
 - **Teléfono** — número en formato internacional
 - **Nombre** — nombre del contacto en Peaking
-- **Status** — **Enviado** (verde) · **Fallido** (rojo)
+- **Status** — **Enviado/Aceptado** (verde o azul, según la fecha del envío) · **Fallido/Rechazado** (rojo)
 - **Motivo de error** — razón del fallo si aplica (ej. `(#130429) Rate limit hit`)
 - **Fecha/hora** — cuándo se procesó ese contacto
 

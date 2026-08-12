@@ -152,9 +152,23 @@ Al usar **Mejorar con IA**, el contenido actual del campo se reemplaza por la ve
 
 ---
 
-## Configuración avanzada: Auto-tagging y Escalación
+## Configuración avanzada: Agrupación, Auto-tagging y Escalación
 
-Dentro de cada prompt encontrarás dos configuraciones avanzadas que complementan el comportamiento del agente:
+Dentro de cada prompt encontrarás tres configuraciones avanzadas que complementan el comportamiento del agente:
+
+### Agrupación de respuestas del agente
+
+![Configuración de la ventana de espera para agrupar respuestas del agente](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/03-prompt-studio/agrupacion-respuestas-agente.png)
+
+Controla cuánto espera el agente antes de responder cuando el cliente envía varios mensajes seguidos, para juntarlos en una sola respuesta en lugar de contestar cada uno por separado.
+
+| Campo | Descripción |
+|-------|-------------|
+| **Ventana de espera** | Tiempo que el agente espera tras el último mensaje del cliente antes de responder (ej. 20 segundos) |
+
+:::tip[Cuándo ajustar la ventana]
+Si tus clientes suelen escribir en ráfagas de 2 o 3 mensajes seguidos (algo muy común en WhatsApp), una ventana de 8–20 segundos evita que el agente conteste de forma fragmentada a cada mensaje individual. Si prefieres respuestas inmediatas, usa **0 segundos** — el agente responde apenas llega cada mensaje.
+:::
 
 ### Auto-tagging
 

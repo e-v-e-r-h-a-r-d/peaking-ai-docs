@@ -35,7 +35,7 @@ Para acceder: en el panel lateral izquierdo, haz clic en **Base de Conocimientos
 
 ![Panel principal de la Base de Conocimientos con pestañas Documentos y Adjuntos, filtros de categoría y estado](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/panel-documentos-kb.png)
 
-La pantalla tiene dos pestañas principales en la parte superior: **Documentos** y **Adjuntos**.
+La pantalla tiene tres pestañas principales en la parte superior: **Documentos**, **Adjuntos** y **Fichas técnicas**.
 
 ### Pestaña Documentos
 
@@ -70,6 +70,31 @@ Los adjuntos solo funcionan en conversaciones de **WhatsApp**. No están disponi
 Los adjuntos están disponibles para **todos los agentes** de la organización. El agente decide cuándo enviarlos según el campo **"Cuándo enviar"** que configuras al subirlos.
 
 Consulta [Añadir y gestionar documentos](/04-base-conocimientos/subir-documentos-y-urls/) para ver cómo agregar adjuntos.
+
+### Pestaña Fichas técnicas
+
+![Pestaña Fichas técnicas vacía, con el banner explicativo y los filtros Todas, Sin vincular, Por revisar y Confirmadas](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/fichas-tecnicas-vacio.png)
+
+Las **Fichas técnicas** son documentos específicos de un producto — hojas de especificaciones, manuales o fichas comerciales — que el agente envía cuando el cliente pregunta por ese producto en particular. A diferencia de un documento general de la pestaña Documentos, cada ficha técnica se **vincula a un producto, una familia o una categoría** de tu catálogo.
+
+:::note[Prioridad de vinculación]
+Si una ficha está vinculada a la vez a un producto específico y a una categoría general, gana la vinculación **más específica** — el agente prioriza la ficha del producto exacto sobre la de la categoría.
+:::
+
+La pestaña tiene cuatro filtros:
+
+| Filtro | Qué muestra |
+|--------|-------------|
+| **Todas** | Todas las fichas técnicas cargadas, sin filtrar |
+| **Sin vincular** | Fichas que todavía no están asociadas a ningún producto, familia o categoría |
+| **Por revisar** | Fichas con una vinculación sugerida automáticamente que un administrador debe confirmar |
+| **Confirmadas** | Fichas cuya vinculación ya fue revisada y validada manualmente |
+
+:::tip[Revisa las sugerencias "Por revisar"]
+El sistema puede sugerir vinculaciones automáticas entre una ficha y un producto. Estas sugerencias aparecen marcadas en ámbar hasta que un administrador las confirma — revísalas periódicamente para asegurarte de que el agente esté enviando la ficha correcta a cada cliente.
+:::
+
+Usa la barra de búsqueda para encontrar una ficha específica por nombre, o el botón **+ Agregar** para cargar una nueva.
 
 ---
 

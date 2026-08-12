@@ -31,7 +31,11 @@ Si el módulo no aparece en el panel lateral:
 
 ## Panel Principal del Catálogo
 
-Al hacer clic en **Productos** verás la tabla principal con todos tus productos. Cada fila muestra:
+Al hacer clic en **Productos** verás la tabla principal con todos tus productos.
+
+![Panel del Catálogo de Productos con filtros por familia, KPIs de total/activos y tabla de productos](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-productos-panel.png)
+
+Cada fila muestra:
 
 | Columna | Descripción |
 |---------|-------------|
