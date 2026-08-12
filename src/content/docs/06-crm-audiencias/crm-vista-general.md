@@ -23,6 +23,8 @@ El CRM aparece en la navegación solo cuando está activado.
 
 En el panel lateral, haz clic en **CRM**. Verás el dashboard principal con el pipeline de oportunidades.
 
+![Panel principal del CRM con KPIs, filtros y Vista Kanban con las etapas del pipeline](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-panel-general.png)
+
 ---
 
 ## La barra de filtros

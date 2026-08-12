@@ -30,6 +30,8 @@ Una vez activo, el ícono de **TODOs** aparece en el panel lateral izquierdo.
 
 ## Vista general del módulo
 
+![Panel de TODOs con métricas superiores, filtros, Vista Kanban con columnas Pendiente, En Progreso, En Revisión y Completado](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/todos-panel-kanban.png)
+
 Al abrir TODOs desde el panel lateral verás:
 
 ### Métricas en la parte superior
@@ -136,9 +138,13 @@ La forma más frecuente: directamente desde el hilo de mensajes con el cliente.
 
 Si tienes configurada la asignación automática, cuando se crea un TODO el sistema lo asigna al miembro correcto sin intervención manual.
 
+![Configuración de Asignación TODO con estrategia AI-Powered (Intelligent Rules) y botón Create First Rule](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/config-asignacion-todo.png)
+
+Esta configuración vive en **TODO Auto-Assignment**, dentro de la configuración del módulo — sus campos aparecen en inglés en la interfaz actual. Actívala con el toggle **Enable Auto-Assignment** y elige la estrategia:
+
 **Round Robin** — los TODOs nuevos se distribuyen en rotación equitativa entre todos los miembros habilitados.
 
-**Reglas inteligentes** — la IA analiza el título y descripción del TODO, compara con las reglas configuradas y asigna al departamento o miembro más adecuado.
+**Reglas inteligentes (AI-Powered)** — la IA analiza el título y descripción del TODO, compara con las reglas configuradas y asigna al departamento o miembro más adecuado, usando Round Robin como respaldo si ninguna regla aplica. Crea reglas con **+ Add Rule** o **Create First Rule** si aún no tienes ninguna.
 
 ---
 

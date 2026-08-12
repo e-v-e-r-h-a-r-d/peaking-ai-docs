@@ -19,6 +19,7 @@ Para que el agente use una integración activa, debes **declarar la herramienta 
 | **Mercado Pago** | Pagos | Próximamente |
 | **Google Calendar** | Calendario | Disponible |
 | **Go HighLevel** | CRM | Disponible |
+| **[Meta Conversions API](/09-integraciones-partner/meta-conversions-api/)** | Marketing / Ads | Disponible |
 | **Integraciones Personalizadas** | Cualquier API | Disponible |
 
 ---
@@ -167,9 +168,9 @@ Si tu herramienta no está en la lista de conectores nativos, puedes crear una *
 
 4. Haz clic en **Crear Integración**.
 
-![Panel de Integraciones Personalizadas con formulario de configuración de API](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/integraciones-personalizados.png)
+Una vez creada, la integración aparecerá en la tabla de **Integraciones Personalizadas**, disponible para declarar en el Estudio de Prompts:
 
-Una vez creada, la integración aparecerá en la lista de herramientas disponibles para declarar en el Estudio de Prompts.
+![Tabla de Integraciones Personalizadas conectadas, con nombre, tipo, estado y fecha de creación de cada una](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/integraciones-personalizados.png)
 
 :::caution[Permisos necesarios]
 La API Key que configures debe tener permisos suficientes en el sistema externo para las acciones que el agente ejecutará (crear registros, leer datos, actualizar campos).

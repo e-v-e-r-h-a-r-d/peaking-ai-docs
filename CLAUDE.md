@@ -68,11 +68,31 @@ src/content/docs/
 
 ---
 
-## Estado del contenido (2026-04-22)
+## Estado del contenido (2026-08-12)
 
-### Todo en git — rama `max's-branch`
+### Sesión 2026-08-12 — procesamiento de `peaking_new_images`
 
-El working tree está limpio. Todos los cambios están commiteados y pusheados.
+Se analizaron 27 screenshots nuevas (tema oscuro) contra todo `src/content/docs`. Resultado:
+
+**Artículos nuevos:**
+- `08-analytics/reportes-y-analisis.md` — pestaña Reportes de Insights (8 tipos de reporte IA + reportes guardados con KPIs/gráficas)
+- `09-integraciones-partner/meta-conversions-api.md` — integración de conversiones a Meta Ads
+
+**Artículos expandidos con contenido/imágenes nuevas:**
+- `01-primeros-pasos/configuraciones-iniciales.md` — antes sin imágenes; ahora cubre las pestañas **Contactos** (extracción automática), **CRM** (etiquetas de campos, campos personalizados, notificaciones, Round Robin) y **Funcionalidades** (14 módulos activables) que faltaban por completo, más el campo **Industria del catálogo** y capturas en Organización/Team/Horario
+- `04-base-conocimientos/que-es-y-como-funciona.md` — nueva pestaña **Fichas técnicas**
+- `03-prompt-studio/crea-tu-primer-prompt.md` — nueva config **Agrupación de respuestas del agente** (ventana de espera)
+- `10-tareas/tareas-y-todos.md` — primeras imágenes del artículo (panel Kanban + Configuración de Asignación TODO)
+- `15-envios-whatsapp/envios-whatsapp.md` — capturas refrescadas a tema oscuro; columnas actualizadas de Destinatarios/Fallidos a **Entregados/No entregados** (cambio real de la UI) con nota sobre datos históricos pre-julio 2026
+- `13-contactos/gestion-de-contactos.md`, `09-integraciones-partner/odoo-hubspot-zoho.md` — capturas refrescadas a tema oscuro (mismo encuadre, sin cambio de contenido)
+
+**Descartado deliberadamente:** captura de "Team Members" (tabla con correos internos reales del equipo Peaking) — no se publicó por exponer PII interna. Documentado en texto sin captura.
+
+**Pendiente / no tocado en esta sesión:** ~10 capturas nuevas de pantallas ya bien documentadas (Mensajes, TODOs Kanban simple, Integraciones/Canales, Plantillas WA, CRM full) donde la versión clara existente ya mostraba un estado más completo o representativo — quedaron sin usar. Un refresh completo de tema claro→oscuro en el resto del sitio (~10+ artículos) sigue pendiente como tarea aparte.
+
+### Estado en git — rama `max's-branch`
+
+Los cambios de la sesión 2026-08-12 (artículos nuevos, secciones expandidas y capturas) están en el working tree pendientes de commit/push al cierre de esta sesión.
 
 ### Artículos con contenido real completo
 
@@ -97,6 +117,9 @@ El working tree está limpio. Todos los cambios están commiteados y pusheados.
 | `08-analytics/peaking-insights.md` | Insights | Información de Conversaciones — agente IA, preguntas de ejemplo, preguntas avanzadas |
 | `08-analytics/metricas-clave-y-kpis.md` | Insights | Definición e interpretación de los 5 KPIs, 3 escenarios de lectura combinada |
 | `13-contactos/gestion-de-contactos.md` | Contactos | Panel KPIs, tabla, ficha con 5 pestañas, Nuevo Contacto, editar, etiquetas |
+| `08-analytics/reportes-y-analisis.md` | Insights | 8 tipos de reporte IA, reportes guardados con KPIs/gráfica/desglose por canal, FAQ |
+| `09-integraciones-partner/meta-conversions-api.md` | Integraciones | Conexión de dataset, auto-tags como disparador de conversión, FAQ |
+| `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Ahora cubre las 10 pestañas reales de Configuración (antes solo 7, sin Contactos/CRM/API) |
 | `01-primeros-pasos/tour-del-dashboard.md` | Primeros pasos | Completo |
 | `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Completo |
 | `01-primeros-pasos/bienvenido-a-peaking.md` | Primeros pasos | Completo |
@@ -204,3 +227,13 @@ También ocultos (en `09-integraciones-partner/`):
 ### Continuo (post-skin)
 - 40 screenshots documentados en `SCREENSHOTS-PENDIENTES.md`
 - Tomar y actualizar imágenes cuando el nuevo skin esté publicado
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
