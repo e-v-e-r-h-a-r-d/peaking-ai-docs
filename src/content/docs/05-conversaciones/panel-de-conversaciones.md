@@ -43,6 +43,7 @@ Al hacer clic en cualquier conversación de la lista, se abre el hilo completo e
 - Escribir y enviar mensajes directamente
 - Asignar tags, agregar notas o crear TODOs
 - Ver el tiempo restante de la ventana de WhatsApp (ej. "Ventana de WhatsApp: 11h 29m restante")
+- Abrir el panel **Copilot** para armar una cotización sin salir de la conversación — ver [Copilot — cotizaciones desde la conversación](/05-conversaciones/copilot-cotizaciones/)
 
 ### Contexto del Lead (panel derecho)
 

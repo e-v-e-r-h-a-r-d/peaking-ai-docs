@@ -90,9 +90,23 @@ Se analizaron 27 screenshots nuevas (tema oscuro) contra todo `src/content/docs`
 
 **Pendiente / no tocado en esta sesión:** ~10 capturas nuevas de pantallas ya bien documentadas (Mensajes, TODOs Kanban simple, Integraciones/Canales, Plantillas WA, CRM full) donde la versión clara existente ya mostraba un estado más completo o representativo — quedaron sin usar. Un refresh completo de tema claro→oscuro en el resto del sitio (~10+ artículos) sigue pendiente como tarea aparte.
 
+### Sesión 2026-08-20 — Copilot (cotizaciones)
+
+Se creó `05-conversaciones/copilot-cotizaciones.md` documentando el panel **Copilot**: herramienta manual (no automática) para que el equipo de ventas arme cotizaciones desde el Panel de Mensajes o desde una oportunidad del CRM, usando el catálogo de productos existente (Odoo Sync o Excel) y generando la cotización final en Odoo.
+
+### Sesión 2026-08-21 — cierre de pendientes de Copilot + correo + glosario
+
+Se completaron los pendientes que había dejado la sesión 2026-08-20:
+
+- **Enlazado Copilot** desde `05-conversaciones/panel-de-conversaciones.md` (bullet en "Panel de conversación") y desde `06-crm-audiencias/crm-vista-general.md` (botón "Cotizar con Copilot" en la ficha del lead, con captura).
+- **Integradas 4 capturas pendientes de CRM** en `06-crm-audiencias/crm-vista-general.md`: nueva subsección **Vista Calendario** (tercera vista del pipeline, junto a Kanban y Lista), captura del modal **Gestionar Tipos de Actividad**, y captura + pasos reales del modal **Nueva Actividad** (Título, Tipo de actividad, Descripción, Fecha y hora programada, Asignado a).
+- **Artículo nuevo:** `09-integraciones-partner/correo-electronico.md` — integración de **Correo (Gmail / Outlook / IMAP)**, registrada en `09-integraciones-partner/index.md`.
+- **Imagen agregada:** `config-crm-notificaciones-asignacion.png` en `01-primeros-pasos/configuraciones-iniciales.md` (sección "Notificaciones de asignación", antes solo texto).
+- **Glosario actualizado** (`01-primeros-pasos/glosario-de-terminos.md`): términos nuevos **Copilot**, **Correo electrónico (integración)**, **Tipo de Actividad**, **Vista Calendario**.
+
 ### Estado en git — rama `max's-branch`
 
-Los cambios de la sesión 2026-08-12 (artículos nuevos, secciones expandidas y capturas) están en el working tree pendientes de commit/push al cierre de esta sesión.
+Cambios de las sesiones 2026-08-20 y 2026-08-21 (Copilot, integración de Correo, expansión de CRM, glosario) commiteados y pusheados a `max's-branch` al cierre de esta sesión.
 
 ### Artículos con contenido real completo
 
@@ -119,6 +133,8 @@ Los cambios de la sesión 2026-08-12 (artículos nuevos, secciones expandidas y 
 | `13-contactos/gestion-de-contactos.md` | Contactos | Panel KPIs, tabla, ficha con 5 pestañas, Nuevo Contacto, editar, etiquetas |
 | `08-analytics/reportes-y-analisis.md` | Insights | 8 tipos de reporte IA, reportes guardados con KPIs/gráfica/desglose por canal, FAQ |
 | `09-integraciones-partner/meta-conversions-api.md` | Integraciones | Conexión de dataset, auto-tags como disparador de conversión, FAQ |
+| `05-conversaciones/copilot-cotizaciones.md` | Mensajes | Panel Copilot (manual), dónde aparece, catálogo Odoo/Excel, flujo de cotización, FAQ |
+| `09-integraciones-partner/correo-electronico.md` | Integraciones | Conexión Gmail/Outlook/IMAP, qué hace el agente con el correo, FAQ |
 | `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Ahora cubre las 10 pestañas reales de Configuración (antes solo 7, sin Contactos/CRM/API) |
 | `01-primeros-pasos/tour-del-dashboard.md` | Primeros pasos | Completo |
 | `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Completo |

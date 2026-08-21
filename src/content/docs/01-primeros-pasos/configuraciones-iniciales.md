@@ -205,6 +205,8 @@ Agrega campos adicionales a tus oportunidades más allá de los estándar. Apare
 
 Avisa automáticamente al vendedor cuando se le asigna una oportunidad nueva:
 
+![Notificaciones de asignación con los toggles Correo electrónico y WhatsApp](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-crm-notificaciones-asignacion.png)
+
 | Canal | Comportamiento |
 |-------|-----------------|
 | **Correo electrónico** | Avisa por email al vendedor asignado |

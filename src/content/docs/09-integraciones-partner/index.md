@@ -31,6 +31,7 @@ Conecta Peaking con CRMs, pasarelas de pago, calendarios y sistemas propios para
 
 - **[Herramientas — CRM, Pagos y más](/09-integraciones-partner/odoo-hubspot-zoho/)** — Go HighLevel, HubSpot, Odoo, Stripe, Integraciones Personalizadas.
 - **[Google Calendar](/09-integraciones-partner/google-calendar/)** — Agendamiento automático de citas desde la conversación.
+- **[Correo — Gmail, Outlook e IMAP](/09-integraciones-partner/correo-electronico/)** — Conecta tu buzón para que el agente lea, cotice y responda correos.
 
 ---
 

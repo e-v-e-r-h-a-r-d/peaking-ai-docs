@@ -83,11 +83,27 @@ Las oportunidades se muestran en una tabla con todas las columnas visibles. Perm
 
 Usa el ícono de **Kanban / Lista** en la esquina superior del panel para cambiar entre vistas.
 
+### Vista Calendario
+
+Muestra las actividades programadas del pipeline (demostraciones, reuniones, llamadas, etc.) en un calendario mensual, semanal o diario — en lugar de las oportunidades mismas.
+
+![Vista Calendario del CRM con filtros por tipo de actividad y por vendedor](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-vista-calendario.png)
+
+- Cambia entre **Mes · Semana · Día** en la esquina superior derecha.
+- Filtra por **tipo de actividad** (ej. Demostración, Reunión) usando los chips superiores.
+- Filtra por **vendedor** con el selector **Todos los vendedores**.
+
+Es la forma más rápida de ver qué actividades tiene agendadas tu equipo de ventas en un rango de fechas, sin tener que abrir oportunidad por oportunidad.
+
 ---
 
 ## Qué ves al abrir una oportunidad
 
-Al hacer clic en una tarjeta del Kanban o en una fila de la lista, se abre el panel de detalle de la oportunidad. El panel tiene dos áreas:
+Al hacer clic en una tarjeta del Kanban o en una fila de la lista, se abre el panel de detalle de la oportunidad. En la esquina superior encontrarás el botón **Cotizar con Copilot**, que abre el panel de [Copilot](/05-conversaciones/copilot-cotizaciones/) para armar una cotización sin salir de la ficha del lead.
+
+![Ficha de una oportunidad con el botón Cotizar con Copilot en la esquina superior derecha](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-lead-cotizar-copilot.png)
+
+El panel tiene dos áreas:
 
 **Lado izquierdo — ficha del lead**, con tres pestañas:
 
@@ -128,6 +144,8 @@ No necesitas ir al Panel de Mensajes para atender al lead. Desde la tarjeta del 
 
 El CRM permite registrar distintos tipos de actividad en la pestaña **Timeline › Actividad** de cada oportunidad. Puedes gestionar y crear tus propios tipos desde el botón **Gestionar Tipos de Actividad** dentro del CRM.
 
+![Panel Gestionar Tipos de Actividad con la lista de tipos existentes y el botón Crear Nuevo Tipo](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-gestionar-tipos-actividad.png)
+
 Los tipos predeterminados disponibles son:
 
 | Tipo | Cuándo usarlo |
@@ -144,10 +162,12 @@ Puedes crear tipos adicionales con **Crear Nuevo Tipo** (botón + en la pantalla
 Para agregar una actividad a una oportunidad:
 
 1. Abre la oportunidad desde el Kanban o la lista.
-2. Selecciona la pestaña **Timeline** en el panel derecho.
-3. Usa la sub-pestaña **Actividad** y selecciona el tipo correspondiente.
-4. Agrega el detalle o nota.
-5. Guarda.
+2. Selecciona la pestaña **Timeline** en el panel derecho, sub-pestaña **Actividad**.
+3. Haz clic en **+ Nueva Actividad**.
+4. Completa el formulario: **Título** (obligatorio), **Tipo de actividad**, **Descripción**, **Fecha y hora programada** y **Asignado a**.
+5. Haz clic en **Crear Actividad**.
+
+![Modal Nueva Actividad con los campos Título, Tipo de actividad, Descripción, Fecha y hora programada y Asignado a](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-nueva-actividad.png)
 
 La actividad queda en el log con fecha y autor.
 

@@ -52,6 +52,12 @@ Un hilo de mensajes entre tu negocio y un contacto. Cada conversación queda reg
 **Conversaciones Respondidas**
 Conversaciones que tu agente de IA atendió de principio a fin sin intervención humana. En la gráfica de Análisis de Conversaciones aparecen en azul claro.
 
+**Copilot**
+Panel de apoyo para que un agente humano arme una cotización desde la conversación (Panel de Mensajes) o desde una oportunidad (CRM), sin salir de donde está atendiendo al cliente. Es una herramienta manual — a diferencia de un agente de IA que cotiza automáticamente por instrucción del prompt.
+
+**Correo electrónico** *(integración)*
+Canal adicional que se conecta vía Gmail, Outlook o IMAP para que el agente de IA lea, cotice y responda correos igual que en WhatsApp, Instagram o el Widget. Se conecta desde **Integraciones › Herramientas**.
+
 **CRM**
 Módulo de gestión de relaciones con clientes. Aquí se registran las oportunidades de venta con su etapa en el pipeline (prospecto, negociación, cerrado, etc.) y se asignan a miembros del equipo.
 
@@ -153,6 +159,9 @@ Estrategia de asignación automática que distribuye conversaciones, oportunidad
 **Tasa de Conversión**
 Porcentaje de conversaciones que terminaron en una acción concreta: una venta completada o una cita agendada. Es el indicador más directo del impacto comercial de tu agente de IA.
 
+**Tipo de Actividad**
+Categoría de una actividad registrada en el Timeline de una oportunidad del CRM (ej. Llamada, Email, Demostración, Propuesta). Se gestionan desde el botón **Gestionar Tipos de Actividad** dentro del CRM.
+
 **TODO**
 Tarea creada a partir de una conversación para dar seguimiento posterior. Puede asignarse a un miembro del equipo, tener prioridad y fecha límite. Se gestiona en el módulo de Mensajes.
 
@@ -165,6 +174,9 @@ Dato que un nodo Agent o Voice Agent captura durante una conversación y guarda 
 
 **Ventana de 24 horas**
 Restricción de las plataformas de Meta (WhatsApp, Instagram, Messenger): un negocio puede responder libremente a un cliente solo dentro de las 24 horas siguientes al último mensaje que ese cliente envió. Después de ese plazo, solo se pueden usar plantillas de mensaje aprobadas.
+
+**Vista Calendario**
+Una de las vistas del pipeline del CRM. Muestra las actividades programadas (demostraciones, reuniones, llamadas) en un calendario mensual, semanal o diario, filtrable por tipo de actividad y por vendedor — en lugar de mostrar las oportunidades como en la Vista Kanban o Vista Lista.
 
 ---
 
