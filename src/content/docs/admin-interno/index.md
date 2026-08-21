@@ -4,6 +4,7 @@ description: Panel de herramientas internas para el equipo de Peaking. No visibl
 sidebar:
   order: 0
   label: 'Índice'
+  hidden: true
 ---
 
 :::caution[Sección interna — Solo equipo Peaking]

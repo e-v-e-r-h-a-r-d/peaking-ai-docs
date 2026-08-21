@@ -137,7 +137,6 @@ Cambios de las sesiones 2026-08-20 y 2026-08-21 (Copilot, integración de Correo
 | `09-integraciones-partner/correo-electronico.md` | Integraciones | Conexión Gmail/Outlook/IMAP, qué hace el agente con el correo, FAQ |
 | `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Ahora cubre las 10 pestañas reales de Configuración (antes solo 7, sin Contactos/CRM/API) |
 | `01-primeros-pasos/tour-del-dashboard.md` | Primeros pasos | Completo |
-| `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Completo |
 | `01-primeros-pasos/bienvenido-a-peaking.md` | Primeros pasos | Completo |
 | `02-canales/conexion-whatsapp.md` | Canales | Completo (sin screenshots aún) |
 | `02-canales/conexion-instagram.md` | Canales | Verificar estado |
@@ -195,8 +194,8 @@ const GA_MEASUREMENT_ID = 'G-XTN1FD69HK';
 - **Voz:** "Experto empático" — directo, orientado a tareas, sin jerga innecesaria
 - **Frontmatter obligatorio:** `title`, `description`, `sidebar.order` en todos los artículos públicos
 - **Admin interno:** añadir `sidebar.hidden: true` en el frontmatter
-- **Imágenes:** URL pública GitHub Raw → `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots/[seccion]/[imagen.jpg]`
-- **Extensión de imágenes:** `.jpg` por defecto (el script guarda JPEG). Usar `.png` solo si se pasó el flag `-png`
+- **Imágenes:** URL pública GitHub Raw → `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/[seccion]/[imagen.png]`
+- **Extensión de imágenes:** `.png` por defecto en las capturas actuales. Usar `.jpg` solo si vienen del flujo antiguo de `guardar-screenshot.ps1` sin el flag `-png`
 - **Nombres propios respetados:** Prompt Studio, Command Center, Knowledge Base, Pedidos y Carritos, TODOs, Tareas, Stripe (nunca "Stipe"), Mercado Pago, Workflows, Go HighLevel
 
 ---

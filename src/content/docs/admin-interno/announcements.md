@@ -3,6 +3,7 @@ title: Announcements
 description: Gestión de anuncios y notificaciones del sistema para usuarios de la plataforma.
 sidebar:
   order: 4
+  hidden: true
 ---
 
 :::caution[Sección interna — Solo equipo Peaking]

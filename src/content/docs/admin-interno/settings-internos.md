@@ -3,6 +3,7 @@ title: Settings internos
 description: Configuraciones internas del sistema Peaking accesibles solo para el equipo.
 sidebar:
   order: 5
+  hidden: true
 ---
 
 :::caution[Sección interna — Solo equipo Peaking]

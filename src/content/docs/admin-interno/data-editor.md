@@ -3,6 +3,7 @@ title: Data Editor
 description: Herramienta de edición directa de datos en la base de datos de Peaking.
 sidebar:
   order: 3
+  hidden: true
 ---
 
 :::caution[Sección interna — Solo equipo Peaking]

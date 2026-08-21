@@ -147,11 +147,7 @@ export default defineConfig({
 					label: 'How To',
 					autogenerate: { directory: '18-how-to' },
 				},
-				{
-					label: '🔒 Interno',
-					collapsed: true,
-					autogenerate: { directory: 'admin-interno' },
-				},
+				// admin-interno: NO incluido aquí — oculto con sidebar.hidden: true en cada página
 			],
 		}),
 	],

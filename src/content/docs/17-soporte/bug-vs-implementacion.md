@@ -72,7 +72,7 @@ Escríbele directamente a nuestro equipo — con gusto revisamos tu caso y te pr
 
 | Situación | Referencia |
 |-----------|------------|
-| La plataforma deja de funcionar sin cambios de mi parte | [Revisar errores frecuentes](/18-how-to/configuraciones-frecuentes/) · [Reportar](/https://peakingai.odoo.com/helpdesk/atencion-al-cliente-1) |
+| La plataforma deja de funcionar sin cambios de mi parte | [Revisar errores frecuentes](/18-how-to/configuraciones-frecuentes/) · [Reportar](https://peakingai.odoo.com/helpdesk/atencion-al-cliente-1) |
 | Una función documentada no se comporta como dice | [Revisar errores frecuentes](/18-how-to/configuraciones-frecuentes/) · [Reportar](https://peakingai.odoo.com/helpdesk/atencion-al-cliente-1) |
 | El agente responde de forma inesperada | [Cómo ajustar el comportamiento del agente](/18-how-to/configuraciones-frecuentes/#el-agente-responde-de-forma-incorrecta-o-inesperada) |
 | Quiero un workflow nuevo o diferente | [Habla con nuestro equipo](mailto:vrr@peaking.ai) |

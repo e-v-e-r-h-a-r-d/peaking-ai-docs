@@ -3,6 +3,7 @@ title: Command Center
 description: Panel de monitoreo maestro para todas las cuentas de Peaking — salud de IA, conversaciones, workflows y análisis por organización.
 sidebar:
   order: 6
+  hidden: true
 ---
 
 El **Command Center** (Centro de Control de Clientes) es el panel de administración global de Peaking. Desde aquí el equipo interno puede monitorear el rendimiento de todas las cuentas activas en tiempo real — sin tener que entrar una a una.

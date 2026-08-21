@@ -61,7 +61,7 @@ En la sección de configuración puedes ajustar cómo se ve el Widget en tu siti
 
 Los cambios se reflejan en la **Vista previa** en tiempo real del lado derecho — verás exactamente cómo quedará el Widget antes de instalarlo.
 
-![Configuración del Widget con vista previa en tiempo real](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/personliazación-widget.web.png)
+![Configuración del Widget con vista previa en tiempo real](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/widget-personalizacion.png)
 
 ---
 
