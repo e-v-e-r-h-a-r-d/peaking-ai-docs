@@ -103,7 +103,7 @@ Cada etiqueta de auto-tagging tiene:
 Cuanto más específico sea el criterio, más preciso será el auto-tagging. Evita criterios vagos como "cuando hable de productos" — mejor usa "cuando el cliente pida el precio o disponibilidad de un producto específico por nombre o SKU".
 :::
 
-También puedes configurar las reglas de auto-tagging desde el **Estudio de Prompts**. Ver [Auto-tagging y Escalación en el Prompt Studio](/03-prompt-studio/crea-tu-primer-prompt/#configuración-avanzada-auto-tagging-y-escalación).
+También puedes configurar las reglas de auto-tagging desde el **Estudio de Prompts**. Ver [Auto-tagging y Escalación en el Prompt Studio](/03-prompt-studio/crea-tu-primer-prompt/#configuración-avanzada-agrupación-auto-tagging-y-escalación).
 
 ---
 

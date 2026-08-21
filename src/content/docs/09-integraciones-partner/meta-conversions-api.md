@@ -46,7 +46,7 @@ Pide al administrador del **Business de Meta** los dos datos que necesitas:
 Una vez conectado, define en la configuración de tags (en **Mensajes**) qué etiquetas automáticas deben disparar el envío de una conversión a Meta. No todas las etiquetas tienen que reportarse — normalmente solo las que representan una acción de negocio real (cotización enviada, venta cerrada, cita agendada).
 
 :::tip[Usa las mismas etiquetas que ya monitoreas]
-Si ya tienes auto-tags configurados en el Estudio de Prompts para clasificar conversaciones (ver [Declarar Herramientas](/03-prompt-studio/declarar-herramientas/)), reutilízalos aquí en lugar de crear etiquetas nuevas solo para Meta — mantiene tu taxonomía de tags consistente en toda la plataforma.
+Si ya tienes auto-tags configurados en el Estudio de Prompts para clasificar conversaciones (ver [Auto-tagging en el Estudio de Prompts](/03-prompt-studio/crea-tu-primer-prompt/#configuración-avanzada-agrupación-auto-tagging-y-escalación)), reutilízalos aquí en lugar de crear etiquetas nuevas solo para Meta — mantiene tu taxonomía de tags consistente en toda la plataforma.
 :::
 
 ---
