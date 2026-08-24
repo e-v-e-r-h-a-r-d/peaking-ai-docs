@@ -10,68 +10,99 @@ sidebar:
 Material de venta interno. No es documentación de producto — son ganchos de discurso comercial para usar en llamadas, demos y mensajes de prospección.
 :::
 
-**Documento vivo.** Esta v1 cubre los ganchos más fuertes por categoría. Agrega los tuyos abajo de cada sección conforme los vayas probando en llamadas reales.
+**Documento vivo — v2.** Reescrito con visión de negocio: dolor → solución → resultado. Agrega los tuyos abajo de cada sección conforme los vayas probando en llamadas reales.
 
 ---
 
 ## El pitch de 10 segundos
 
-> "Peaking es el agente de IA que vende, cotiza y cobra por WhatsApp, Instagram, Messenger, Web y Correo — 24/7, sin que tu equipo levante un dedo."
+> "Peaking es el agente de IA que atiende, cotiza, cobra y le da seguimiento a tus clientes en WhatsApp, Instagram, Messenger, Web y Correo — y tu CRM, tus tareas y tu Odoo trabajan solos detrás, sin que nadie tenga que estar picándole a nada."
 
 ---
 
-## 🤖 Agente de IA
+## ⭐ Copilot — el gancho más fuerte
 
-- Responde en segundos, 24/7 — mientras la competencia contesta al día siguiente.
-- Un solo cerebro para WhatsApp, Instagram, Messenger, Widget web y Correo — sin cambiar de pantalla.
-- Nunca pierde el hilo: retoma cualquier conversación con el historial completo, aunque hayan pasado semanas.
-- Se entrena con tu Base de Conocimientos en minutos — cero líneas de código.
-
----
-
-## 💼 CRM & Cierre
-
-- Copilot arma la cotización dentro de la misma conversación — sin salir del chat, sin copiar a Excel.
-- Round Robin reparte los leads nuevos solo entre tu equipo de ventas — cero leads fríos por "no le tocó a nadie".
-- Cada oportunidad nace con el historial completo de la conversación — el vendedor nunca arranca de cero.
-- Vista Calendario del CRM: todo el equipo ve demos y reuniones agendadas en un solo lugar.
+- Tu vendedor arma la cotización **dentro de la misma conversación** — sin salir del chat, sin copiar nada a Excel ni a Odoo a mano.
+- Funciona igual en Mensajes, en el CRM y ahora también en Correo — un solo flujo, tres puntos de entrada.
+- Gancho de cierre: *"¿Cuántos clics le toma hoy a tu equipo pasar de 'quiero cotizar' a mandarle el PDF? Aquí son tres."*
 
 ---
 
-## ⚙️ Automatización (Workflows)
+## 🤖 El agente que nunca se va de vacaciones
 
-- Arma flujos de atención arrastrando bloques — sin developers, sin ticket a IT.
-- Condiciones, esperas, webhooks: un proceso de ventas completo en un solo canvas visual.
-- Se prueba antes de publicar — cero sorpresas en producción.
-
----
-
-## 📊 Insights con IA
-
-- Preguntas en español, respuestas al instante — nada de dashboards que hay que aprender a leer.
-- 8 tipos de reporte generado por IA, listos en segundos — sin pedirle nada a un analista.
-- Sabes cuántas conversaciones cerraron venta sin exportar una sola hoja de Excel.
+- Contesta en segundos, a cualquier hora — el prospecto no se enfría esperando a que "el vendedor vea el WhatsApp el lunes".
+- Un solo cerebro en WhatsApp, Instagram, Messenger, Web y Correo — el cliente cambia de canal y el agente sigue la conversación como si nada.
+- Se entrena con lo que tu equipo ya sabe (PDFs, catálogos, FAQs) — no se "programa", se le enseña como a un vendedor nuevo, pero en minutos.
 
 ---
 
-## 🔌 Integraciones
+## 📥 Correo ya no es una bandeja aparte
 
-- Se conecta con lo que ya usan: Odoo, HubSpot, Stripe, Mercado Pago, Google Calendar, Go High Level — sin migrar nada.
-- Meta Conversions API: cada venta cerrada por el agente alimenta y optimiza tus anuncios de Meta.
-- Conecta Gmail, Outlook o cualquier correo por IMAP — el mismo agente cotiza y responde ahí también.
+- Conecta Gmail, Outlook o cualquier correo por IMAP — el buzón vive **dentro de Peaking**, no en otra pestaña ni en otra ventana.
+- El mismo agente que cotiza por WhatsApp lee, cotiza y responde correos — cero copiar-pegar entre sistemas.
+- Copilot funciona igual ahí: el vendedor arma la cotización sin salir del correo del cliente.
+- Gancho de cierre: *"¿Cuántas pestañas abre tu equipo para atender a un solo cliente hoy? Con Peaking es una."*
+
+---
+
+## 💼 CRM: tu proceso, no el de un CRM genérico
+
+- Las etapas del pipeline se llaman como tú las llamas — tu proceso real de venta, no una plantilla gringa que nadie sigue.
+- Agrega campos propios a cada oportunidad (ej. "número de cotización interna") sin pedirle nada a un developer.
+- Notificación automática por correo o WhatsApp en cuanto le asignan un lead a un vendedor — nadie se entera dos días después.
+- **Round Robin**: los leads nuevos se reparten solos entre el equipo — se acabó el "ese lead no era mío".
+- **Vista Calendario**: todo el equipo ve en un solo lugar quién tiene demo o llamada hoy, sin cruzar agendas por WhatsApp.
+- Cada oportunidad nace con el historial completo de la conversación — el vendedor entra ya sabiendo qué quiere el cliente.
+
+---
+
+## ✅ Tareas: el equipo ya no "se le olvida"
+
+- Todo pendiente interno (seguimientos, coordinaciones) queda ligado al cliente y a la conversación real — nada se pierde en un chat interno de WhatsApp.
+- El agente de IA puede crear la tarea solo — ej. *"si el cliente reporta un problema, crea un TODO y asígnalo a Soporte"* — sin que nadie copie conversaciones a mano.
+- Asignación inteligente: no es solo Round Robin — hay un modo donde la IA lee el título de la tarea y decide sola a qué persona o departamento le toca.
+- Métricas que un gerente realmente quiere ver: % de tareas completadas, cuántas están vencidas y cuánto tarda el equipo en resolver cada una — sin pedir un reporte a nadie.
+
+---
+
+## 🔌 Odoo: se vuelven un solo sistema (sin migrar nada)
+
+- El agente checa **inventario real** en Odoo antes de prometerle algo al cliente — cero "déjame verificar y te aviso".
+- Genera la cotización directamente en Odoo desde la conversación, y la convierte en orden de venta en cuanto el cliente confirma.
+- El cliente pregunta *"¿cuándo llega mi pedido?"* y el agente responde con el estatus real de Odoo — no un "en unos días" genérico.
+- Se conecta con una sola API Key — no es un proyecto de sistemas de 3 meses, ni hay que migrar ni tocar tu Odoo actual.
+- Mismo principio con HubSpot, Zoho, Go High Level y Stripe — Peaking se pega a lo que ya usan, no al revés.
+
+---
+
+## 📲 WhatsApp: Plantillas y Envíos Masivos
+
+- Reactiva leads "fríos" (más de 24h sin responder) con plantillas aprobadas por Meta — sin arriesgar el número de la empresa.
+- Lanza una campaña a cientos de contactos segmentados por Audiencias y ve exactamente quién la recibió y quién no.
+- Si algo falla, reenvías **solo a los fallidos** con un clic — no hay que rearmar la campaña completa.
+- Cada mensaje queda trackeado contacto por contacto, con el motivo exacto si algo no llegó — cero cajas negras, cero "no sé si le llegó".
 
 ---
 
 ## 🛒 De la conversación al cobro
 
-- El cliente compra sin salir del chat — checkout integrado con Stripe o Mercado Pago.
-- Carritos abandonados se detectan y se recuperan automáticamente, sin que nadie tenga que dar seguimiento manual.
+- El cliente paga sin salir del chat — Stripe o Mercado Pago integrados al checkout.
+- Carritos abandonados se detectan y se recuperan solos, sin que nadie dé seguimiento manual.
 
 ---
 
-## 📣 Audiencias & Campañas
+## 📊 Datos que un gerente entiende sin ayuda
 
-- Segmenta audiencias dinámicas y lanza campañas de WhatsApp con plantillas aprobadas por Meta — todo desde la misma plataforma.
+- Preguntas en español y la IA te arma el reporte — cero dashboards que hay que aprender a leer.
+- Sabes cuántas conversaciones cerraron venta sin pedirle el Excel a nadie.
+
+---
+
+## 🗣️ Objeciones rápidas
+
+- **"Ya tenemos WhatsApp Business."** → "Sí, pero ¿tu WhatsApp Business cotiza, cobra y llena tu CRM solo?"
+- **"Necesito que lo revise mi equipo de sistemas."** → "La conexión con Odoo es una API Key, no un proyecto de 3 meses."
+- **"¿Y si el cliente quiere hablar con una persona?"** → "El agente se hace a un lado en un clic y tu equipo retoma con todo el historial — nunca empieza de cero."
 
 ---
 
