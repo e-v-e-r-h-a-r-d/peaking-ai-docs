@@ -48,12 +48,21 @@ Cambia entre Y y O según la lógica de búsqueda que necesites.
 
 ### Filtros disponibles
 
+Al hacer clic en **Filtros** se despliega el panel completo de búsqueda avanzada:
+
+![Panel de filtros avanzados del CRM con combinador Y/O y todos los campos disponibles](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-busqueda-avanzada.png)
+
 | Filtro | Descripción |
 |--------|-------------|
 | **Etapa** | Filtra por la etapa del pipeline donde está la oportunidad (ej. Prospecto, Calificado, Propuesta, Cierre) |
 | **Prioridad** | Filtra por nivel de urgencia o valor: Alta · Media · Baja |
 | **Asignado a** | Muestra solo las oportunidades asignadas a un vendedor específico |
 | **Estado** | Filtra por el estado actual: Activo · Ganado · Perdido · En pausa |
+| **Fuente** | Filtra por origen del lead (ej. `ai_agent`, campaña específica) |
+| **Canal** | Filtra por el canal de origen: WhatsApp, Instagram, Messenger, Sitio Web |
+| **Creada desde / Creada hasta** | Acota el pipeline a un rango de fechas de creación |
+
+Puedes combinar cualquiera de estos filtros con el combinador **Y/O** de arriba — por ejemplo, "Estado: Activo" **Y** "Prioridad: Alta" para encontrar los leads urgentes que siguen abiertos.
 
 ### Chip de filtro rápido
 
@@ -170,6 +179,20 @@ Para agregar una actividad a una oportunidad:
 ![Modal Nueva Actividad con los campos Título, Tipo de actividad, Descripción, Fecha y hora programada y Asignado a](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-nueva-actividad.png)
 
 La actividad queda en el log con fecha y autor.
+
+---
+
+## Papelera de oportunidades
+
+Cuando se elimina una oportunidad, no desaparece de inmediato — pasa a la **Papelera**, donde puedes ver quién la eliminó y cuándo, y restaurarla si fue un error.
+
+![Papelera de oportunidades eliminadas, con buscador por nombre, empresa, teléfono o quién la eliminó](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-papelera.png)
+
+:::caution[La restauración no es completa]
+Al restaurar una oportunidad desde la Papelera, **no vuelven las actividades ni las etiquetas** que tenía antes de eliminarse. Solo se recupera la oportunidad en sí.
+:::
+
+Del mismo modo, las etapas y los tipos de actividad que elimines desde sus respectivos paneles de gestión (**Gestionar Etapas** y **Gestionar Tipos de Actividad**) tienen su propia papelera, siguiendo la misma lógica.
 
 ---
 

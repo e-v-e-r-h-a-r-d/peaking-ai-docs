@@ -81,6 +81,8 @@ Si configuras los departamentos primero, puedes asignar a cada nuevo miembro a s
 
 La tabla **Team Members** muestra todos los usuarios con acceso a tu organización:
 
+![Tabla Team Members con nombre, rol, departamento y vendedor — columna de correo oculta por privacidad](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-team-miembros.png)
+
 | Columna | Descripción |
 |---------|-------------|
 | **Usuario** | Nombre del miembro |
@@ -173,11 +175,13 @@ El agente solo extrae información que el cliente menciona espontáneamente — 
 ### Agregar un campo de extracción
 
 1. Haz clic en **+ Agregar campo**.
-2. Define el **nombre del campo** (ej. "Fecha de Nacimiento") y una etiqueta corta interna (ej. `cumple`).
-3. Indica el **tipo de dato** (ej. `date`).
-4. Escribe una breve descripción de qué debe capturar el campo y en qué formato (ej. "Fecha de nacimiento del cliente, en formato YYYY-MM-DD").
-5. Agrega ejemplos de frases que el cliente podría usar, para ayudar al agente a reconocer el dato (ej. "Mi cumple es el 3 de marzo de 1995" → `1995-03-05`).
-6. Activa el toggle para habilitar el campo.
+2. Define la **Clave** (uso interno, ej. `birthday`) y la **Etiqueta visible** (ej. "Fecha de nacimiento").
+3. Indica el **Tipo de dato** (Texto, Número, Fecha, JSON o Verdadero/Falso).
+4. Escribe la **Descripción para el agente IA** — mínimo 20 caracteres, entre más específica mejor, porque es lo que el LLM lee para decidir si debe extraer el dato.
+5. Agrega **Ejemplos** (uno por línea) de frases que el cliente podría usar, para ayudar al agente a reconocer variaciones (ej. "mi cumple es el 5 de marzo → 1990-03-05").
+6. Activa el toggle **Campo activo** y haz clic en **Guardar**.
+
+![Formulario Nuevo campo con Clave, Etiqueta visible, Tipo de dato, Descripción para el agente IA y Ejemplos](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-contactos-nuevo-campo-modal.png)
 
 ---
 
@@ -258,6 +262,14 @@ Activa o desactiva módulos completos de la plataforma según lo que tu operaci�
 :::caution[Algunos módulos son excluyentes]
 "Visibilidad por asignación" y "Ver todo el CRM, editar solo lo propio" controlan el mismo tipo de permiso de formas distintas — no actives ambos a la vez, ya que uno anula la lógica del otro.
 :::
+
+### Configuración de Asignación TODO
+
+Con el **Módulo TODOs** activo, más abajo en Funcionalidades encontrarás su propia configuración de asignación automática — igual que el Round Robin del CRM, pero para tareas:
+
+![Configuración de Asignación TODO con estrategia AI-Powered y reglas inteligentes de asignación](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-asignacion-todo.png)
+
+Activa **Enable Auto-Assignment** y elige la **Assignment Strategy**: **Round Robin** (rotación equitativa) o **AI-Powered (Intelligent Rules)**, donde la IA analiza cada TODO y lo asigna según las reglas que definas. Para crear esas reglas paso a paso, ver [Crear una regla inteligente de asignación](/10-tareas/tareas-y-todos/#crear-una-regla-inteligente-de-asignación).
 
 ---
 

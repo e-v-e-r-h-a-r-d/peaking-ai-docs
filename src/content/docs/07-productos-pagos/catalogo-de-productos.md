@@ -64,40 +64,57 @@ En la parte superior del panel encontrarás:
 
 Haz clic en **+ Agregar Producto**. Se abrirá el formulario de creación con las siguientes secciones:
 
-### Nombre
+### Información Básica
 
-- Escribe el nombre del producto tal como quieres que el agente lo mencione en las conversaciones.
-- Sé específico: "Tubería PVC 4 pulgadas" es mejor que "Tubería".
+![Sección Información Básica: Nombre del Producto, Tipo de Producto, SKU y Categoría](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-crear-producto-info-basica.png)
+
+| Campo | Obligatorio | Descripción |
+|-------|:-----------:|-------------|
+| **Nombre del Producto** | Sí | Tal como quieres que el agente lo mencione en las conversaciones. Sé específico: "Tubería PVC 4 pulgadas" es mejor que "Tubería" |
+| **Tipo de Producto** | Sí | Clasifica el producto según tu catálogo (ej. Físico) |
+| **SKU** | No | Código de referencia interno |
+| **Categoría** | No | Organiza tus productos por categorías |
+
+Justo debajo puedes subir la **Imagen del Producto** (máximo 5 MB) — es la imagen principal que verán tus clientes.
 
 ### Descripción
 
-- Detalla las características principales del producto.
-- El agente usa esta descripción para responder preguntas técnicas del cliente.
-- Incluye: material, dimensiones, usos, compatibilidades.
+| Campo | Obligatorio |
+|-------|:-----------:|
+| **Descripción Corta** | No |
+| **Descripción** (detallada) | No |
 
-### Precio e Inventario
-
-| Campo | Descripción |
-|-------|-------------|
-| **Precio base** | El precio de venta al público |
-| **Precio de costo** | Costo interno (no visible para el agente ni el cliente) |
-| **Moneda** | La moneda de tu cuenta (MXN, USD, COP, etc.) |
-| **Control de inventario** | Activa para rastrear el stock disponible |
-| **Stock disponible** | Cantidad en inventario (si control de inventario está activo) |
-| **Inventario agotado** | Qué hace el agente cuando no hay stock: bloquear venta o seguir vendiendo |
-
-### Configuración
-
-| Campo | Descripción |
-|-------|-------------|
-| **SKU** | Código de referencia único del producto |
-| **Estado** | Activo (visible para el agente) · Inactivo (el agente no puede venderlo) |
-| **Categoría** | Asigna el producto a una categoría |
-| **Campos dinámicos** | Variables como talla, color, cantidad que el agente puede preguntar al cliente |
-
-:::tip[Campos dinámicos]
-Si tu producto tiene variantes (tallas, colores, versiones), usa los **campos dinámicos** para que el agente recopile esa información del cliente antes de generar la orden. Ejemplo: `{{talla}}`, `{{color}}`.
+:::tip[La descripción no es obligatoria, pero conviene llenarla]
+El agente encuentra mejor los productos mientras más completa sea la descripción — sobre todo si tu catálogo es grande y tienes varios productos con nombres similares.
 :::
+
+### Precio
+
+![Sección Precio: Precio, Moneda, Costo y Unidad de Medida](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-crear-producto-precio.png)
+
+| Campo | Obligatorio | Descripción |
+|-------|:-----------:|-------------|
+| **Precio** | Sí | El precio de venta al público |
+| **Moneda** | — | Se hereda de la configuración de tu organización — los productos nuevos siempre usan esa moneda |
+| **Costo** | No | Costo interno del producto (no visible para el agente ni el cliente) |
+| **Unidad de Medida** | Sí | Ej. pieza, kg, litro, servicio |
+
+### Dimensiones
+
+![Sección Dimensiones: Peso, Largo, Ancho y Alto](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-crear-producto-dimensiones.png)
+
+Peso (kg), Largo, Ancho y Alto (cm) — todos opcionales. Útiles si calculas envíos según las medidas del producto.
+
+### Configuración, Atributos y Productos Opcionales
+
+![Sección Configuración con switches Producto Activo y Control de inventario, más Atributos y Productos Opcionales](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-crear-producto-atributos.png)
+
+| Campo | Descripción |
+|-------|-------------|
+| **Producto Activo** | Switch — si está apagado, el producto no es visible para clientes ni para el agente |
+| **Control de inventario** | Switch — actívalo para que Peaking rastree el stock disponible de este producto |
+| **Atributos** | Características adicionales del producto (ej. Color, Talla) — se agregan con **+ Agregar atributo** |
+| **Productos Opcionales** | Otros productos de tu catálogo que se pueden ofrecer como complemento a este (ej. un accesorio o un servicio adicional) |
 
 1. Haz clic en **Guardar** cuando hayas completado todos los campos obligatorios.
 2. El producto aparecerá en la tabla principal como **Activo**.

@@ -21,6 +21,7 @@ Copilot vive en dos lugares de la plataforma — es el mismo panel en ambos:
 |-----------|--------------|
 | **Panel de Mensajes** | Aparece en el panel derecho de la conversación, con la etiqueta **COPILOT** junto al título de la cotización activa |
 | **Ficha de una oportunidad del CRM** | Botón **Cotizar con Copilot** en la esquina superior de la ficha del lead |
+| **Un TODO generado automáticamente** | Si el agente de IA detecta que un cliente pidió una cotización, crea un TODO con el contexto ya armado — ese TODO también tiene su propio botón **Cotizar con Copilot**. Ver [Tareas y TODOs](/10-tareas/tareas-y-todos/#conversación-vinculada) |
 
 ![Panel Copilot dentro de una conversación de Mensajes, con carrito, cliente y botón para crear la cotización](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/copilot-cotizacion-panel.png)
 
