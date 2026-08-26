@@ -34,6 +34,22 @@ Muestra todas las conversaciones en una lista compacta. Cada fila incluye:
 | **Indicador de no leído** | Punto de color cuando hay mensajes nuevos sin revisar |
 | **Tag / etiqueta** | Si la conversación tiene una etiqueta asignada, aparece visible |
 
+#### Seleccionar varias conversaciones a la vez
+
+Haz clic en el círculo que aparece dentro del avatar de un contacto (a la izquierda de la tarjeta) para activar el modo de selección múltiple. Puedes marcar varias conversaciones y aplicar una acción en lote a todas al mismo tiempo:
+
+![Barra de acciones en lote al seleccionar varias conversaciones](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-seleccion-multiple.png)
+
+| Ícono | Acción |
+|-------|--------|
+| Persona con check | Asignar las conversaciones seleccionadas a un miembro del equipo |
+| Etiqueta | Agregar o quitar tags de las conversaciones seleccionadas |
+| Altavoz tachado | Silenciar el agente de IA en esas conversaciones (pasan a control manual) |
+| Altavoz activo | Reactivar al agente de IA en esas conversaciones |
+| X | Salir del modo de selección |
+
+Todos los cambios se guardan al momento, salvo la escalación a humano, que sigue el criterio normal de escalamiento — ver [Escalamiento a humano](/05-conversaciones/escalamiento-a-humano/).
+
 ### Panel de conversación (área central)
 
 Al hacer clic en cualquier conversación de la lista, se abre el hilo completo en el centro. Aquí puedes:
@@ -47,7 +63,19 @@ Al hacer clic en cualquier conversación de la lista, se abre el hilo completo e
 
 ### Contexto del Lead (panel derecho)
 
-A la derecha del hilo aparece el panel de **Contexto del Lead** — el perfil del contacto vinculado a esa conversación. Muestra datos del contacto, su historial de oportunidades y la información relevante para el agente.
+A la derecha del hilo aparece el panel de **Contexto del Lead** — el perfil del contacto vinculado a esa conversación:
+
+![Panel de Contexto del Lead con resumen IA, notas y etiquetas](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-contexto-lead-detalle.png)
+
+| Sección | Qué muestra |
+|---------|-------------|
+| **Datos del contacto** | Nombre, correo y etapa actual del lead |
+| **Valor potencial / Probabilidad** | Si el contacto tiene una oportunidad de CRM asociada |
+| **Etapa** | En qué etapa del pipeline está (ej. "New Lead") |
+| **Primer contacto** | Cuándo escribió por primera vez |
+| **Resumen IA** | Resumen generado automáticamente de qué necesita el cliente — tiene botón **Actualizar** para regenerarlo con la conversación más reciente |
+| **Notas del asesor** | Espacio libre para que tu equipo deje contexto que verá cualquiera que retome la conversación |
+| **Etiquetas** | Los tags aplicados a esa conversación, visibles desde el mismo panel |
 
 Si la conversación aún no tiene un contacto vinculado, verás el botón **Crear contacto** — que permite crear el perfil directamente desde el hilo sin salir del panel.
 
