@@ -160,6 +160,25 @@ Cambios de las sesiones 2026-08-20 y 2026-08-21 (Copilot, integración de Correo
 - Token almacenado en `localStorage` (o `sessionStorage` si no se activa "Recordar")
 - Botón "Bloquear" visible en páginas admin para cerrar sesión
 
+### Sesión 2026-08-26 — Recap del founder + 40 screenshots nuevas
+
+Se procesó `Documentación Recap.md` (notas del founder sobre cómo funciona cada módulo) contra 40 screenshots nuevas en `nuevas_screenshots_peaking/` (sin organizar, formato `Screenshot AAAA-MM-DD at HH-MM-SS Peaking AI.png`). Se catalogó cada captura, se recortaron/renombraron 26 de ellas a la convención del proyecto y se integraron en 8 artículos:
+
+- `05-conversaciones/panel-de-conversaciones.md` — selección múltiple de conversaciones (asignar/etiquetar/silenciar en lote), Contexto del Lead desglosado
+- `05-conversaciones/copilot-cotizaciones.md` — cruce con TODOs auto-generados por el agente
+- `06-crm-audiencias/crm-vista-general.md` — sección nueva **Papelera de oportunidades**, búsqueda avanzada completa (Fuente, Canal, rango de fechas)
+- `10-tareas/tareas-y-todos.md` — búsqueda avanzada, campo Departamento en Nuevo TODO, sección nueva **Crear una regla inteligente de asignación** (AI-Powered)
+- `02-canales/plantillas-whatsapp.md` — sección nueva **Enviar una plantilla en lote** (Nuevos Contactos, Contactos Existentes, Audiencias, Programar), límites de envío por calidad de número, verificación de Meta Business
+- `09-integraciones-partner/google-calendar.md` — sección nueva **Modos de Agendamiento** (Estricto, Flexible, AI Calendar Routing) + configuración por calendario
+- `07-productos-pagos/catalogo-de-productos.md` — formulario "Agregar Producto" reescrito con los campos reales (Tipo de Producto, Imagen, Dimensiones, Atributos, Productos Opcionales); se corrigió el concepto de "campos dinámicos" `{{talla}}` que no existe en la UI actual
+- `01-primeros-pasos/configuraciones-iniciales.md` — captura de Team Members (columna de correo redactada — ver nota de privacidad abajo), modal completo de "Nuevo campo" en Contactos, sección nueva de Configuración de Asignación TODO
+
+**Nota de privacidad:** una de las 40 capturas mostraba la tabla completa de Team Members con correos internos reales del equipo. Se usó una versión recortada (nombres/roles visibles, columna de correo tapada con un bloque gris) en vez de excluirla por completo, a pedido explícito del usuario tras confirmar el riesgo. Otra captura de Google Calendar exponía un banner de admin ("Viendo como: X") y un Gmail personal de un miembro del equipo — se descartaron ambos elementos recortando la imagen a solo la fila genérica de calendario.
+
+**Bugs de UI detectados (no corregidos, son del producto no de la doc):** la pestaña Organización de Configuración muestra llaves de traducción sin traducir (`settings.businessContext`); las pestañas Profile/Security y los paneles de asignación Round Robin/TODO están en inglés dentro de una app en español. Documentados tal cual, reflejando la realidad actual.
+
+Build de Astro verificado sin errores tras los cambios (80 páginas). Cambios commiteados y pusheados a `max's-branch`. La carpeta `nuevas_screenshots_peaking/` y `Documentación Recap.md` quedaron sin comitear (son insumos de trabajo, no contenido del sitio).
+
 ---
 
 ## Google Analytics 4
