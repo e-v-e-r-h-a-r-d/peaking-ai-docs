@@ -11,6 +11,10 @@ El **Panel de Control** es la primera pantalla que ves al ingresar a Peaking. De
 Para volver al Panel de Control en cualquier momento, haz clic en el ícono de inicio en el panel lateral izquierdo de Peaking.
 :::
 
+Este es el menú de navegación completo — el punto de partida para moverte por toda la plataforma. Los módulos que ves dependen de cuáles tengas activados en _Configuración › Funcionalidades_ (ver [Configuración general de la cuenta](/01-primeros-pasos/configuraciones-iniciales/#pestaña-funcionalidades--módulos-activables)).
+
+![Menú de navegación completo de Peaking con todos los módulos disponibles en el panel lateral](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/sidebar-navegacion-completa.png)
+
 ---
 
 ## Resumen del Panel

@@ -79,8 +79,10 @@ El CRM ofrece dos formas de visualizar las oportunidades:
 Las oportunidades se muestran como tarjetas organizadas en columnas, donde cada columna representa una etapa del pipeline.
 
 - Arrastra tarjetas entre columnas para avanzar una oportunidad en el proceso.
-- Cada tarjeta muestra: nombre del lead, etiqueta de prioridad, vendedor asignado y fecha de última actividad.
+- Cada tarjeta muestra: nombre del lead, empresa, prioridad, fecha de creación, vendedor asignado y la etapa actual.
 - La vista Kanban es ideal para sesiones de revisión del pipeline en equipo.
+
+![Ejemplo de una tarjeta individual del Kanban con nombre, prioridad, fecha y etapa](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-tarjeta-kanban-ejemplo.png)
 
 ### Vista Lista
 

@@ -240,11 +240,13 @@ Algunos campos de esta sección (**Auto Assignment**, **Assignment Strategy**) a
 
 Activa o desactiva módulos completos de la plataforma según lo que tu operación necesite. Cada módulo tiene un badge **Activo** o **Inactivo** y un toggle para cambiarlo.
 
-![Funcionalidades: Módulo CRM, Visibilidad por asignación, Ver todo el CRM editar solo lo propio, Módulo TODOs](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-1.png)
+![Funcionalidades: Módulo CRM, Visibilidad por asignación, Ver todo el CRM editar solo lo propio, Módulo TODOs, Sucursales/Ubicaciones, Time Blocks/Reservaciones](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-1.png)
 
-![Funcionalidades: Sucursales/Ubicaciones, Time Blocks/Reservaciones, Workflows, Formularios de captación, API pública, Plantillas y envío masivo de WhatsApp, Odoo Sync](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-2.png)
+![Funcionalidades: Workflows, Formularios de captación, API pública, Plantillas y envío masivo de WhatsApp, Odoo Sync, Enriquecimiento IA](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-2.png)
 
 ![Funcionalidades: Enriquecimiento IA, Agentes de Voz, Variantes de producto](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-3.png)
+
+![Funcionalidades: Variantes de producto y Configuración de Asignación CRM (Round Robin)](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-4.png)
 
 | Módulo | Qué habilita |
 |--------|---------------|
