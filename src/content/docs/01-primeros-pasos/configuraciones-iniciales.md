@@ -109,6 +109,8 @@ La persona recibirá un correo con el enlace de acceso a la plataforma.
 
 Actualiza tu información de usuario dentro de la plataforma.
 
+![Pestaña Profile con Avatar, First Name, Last Name, Email, Phone Number, Job Title y WhatsApp para notificaciones](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-profile-informacion.png)
+
 | Campo | Notas |
 |-------|-------|
 | **Avatar** | Imagen de perfil · máximo 5 MB · click en la foto para cambiarla |
@@ -123,6 +125,8 @@ Cuando termines los cambios, haz clic en **Save Changes**.
 ---
 
 ## Pestaña: Security — Seguridad de la cuenta
+
+![Pestaña Security con Current Password, New Password, Confirm New Password y la sección Onboarding](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-security-password.png)
 
 ### Cambiar contraseña
 
