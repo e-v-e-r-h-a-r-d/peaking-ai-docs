@@ -117,6 +117,17 @@ Artículos aún en placeholder — sin screenshots no se puede escribir el conte
 | [ ] | Dashboard principal completo (Panel de Control) | `dashboard-panel-control.jpg` | `tour-del-dashboard.md` |
 | [ ] | Modal de configuraciones iniciales / onboarding | `primeros-pasos-setup.jpg` | `configuraciones-iniciales.md` |
 
+### Mejores Prácticas (`19-mejores-practicas/`)
+Sección nueva (2026-08-28), reutiliza screenshots existentes de Workflows/Prompt Studio. Estas son específicas del tema y no existen todavía — la sección funciona sin ellas, pero las reforzarían.
+
+| Hecho | Captura | Nombre de archivo | Dónde va |
+|-------|---------|-------------------|----------|
+| [ ] | Canvas de un workflow real con 2 nodos Agent principales + 1 nodo Agent de seguimiento, conectados y etiquetados | `mejores-practicas-arquitectura-2-1.jpg` | `arquitectura-de-agentes.md` — sección "Dos arquetipos que funcionan en producción" |
+| [ ] | Nodo Agent con "Available Tools" expandido mostrando la misma herramienta con una instrucción distinta a la de otro nodo Agent del mismo flow (dos capturas lado a lado) | `mejores-practicas-tool-scoping.jpg` | `evitar-colisiones-agentes-herramientas.md` — sección "Herramienta vs. Herramienta" |
+| [ ] | Historial de versiones de un Prompt (ícono reloj) con varias versiones listadas | `mejores-practicas-historial-versiones.jpg` | `ciclo-de-mejora-y-versionado.md` — sección "Cambios aditivos, con rollback disponible" |
+
+**Video sugerido (formato futuro, no bloqueante):** grabación corta del ciclo completo — editar una regla de un prompt → probar el cambio en el Peaking Lab → publicar → abrir el historial de versiones para confirmar el rollback disponible. Encajaría en `ciclo-de-mejora-y-versionado.md` una vez que el sitio soporte incrustar video.
+
 ---
 
 ## Resumen
