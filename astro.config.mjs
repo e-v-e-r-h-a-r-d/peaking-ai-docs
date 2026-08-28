@@ -120,6 +120,10 @@ export default defineConfig({
 					autogenerate: { directory: '11-workflows' },
 				},
 				{
+					label: 'Mejores Prácticas',
+					autogenerate: { directory: '19-mejores-practicas' },
+				},
+				{
 					label: 'Pedidos y Carritos',
 					autogenerate: { directory: '12-pedidos-carritos' },
 				},

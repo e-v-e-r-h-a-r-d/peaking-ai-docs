@@ -30,6 +30,7 @@ src/content/docs/
 ├── 12-pedidos-carritos/         ← Pedidos, Carritos, Stripe, Mercado Pago, Flujo de compra
 ├── 13-contactos/                ← Contactos (sección propia, separada del CRM)
 ├── 14-audiencias/               ← Audiencias y Campañas (sección propia)
+├── 19-mejores-practicas/        ← Mejores prácticas de arquitectura de agentes, prompts y workflows
 └── admin-interno/               ← Solo equipo Peaking (sidebar.hidden: true)
 ```
 
@@ -53,6 +54,7 @@ src/content/docs/
 | Integraciones | `09-integraciones-partner` |
 | Productos | `07-productos-pagos` |
 | Workflows | `11-workflows` |
+| Mejores Prácticas | `19-mejores-practicas` |
 | Pedidos y Carritos | `12-pedidos-carritos` |
 | Audiencias y Campañas | `14-audiencias` |
 | Conecta tus canales | `02-canales` |
@@ -123,6 +125,11 @@ Cambios de las sesiones 2026-08-20 y 2026-08-21 (Copilot, integración de Correo
 | `12-pedidos-carritos/mercado-pago-configuracion.md` | Pedidos | Autenticación MP, IVA, dashboard, métodos por país, tarifas |
 | `09-integraciones-partner/odoo-hubspot-zoho.md` | Integraciones | Go HighLevel nativo, HubSpot, Odoo, Zoho, Integraciones Personalizadas, Stripe OAuth |
 | `09-integraciones-partner/google-calendar.md` | Integraciones | Conexión, autenticación Google, declaración en Prompt Studio |
+| `19-mejores-practicas/resumen-de-mejores-practicas.md` | Mejores Prácticas | Cheat sheet de entrada, 4 reglas madre con enlaces |
+| `19-mejores-practicas/arquitectura-de-agentes.md` | Mejores Prácticas | Patrón 2 agentes principales + 1 seguimiento, 2 arquetipos, cuándo consolidar vs. separar |
+| `19-mejores-practicas/evitar-colisiones-agentes-herramientas.md` | Mejores Prácticas | 3 tipos de solapamiento (agente↔agente, herramienta↔herramienta, agente↔herramienta), checklist pre-publicación |
+| `19-mejores-practicas/escribir-prompts-efectivos.md` | Mejores Prácticas | Estructura TRIGGER→ACCIÓN→PROHIBIDO, guardrails anti-alucinación, formato de salida |
+| `19-mejores-practicas/ciclo-de-mejora-y-versionado.md` | Mejores Prácticas | Diagnosticar→cambio único→probar→documentar, versionado aditivo con rollback |
 | `09-integraciones-partner/catalogos-de-datos.md` | Integraciones | Catálogos de Datos Externos — form completo, declaración en Prompt, FAQ |
 | `02-canales/plantillas-whatsapp.md` | Canales | WABA, sincronización, envío desde Panel de Mensajes |
 | `03-prompt-studio/declarar-herramientas.md` | Prompt Studio | Configuración de Herramientas, ejemplo HubSpot, FAQ |
@@ -178,6 +185,20 @@ Se procesó `Documentación Recap.md` (notas del founder sobre cómo funciona ca
 **Bugs de UI detectados (no corregidos, son del producto no de la doc):** la pestaña Organización de Configuración muestra llaves de traducción sin traducir (`settings.businessContext`); las pestañas Profile/Security y los paneles de asignación Round Robin/TODO están en inglés dentro de una app en español. Documentados tal cual, reflejando la realidad actual.
 
 Build de Astro verificado sin errores tras los cambios (80 páginas). Cambios commiteados y pusheados a `max's-branch`. La carpeta `nuevas_screenshots_peaking/` y `Documentación Recap.md` quedaron sin comitear (son insumos de trabajo, no contenido del sitio).
+
+### Sesión 2026-08-28 — Sección nueva: Mejores Prácticas (arquitectura de agentes, prompts, workflows)
+
+Se creó la sección pública `19-mejores-practicas/` (sidebar: **Mejores Prácticas**, entre Workflows y Pedidos y Carritos) con 5 artículos, generalizando aprendizajes de implementaciones reales de clientes de Peaking (Forza EPP/JAD, Más Sicarú, BAJAJ Torito Motos, EasyFit/Vivo47, Mexbelt — revisadas en `C:\Users\guerr\onedrive\desktop\Peaking\`, fuera de este repo) sin usar nombres de cliente, marcas, precios ni texto de prompt copiado literal:
+
+- `resumen-de-mejores-practicas.md` — cheat sheet de entrada con las 4 reglas madre
+- `arquitectura-de-agentes.md` — patrón de máximo 2 agentes principales + 1 de seguimiento; cuándo consolidar vs. separar
+- `evitar-colisiones-agentes-herramientas.md` — las 3 formas de solapamiento (agente↔agente, herramienta↔herramienta, agente↔herramienta), incluyendo un caso real generalizado de un nodo Condition ciego al contexto que "robaba" la conversación entre dos agentes
+- `escribir-prompts-efectivos.md` — estructura TRIGGER → ACCIÓN OBLIGATORIA → PROHIBIDO, reglas críticas al tope, casos reales fechados, guardrails anti-alucinación
+- `ciclo-de-mejora-y-versionado.md` — diagnosticar → un cambio a la vez → probar en Peaking Lab → documentar
+
+Reutiliza screenshots ya existentes de `03-prompt-studio/` y `11-workflows/` (no se tomaron capturas nuevas). Se agregaron 3 sugerencias de capturas específicas del tema + 1 idea de video a `SCREENSHOTS-PENDIENTES.md` (sección "Mejores Prácticas") para un futuro refuerzo visual — no bloquean la sección, que ya es completa en texto.
+
+Build de Astro verificado sin errores (85 páginas). Sidebar registrado en `astro.config.mjs` según la regla crítica del proyecto.
 
 ---
 
