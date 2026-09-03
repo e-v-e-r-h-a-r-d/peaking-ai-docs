@@ -1,6 +1,8 @@
 ---
 title: Primeros pasos
 description: Todo lo que necesitas para ir de cero a tu primera IA activa en Peaking. Empieza aquí.
+sidebar:
+  order: 0
 ---
 
 Bienvenido al Centro de Ayuda de Peaking. Esta sección te lleva, paso a paso, desde el primer acceso hasta tener tu agente de IA funcionando y atendiendo clientes.

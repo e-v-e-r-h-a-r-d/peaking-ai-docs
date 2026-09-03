@@ -1,6 +1,8 @@
 ---
 title: Productos
 description: Gestiona el catálogo de productos que el agente de IA usa para vender, cotizar y responder preguntas durante las conversaciones.
+sidebar:
+  order: 0
 ---
 
 El módulo de **Productos** centraliza tu catálogo de ventas. El agente de IA consulta este catálogo en tiempo real durante las conversaciones para dar precios exactos, verificar disponibilidad y generar cotizaciones u órdenes.

@@ -1,6 +1,8 @@
 ---
 title: Audiencias y Campañas
 description: Crea segmentos de contactos y envía mensajes masivos por WhatsApp para re-engagement, prospección y campañas de marketing.
+sidebar:
+  order: 0
 ---
 
 El módulo de **Audiencias y Campañas** te permite agrupar contactos por atributos y enviarles mensajes masivos por WhatsApp. Es la herramienta de salida — a diferencia de Mensajes (que gestiona conversaciones entrantes), aquí inicias tú la comunicación.

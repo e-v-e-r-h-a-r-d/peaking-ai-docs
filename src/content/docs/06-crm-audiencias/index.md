@@ -1,6 +1,8 @@
 ---
 title: CRM
 description: Gestiona tu pipeline de ventas — oportunidades, etapas, asignación de leads y seguimiento con el agente de IA.
+sidebar:
+  order: 0
 ---
 
 El **CRM** de Peaking gestiona el pipeline activo de ventas. El agente de IA crea oportunidades automáticamente cuando detecta intención de compra, y tu equipo les da seguimiento desde el Kanban o la lista hasta el cierre.

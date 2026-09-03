@@ -1,6 +1,8 @@
 ---
 title: Integraciones
 description: Conecta Peaking con tus canales de mensajería, fuentes de datos externas y herramientas de CRM, pagos y calendario.
+sidebar:
+  order: 0
 ---
 
 La sección de **Integraciones** está organizada en tres pestañas, cada una con un propósito distinto:
