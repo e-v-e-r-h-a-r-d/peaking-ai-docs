@@ -16,6 +16,7 @@ Help Center de **Peaking AI** — documentación orientada al usuario final (en 
 ```
 src/content/docs/
 ├── index.mdx                    ← Landing page del Help Center
+├── 00-novedades/                ← Release notes: anuncios de features nuevas, mejoras y correcciones
 ├── 01-primeros-pasos/           ← Onboarding (bienvenida, dashboard, config, glosario)
 ├── 02-canales/                  ← WhatsApp, Instagram, Messenger, Widget web, Plantillas WA
 ├── 03-prompt-studio/            ← Prompt Studio: prompt, variables, herramientas, test
@@ -30,6 +31,10 @@ src/content/docs/
 ├── 12-pedidos-carritos/         ← Pedidos, Carritos, Stripe, Mercado Pago, Flujo de compra
 ├── 13-contactos/                ← Contactos (sección propia, separada del CRM)
 ├── 14-audiencias/               ← Audiencias y Campañas (sección propia)
+├── 15-envios-whatsapp/          ← Histórico de envíos masivos de WhatsApp
+├── 16-guia-devs/                ← Guía para desarrolladores (Peaking MCP)
+├── 17-soporte/                  ← Error de plataforma vs. solicitud de implementación
+├── 18-how-to/                   ← Resolución de configuraciones frecuentes
 ├── 19-mejores-practicas/        ← Mejores prácticas de arquitectura de agentes, prompts y workflows
 └── admin-interno/               ← Solo equipo Peaking (sidebar.hidden: true)
 ```
@@ -42,6 +47,7 @@ src/content/docs/
 
 | Label | Directorio / Estructura |
 |-------|------------------------|
+| Novedades | `00-novedades` |
 | Primeros pasos | `01-primeros-pasos` |
 | Base de Conocimientos | `04-base-conocimientos` |
 | Mensajes | `05-conversaciones` |
@@ -57,7 +63,11 @@ src/content/docs/
 | Mejores Prácticas | `19-mejores-practicas` |
 | Pedidos y Carritos | `12-pedidos-carritos` |
 | Audiencias y Campañas | `14-audiencias` |
+| Envíos WhatsApp | `15-envios-whatsapp` |
 | Conecta tus canales | `02-canales` |
+| Guía para Devs | `16-guia-devs` |
+| Soporte | `17-soporte` |
+| How To | `18-how-to` |
 
 `admin-interno/` no aparece en el sidebar — artículos ocultos con `sidebar.hidden: true`.
 
@@ -199,6 +209,19 @@ Se creó la sección pública `19-mejores-practicas/` (sidebar: **Mejores Práct
 Reutiliza screenshots ya existentes de `03-prompt-studio/` y `11-workflows/` (no se tomaron capturas nuevas). Se agregaron 3 sugerencias de capturas específicas del tema + 1 idea de video a `SCREENSHOTS-PENDIENTES.md` (sección "Mejores Prácticas") para un futuro refuerzo visual — no bloquean la sección, que ya es completa en texto.
 
 Build de Astro verificado sin errores (85 páginas). Sidebar registrado en `astro.config.mjs` según la regla crítica del proyecto.
+
+### Sesión 2026-09-03 — Sección nueva: Novedades (release notes)
+
+Se creó la sección pública `00-novedades/` (sidebar: **Novedades**, primer ítem del menú, antes de "Primeros pasos") — historial de anuncios oficiales para que los clientes verifiquen qué cambió en la plataforma, con tres categorías: 🆕 Nuevo, 🔧 Mejora, 🐛 Corrección.
+
+- `index.md` — landing de la sección: qué es, cómo leer un release, lista de entregas publicadas
+- `agosto-2026.md` — **v1**, primera entrega: todo lo agregado al producto desde julio 2026 (alcance: solo features/mejoras, sin correcciones — pendiente una siguiente entrega para bugs). Cubre Copilot, Correo (Gmail/Outlook/IMAP), envío de plantillas WhatsApp en lote, métricas Entregados/No entregados, Vista Calendario + Papelera de oportunidades + búsqueda avanzada en CRM, reglas de asignación AI-Powered en Tareas, selección múltiple de conversaciones, Reportes y Análisis con IA, Meta Conversions API, Modos de Agendamiento en Google Calendar, Fichas técnicas en Base de Conocimientos, Agrupación de respuestas del agente, formulario de producto renovado, nuevas pestañas de Configuración, y el lanzamiento de la sección Mejores Prácticas del Help Center.
+
+**Convención para futuros releases:** cada entrega nueva es un archivo `mes-año.md` (ej. `septiembre-2026.md`) dentro de `00-novedades/`. `index.md` mantiene siempre `sidebar.order: 0`. El release más reciente entra con `sidebar.order: 1`, y los anteriores se re-numeran +1 (el más nuevo siempre arriba, justo debajo del índice).
+
+Build de Astro verificado sin errores (87 páginas). Sidebar registrado en `astro.config.mjs`. Todos los enlaces internos del release verificados contra el build.
+
+**Pendiente:** revisión completa de las ~19 secciones públicas contra este release y contra el inventario de este CLAUDE.md, para confirmar que no falte nada ni haya inconsistencias (fase 2 solicitada por el usuario, aún no ejecutada). De paso, esta sesión notó que las tablas "Estructura de contenido" y "Sidebar actual" de este archivo ya estaban desactualizadas antes de este cambio (no reflejaban `15-envios-whatsapp`, `16-guia-devs`, `17-soporte`, `18-how-to`) — corregirlo queda dentro del alcance de esa revisión.
 
 ---
 
