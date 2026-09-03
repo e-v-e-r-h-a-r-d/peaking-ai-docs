@@ -1,6 +1,8 @@
 ---
 title: Insights
 description: Mide el rendimiento de tu agente de IA y analiza las conversaciones de tus clientes con el dashboard y el agente de análisis de Peaking.
+sidebar:
+  order: 0
 ---
 
 **Insights** centraliza la inteligencia operativa de tu cuenta: métricas de rendimiento del agente, análisis de conversaciones y tendencias de tus clientes — todo en un solo lugar.

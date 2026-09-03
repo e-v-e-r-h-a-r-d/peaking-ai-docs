@@ -1,6 +1,8 @@
 ---
 title: Mensajes
 description: Gestiona el panel de mensajes entrantes, escalamientos a agentes humanos, tags y la bandeja de tu equipo.
+sidebar:
+  order: 0
 ---
 
 El módulo de **Mensajes** es el centro de operaciones de tu equipo. Aquí ves en tiempo real todo lo que está pasando: mensajes activos, conversaciones sin leer, escalamientos pendientes y mensajes asignados a tu equipo.

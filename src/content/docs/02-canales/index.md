@@ -1,6 +1,8 @@
 ---
 title: Conecta tus canales
 description: Conecta WhatsApp, Instagram, Messenger y tu sitio web a Peaking para que tu IA empiece a atender clientes.
+sidebar:
+  order: 0
 ---
 
 Una vez que tienes tu cuenta configurada, el siguiente paso es conectar los canales por los que recibes mensajes de tus clientes. Peaking soporta los principales canales de mensajería y un widget de chat para tu sitio web.

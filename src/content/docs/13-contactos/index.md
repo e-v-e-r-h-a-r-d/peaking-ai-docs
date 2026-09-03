@@ -1,6 +1,8 @@
 ---
 title: Contactos
 description: Base de datos central de todos tus clientes y prospectos — historial, datos de contacto, etiquetas y actividad vinculada.
+sidebar:
+  order: 0
 ---
 
 El módulo de **Contactos** es el repositorio central de todas las personas y empresas que han interactuado con tus canales. Desde aquí puedes buscar cualquier contacto, ver su historial completo, editar sus datos, gestionar etiquetas y crear nuevos contactos manualmente.

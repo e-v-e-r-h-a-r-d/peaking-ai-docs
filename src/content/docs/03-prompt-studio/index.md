@@ -1,6 +1,8 @@
 ---
 title: Tu agente de IA — Prompt Studio
 description: Crea, configura y mejora el comportamiento de tu agente de IA desde Prompt Studio.
+sidebar:
+  order: 0
 ---
 
 Prompt Studio es el módulo donde defines la personalidad, el tono y el comportamiento de tu agente de IA. Un buen prompt es la diferencia entre una IA que frustra a tus clientes y una que los deleita.

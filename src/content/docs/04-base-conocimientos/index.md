@@ -1,6 +1,8 @@
 ---
 title: Base de Conocimientos
 description: Sube documentos, URLs y contenido para que tu agente de IA responda con información precisa de tu negocio.
+sidebar:
+  order: 0
 ---
 
 La Base de Conocimientos (Knowledge Base) es el repositorio de información que tu agente de IA consulta para responder las preguntas de tus clientes. Cuanto más relevante y organizado sea el contenido, más precisas serán las respuestas.
