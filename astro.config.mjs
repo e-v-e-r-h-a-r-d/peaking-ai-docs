@@ -71,6 +71,10 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: 'Novedades',
+					autogenerate: { directory: '00-novedades' },
+				},
+				{
 					label: 'Primeros pasos',
 					autogenerate: { directory: '01-primeros-pasos' },
 				},
