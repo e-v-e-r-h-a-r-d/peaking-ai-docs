@@ -2,7 +2,7 @@
 title: Conexión con Messenger
 description: Cómo conectar tu Página de Facebook a Peaking para gestionar conversaciones de Messenger con tu agente de IA.
 sidebar:
-  order: 3
+  order: 2
 ---
 
 Facebook Messenger es uno de los canales con mayor base instalada en Latinoamérica. Al conectarlo a Peaking, todos los mensajes que lleguen al chat de tu Página de Facebook serán atendidos automáticamente por tu agente de IA — sin intervención manual.

@@ -6,6 +6,12 @@ const GA_MEASUREMENT_ID = 'G-XTN1FD69HK';
 
 export default defineConfig({
 	site: 'https://docs.peaking.ai',
+	redirects: {
+		'/02-canales/conexion-whatsapp/': '/15-whatsapp/conexion-whatsapp/',
+		'/02-canales/plantillas-whatsapp/': '/15-whatsapp/plantillas-whatsapp/',
+		'/15-envios-whatsapp/envios-whatsapp/': '/15-whatsapp/envios-whatsapp/',
+		'/09-integraciones-partner/reconexion-tokens/': '/02-canales/reconexion-tokens/',
+	},
 	integrations: [
 		starlight({
 			title: 'Peaking AI',
@@ -79,16 +85,38 @@ export default defineConfig({
 					autogenerate: { directory: '01-primeros-pasos' },
 				},
 				{
+					label: 'Integraciones',
+					items: [
+						{
+							label: 'WhatsApp',
+							autogenerate: { directory: '15-whatsapp' },
+						},
+						{
+							label: 'Catálogos y Herramientas',
+							autogenerate: { directory: '09-integraciones-partner' },
+						},
+					],
+				},
+				{
+					label: 'Estudio de Prompts',
+					autogenerate: { directory: '03-prompt-studio' },
+				},
+				{
 					label: 'Base de Conocimientos',
 					autogenerate: { directory: '04-base-conocimientos' },
 				},
 				{
 					label: 'Mensajes',
-					autogenerate: { directory: '05-conversaciones' },
-				},
-				{
-					label: 'Insights',
-					autogenerate: { directory: '08-analytics' },
+					items: [
+						{
+							label: 'Conversaciones',
+							autogenerate: { directory: '05-conversaciones' },
+						},
+						{
+							label: 'Otros canales',
+							autogenerate: { directory: '02-canales' },
+						},
+					],
 				},
 				{
 					label: 'CRM y Gestión',
@@ -108,24 +136,8 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Estudio de Prompts',
-					autogenerate: { directory: '03-prompt-studio' },
-				},
-				{
-					label: 'Integraciones',
-					autogenerate: { directory: '09-integraciones-partner' },
-				},
-				{
 					label: 'Productos',
 					autogenerate: { directory: '07-productos-pagos' },
-				},
-				{
-					label: 'Workflows',
-					autogenerate: { directory: '11-workflows' },
-				},
-				{
-					label: 'Mejores Prácticas',
-					autogenerate: { directory: '19-mejores-practicas' },
 				},
 				{
 					label: 'Pedidos y Carritos',
@@ -136,12 +148,16 @@ export default defineConfig({
 					autogenerate: { directory: '14-audiencias' },
 				},
 				{
-					label: 'Envíos WhatsApp',
-					autogenerate: { directory: '15-envios-whatsapp' },
+					label: 'Insights',
+					autogenerate: { directory: '08-analytics' },
 				},
 				{
-					label: 'Conecta tus canales',
-					autogenerate: { directory: '02-canales' },
+					label: 'Workflows',
+					autogenerate: { directory: '11-workflows' },
+				},
+				{
+					label: 'Mejores Prácticas',
+					autogenerate: { directory: '19-mejores-practicas' },
 				},
 				{
 					label: 'Guía para Devs',

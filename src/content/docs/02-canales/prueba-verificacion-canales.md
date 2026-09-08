@@ -2,7 +2,7 @@
 title: Estado y verificación de canales
 description: Cómo interpretar el estado de tus canales conectados en Peaking y verificar que funcionan correctamente antes de activar tu agente de IA.
 sidebar:
-  order: 5
+  order: 4
 ---
 
 Una vez que conectas un canal a Peaking, la sección **Canales de Mensajería** te muestra en tiempo real el estado de cada integración. Desde aquí puedes verificar que todo funciona, activar o pausar canales sin desconectarlos, y detectar problemas antes de que afecten la atención a tus clientes.
@@ -71,7 +71,7 @@ Sin toggle ni información de conexión
 El canal nunca ha sido vinculado a esta cuenta de Peaking, o fue desconectado. No hay ninguna integración activa.
 
 Para conectarlo, haz clic sobre el canal y sigue el proceso de conexión correspondiente:
-- [Conectar WhatsApp](/02-canales/conexion-whatsapp/)
+- [Conectar WhatsApp](/15-whatsapp/conexion-whatsapp/)
 - [Conectar Instagram](/02-canales/conexion-instagram/)
 - [Conectar Messenger](/02-canales/conexion-messenger/)
 

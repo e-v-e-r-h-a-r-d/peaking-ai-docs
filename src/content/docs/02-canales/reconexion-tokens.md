@@ -2,7 +2,7 @@
 title: Reconexión de tokens — WhatsApp, Instagram y Facebook
 description: Qué hacer cuando aparece el aviso "Token expirado - Reconectar" en tus canales de mensajería y cómo volver a conectarlos en minutos.
 sidebar:
-  order: 3
+  order: 5
 ---
 
 Los canales de Instagram Business y Facebook Messenger usan tokens de acceso de Meta que **expiran periódicamente** (aproximadamente cada 60 días). Cuando un token expira, la plataforma sigue mostrando el canal como "Conectado" pero el agente deja de poder enviar y recibir mensajes por ese canal hasta que se renueve.
