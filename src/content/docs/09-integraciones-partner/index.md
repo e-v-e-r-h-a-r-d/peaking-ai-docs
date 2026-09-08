@@ -7,8 +7,8 @@ sidebar:
 
 Dentro de **Integraciones**, esta parte cubre las fuentes de datos externas y las herramientas de terceros que tu agente de IA puede usar durante una conversación.
 
-:::note[¿Buscas cómo conectar un canal de mensajería?]
-WhatsApp tiene su propia sección, por ser el canal de mayor volumen: **[WhatsApp](/15-whatsapp/)**. Instagram, Messenger y el Widget web están documentados en **[Otros canales](/02-canales/)**, junto al Panel de Mensajes.
+:::note[¿Buscas cómo conectar un canal de mensajería o una campaña?]
+Aquí al lado, dentro de **Integraciones**, encuentras **[WhatsApp](/15-whatsapp/)** (conexión, plantillas, envíos masivos), **[Audiencias y Campañas](/14-audiencias/)** y **[Otros canales](/02-canales/)** (Instagram, Messenger, Widget web).
 :::
 
 ---

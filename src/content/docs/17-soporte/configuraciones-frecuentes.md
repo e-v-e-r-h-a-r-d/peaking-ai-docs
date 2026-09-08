@@ -2,7 +2,7 @@
 title: Resolución de configuraciones frecuentes
 description: Guía práctica para resolver por tu cuenta las dudas más comunes sobre prompts, workflows, tags, variables y canales en Peaking.
 sidebar:
-  order: 1
+  order: 2
 ---
 
 Esta guía cubre las situaciones que más frecuentemente generan dudas — y que en la mayoría de los casos tienen solución directa desde la propia plataforma, sin necesidad de contactar al equipo de soporte.

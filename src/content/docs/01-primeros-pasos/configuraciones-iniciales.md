@@ -283,6 +283,76 @@ Activa **Enable Auto-Assignment** y elige la **Assignment Strategy**: **Round Ro
 
 Gestiona el acceso programático a tu cuenta de Peaking. Esta pestaña está ligada al módulo **API pública** de Funcionalidades — actívalo primero si no ves opciones disponibles aquí. Para el detalle de cómo consumir la API con leads externos, ver [Integraciones Personalizadas](/09-integraciones-partner/odoo-hubspot-zoho/).
 
+### Conexión MCP con Claude Code (equipos técnicos y partners)
+
+La misma API key (`pk_live_…`) que generas en esta pestaña sirve para conectar un servidor **MCP remoto** a **Claude Code** y mejorar los AI Agents de una organización **desde la terminal**, con acceso acotado a esa organización. Es una herramienta para el equipo técnico de Peaking o para partners que implementan cuentas — no es un módulo que actives para ti mismo como usuario final.
+
+Sirve para: diagnosticar conversaciones reales, editar/crear/versionar prompts, ajustar y crear workflows, y **probar un cambio antes de que salga a producción**.
+
+#### Conectar (2 minutos)
+
+```bash
+claude mcp add --transport http peaking \
+  https://wqicfalgufotrnruyumk.supabase.co/functions/v1/mcp \
+  --header "Authorization: Bearer pk_live_TU_KEY"
+```
+
+- Agrega `--scope user` para tenerlo disponible en todos tus proyectos.
+- Verifica: `claude mcp list` (debe salir `peaking ✓`) y dentro de una sesión `/mcp`.
+- ¿Varios clientes? Una key **por** cliente → agrégalos como servidores separados: `peaking-clienteA`, `peaking-clienteB`.
+
+:::note[1 key = 1 organización]
+La key ya define de qué cliente son todos los datos. No puedes cruzar orgs con la misma key.
+:::
+
+#### Permisos (scopes)
+
+Al crear la key en esta pestaña (o pídesela a un admin), marca solo lo que necesites:
+
+| Scope | Para qué |
+|-------|----------|
+| `conversations:read` | Leer conversaciones reales (diagnóstico) y usar replay |
+| `prompts:read` | Ver prompts |
+| `prompts:write` | Crear / editar / versionar prompts |
+| `workflows:read` | Ver workflows |
+| `workflows:write` | Editar nodos, clonar, crear y publicar workflows |
+
+#### Qué puedes hacer (17 herramientas)
+
+No llamas las tools por nombre: **le hablas normal a Claude Code** y él las usa.
+
+| Área | Tools | Ejemplo |
+|------|-------|---------|
+| Conversaciones (diagnóstico) | `list_conversations`, `get_conversation` | *"Trae las últimas 10 conversaciones de WhatsApp y muéstrame la transcripción de la de Emilio."* |
+| Prompts | `list_prompts`, `get_prompt`, `create_prompt`, `update_prompt`, `list_prompt_versions`, `rollback_prompt`, `get_prompt_tools`, `update_prompt_tool` | *"En el prompt del cotizador, cambia el 'cuándo ejecutar' del Catálogo de Productos a: solo cuando el cliente dé un SKU exacto."* |
+| Workflows | `list_workflows`, `get_workflow`, `set_agent_node_config`, `clone_workflow`, `create_workflow_from_spec`, `publish_workflow` | *"Clona el workflow Demo, en el nodo agente ponle el prompt X, y publícalo."* |
+| Probar antes de aplicar | `replay_conversation` | *"Lee la conversación donde el agente falló, propón un fix al prompt, y con replay muéstrame qué respondería con el cambio antes de aplicarlo."* |
+
+#### El flujo estrella: conversación mala → fix verificado
+
+1. `list_conversations` / `get_conversation` → encuentras dónde falló el agente.
+2. Claude propone un cambio al prompt.
+3. `replay_conversation` → ves **qué respondería** con el prompt nuevo (sin efectos secundarios).
+4. Si mejora → `update_prompt` lo aplica (queda versionado).
+5. Si algo sale mal → `rollback_prompt`.
+
+#### Cosas que debes saber (gotchas)
+
+- **Editar un prompt = efecto inmediato en producción.** No hay "guardar borrador" a nivel prompt — por eso existe el versionado + rollback.
+- **Editar un workflow (grafo/nodos) NO aplica hasta `publish_workflow`.** El motor solo lee el snapshot publicado.
+- **`replay_conversation` es 100% seguro** — corre en modo test, no persiste ni envía.
+- **Clonar comparte los prompts por referencia** (editar el clon afecta el original). Usa el flag para duplicarlos si quieres independencia.
+- Todo cambio queda con **`api_key_id`** → es auditable por persona. `last_used_at` te dice si una key se está usando.
+
+#### Seguridad / higiene
+
+- **Una key por persona y por cliente** → revocas y auditas individualmente.
+- La key es **acceso a producción del cliente**: trátala como credencial sensible.
+- El contenido de conversaciones **sale a Anthropic** vía Claude Code — considéralo para clientes con datos sensibles.
+- Al terminar un encargo, **revoca la key** desde esta misma pestaña.
+
+*Endpoint MCP: `https://wqicfalgufotrnruyumk.supabase.co/functions/v1/mcp` · Auth: `Authorization: Bearer pk_live_…`*
+
 ---
 
 ## Preguntas frecuentes

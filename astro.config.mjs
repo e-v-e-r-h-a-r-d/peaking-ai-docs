@@ -11,6 +11,8 @@ export default defineConfig({
 		'/02-canales/plantillas-whatsapp/': '/15-whatsapp/plantillas-whatsapp/',
 		'/15-envios-whatsapp/envios-whatsapp/': '/15-whatsapp/envios-whatsapp/',
 		'/09-integraciones-partner/reconexion-tokens/': '/02-canales/reconexion-tokens/',
+		'/18-how-to/configuraciones-frecuentes/': '/17-soporte/configuraciones-frecuentes/',
+		'/16-guia-devs/peaking-mcp/': '/01-primeros-pasos/configuraciones-iniciales/',
 	},
 	integrations: [
 		starlight({
@@ -92,6 +94,14 @@ export default defineConfig({
 							autogenerate: { directory: '15-whatsapp' },
 						},
 						{
+							label: 'Audiencias y Campañas',
+							autogenerate: { directory: '14-audiencias' },
+						},
+						{
+							label: 'Otros canales',
+							autogenerate: { directory: '02-canales' },
+						},
+						{
 							label: 'Catálogos y Herramientas',
 							autogenerate: { directory: '09-integraciones-partner' },
 						},
@@ -107,16 +117,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Mensajes',
-					items: [
-						{
-							label: 'Conversaciones',
-							autogenerate: { directory: '05-conversaciones' },
-						},
-						{
-							label: 'Otros canales',
-							autogenerate: { directory: '02-canales' },
-						},
-					],
+					autogenerate: { directory: '05-conversaciones' },
 				},
 				{
 					label: 'CRM y Gestión',
@@ -144,10 +145,6 @@ export default defineConfig({
 					autogenerate: { directory: '12-pedidos-carritos' },
 				},
 				{
-					label: 'Audiencias y Campañas',
-					autogenerate: { directory: '14-audiencias' },
-				},
-				{
 					label: 'Insights',
 					autogenerate: { directory: '08-analytics' },
 				},
@@ -160,16 +157,8 @@ export default defineConfig({
 					autogenerate: { directory: '19-mejores-practicas' },
 				},
 				{
-					label: 'Guía para Devs',
-					autogenerate: { directory: '16-guia-devs' },
-				},
-				{
-					label: 'Soporte',
+					label: 'Soporte y Soluciones',
 					autogenerate: { directory: '17-soporte' },
-				},
-				{
-					label: 'How To',
-					autogenerate: { directory: '18-how-to' },
 				},
 				// admin-interno: NO incluido aquí — oculto con sidebar.hidden: true en cada página
 			],

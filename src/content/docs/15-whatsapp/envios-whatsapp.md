@@ -7,6 +7,10 @@ sidebar:
 
 El **Histórico de envíos masivos** registra todas las campañas de plantillas de WhatsApp enviadas a múltiples destinatarios. Desde aquí puedes verificar cuántos mensajes se entregaron, cuántos fallaron y reenviar los fallidos sin recrear la campaña.
 
+:::note[¿Buscas cómo crear la campaña?]
+Este artículo cubre el resultado de campañas ya enviadas. Para armar una campaña nueva (elegir audiencia, plantilla y programar el envío), ve a **[Campañas y broadcasts](/14-audiencias/campanas-y-broadcasts/)** — la audiencia a la que le envías se define en **[Audiencias y segmentos](/14-audiencias/audiencias-y-segmentos/)**.
+:::
+
 ---
 
 ## Acceder al histórico
