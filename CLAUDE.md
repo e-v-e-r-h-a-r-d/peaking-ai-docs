@@ -18,10 +18,10 @@ src/content/docs/
 ├── index.mdx                    ← Landing page del Help Center
 ├── 00-novedades/                ← Release notes: anuncios de features nuevas, mejoras y correcciones
 ├── 01-primeros-pasos/           ← Onboarding (bienvenida, dashboard, config, glosario)
-├── 02-canales/                  ← "Otros canales" (nested bajo Mensajes): Instagram, Messenger, Widget web, verificación, reconexión de tokens
+├── 02-canales/                  ← "Otros canales" (nested bajo Integraciones): Instagram, Messenger, Widget web, verificación, reconexión de tokens
 ├── 03-prompt-studio/            ← Prompt Studio: prompt, variables, herramientas, test
 ├── 04-base-conocimientos/       ← Knowledge Base
-├── 05-conversaciones/           ← "Conversaciones" (nested bajo Mensajes): panel, escalamiento, bandeja, tags, copilot
+├── 05-conversaciones/           ← Mensajes: panel, escalamiento, bandeja, tags, copilot
 ├── 06-crm-audiencias/           ← Solo CRM (pipeline). Contactos y Audiencias en secciones propias
 ├── 07-productos-pagos/          ← Solo catálogo de productos (Stripe/MP/Orders en 12-pedidos)
 ├── 08-analytics/                ← Dashboard, KPIs, Información de Conversaciones (sidebar: Insights)
@@ -30,14 +30,14 @@ src/content/docs/
 ├── 11-workflows/                ← Editor visual de flujos por nodos
 ├── 12-pedidos-carritos/         ← Pedidos, Carritos, Stripe, Mercado Pago, Flujo de compra
 ├── 13-contactos/                ← Contactos (sección propia, separada del CRM)
-├── 14-audiencias/               ← Audiencias y Campañas (sección propia)
+├── 14-audiencias/               ← "Audiencias y Campañas" (nested bajo Integraciones, junto a WhatsApp — los broadcasts son casi siempre por WhatsApp)
 ├── 15-whatsapp/                 ← "WhatsApp" (nested bajo Integraciones): conexión, plantillas, histórico de envíos masivos — antes repartido entre 02-canales y 15-envios-whatsapp
-├── 16-guia-devs/                ← Guía para desarrolladores (Peaking MCP)
-├── 17-soporte/                  ← Error de plataforma vs. solicitud de implementación
-├── 18-how-to/                   ← Resolución de configuraciones frecuentes
+├── 17-soporte/                  ← "Soporte y Soluciones": bug vs. solicitud de implementación + configuraciones frecuentes (antes 18-how-to, fusionado aquí)
 ├── 19-mejores-practicas/        ← Mejores prácticas de arquitectura de agentes, prompts y workflows
 └── admin-interno/               ← Solo equipo Peaking (sidebar.hidden: true)
 ```
+
+**Secciones retiradas (2026-09-08):** `16-guia-devs/` (Peaking MCP) — su contenido se movió a `01-primeros-pasos/configuraciones-iniciales.md` (subsección "Conexión MCP con Claude Code", dentro de la pestaña API). `18-how-to/` — su único artículo se movió a `17-soporte/`.
 
 **Regla crítica:** Toda sección nueva debe registrarse también en `astro.config.mjs` con `autogenerate: { directory: 'XX-nombre' }`.
 
@@ -45,7 +45,7 @@ src/content/docs/
 
 ## Sidebar actual (astro.config.mjs)
 
-Reordenado el 2026-09-08 siguiendo el customer journey real (ver sesión de esa fecha más abajo). 16 secciones de primer nivel (antes 18):
+Reordenado el 2026-09-08 (dos pasadas, ver sesión de esa fecha más abajo) siguiendo el customer journey real. 13 secciones de primer nivel (antes 18):
 
 | # | Label | Directorio / Estructura |
 |---|-------|------------------------|
@@ -53,29 +53,28 @@ Reordenado el 2026-09-08 siguiendo el customer journey real (ver sesión de esa 
 | 2 | Primeros pasos | `01-primeros-pasos` |
 | 3 | **Integraciones** *(grupo anidado)* | — |
 | | → WhatsApp | `15-whatsapp` |
+| | → Audiencias y Campañas | `14-audiencias` |
+| | → Otros canales | `02-canales` |
 | | → Catálogos y Herramientas | `09-integraciones-partner` |
 | 4 | Estudio de Prompts | `03-prompt-studio` |
 | 5 | Base de Conocimientos | `04-base-conocimientos` |
-| 6 | **Mensajes** *(grupo anidado)* | — |
-| | → Conversaciones | `05-conversaciones` |
-| | → Otros canales | `02-canales` |
+| 6 | Mensajes | `05-conversaciones` |
 | 7 | **CRM y Gestión** *(grupo anidado)* | — |
 | | → CRM | `06-crm-audiencias` |
 | | → Contactos | `13-contactos` |
 | | → Tareas | `10-tareas` |
 | 8 | Productos | `07-productos-pagos` |
 | 9 | Pedidos y Carritos | `12-pedidos-carritos` |
-| 10 | Audiencias y Campañas | `14-audiencias` |
-| 11 | Insights | `08-analytics` |
-| 12 | Workflows | `11-workflows` |
-| 13 | Mejores Prácticas | `19-mejores-practicas` |
-| 14 | Guía para Devs | `16-guia-devs` |
-| 15 | Soporte | `17-soporte` |
-| 16 | How To | `18-how-to` |
+| 10 | Insights | `08-analytics` |
+| 11 | Workflows | `11-workflows` |
+| 12 | Mejores Prácticas | `19-mejores-practicas` |
+| 13 | Soporte y Soluciones | `17-soporte` |
 
 `admin-interno/` no aparece en el sidebar — artículos ocultos con `sidebar.hidden: true`.
 
-**Nota sobre grupos anidados sin landing propia:** "Integraciones" y "Mensajes" (como ya pasaba con "CRM y Gestión") son etiquetas paraguas sin página propia de un clic — al hacer clic solo expanden sus subgrupos. Los `index.md` de `09-integraciones-partner` y `05-conversaciones` siguen existiendo y son el primer artículo dentro de su subgrupo respectivo, pero quedan un nivel más adentro que antes.
+**Nota sobre grupos anidados sin landing propia:** "Integraciones" (como ya pasaba con "CRM y Gestión") es una etiqueta paraguas sin página propia de un clic — al hacer clic solo expande sus subgrupos. El `index.md` de `09-integraciones-partner` sigue existiendo y es el primer artículo dentro de su subgrupo "Catálogos y Herramientas", un nivel más adentro que antes. "Mensajes" sí volvió a tener landing directa de un clic (se le quitó el subgrupo "Otros canales" en la segunda pasada de reordenamiento).
+
+**Por qué Reconexión de tokens y Otros canales viven en Integraciones y no en Mensajes:** en la primera pasada de reordenamiento se habían puesto ahí porque conceptualmente "sirven a Mensajes". El usuario corrigió esto — en el producto real, conectar canales (incluida la reconexión de tokens) es parte del panel de **Integraciones**, no de Mensajes. Aplica también a por qué Audiencias y Campañas quedó anidada junto a WhatsApp: los broadcasts casi siempre se envían por WhatsApp.
 
 **Nota sobre labels anidados vía Starlight `autogenerate`:** cuando un `autogenerate` va dentro de un `items: []` (subgrupo), el `label` que le pongas en `astro.config.mjs` SIEMPRE se respeta — no hace falta (ni funciona de forma confiable) nombrar la carpeta física igual al label deseado.
 
@@ -235,19 +234,27 @@ Build de Astro verificado sin errores (87 páginas). Sidebar registrado en `astr
 
 Ejecutó la "fase 2" pendiente de la sesión anterior: reordenó el sidebar completo siguiendo el customer journey real, unificó WhatsApp en una sola sección, y rediseñó la portada para que no tenga links falsos ni contenido desactualizado.
 
-**Reestructuración de contenido:**
-- **WhatsApp unificado:** `15-envios-whatsapp/` se renombró a `15-whatsapp/` y ahí se movieron `conexion-whatsapp.md` y `plantillas-whatsapp.md` (antes en `02-canales/`). Nueva sección **WhatsApp**, anidada dentro de **Integraciones**, con las 3 piezas juntas (Conexión, Plantillas, Histórico de envíos) — a pedido explícito del usuario, por ser "el mayor compendio" de contenido y el canal de mayor inversión.
-- **`02-canales/` pasó a ser "Otros canales"**, anidado dentro de **Mensajes** (Instagram, Messenger, Widget, verificación de estado). También se le movió `reconexion-tokens.md` (antes en `09-integraciones-partner/`, es 100% sobre tokens de Instagram/Messenger).
-- **`09-integraciones-partner/` pasó a ser "Catálogos y Herramientas"**, anidado dentro de **Integraciones** junto a WhatsApp. Se aprovechó para enlazar en su `index.md` dos artículos que existían pero no estaban linkeados: `meta-conversions-api.md` y `agentes-de-voz.md`.
-- **Redirects agregados en `astro.config.mjs`** (`redirects: {...}`) para las 4 URLs viejas que cambiaron de lugar — Astro genera páginas estáticas de meta-refresh en el build, compatibles con GitHub Pages. Verificado en `dist/` tras el build.
-- Los 6 archivos que referenciaban las rutas viejas (incluyendo `00-novedades/agosto-2026.md` y `14-audiencias/campanas-y-broadcasts.md`) se actualizaron a las rutas nuevas.
+**Reestructuración de contenido — primera pasada:**
+- **WhatsApp unificado:** `15-envios-whatsapp/` se renombró a `15-whatsapp/` y ahí se movieron `conexion-whatsapp.md` y `plantillas-whatsapp.md` (antes en `02-canales/`). Nueva sección **WhatsApp**, con las 3 piezas juntas (Conexión, Plantillas, Histórico de envíos) — a pedido explícito del usuario, por ser "el mayor compendio" de contenido y el canal de mayor inversión.
+- Redirects agregados en `astro.config.mjs` para las URLs que cambiaron de lugar — Astro genera páginas estáticas de meta-refresh, compatibles con GitHub Pages. Verificado en `dist/` tras cada build.
 
-**Sidebar reordenado (18 → 16 secciones de primer nivel):** ver tabla completa en "Sidebar actual" arriba. Orden nuevo: Novedades → Primeros pasos → Integraciones (WhatsApp primero) → Estudio de Prompts → Base de Conocimientos → Mensajes → CRM y Gestión → Productos → Pedidos y Carritos → Audiencias y Campañas → Insights → Workflows → Mejores Prácticas → Guía para Devs → Soporte → How To. Criterio: customer journey + concentrar el core de uso diario en las primeras secciones (a pedido del usuario, sin usar datos de GA4 esta vez).
+**Reestructuración de contenido — segunda pasada (corrección del usuario tras revisar):**
+- El usuario corrigió el destino de **Reconexión de tokens** e **Instagram/Messenger/Widget**: no van con Mensajes, van con **Integraciones** — es ahí donde se conectan los canales en el producto real. `02-canales` ("Otros canales") y `15-whatsapp` (WhatsApp) quedaron como subgrupos de **Integraciones**, junto con `09-integraciones-partner` ("Catálogos y Herramientas"). "Mensajes" volvió a ser un grupo simple con landing directa (`05-conversaciones`).
+- **`14-audiencias` (Audiencias y Campañas)** se anidó también dentro de Integraciones, junto a WhatsApp — los broadcasts se envían casi siempre por WhatsApp. Se agregaron cross-links recíprocos entre `14-audiencias/index.md` / `campanas-y-broadcasts.md` y `15-whatsapp/envios-whatsapp.md`.
+- **Soporte + How To fusionados** en una sola sección **"Soporte y Soluciones"** (nombre elegido por Claude, a pedido del usuario): `18-how-to/configuraciones-frecuentes.md` se movió a `17-soporte/`, se creó `17-soporte/index.md`, y se retiró `18-how-to/` del sidebar y del proyecto.
+- **Guía para Devs retirada:** el contenido de `16-guia-devs/peaking-mcp.md` (conexión MCP de Claude Code) se movió a `01-primeros-pasos/configuraciones-iniciales.md`, como subsección "Conexión MCP con Claude Code (equipos técnicos y partners)" dentro de la pestaña **API** — la misma API key de esa pestaña es la que se usa para `claude mcp add`. Se retiró `16-guia-devs/` del sidebar y del proyecto.
+- 2 redirects adicionales agregados para las rutas retiradas.
 
-**Portada (`index.mdx`) rediseñada:**
-- Los 4 "recuadros" de `.step-card` eran `<div>` sin `href` — parecían clicables (tenían hover) pero no llevaban a ningún lado. Se convirtieron en `<a>` reales (Primeros pasos, Conecta WhatsApp, Prompt Studio, Mensajes) y se agregó CSS (`text-decoration`, `color`, `display`) para que se vean igual siendo enlaces.
-- Se reemplazó la sección "Explora por módulo" (9 tarjetas desactualizadas de 18 secciones reales) por una **línea del tiempo de 8 nodos** (`.journey-timeline`) con el core real del producto, más una lista compacta **"Más secciones"** (`.more-sections-grid`) con las 9 secciones restantes — ninguna sección del sitio queda sin link en la portada.
-- CSS nuevo en `src/styles/custom.css`: `.journey-timeline`, `.journey-node`, `.node-dot`, `.node-card`, `.more-sections-grid` — reutiliza los tokens glass/gradient existentes, sin librerías nuevas.
+**Sidebar final (18 → 13 secciones de primer nivel):** ver tabla completa en "Sidebar actual" arriba. Orden: Novedades → Primeros pasos → Integraciones (WhatsApp, Audiencias y Campañas, Otros canales, Catálogos y Herramientas) → Estudio de Prompts → Base de Conocimientos → Mensajes → CRM y Gestión → Productos → Pedidos y Carritos → Insights → Workflows → Mejores Prácticas → Soporte y Soluciones.
+
+**Portada (`index.mdx`) rediseñada — dos pasadas:**
+- Los 4 "recuadros" de `.step-card` (Sigue el camino recomendado) eran `<div>` sin `href` — parecían clicables pero no llevaban a ningún lado. Se convirtieron en `<a>` reales manteniendo el texto y la numeración originales exactos (1. Primeros pasos, 2. Conecta tus canales, 3. Configura tu IA, 4. Opera y crece) — en la primera pasada Claude había reescrito ese texto sin que se pidiera; el usuario pidió restaurarlo.
+- La sección "Explora por módulo" (9 tarjetas desactualizadas) se reemplazó por **"El recorrido completo"**: una línea del tiempo de 8 nodos en **zigzag/serpentina** (fila 1 → baja → fila 2 en reversa, con flecha `▶` al final) dibujada con un `<svg class="timeline-path">` superpuesto al grid — la primera versión (sin línea visible, solo tarjetas en grid) no se sentía como línea de tiempo. Los nombres de los 8 nodos se reescribieron con tono ambicioso/enérgico a pedido del usuario: Arranca tu cuenta, Enciende WhatsApp, Entrena tu agente, Vuélvelo experto, Conversa sin límites, Convierte cada lead, Monta tu escaparate, Domina tus números (el subtítulo de cada tarjeta mantiene la descripción literal de la sección).
+- Debajo, lista compacta **"Más secciones"** (`.more-sections-grid`) con las 7 secciones restantes que no son parte del core — ninguna sección del sitio queda sin link en la portada.
+- **Bug encontrado y corregido:** el zigzag se implementó con `.journey-node:nth-child(N)` para ubicar cada nodo en su columna/fila del grid, pero el `<svg>` de la línea también cuenta como hijo dentro de `.journey-timeline`, corriendo el conteo en 1 y desordenando los 8 nodos. Se corrigió usando `:nth-of-type(N)` (cuenta solo entre elementos `<a>`, ignorando el `<svg>`). Verificado visualmente con captura de pantalla vía `chrome-devtools` MCP antes de dar por terminado.
+- CSS en `src/styles/custom.css`: `.journey-timeline`, `.timeline-path` (SVG + flecha), `.journey-node`, `.node-dot`, `.node-card`, `.more-sections-grid` — reutiliza los tokens glass/gradient existentes (`--sl-color-gray-4` para el trazo de la línea, muy sutil con `--pk-glass-border`), sin librerías nuevas.
+
+**Flujo de trabajo de esta sesión:** el usuario pidió expresamente hacer preguntas de aclaración antes de ejecutar la segunda pasada (`AskUserQuestion` con 4 preguntas: relación Audiencias-WhatsApp, nombre de Soporte+HowTo, ubicación de la guía MCP, estilo de la línea de tiempo) y luego subir directo a `main` sin pasar por revisión local con `npm run dev` — a diferencia de la primera pasada de esta misma sesión.
 
 **Flujo de git:** se migró la rama de trabajo de `max's-branch` a `main` (ver nota al inicio del archivo). `origin/main` y `origin/max's-branch` estaban exactamente en el mismo commit (`b7adf4f`) al momento del cambio, así que no hubo nada que fusionar.
 

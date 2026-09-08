@@ -1,11 +1,11 @@
 ---
 title: Otros canales de mensajería
-description: Conecta Instagram, Facebook Messenger y el widget de tu sitio web a Peaking — canales secundarios frente a WhatsApp, pensados para complementar tu atención por Mensajes.
+description: Conecta Instagram, Facebook Messenger y el widget de tu sitio web a Peaking — canales secundarios frente a WhatsApp.
 sidebar:
   order: 0
 ---
 
-Además de WhatsApp — que por ser el canal de mayor volumen tiene su propia sección dentro de **[Integraciones](/09-integraciones-partner/)** —, Peaking soporta otros canales de mensajería para que atiendas a tus clientes donde sea que te escriban.
+Además de WhatsApp — que por ser el canal de mayor volumen tiene su propia sección dentro de **Integraciones** —, Peaking soporta otros canales de mensajería para que atiendas a tus clientes donde sea que te escriban.
 
 ## Canales disponibles
 

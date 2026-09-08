@@ -16,5 +16,5 @@ WhatsApp es, para la gran mayoría de negocios en Latinoamérica, el canal de ma
 | [Histórico de envíos masivos](/15-whatsapp/envios-whatsapp/) | Revisar el resultado de tus campañas de plantillas — entregados, no entregados y reenvío en un clic. |
 
 :::note[¿Buscas Instagram, Messenger o el Widget web?]
-Esos canales viven en **[Mensajes → Otros canales](/02-canales/)**, ya que son secundarios frente a WhatsApp y están más ligados al día a día del panel de conversaciones.
+Esos canales viven en **[Otros canales](/02-canales/)**, aquí mismo dentro de Integraciones, ya que son secundarios frente a WhatsApp. ¿Buscas cómo armar una campaña de envío masivo? Ve a **[Audiencias y Campañas](/14-audiencias/)**.
 :::
