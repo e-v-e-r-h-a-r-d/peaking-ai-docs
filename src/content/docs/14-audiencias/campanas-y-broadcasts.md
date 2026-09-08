@@ -8,7 +8,7 @@ sidebar:
 Una **Campaña** (también llamada **Broadcast**) es un envío masivo de mensajes a una audiencia predefinida. En lugar de escribirle a cada contacto uno por uno, seleccionas una audiencia, defines el mensaje o plantilla, y lo envías a todos sus miembros en un solo disparo.
 
 :::note[Requisito para WhatsApp]
-Los broadcasts de WhatsApp requieren una **plantilla aprobada por Meta** (WhatsApp Template). No puedes enviar mensajes de texto libre a contactos que no hayan iniciado conversación en las últimas 24 horas. Consulta [Plantillas de WhatsApp](/02-canales/plantillas-whatsapp/) para crearlas y sincronizarlas.
+Los broadcasts de WhatsApp requieren una **plantilla aprobada por Meta** (WhatsApp Template). No puedes enviar mensajes de texto libre a contactos que no hayan iniciado conversación en las últimas 24 horas. Consulta [Plantillas de WhatsApp](/15-whatsapp/plantillas-whatsapp/) para crearlas y sincronizarlas.
 :::
 
 ---

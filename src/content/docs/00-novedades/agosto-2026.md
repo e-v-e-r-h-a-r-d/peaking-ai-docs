@@ -35,13 +35,13 @@ Ahora puedes conectar el correo del negocio a Peaking. El agente de IA puede lee
 
 Envía una plantilla de WhatsApp aprobada a **Nuevos Contactos**, **Contactos Existentes** o una **Audiencia** completa desde un solo flujo, con opción de programar el envío. Incluye límites de envío según la calidad del número y verificación de Meta Business.
 
-→ [Plantillas de WhatsApp](/02-canales/plantillas-whatsapp/)
+→ [Plantillas de WhatsApp](/15-whatsapp/plantillas-whatsapp/)
 
 ### 🔧 Métricas de envíos actualizadas
 
 El histórico de envíos masivos ahora reporta **Entregados** y **No entregados** en vez de "Destinatarios" y "Fallidos" — una lectura más precisa del resultado real de cada campaña. Los envíos anteriores a julio 2026 conservan el formato antiguo.
 
-→ [Histórico de envíos masivos](/15-envios-whatsapp/envios-whatsapp/)
+→ [Histórico de envíos masivos](/15-whatsapp/envios-whatsapp/)
 
 ---
 

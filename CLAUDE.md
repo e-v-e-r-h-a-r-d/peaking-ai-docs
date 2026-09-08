@@ -7,7 +7,7 @@ Help Center de **Peaking AI** — documentación orientada al usuario final (en 
 **Stack:** Astro + Starlight · Hosting: GitHub Pages · CI/CD: GitHub Actions
 
 **Repo:** `https://github.com/e-v-e-r-h-a-r-d/peaking-ai-docs`
-**Rama de trabajo activa:** `max's-branch` (el deploy se activa en `main` y `max's-branch`)
+**Rama de trabajo activa:** `main` (desde 2026-09-08). `max's-branch` quedó igualada a `main` en el commit `b7adf4f` y se dejó inactiva — el deploy se sigue activando en `main` y `max's-branch`, pero el trabajo nuevo va directo a `main` para simplificar el flujo.
 
 ---
 
@@ -18,20 +18,20 @@ src/content/docs/
 ├── index.mdx                    ← Landing page del Help Center
 ├── 00-novedades/                ← Release notes: anuncios de features nuevas, mejoras y correcciones
 ├── 01-primeros-pasos/           ← Onboarding (bienvenida, dashboard, config, glosario)
-├── 02-canales/                  ← WhatsApp, Instagram, Messenger, Widget web, Plantillas WA
+├── 02-canales/                  ← "Otros canales" (nested bajo Mensajes): Instagram, Messenger, Widget web, verificación, reconexión de tokens
 ├── 03-prompt-studio/            ← Prompt Studio: prompt, variables, herramientas, test
 ├── 04-base-conocimientos/       ← Knowledge Base
-├── 05-conversaciones/           ← Mensajes (sidebar label), panel, escalamiento, bandeja
+├── 05-conversaciones/           ← "Conversaciones" (nested bajo Mensajes): panel, escalamiento, bandeja, tags, copilot
 ├── 06-crm-audiencias/           ← Solo CRM (pipeline). Contactos y Audiencias en secciones propias
 ├── 07-productos-pagos/          ← Solo catálogo de productos (Stripe/MP/Orders en 12-pedidos)
 ├── 08-analytics/                ← Dashboard, KPIs, Información de Conversaciones (sidebar: Insights)
-├── 09-integraciones-partner/    ← 3 tabs reales: Canales (→02-canales), Catálogos de Datos, Herramientas
+├── 09-integraciones-partner/    ← "Catálogos y Herramientas" (nested bajo Integraciones): Catálogos de Datos, Odoo/HubSpot/Zoho, Calendar, Correo, Meta Conversions, Agentes de Voz
 ├── 10-tareas/                   ← Tareas/TODOs como sección independiente
 ├── 11-workflows/                ← Editor visual de flujos por nodos
 ├── 12-pedidos-carritos/         ← Pedidos, Carritos, Stripe, Mercado Pago, Flujo de compra
 ├── 13-contactos/                ← Contactos (sección propia, separada del CRM)
 ├── 14-audiencias/               ← Audiencias y Campañas (sección propia)
-├── 15-envios-whatsapp/          ← Histórico de envíos masivos de WhatsApp
+├── 15-whatsapp/                 ← "WhatsApp" (nested bajo Integraciones): conexión, plantillas, histórico de envíos masivos — antes repartido entre 02-canales y 15-envios-whatsapp
 ├── 16-guia-devs/                ← Guía para desarrolladores (Peaking MCP)
 ├── 17-soporte/                  ← Error de plataforma vs. solicitud de implementación
 ├── 18-how-to/                   ← Resolución de configuraciones frecuentes
@@ -45,31 +45,39 @@ src/content/docs/
 
 ## Sidebar actual (astro.config.mjs)
 
-| Label | Directorio / Estructura |
-|-------|------------------------|
-| Novedades | `00-novedades` |
-| Primeros pasos | `01-primeros-pasos` |
-| Base de Conocimientos | `04-base-conocimientos` |
-| Mensajes | `05-conversaciones` |
-| Insights | `08-analytics` |
-| **CRM y Gestión** *(grupo anidado)* | — |
-| → CRM | `06-crm-audiencias` |
-| → Contactos | `13-contactos` |
-| → Tareas | `10-tareas` |
-| Estudio de Prompts | `03-prompt-studio` |
-| Integraciones | `09-integraciones-partner` |
-| Productos | `07-productos-pagos` |
-| Workflows | `11-workflows` |
-| Mejores Prácticas | `19-mejores-practicas` |
-| Pedidos y Carritos | `12-pedidos-carritos` |
-| Audiencias y Campañas | `14-audiencias` |
-| Envíos WhatsApp | `15-envios-whatsapp` |
-| Conecta tus canales | `02-canales` |
-| Guía para Devs | `16-guia-devs` |
-| Soporte | `17-soporte` |
-| How To | `18-how-to` |
+Reordenado el 2026-09-08 siguiendo el customer journey real (ver sesión de esa fecha más abajo). 16 secciones de primer nivel (antes 18):
+
+| # | Label | Directorio / Estructura |
+|---|-------|------------------------|
+| 1 | Novedades | `00-novedades` |
+| 2 | Primeros pasos | `01-primeros-pasos` |
+| 3 | **Integraciones** *(grupo anidado)* | — |
+| | → WhatsApp | `15-whatsapp` |
+| | → Catálogos y Herramientas | `09-integraciones-partner` |
+| 4 | Estudio de Prompts | `03-prompt-studio` |
+| 5 | Base de Conocimientos | `04-base-conocimientos` |
+| 6 | **Mensajes** *(grupo anidado)* | — |
+| | → Conversaciones | `05-conversaciones` |
+| | → Otros canales | `02-canales` |
+| 7 | **CRM y Gestión** *(grupo anidado)* | — |
+| | → CRM | `06-crm-audiencias` |
+| | → Contactos | `13-contactos` |
+| | → Tareas | `10-tareas` |
+| 8 | Productos | `07-productos-pagos` |
+| 9 | Pedidos y Carritos | `12-pedidos-carritos` |
+| 10 | Audiencias y Campañas | `14-audiencias` |
+| 11 | Insights | `08-analytics` |
+| 12 | Workflows | `11-workflows` |
+| 13 | Mejores Prácticas | `19-mejores-practicas` |
+| 14 | Guía para Devs | `16-guia-devs` |
+| 15 | Soporte | `17-soporte` |
+| 16 | How To | `18-how-to` |
 
 `admin-interno/` no aparece en el sidebar — artículos ocultos con `sidebar.hidden: true`.
+
+**Nota sobre grupos anidados sin landing propia:** "Integraciones" y "Mensajes" (como ya pasaba con "CRM y Gestión") son etiquetas paraguas sin página propia de un clic — al hacer clic solo expanden sus subgrupos. Los `index.md` de `09-integraciones-partner` y `05-conversaciones` siguen existiendo y son el primer artículo dentro de su subgrupo respectivo, pero quedan un nivel más adentro que antes.
+
+**Nota sobre labels anidados vía Starlight `autogenerate`:** cuando un `autogenerate` va dentro de un `items: []` (subgrupo), el `label` que le pongas en `astro.config.mjs` SIEMPRE se respeta — no hace falta (ni funciona de forma confiable) nombrar la carpeta física igual al label deseado.
 
 **Artículos ocultos dentro de secciones públicas** (sidebar.hidden: true):
 - `09-integraciones-partner/zapier-make-n8n.md` — desactualizado, guardado por si se necesita
@@ -141,7 +149,7 @@ Cambios de las sesiones 2026-08-20 y 2026-08-21 (Copilot, integración de Correo
 | `19-mejores-practicas/escribir-prompts-efectivos.md` | Mejores Prácticas | Estructura TRIGGER→ACCIÓN→PROHIBIDO, guardrails anti-alucinación, formato de salida |
 | `19-mejores-practicas/ciclo-de-mejora-y-versionado.md` | Mejores Prácticas | Diagnosticar→cambio único→probar→documentar, versionado aditivo con rollback |
 | `09-integraciones-partner/catalogos-de-datos.md` | Integraciones | Catálogos de Datos Externos — form completo, declaración en Prompt, FAQ |
-| `02-canales/plantillas-whatsapp.md` | Canales | WABA, sincronización, envío desde Panel de Mensajes |
+| `15-whatsapp/plantillas-whatsapp.md` | Integraciones › WhatsApp | WABA, sincronización, envío desde Panel de Mensajes |
 | `03-prompt-studio/declarar-herramientas.md` | Prompt Studio | Configuración de Herramientas, ejemplo HubSpot, FAQ |
 | `05-conversaciones/panel-de-conversaciones.md` | Mensajes | Panel de Mensajes, filtros, estados, intervención humana |
 | `08-analytics/dashboard-overview.md` | Insights | 5 KPIs, badges, gráfica Análisis de Conversaciones, Asistencia Requerida |
@@ -155,10 +163,10 @@ Cambios de las sesiones 2026-08-20 y 2026-08-21 (Copilot, integración de Correo
 | `01-primeros-pasos/configuraciones-iniciales.md` | Primeros pasos | Ahora cubre las 10 pestañas reales de Configuración (antes solo 7, sin Contactos/CRM/API) |
 | `01-primeros-pasos/tour-del-dashboard.md` | Primeros pasos | Completo |
 | `01-primeros-pasos/bienvenido-a-peaking.md` | Primeros pasos | Completo |
-| `02-canales/conexion-whatsapp.md` | Canales | Completo (sin screenshots aún) |
-| `02-canales/conexion-instagram.md` | Canales | Verificar estado |
-| `02-canales/conexion-messenger.md` | Canales | Verificar estado |
-| `02-canales/widget-sitio-web.md` | Canales | Verificar estado |
+| `15-whatsapp/conexion-whatsapp.md` | Integraciones › WhatsApp | Completo (sin screenshots aún) |
+| `02-canales/conexion-instagram.md` | Mensajes › Otros canales | Verificar estado |
+| `02-canales/conexion-messenger.md` | Mensajes › Otros canales | Verificar estado |
+| `02-canales/widget-sitio-web.md` | Mensajes › Otros canales | Verificar estado |
 | `03-prompt-studio/variables-y-funciones-avanzadas.md` | Prompt Studio | Completo (renombrado a Plantillas de Prompt) |
 | `05-conversaciones/tags-y-etiquetas.md` | Mensajes | Completo |
 | `05-conversaciones/escalamiento-a-humano.md` | Mensajes | Completo |
@@ -222,6 +230,28 @@ Se creó la sección pública `00-novedades/` (sidebar: **Novedades**, primer í
 Build de Astro verificado sin errores (87 páginas). Sidebar registrado en `astro.config.mjs`. Todos los enlaces internos del release verificados contra el build.
 
 **Pendiente:** revisión completa de las ~19 secciones públicas contra este release y contra el inventario de este CLAUDE.md, para confirmar que no falte nada ni haya inconsistencias (fase 2 solicitada por el usuario, aún no ejecutada). De paso, esta sesión notó que las tablas "Estructura de contenido" y "Sidebar actual" de este archivo ya estaban desactualizadas antes de este cambio (no reflejaban `15-envios-whatsapp`, `16-guia-devs`, `17-soporte`, `18-how-to`) — corregirlo queda dentro del alcance de esa revisión.
+
+### Sesión 2026-09-08 — Reorganización de secciones + rediseño de portada + flujo de git a `main`
+
+Ejecutó la "fase 2" pendiente de la sesión anterior: reordenó el sidebar completo siguiendo el customer journey real, unificó WhatsApp en una sola sección, y rediseñó la portada para que no tenga links falsos ni contenido desactualizado.
+
+**Reestructuración de contenido:**
+- **WhatsApp unificado:** `15-envios-whatsapp/` se renombró a `15-whatsapp/` y ahí se movieron `conexion-whatsapp.md` y `plantillas-whatsapp.md` (antes en `02-canales/`). Nueva sección **WhatsApp**, anidada dentro de **Integraciones**, con las 3 piezas juntas (Conexión, Plantillas, Histórico de envíos) — a pedido explícito del usuario, por ser "el mayor compendio" de contenido y el canal de mayor inversión.
+- **`02-canales/` pasó a ser "Otros canales"**, anidado dentro de **Mensajes** (Instagram, Messenger, Widget, verificación de estado). También se le movió `reconexion-tokens.md` (antes en `09-integraciones-partner/`, es 100% sobre tokens de Instagram/Messenger).
+- **`09-integraciones-partner/` pasó a ser "Catálogos y Herramientas"**, anidado dentro de **Integraciones** junto a WhatsApp. Se aprovechó para enlazar en su `index.md` dos artículos que existían pero no estaban linkeados: `meta-conversions-api.md` y `agentes-de-voz.md`.
+- **Redirects agregados en `astro.config.mjs`** (`redirects: {...}`) para las 4 URLs viejas que cambiaron de lugar — Astro genera páginas estáticas de meta-refresh en el build, compatibles con GitHub Pages. Verificado en `dist/` tras el build.
+- Los 6 archivos que referenciaban las rutas viejas (incluyendo `00-novedades/agosto-2026.md` y `14-audiencias/campanas-y-broadcasts.md`) se actualizaron a las rutas nuevas.
+
+**Sidebar reordenado (18 → 16 secciones de primer nivel):** ver tabla completa en "Sidebar actual" arriba. Orden nuevo: Novedades → Primeros pasos → Integraciones (WhatsApp primero) → Estudio de Prompts → Base de Conocimientos → Mensajes → CRM y Gestión → Productos → Pedidos y Carritos → Audiencias y Campañas → Insights → Workflows → Mejores Prácticas → Guía para Devs → Soporte → How To. Criterio: customer journey + concentrar el core de uso diario en las primeras secciones (a pedido del usuario, sin usar datos de GA4 esta vez).
+
+**Portada (`index.mdx`) rediseñada:**
+- Los 4 "recuadros" de `.step-card` eran `<div>` sin `href` — parecían clicables (tenían hover) pero no llevaban a ningún lado. Se convirtieron en `<a>` reales (Primeros pasos, Conecta WhatsApp, Prompt Studio, Mensajes) y se agregó CSS (`text-decoration`, `color`, `display`) para que se vean igual siendo enlaces.
+- Se reemplazó la sección "Explora por módulo" (9 tarjetas desactualizadas de 18 secciones reales) por una **línea del tiempo de 8 nodos** (`.journey-timeline`) con el core real del producto, más una lista compacta **"Más secciones"** (`.more-sections-grid`) con las 9 secciones restantes — ninguna sección del sitio queda sin link en la portada.
+- CSS nuevo en `src/styles/custom.css`: `.journey-timeline`, `.journey-node`, `.node-dot`, `.node-card`, `.more-sections-grid` — reutiliza los tokens glass/gradient existentes, sin librerías nuevas.
+
+**Flujo de git:** se migró la rama de trabajo de `max's-branch` a `main` (ver nota al inicio del archivo). `origin/main` y `origin/max's-branch` estaban exactamente en el mismo commit (`b7adf4f`) al momento del cambio, así que no hubo nada que fusionar.
+
+Build de Astro verificado sin errores (88 páginas, antes 87). Redirects verificados en `dist/`. Pendiente: el usuario probará en local con `npm run dev` antes de que se haga push a `main`.
 
 ---
 

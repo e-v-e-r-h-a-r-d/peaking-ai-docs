@@ -1,21 +1,15 @@
 ---
-title: Integraciones
-description: Conecta Peaking con tus canales de mensajería, fuentes de datos externas y herramientas de CRM, pagos y calendario.
+title: Catálogos de Datos y Herramientas
+description: Conecta fuentes de datos externas y herramientas de CRM, pagos, calendario y voz a Peaking. Para canales de mensajería, ve a WhatsApp o a Otros canales.
 sidebar:
   order: 0
 ---
 
-La sección de **Integraciones** está organizada en tres pestañas, cada una con un propósito distinto:
+Dentro de **Integraciones**, esta parte cubre las fuentes de datos externas y las herramientas de terceros que tu agente de IA puede usar durante una conversación.
 
----
-
-## Canales de Mensajería
-
-Conecta y gestiona los canales por donde tus clientes te escriben: **WhatsApp Business**, **Instagram Business**, **Facebook Messenger** y el **Widget web** para tu sitio. También incluye la gestión de **Plantillas de WhatsApp**.
-
-Consulta la sección **[Conecta tus canales](/02-canales/)** para las instrucciones de conexión de cada canal.
-
-- **[Reconexión de tokens](/09-integraciones-partner/reconexion-tokens/)** — Qué hacer cuando Instagram o Facebook Messenger muestran "Token expirado - Reconectar".
+:::note[¿Buscas cómo conectar un canal de mensajería?]
+WhatsApp tiene su propia sección, por ser el canal de mayor volumen: **[WhatsApp](/15-whatsapp/)**. Instagram, Messenger y el Widget web están documentados en **[Otros canales](/02-canales/)**, junto al Panel de Mensajes.
+:::
 
 ---
 
@@ -27,13 +21,15 @@ Conecta fuentes de datos externas mediante APIs para que el agente consulte info
 
 ---
 
-## Herramientas (CRM, Mesa de Ayuda, Calendarios)
+## Herramientas (CRM, Pagos, Calendario, Voz)
 
 Conecta Peaking con CRMs, pasarelas de pago, calendarios y sistemas propios para que el agente interactúe con ellos en tiempo real.
 
 - **[Herramientas — CRM, Pagos y más](/09-integraciones-partner/odoo-hubspot-zoho/)** — Go HighLevel, HubSpot, Odoo, Stripe, Integraciones Personalizadas.
 - **[Google Calendar](/09-integraciones-partner/google-calendar/)** — Agendamiento automático de citas desde la conversación.
 - **[Correo — Gmail, Outlook e IMAP](/09-integraciones-partner/correo-electronico/)** — Conecta tu buzón para que el agente lea, cotice y responda correos.
+- **[Meta Conversions API](/09-integraciones-partner/meta-conversions-api/)** — Envía conversiones a Meta Ads cuando el agente etiqueta una venta.
+- **[Agentes de Voz](/09-integraciones-partner/agentes-de-voz/)** — Llamadas telefónicas automatizadas con ElevenLabs y Twilio.
 
 ---
 

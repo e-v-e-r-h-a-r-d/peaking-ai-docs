@@ -2,7 +2,7 @@
 title: Plantillas de WhatsApp
 description: Qué son las plantillas de mensajes aprobadas por Meta, cómo crearlas en WhatsApp Business Manager y cómo enviarlas desde Peaking.
 sidebar:
-  order: 6
+  order: 2
 ---
 
 Las **Plantillas de WhatsApp** (Message Templates) son mensajes pre-aprobados por Meta que te permiten iniciar o retomar conversaciones con clientes fuera de la ventana de 24 horas. Son el único tipo de mensaje que puedes enviar cuando no ha habido actividad reciente del cliente.

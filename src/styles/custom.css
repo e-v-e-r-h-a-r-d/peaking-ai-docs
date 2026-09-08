@@ -813,6 +813,9 @@ starlight-toc a[aria-current='true'] {
   overflow: hidden;
   counter-increment: step-counter;
   transition: var(--pk-transition);
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
 }
 
 .step-card:hover {
@@ -859,6 +862,110 @@ starlight-toc a[aria-current='true'] {
   margin: 3rem 1rem;
   max-width: 960px;
   margin-inline: auto;
+}
+
+/* Journey timeline — core customer journey, connected nodes */
+.journey-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem 0.85rem;
+  margin-top: 2.4rem;
+}
+
+/* Connecting line: only drawn in the single-column mobile layout below,
+   where it can span the full list correctly. A 2-row desktop grid can't
+   be spanned by one straight line, so desktop relies on numbered dots only. */
+
+.journey-node {
+  position: relative;
+  display: block;
+  text-decoration: none !important;
+  color: inherit;
+  padding-top: 2.5rem;
+}
+
+.journey-node .node-dot {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--pk-gradient);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  z-index: 1;
+  transition: var(--pk-transition);
+}
+
+.journey-node .node-card {
+  background: var(--pk-glass-bg);
+  backdrop-filter: var(--pk-glass-blur);
+  -webkit-backdrop-filter: var(--pk-glass-blur);
+  border: 1px solid var(--pk-glass-border);
+  border-radius: var(--pk-radius);
+  padding: 1.1rem 1rem 1.2rem;
+  height: 100%;
+  transition: var(--pk-transition);
+}
+
+.journey-node:hover .node-card {
+  background: var(--pk-glass-bg-hover);
+  border-color: var(--pk-glass-border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--pk-feature-card-hover-shadow);
+}
+
+.journey-node:hover .node-dot {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.journey-node h3 {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--sl-color-white);
+  margin: 0 0 0.35rem 0;
+}
+
+.journey-node p {
+  font-size: 0.8rem;
+  color: var(--sl-color-gray-3);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Compact secondary link list — remaining sections not in the core journey */
+.more-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.6rem;
+}
+
+.more-sections-grid a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--pk-glass-bg);
+  border: 1px solid var(--pk-glass-border);
+  border-radius: calc(var(--pk-radius) - 4px);
+  text-decoration: none !important;
+  color: var(--sl-color-gray-2);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: var(--pk-transition);
+}
+
+.more-sections-grid a:hover {
+  background: var(--pk-glass-bg-hover);
+  border-color: var(--pk-glass-border-hover);
+  color: var(--sl-color-white);
 }
 
 /* ===== STEPS COMPONENT (Starlight <Steps>) ===== */
@@ -1032,6 +1139,37 @@ starlight-toc a[aria-current='true'] {
   .feature-grid,
   .steps-grid {
     grid-template-columns: 1fr;
+  }
+
+  .journey-timeline {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .journey-timeline::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    width: 2px;
+    background: var(--pk-glass-border);
+    z-index: 0;
+  }
+
+  .journey-node {
+    padding-top: 0;
+    padding-left: 2.5rem;
+  }
+
+  .journey-node .node-dot {
+    top: 0;
+    left: 15px;
+    transform: translateX(-50%);
+  }
+
+  .journey-node:hover .node-dot {
+    transform: translateX(-50%) scale(1.1);
   }
 
   .hero h1 {

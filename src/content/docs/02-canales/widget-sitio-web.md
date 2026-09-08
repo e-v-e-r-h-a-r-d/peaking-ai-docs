@@ -2,7 +2,7 @@
 title: Widget para sitio web
 description: Cómo instalar y personalizar el Widget de Peaking en tu sitio web para atender visitantes con IA en tiempo real.
 sidebar:
-  order: 4
+  order: 3
 ---
 
 El **Widget de Peaking** es un botón de chat que se instala en tu sitio web y convierte a los visitantes en conversaciones activas. Cuando alguien hace clic, puede escribirte directamente por WhatsApp, Instagram, Messenger o iniciar un chat en tiempo real — todo sin salir de tu página.

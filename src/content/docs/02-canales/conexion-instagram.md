@@ -2,7 +2,7 @@
 title: Conexión con Instagram
 description: Cómo vincular tu cuenta profesional de Instagram a Peaking para atender mensajes directos con tu agente de IA.
 sidebar:
-  order: 2
+  order: 1
 ---
 
 Al conectar Instagram a Peaking, tu agente de IA puede responder automáticamente los mensajes directos (DMs) que lleguen a tu cuenta — sin que tengas que abrir la app. Ideal para negocios que reciben consultas por Instagram pero no tienen capacidad de responder manualmente en tiempo real.

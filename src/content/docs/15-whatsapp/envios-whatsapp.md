@@ -2,7 +2,7 @@
 title: Histórico de envíos masivos
 description: Cómo revisar el resultado de tus campañas de plantillas de WhatsApp — entregas exitosas, fallidos y reenvío en un clic.
 sidebar:
-  order: 1
+  order: 3
 ---
 
 El **Histórico de envíos masivos** registra todas las campañas de plantillas de WhatsApp enviadas a múltiples destinatarios. Desde aquí puedes verificar cuántos mensajes se entregaron, cuántos fallaron y reenviar los fallidos sin recrear la campaña.
