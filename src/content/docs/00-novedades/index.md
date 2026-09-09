@@ -23,7 +23,10 @@ Las entregas se listan de la más reciente a la más antigua.
 
 ## Releases publicados
 
-- **[Agosto 2026 — Copilot, Correo electrónico y más de 15 novedades](/00-novedades/agosto-2026/)** — primera entrega: todo lo que Peaking agregó desde julio 2026.
+- **[Septiembre 2026 — WhatsApp multi-cuenta, Meta Ads y correo compartido](/00-novedades/septiembre-2026/)** — entrega parcial, 1 al 8 de septiembre.
+- **[Agosto 2026 — Bandeja de entrada v2, Papelera del CRM y WhatsApp multi-número](/00-novedades/agosto-2026/)** — 28 de julio al 31 de agosto.
+- **[Julio 2026 — Copilot, Correo electrónico y Fichas técnicas](/00-novedades/julio-2026/)** — 30 de junio al 27 de julio.
+- **[Junio 2026 — API pública, auto-etiquetado y exportación de contactos](/00-novedades/junio-2026/)** — 8 al 29 de junio, inicio de este historial.
 
 ---
 

@@ -282,6 +282,26 @@ Continuación directa de la sesión anterior (mismo trabajo, día siguiente). El
 
 Build de Astro verificado sin errores (88 páginas). Pusheado a `main` a pedido del usuario.
 
+### Sesión 2026-09-09 (tarde) — Novedades dividido por mes a partir del changelog oficial
+
+El usuario entregó `novedades-peaking-2026-Q3.html` — el changelog oficial semanal de Peaking (8 jun – 8 sep 2026, 13 semanas, con etiquetas 🆕 Nuevo / 🔧 Mejora / 🐛 Corrección) — y pidió reorganizar Novedades dividiéndolo por mes y luego por segmento (área de producto).
+
+**Restructuración completa de `00-novedades/`:**
+- El único release existente hasta ahora, `agosto-2026.md` (v1, publicado 2026-09-03), era en realidad un resumen sintetizado de memoria interna que mezclaba julio y agosto bajo un solo archivo con el nombre del mes equivocado. Se reemplazó por 4 releases reales, uno por mes calendario, usando el changelog oficial como fuente autoritativa:
+  - `junio-2026.md` (nuevo) — semanas 8–29 jun.
+  - `julio-2026.md` (nuevo) — semanas 30 jun–27 jul.
+  - `agosto-2026.md` (reescrito por completo) — semanas 28 jul–31 ago.
+  - `septiembre-2026.md` (nuevo) — semana 1–8 sep (entrega parcial, se ampliará con las próximas semanas del mes).
+- **Regla de asignación semana → mes:** cada semana del changelog se asignó al mes de su último día (ej. la semana "28 jul – 3 ago" quedó en agosto). Las semanas no coinciden con el calendario, así que se necesitaba una regla consistente.
+- Dentro de cada archivo, los cambios se agruparon por segmento de producto (WhatsApp, CRM, Correo, Meta, Agente de IA, etc.) en vez de por semana — replicando la agrupación por área que ya usa el changelog fuente, pero consolidada a nivel mes.
+- `sidebar.order` renumerado: 1 = septiembre (más reciente) … 4 = junio (más antiguo), siguiendo la convención ya documentada arriba.
+- `index.md` de la sección actualizado con los 4 releases en la lista "Releases publicados", del más reciente al más antiguo.
+- Un solo ítem del `agosto-2026.md` original no venía en el changelog HTML (el anuncio, no-producto, de la sección Mejores Prácticas del Help Center, publicada 2026-08-28 según el historial de este archivo) — se conservó como segmento "Help Center" dentro del agosto-2026.md reescrito, ya que su fecha real sí se conoce. El resto del contenido del v1 original que no aparecía en el HTML (pestañas Contactos/CRM/Funcionalidades de Configuración, formulario de producto renovado) se descartó de Novedades: por las notas de la sesión 2026-08-12/2026-08-26, ambas eran UI ya existente que se estaba documentando por primera vez, no cambios de producto ocurridos en la ventana jun–sep — no correspondía anunciarlas como "novedad".
+
+**Pendiente:** varias funciones nuevas anunciadas en el changelog todavía no tienen artículo propio con el paso a paso (verificado por grep antes de enlazar, para no prometer un link que no cubre el tema): aislamiento y coexistencia multi-número de WhatsApp, integración de Meta Ads, y bandeja de correo compartida con firmas/estilo por remitente. Los releases de Novedades las describen igual (es su función, anunciar qué cambió) pero enlazan al artículo general de la sección en vez de a una guía específica — cuando se escriban esos artículos, actualizar los enlaces en `15-whatsapp/`, `09-integraciones-partner/meta-conversions-api.md` (o un artículo nuevo de Meta Ads) y `09-integraciones-partner/correo-electronico.md`.
+
+Build de Astro verificado sin errores (91 páginas, antes 88). Cambios pusheados a `main` a pedido del usuario.
+
 ---
 
 ## Google Analytics 4
