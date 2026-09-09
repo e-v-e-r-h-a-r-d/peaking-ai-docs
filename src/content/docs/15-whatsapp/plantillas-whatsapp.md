@@ -1,6 +1,6 @@
 ---
 title: Plantillas de WhatsApp
-description: Qué son las plantillas de mensajes aprobadas por Meta, cómo crearlas en WhatsApp Business Manager y cómo enviarlas desde Peaking.
+description: Qué son las plantillas de mensajes aprobadas por Meta, cómo crearlas desde Peaking o en WhatsApp Business Manager, replicarlas en varias cuentas y enviarlas en lote o desde una conversación.
 sidebar:
   order: 2
 ---
@@ -71,6 +71,18 @@ Usa los filtros **Todos los idiomas** y **Todas las categorías** en la parte su
 
 ---
 
+## Crea, edita y elimina plantillas sin salir de Peaking
+
+Ya no es obligatorio pasar por el WhatsApp Business Manager de Meta para gestionar tus plantillas — Peaking te deja **crear y eliminar plantillas directamente**, y Meta sigue siendo quien las aprueba o rechaza. Sigue siendo el mismo proceso de revisión (minutos a 24 horas) descrito arriba, solo que ya no necesitas salir de Peaking para iniciarlo.
+
+### Una plantilla en todas tus cuentas de WhatsApp
+
+Si conectaste [varios números de WhatsApp](/15-whatsapp/conexion-whatsapp/#varios-números-de-whatsapp), al crear una plantilla marca la casilla **«Crear también en las otras cuentas»** para enviarla a revisión en cada cuenta a la vez, en lugar de repetir el proceso número por número.
+
+Si Meta rechaza la plantilla en alguna de las cuentas, Peaking te muestra el motivo del rechazo **por cuenta** — puedes corregir y reintentar solo la que falló, sin tocar las que ya se aprobaron.
+
+---
+
 ## Enviar una plantilla en lote (nuevos contactos, existentes o audiencias)
 
 El ícono ✈ de la tabla de plantillas abre el panel **Enviar Template**, que te permite mandar la plantilla a mucho más que una sola conversación.
@@ -90,6 +102,10 @@ En la parte superior del panel verás tres indicadores:
 :::tip[El límite crece con tu reputación en Meta]
 Conforme Meta apruebe más plantillas y tu número mantenga buena calidad, el límite de 24 horas aumenta automáticamente. No es algo que configures en Peaking.
 :::
+
+### Elige el número emisor
+
+Si tienes [más de un número de WhatsApp](/15-whatsapp/conexion-whatsapp/#varios-números-de-whatsapp) conectado, el panel de envío (tanto en plantillas y masivos como al enviar una sola desde una conversación) suma un selector de número emisor, preseleccionado con el número de la bandeja en la que estás. Con un solo número conectado, no ves este selector — no hace falta.
 
 ### Las cuatro formas de enviar
 
@@ -205,9 +221,13 @@ Usa variables dinámicas al crear la plantilla en WABA: escribe `{{1}}` donde qu
 
 Las plantillas son aprobadas o rechazadas por **Meta (WhatsApp Business API)**. El proceso suele tardar entre algunos minutos y 24 horas. Una vez aprobadas, no necesitas re-enviarlas a menos que modifiques su contenido.
 
-**¿Puedo editar una plantilla en Peaking?**
+**¿Puedo crear o editar una plantilla en Peaking?**
 
-No. Las plantillas solo se pueden crear y modificar en el **WhatsApp Business Manager (WABA)** de Meta. Una vez modificadas allá, deben ser sincronizadas nuevamente en Peaking para que los cambios apliquen.
+Puedes **crear y eliminar** plantillas directamente desde Peaking — ver [Crea, edita y elimina plantillas sin salir de Peaking](#crea-edita-y-elimina-plantillas-sin-salir-de-peaking). Para modificar el contenido de una plantilla ya aprobada, sigue haciéndose en el **WhatsApp Business Manager (WABA)** de Meta; una vez modificada allá, sincronízala de nuevo en Peaking para que el cambio se refleje.
+
+**¿Puedo enviar la misma plantilla a varias cuentas de WhatsApp a la vez?**
+
+Sí, si tienes varias cuentas conectadas — marca **«Crear también en las otras cuentas»** al crear la plantilla. Cada cuenta la recibe a revisión por separado, y si Meta rechaza una, puedes reintentar solo esa sin afectar a las demás.
 
 **¿Por qué tengo un límite de contactos por 24 horas?**
 

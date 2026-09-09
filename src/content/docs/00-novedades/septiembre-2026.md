@@ -26,7 +26,7 @@ Lo que tu equipo escribe desde el teléfono aparece en Peaking como mensaje sali
 - **Elige el número emisor** al enviar una plantilla o un masivo (si tienes más de uno), preseleccionado con el número de tu bandeja. Disponible en `Integraciones → WhatsApp → Plantillas`.
 - **Variables por destinatario en envíos masivos:** cada variable se llena desde el remitente, el contacto, una columna de tu archivo, un campo del CRM o un texto fijo. Peaking sugiere el mapeo leyendo la plantilla, cuenta los campos vacíos, permite un texto de respaldo y muestra una vista previa. El mapeo se recuerda por plantilla.
 
-→ [WhatsApp](/15-whatsapp/) · [Plantillas de WhatsApp](/15-whatsapp/plantillas-whatsapp/)
+→ [Varios números y Coexistencia](/15-whatsapp/conexion-whatsapp/#varios-números-de-whatsapp) · [Plantillas de WhatsApp](/15-whatsapp/plantillas-whatsapp/#crea-edita-y-elimina-plantillas-sin-salir-de-peaking)
 
 ---
 
@@ -40,7 +40,7 @@ Al conectar Messenger, Instagram o WhatsApp, Peaking vincula el dataset de conve
 
 Conecta tu cuenta publicitaria con el mismo inicio de sesión de Facebook. Peaking sincroniza campañas, anuncios y resultados cada 10 minutos, y el chip «Llegó por un anuncio» en el lead muestra la campaña y el conjunto de anuncios reales.
 
-→ [Meta Conversions API](/09-integraciones-partner/meta-conversions-api/)
+→ [Meta Conversions API](/09-integraciones-partner/meta-conversions-api/) · [Meta Ads](/09-integraciones-partner/meta-ads/)
 
 ---
 
@@ -55,7 +55,7 @@ Un buzón puede ser privado, de toda la organización o de usuarios seleccionado
 - 🆕 **Imágenes y adjuntos en correos entrantes** — logos, fotos pegadas y adjuntos con vista previa y descarga. Las fotos también las ve el agente.
 - 🆕 **Estilo de respuesta por remitente:** define un estilo general y reglas por dominio o correo (tono, instrucciones, emojis sí o no). Aplica a los borradores, a «Regenerar» y al agente de ventas en correo.
 
-→ [Correo — Gmail, Outlook e IMAP](/09-integraciones-partner/correo-electronico/)
+→ [Correo — Bandeja compartida](/09-integraciones-partner/correo-electronico/#bandeja-de-correo-compartida)
 
 ---
 

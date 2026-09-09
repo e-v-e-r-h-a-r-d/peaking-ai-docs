@@ -11,6 +11,10 @@ sidebar:
 Esta integración solo aporta valor si inviertes en anuncios de Meta (Facebook o Instagram) y quieres que la plataforma de anuncios aprenda de tus resultados reales de ventas, no solo de clics o mensajes iniciados.
 :::
 
+:::note[No la confundas con Meta Ads]
+Son dos integraciones distintas que se complementan. Esta (**Meta Conversions API**) envía información *hacia* Meta. **[Meta Ads](/09-integraciones-partner/meta-ads/)** trae información *hacia* Peaking — qué campaña y qué anuncio generó cada lead.
+:::
+
 ---
 
 ## Cómo funciona
