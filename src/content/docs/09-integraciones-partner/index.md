@@ -29,6 +29,7 @@ Conecta Peaking con CRMs, pasarelas de pago, calendarios y sistemas propios para
 - **[Google Calendar](/09-integraciones-partner/google-calendar/)** — Agendamiento automático de citas desde la conversación.
 - **[Correo — Gmail, Outlook e IMAP](/09-integraciones-partner/correo-electronico/)** — Conecta tu buzón para que el agente lea, cotice y responda correos.
 - **[Meta Conversions API](/09-integraciones-partner/meta-conversions-api/)** — Envía conversiones a Meta Ads cuando el agente etiqueta una venta.
+- **[Meta Ads](/09-integraciones-partner/meta-ads/)** — Conecta tu cuenta publicitaria para ver la campaña y el anuncio real detrás de cada lead.
 - **[Agentes de Voz](/09-integraciones-partner/agentes-de-voz/)** — Llamadas telefónicas automatizadas con ElevenLabs y Twilio.
 
 ---

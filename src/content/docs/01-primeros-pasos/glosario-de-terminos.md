@@ -33,6 +33,9 @@ Función de etiquetado automático de conversaciones. Puedes definir un criterio
 
 ## B
 
+**Bandeja compartida**
+Buzón de correo (o número de WhatsApp con aislamiento desactivado) al que varios usuarios tienen acceso al mismo tiempo. Cada respuesta manual queda marcada con quién la envió, para que el equipo no duplique esfuerzos.
+
 **Base de Conocimientos**
 Repositorio de información que entrena a tu agente de IA: documentos PDF, páginas web, preguntas frecuentes, listas de productos y cualquier otro contenido relevante de tu negocio. Mientras más completa, más precisas serán las respuestas del agente.
 
@@ -48,6 +51,9 @@ Envío masivo de una plantilla de WhatsApp a una audiencia completa, para reacti
 
 **Canal**
 Plataforma de mensajería conectada a Peaking. Los canales disponibles son: **WhatsApp**, **Instagram**, **Facebook Messenger** y el **Widget** de chat para sitios web.
+
+**Coexistencia** *(WhatsApp)*
+Modo de conexión de WhatsApp alternativo al estándar: conecta el número a Peaking sin desvincularlo de la app de WhatsApp Business en el teléfono, para que ambos operen a la vez. Permite importar hasta 180 días de historial.
 
 **Contacto**
 Perfil de un cliente o prospecto en Peaking. Se crea automáticamente la primera vez que alguien escribe a cualquier canal conectado. Agrupa el historial de conversaciones, oportunidades, órdenes, cotizaciones y tareas de esa persona en un solo lugar.
@@ -123,6 +129,9 @@ Servidor remoto que conecta **Claude Code** a una organización de Peaking, con 
 
 **Mensajes**
 Módulo de bandeja unificada de Peaking. Centraliza en un solo lugar todos los mensajes entrantes de WhatsApp, Instagram, Messenger y Widget, sin importar desde qué canal lleguen.
+
+**Meta Ads**
+Integración que conecta tu cuenta publicitaria de Meta (Facebook e Instagram Ads) a Peaking, para que cada lead que llegue por un anuncio muestre la campaña y el conjunto de anuncios reales que lo trajo. No debe confundirse con Meta Conversions API, que envía información en sentido contrario (de Peaking hacia Meta).
 
 ---
 

@@ -298,9 +298,30 @@ El usuario entregó `novedades-peaking-2026-Q3.html` — el changelog oficial se
 - `index.md` de la sección actualizado con los 4 releases en la lista "Releases publicados", del más reciente al más antiguo.
 - Un solo ítem del `agosto-2026.md` original no venía en el changelog HTML (el anuncio, no-producto, de la sección Mejores Prácticas del Help Center, publicada 2026-08-28 según el historial de este archivo) — se conservó como segmento "Help Center" dentro del agosto-2026.md reescrito, ya que su fecha real sí se conoce. El resto del contenido del v1 original que no aparecía en el HTML (pestañas Contactos/CRM/Funcionalidades de Configuración, formulario de producto renovado) se descartó de Novedades: por las notas de la sesión 2026-08-12/2026-08-26, ambas eran UI ya existente que se estaba documentando por primera vez, no cambios de producto ocurridos en la ventana jun–sep — no correspondía anunciarlas como "novedad".
 
-**Pendiente:** varias funciones nuevas anunciadas en el changelog todavía no tienen artículo propio con el paso a paso (verificado por grep antes de enlazar, para no prometer un link que no cubre el tema): aislamiento y coexistencia multi-número de WhatsApp, integración de Meta Ads, y bandeja de correo compartida con firmas/estilo por remitente. Los releases de Novedades las describen igual (es su función, anunciar qué cambió) pero enlazan al artículo general de la sección en vez de a una guía específica — cuando se escriban esos artículos, actualizar los enlaces en `15-whatsapp/`, `09-integraciones-partner/meta-conversions-api.md` (o un artículo nuevo de Meta Ads) y `09-integraciones-partner/correo-electronico.md`.
+**Pendiente (resuelto en la sesión siguiente, misma tarde):** varias funciones nuevas anunciadas en el changelog no tenían artículo propio con el paso a paso — ver sesión de abajo.
 
 Build de Astro verificado sin errores (91 páginas, antes 88). Cambios pusheados a `main` a pedido del usuario.
+
+### Sesión 2026-09-09 (tarde, continuación) — Artículos pendientes + curva de la portada
+
+Cerró los 3 pendientes que había dejado la sesión anterior, y ajustó la línea de tiempo de la portada a pedido del usuario (varias iteraciones en vivo, verificadas con capturas vía `chrome-devtools` MCP antes de cada confirmación).
+
+**Artículos completados:**
+- `15-whatsapp/conexion-whatsapp.md` — dos secciones nuevas: **Varios números de WhatsApp** (conversaciones aisladas por número, franja de números en la Bandeja, aislamiento opcional por número, calidad y límite de mensajería) y **Coexistencia con la app de WhatsApp Business** (importar hasta 180 días de historial, atribución de campaña conservada). Se corrigieron 2 respuestas de la FAQ que la nueva función de coexistencia había dejado **contradictorias con el producto real** ("¿puedo seguir usando la app...? No al mismo tiempo" → ahora explica ambos modos).
+- `15-whatsapp/plantillas-whatsapp.md` — sección nueva **Crea, edita y elimina plantillas sin salir de Peaking** (antes la FAQ decía explícitamente que no se podía), subsección **Una plantilla en todas tus cuentas** y **Elige el número emisor**. FAQ corregida y ampliada.
+- `09-integraciones-partner/meta-ads.md` (nuevo) — integración de Meta Ads (sincronización de campañas/anuncios cada 10 min, chip "Llegó por un anuncio"), con nota cruzada aclarando que es distinta de Meta Conversions API (una trae datos hacia Peaking, la otra los envía hacia Meta). Registrado en `09-integraciones-partner/index.md` y enlazado recíprocamente desde `meta-conversions-api.md`.
+- `09-integraciones-partner/correo-electronico.md` — sección nueva **Bandeja de correo compartida** (privado/organización/usuarios seleccionados, quién respondió cada correo, firmas personales y del buzón, estilo de respuesta por remitente, imágenes y adjuntos entrantes). FAQ ampliada.
+- Enlaces de `00-novedades/septiembre-2026.md` actualizados para apuntar a las secciones nuevas en vez de a la página general de cada artículo.
+- Glosario actualizado: **Bandeja compartida**, **Coexistencia (WhatsApp)**, **Meta Ads**.
+
+**Portada (`index.mdx` + `custom.css`) — ajuste de la línea de tiempo, con corrección en vivo del usuario en 3 pasadas:**
+1. Se reemplazó el tramo recto entre los nodos 4 y 5 (un corner de 90°) por una curva sinusoidal (dos cubic bézier).
+2. El usuario notó que, con el nodo 5 alineado bajo el nodo 4 (fila 2 invertida, patrón "serpentina" original del diseño), la curva se veía rara. Se cambió el grid para que la fila 2 lea de izquierda a derecha igual que la fila 1 (nodo 5 bajo el nodo 1, `nth-of-type(5..8)` ya no invertido) y la curva ahora barre de derecha a izquierda conectando el final de la fila 1 con el inicio de la fila 2; la flecha final se volteó para apuntar a la derecha (antes apuntaba a la izquierda).
+3. El usuario pidió que el gancho de salida del nodo 4 y el de entrada al nodo 5 fueran **reflejo exacto uno del otro** (curva punto-simétrica respecto al punto medio entre ambos nodos) — la primera versión curveaba bien pero no era simétrica. Se recalculó el segundo cubic bézier como la reflexión matemática exacta del primero respecto al punto medio (200, 106.5 en el viewBox), garantizando continuidad de tangente automática en el punto de unión.
+
+**Gotcha de esta sesión:** los `npm run dev` lanzados en background para verificar cambios visuales no siempre mueren con `TaskStop` en Windows — quedaron 5 procesos `node` huérfanos escuchando en puertos 4321–4325 que hubo que matar manualmente con `taskkill`. Revisar con `netstat -ano | grep LISTENING` si un puerto "ya está en uso" en la próxima sesión.
+
+Build de Astro verificado sin errores (92 páginas, antes 91).
 
 ---
 
