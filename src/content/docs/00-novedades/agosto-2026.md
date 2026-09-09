@@ -1,163 +1,136 @@
 ---
-title: "Agosto 2026: Copilot, Correo electrónico y más de 15 novedades"
-description: Todo lo que Peaking agregó desde julio 2026 — cotizaciones con Copilot, integración de correo, envíos masivos de WhatsApp, y mejoras en CRM, Tareas, Reportes y más.
+title: "Agosto 2026: Bandeja de entrada v2, Papelera del CRM y WhatsApp multi-número"
+description: Agosto rediseñó la Bandeja de entrada, sumó papelera con restauración al CRM, permitió operar varios números de WhatsApp sin que las conversaciones se mezclen, y evitó que una cotización se duplique cuando el cliente cambia de opinión.
 sidebar:
-  order: 1
+  order: 2
 ---
 
-Esta es la primera entrega de **Novedades** — reúne todo lo que agregamos a Peaking desde julio 2026. A partir de aquí, cada release nuevo cubrirá solo el período desde la entrega anterior.
-
----
-
-## Ventas y cotizaciones
-
-### 🆕 Copilot — arma cotizaciones sin salir de la conversación
-
-Copilot es un panel manual para que el equipo de ventas arme cotizaciones directamente desde el **Panel de Mensajes** o desde una oportunidad del **CRM**, usando el catálogo de productos existente (sincronizado con Odoo o cargado por Excel) y generando la cotización final en Odoo — sin cambiar de pantalla ni copiar datos a mano.
-
-→ [Copilot — cotizaciones desde la conversación](/05-conversaciones/copilot-cotizaciones/)
+Cambios publicados entre el 28 de julio y el 31 de agosto de 2026.
 
 ---
 
-## Correo electrónico
+## Bandeja de entrada v2
 
-### 🆕 Conecta Gmail, Outlook o cualquier bandeja IMAP
+Rediseño completo del Panel de Mensajes:
 
-Ahora puedes conectar el correo del negocio a Peaking. El agente de IA puede leer los correos entrantes, usarlos como contexto de la conversación y responder o cotizar por ese canal, igual que ya lo hace por WhatsApp o Instagram.
-
-→ [Correo — Gmail, Outlook e IMAP](/09-integraciones-partner/correo-electronico/)
-
----
-
-## WhatsApp
-
-### 🆕 Envío de plantillas en lote
-
-Envía una plantilla de WhatsApp aprobada a **Nuevos Contactos**, **Contactos Existentes** o una **Audiencia** completa desde un solo flujo, con opción de programar el envío. Incluye límites de envío según la calidad del número y verificación de Meta Business.
-
-→ [Plantillas de WhatsApp](/15-whatsapp/plantillas-whatsapp/)
-
-### 🔧 Métricas de envíos actualizadas
-
-El histórico de envíos masivos ahora reporta **Entregados** y **No entregados** en vez de "Destinatarios" y "Fallidos" — una lectura más precisa del resultado real de cada campaña. Los envíos anteriores a julio 2026 conservan el formato antiguo.
-
-→ [Histórico de envíos masivos](/15-whatsapp/envios-whatsapp/)
-
----
-
-## CRM
-
-### 🆕 Vista Calendario del pipeline
-
-Una tercera forma de ver tus oportunidades, además de Kanban y Lista: organizadas por fecha en un calendario.
-
-### 🆕 Papelera de oportunidades
-
-Recupera oportunidades eliminadas por error en vez de perderlas para siempre.
-
-### 🆕 Búsqueda avanzada
-
-Filtra oportunidades por Fuente, Canal y rango de fechas, además de los filtros rápidos existentes.
-
-### 🆕 Tipos de Actividad personalizables
-
-Define y gestiona tus propios tipos de actividad (llamada, reunión, seguimiento, etc.) desde un modal dedicado, con un flujo claro para registrar una nueva actividad en cualquier oportunidad.
-
-→ [CRM — vista general](/06-crm-audiencias/crm-vista-general/)
-
----
-
-## Tareas (TODOs)
-
-### 🆕 Reglas inteligentes de asignación (AI-Powered)
-
-Configura una regla para que Peaking decida automáticamente a quién asignar un TODO nuevo, en vez de asignarlo siempre a la misma persona o dejarlo sin asignar.
-
-### 🔧 Búsqueda avanzada y campo Departamento
-
-El módulo de Tareas suma búsqueda avanzada y un campo de Departamento al crear un TODO nuevo.
-
-→ [Tareas (TODOs)](/10-tareas/tareas-y-todos/)
-
----
-
-## Mensajes
-
-### 🆕 Selección múltiple de conversaciones
-
-Asigna, etiqueta o silencia varias conversaciones a la vez desde el Panel de Mensajes, en vez de repetir la acción una por una.
-
-### 🔧 Contexto del Lead desglosado
-
-El panel de Contexto del Lead ahora presenta la información del contacto de forma más desglosada y fácil de escanear.
+- 🆕 **No leídos por usuario** — el contador cuenta lo que tú no has visto; que la IA conteste no marca la conversación como leída.
+- 🆕 **Tiempo real** en el hilo abierto, con scroll infinito que no repite ni salta conversaciones.
+- 🆕 **Estado de atención** (bot, sin asignar, asignado, escalado), filtro «Mías» y acciones en lote.
+- 🆕 **Notas del asesor** bajo el Resumen IA — no se envían al cliente, las ve todo el equipo y sobreviven a una reasignación.
+- 🆕 **Firma del asesor** en cada mensaje humano («Emilio · 10:38 PM»; «Tú» para ti mismo).
+- 🆕 **Bandeja compartida** como permiso independiente de la visibilidad del CRM.
+- 🔧 Filtros usables en ventanas no maximizadas, y como panel inferior en móvil con un solo scroll.
+- 🆕 **Editar el contacto sin salir de Mensajes**, con el mismo formulario de la sección Contactos.
+- 🐛 Las notificaciones bajan al leer, no sólo al responder.
+- 🐛 Los adjuntos que envía el agente ahora se ven en la conversación.
+- 🔧 El rol usuario puede reasignar y tomar control de conversaciones (antes sólo administradores y managers); los límites de visibilidad siguen aplicando.
 
 → [Panel de Mensajes](/05-conversaciones/panel-de-conversaciones/)
 
 ---
 
-## Insights
+## CRM
 
-### 🆕 Reportes y análisis con IA
+### 🆕 Papelera con restauración
 
-Una pestaña nueva dentro de Insights: 8 tipos de reporte generados por IA, más la opción de guardar reportes con sus KPIs y gráficas para consultarlos después.
+Lista lo eliminado, con quién lo eliminó y cuándo, búsqueda y botón Restaurar. Disponible para administradores y managers en `CRM → Configuración → Papelera`.
 
-→ [Reportes y análisis con IA](/08-analytics/reportes-y-analisis/)
+- 🐛 Fin del «borrado fantasma»: un vendedor sin permiso veía «Oportunidad eliminada» y la tarjeta reaparecía al recargar. Ahora el sistema avisa y oculta el botón Eliminar a quien no tiene permiso.
+- 🐛 Tablero en cero corregido en organizaciones grandes; se quitó el aviso global y el tablero carga más rápido.
 
----
+### 🔧 Tablero que carga por scroll
 
-## Integraciones
+Cada columna trae más tarjetas al bajar, en lugar de mostrar «96 de 13,104». La carga inicial pesa cuatro veces menos y el reparto por etapa quedó corregido. Los contadores por etapa ahora son instantáneos y las tarjetas ya no se repintan completas al actualizarse.
 
-### 🆕 Meta Conversions API
+- 🐛 Pantalla en negro al abrir el CRM, corregida.
 
-Conecta las conversiones que ocurren en WhatsApp o Instagram directamente a tus campañas de Meta Ads, para medir mejor el retorno de tu inversión publicitaria.
-
-→ [Meta Conversions API](/09-integraciones-partner/meta-conversions-api/)
-
-### 🆕 Modos de Agendamiento en Google Calendar
-
-Tres formas de dejar que el agente agende citas: **Estricto** (solo horarios predefinidos), **Flexible** (el agente negocia dentro de reglas) y **AI Calendar Routing** (el agente decide con criterio propio), configurables por calendario.
-
-→ [Google Calendar](/09-integraciones-partner/google-calendar/)
+→ [CRM — vista general](/06-crm-audiencias/crm-vista-general/)
 
 ---
 
-## Base de Conocimientos
+## WhatsApp
 
-### 🆕 Fichas técnicas
+### 🆕 Varios números sin que se mezclen
 
-Una nueva forma de estructurar información de producto en la Base de Conocimientos, pensada para que el agente la use como referencia técnica precisa en sus respuestas.
+Si una persona escribe a dos números de tu empresa, ahora son dos conversaciones independientes: la respuesta sale siempre por el número correcto y la ventana de 24 horas se respeta por número. La bandeja suma una franja de números con contador de no leídos por número y un distintivo «vía «número»» antes de escribir; cada usuario elige su vista predeterminada en `Ajustes → Usuarios`. Con un solo número la pantalla no cambia.
 
-→ [Qué es la Base de Conocimientos y cómo funciona](/04-base-conocimientos/que-es-y-como-funciona/)
+- 🔧 Pausar la IA aplica al cliente, no al hilo: tomar control en un número también pausa la IA si ese cliente escribe al otro.
+- 🐛 Los avisos de «sin responder» ahora cuentan todas las conversaciones reales en organizaciones grandes (el número visible puede subir respecto a antes).
+- 🐛 Acuse de lectura restaurado en números en coexistencia, y corregido un error que impedía enviar plantillas.
 
----
+### 🆕 Calidad y límite de mensajería en la tarjeta de conexión
 
-## Estudio de Prompts
+Ves la calidad del número (alta, media, baja) y cuántos destinatarios únicos puedes alcanzar en 24 horas — explica por qué un envío masivo no llega completo.
 
-### 🆕 Agrupación de respuestas del agente
+### 🆕 «Escribiendo…» mientras la IA responde
 
-Una configuración nueva que le da al agente una ventana de espera antes de responder, para que agrupe varios mensajes seguidos del cliente en una sola respuesta en vez de contestar mensaje por mensaje.
+El cliente ve el indicador en su WhatsApp mientras se prepara la respuesta.
 
-→ [Crea tu primer prompt](/03-prompt-studio/crea-tu-primer-prompt/)
+### 🔧 PDF de cotización con entrega confiable
 
----
+En cotizadores industriales, el envío del PDF por WhatsApp ahora es confiable incluso cuando el ERP tarda en generarlo.
 
-## Catálogo de productos
-
-### 🔧 Formulario de producto renovado
-
-El formulario para agregar un producto se actualizó con los campos reales de la plataforma: Tipo de Producto, Imagen, Dimensiones, Atributos y Productos Opcionales.
-
-→ [Catálogo de Productos](/07-productos-pagos/catalogo-de-productos/)
+→ [WhatsApp](/15-whatsapp/)
 
 ---
 
-## Configuración
+## Agente y voz
 
-### 🆕 Pestañas Contactos, CRM y Funcionalidades
+### 🔧 Búsquedas largas ya no agotan el turno
 
-Configuración general de la cuenta suma tres pestañas nuevas: **Contactos** (reglas de extracción automática de datos), **CRM** (etiquetas de campos, campos personalizados, notificaciones y Round Robin) y **Funcionalidades** (activa o desactiva 14 módulos de la plataforma).
+El agente tiene un tope de búsqueda por turno y responde aunque una consulta se alargue.
 
-→ [Configuración general de la cuenta](/01-primeros-pasos/configuraciones-iniciales/)
+### 🆕 Panel de uso de voz
+
+Con medición por llamada.
+
+→ [Agentes de Voz](/09-integraciones-partner/agentes-de-voz/)
+
+---
+
+## Exportaciones y búsqueda
+
+### 🆕 Campos inteligentes y personalizados en el Excel
+
+Una columna por campo en la exportación de contactos y del CRM.
+
+### 🔧 Búsqueda de productos más precisa
+
+Sólo rankea lo que tiene evidencia real; el primer resultado correcto pasó de 83% a 100% en las consultas de prueba, y las listas de 40 a 100 códigos se leen completas.
+
+### 🆕 Cotizadores industriales: PDF por WhatsApp y atención a vendedores internos
+
+El agente envía el PDF de la cotización por WhatsApp y atiende a vendedores internos desde el mismo número (copiloto).
+
+---
+
+## Cotización
+
+### 🆕 Actualizar la cotización en vez de duplicarla
+
+Si el cliente cambia cantidades o productos después de cotizar, la cotización viva del hilo se actualiza con el mismo folio y el mismo enlace, y se reenvía el PDF vigente. Opcional por organización.
+
+### 🆕 Condiciones por cliente en cotizadores de bandas industriales
+
+Incremento porcentual y cargos fijos, reflejados tanto en la línea de cotización como en el PDF de Odoo.
+
+### 🔧 Agentes de cotización a la medida
+
+Reglas de forma de pago sin ambigüedad, medidas en milímetros, redondeo, PDF integrado y cliente obligatorio antes de cotizar.
+
+→ [Copilot — cotizaciones desde la conversación](/05-conversaciones/copilot-cotizaciones/)
+
+---
+
+## Plataforma
+
+### 🐛 Zona horaria de tu organización
+
+Corregida en analíticas y en fechas de correo.
+
+### 🔧 La plataforma se siente más rápida
+
+El aviso de mensajes sin responder dejó de sobrecargar la base de datos.
 
 ---
 
@@ -165,6 +138,6 @@ Configuración general de la cuenta suma tres pestañas nuevas: **Contactos** (r
 
 ### 🆕 Nueva sección: Mejores Prácticas
 
-Publicamos una sección nueva en este Help Center con guías sobre arquitectura de agentes, cómo evitar que agentes y herramientas se pisen entre sí, cómo escribir prompts efectivos, y cómo versionar cambios de forma segura — pensada para equipos que ya construyeron su primer agente y quieren afinarlo.
+Publicamos una sección nueva en este Help Center con guías sobre arquitectura de agentes, cómo evitar que agentes y herramientas se pisen entre sí, cómo escribir prompts efectivos, y cómo versionar cambios de forma segura.
 
 → [Resumen de mejores prácticas](/19-mejores-practicas/resumen-de-mejores-practicas/)
