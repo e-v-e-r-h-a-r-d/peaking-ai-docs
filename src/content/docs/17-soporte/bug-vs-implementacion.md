@@ -17,10 +17,10 @@ Un error de la plataforma ocurre cuando una función que estaba operando correct
 
 Antes de reportarlo, te invitamos a hacer un diagnóstico rápido con estas cinco preguntas:
 
-1. **¿Esto funcionaba antes exactamente igual y sin cambios de tu parte?** Si hubo algún ajuste reciente en el prompt, el workflow o la configuración del canal, el origen puede estar ahí — consulta nuestra [guía de resolución de problemas frecuentes](/18-how-to/configuraciones-frecuentes/).
+1. **¿Esto funcionaba antes exactamente igual y sin cambios de tu parte?** Si hubo algún ajuste reciente en el prompt, el workflow o la configuración del canal, el origen puede estar ahí — consulta nuestra [guía de resolución de problemas frecuentes](/17-soporte/configuraciones-frecuentes/).
 2. **¿El problema afecta a todos tus canales o solo a uno específico?** Si es solo uno, revisa el estado de conexión en **Integraciones › Canales de Mensajería**.
 3. **¿Puedes reproducirlo siempre con los mismos pasos?** Un problema intermitente puede ser una condición de red o de la API de Meta — intenta de nuevo antes de escalar.
-4. **¿El agente responde de forma inesperada?** En la mayoría de los casos esto tiene solución directa desde el Prompt Studio. Revisa primero nuestra sección [How To](/18-how-to/configuraciones-frecuentes/).
+4. **¿El agente responde de forma inesperada?** En la mayoría de los casos esto tiene solución directa desde el Prompt Studio. Revisa primero nuestra [guía de configuraciones frecuentes](/17-soporte/configuraciones-frecuentes/).
 5. **¿El problema persiste después de hacer refresh y de reconectar el canal si aplica?** Si sí, y ninguno de los pasos anteriores explica el origen — entonces es un error que debemos atender nosotros.
 
 ### Ejemplos claros de errores de plataforma
@@ -72,9 +72,9 @@ Escríbele directamente a nuestro equipo — con gusto revisamos tu caso y te pr
 
 | Situación | Referencia |
 |-----------|------------|
-| La plataforma deja de funcionar sin cambios de mi parte | [Revisar errores frecuentes](/18-how-to/configuraciones-frecuentes/) · [Reportar](https://peakingai.odoo.com/helpdesk/atencion-al-cliente-1) |
-| Una función documentada no se comporta como dice | [Revisar errores frecuentes](/18-how-to/configuraciones-frecuentes/) · [Reportar](https://peakingai.odoo.com/helpdesk/atencion-al-cliente-1) |
-| El agente responde de forma inesperada | [Cómo ajustar el comportamiento del agente](/18-how-to/configuraciones-frecuentes/#el-agente-responde-de-forma-incorrecta-o-inesperada) |
+| La plataforma deja de funcionar sin cambios de mi parte | [Revisar errores frecuentes](/17-soporte/configuraciones-frecuentes/) · [Reportar](https://peakingai.odoo.com/helpdesk/atencion-al-cliente-1) |
+| Una función documentada no se comporta como dice | [Revisar errores frecuentes](/17-soporte/configuraciones-frecuentes/) · [Reportar](https://peakingai.odoo.com/helpdesk/atencion-al-cliente-1) |
+| El agente responde de forma inesperada | [Cómo ajustar el comportamiento del agente](/17-soporte/configuraciones-frecuentes/#el-agente-responde-de-forma-incorrecta-o-inesperada) |
 | Quiero un workflow nuevo o diferente | [Habla con nuestro equipo](mailto:vrr@peaking.ai) |
 | Quiero conectar un sistema externo nuevo | [Habla con nuestro equipo](mailto:vrr@peaking.ai) |
 | Quiero una estrategia de campañas o audiencias | [Habla con nuestro equipo](mailto:vrr@peaking.ai) |
@@ -86,6 +86,6 @@ Escríbele directamente a nuestro equipo — con gusto revisamos tu caso y te pr
 
 No hay problema — eso es completamente normal.
 
-Si algo dejó de funcionar solo, sin que hayas tocado nada, empieza por nuestra [guía de resolución de problemas frecuentes](/18-how-to/configuraciones-frecuentes/). Muchas veces la solución está a un ajuste de distancia y puedes resolverlo tú mismo en minutos.
+Si algo dejó de funcionar solo, sin que hayas tocado nada, empieza por nuestra [guía de resolución de problemas frecuentes](/17-soporte/configuraciones-frecuentes/). Muchas veces la solución está a un ajuste de distancia y puedes resolverlo tú mismo en minutos.
 
 Si lo que tienes en mente es algo nuevo que quieres construir o mejorar, [escríbenos](mailto:vrr@peaking.ai) — con gusto te orientamos y te proponemos el mejor camino.

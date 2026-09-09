@@ -258,7 +258,29 @@ Ejecutó la "fase 2" pendiente de la sesión anterior: reordenó el sidebar comp
 
 **Flujo de git:** se migró la rama de trabajo de `max's-branch` a `main` (ver nota al inicio del archivo). `origin/main` y `origin/max's-branch` estaban exactamente en el mismo commit (`b7adf4f`) al momento del cambio, así que no hubo nada que fusionar.
 
-Build de Astro verificado sin errores (88 páginas, antes 87). Redirects verificados en `dist/`. Pendiente: el usuario probará en local con `npm run dev` antes de que se haga push a `main`.
+Build de Astro verificado sin errores (88 páginas, antes 87). Redirects verificados en `dist/`. Las dos pasadas de esta sesión se commitearon y pushearon a `main` (`35f383c`, `bccedd1`) a pedido explícito del usuario.
+
+### Sesión 2026-09-09 — Pulido de experiencia, corrección de enlaces y glosario
+
+Continuación directa de la sesión anterior (mismo trabajo, día siguiente). El usuario pidió ejecutar en paralelo las 4 ideas de pulido que se habían dejado pendientes, más una revisada de redacción del sitio y una actualización del glosario.
+
+**1. Tema claro verificado:** capturas de pantalla vía `chrome-devtools` MCP con `emulate({colorScheme: 'light'})` — la línea del tiempo en zigzag y la flecha se ven bien en ambos temas, sin cambios de CSS necesarios.
+
+**2. GA4:** no se pudo revisar — la extensión `claude-in-chrome` no está conectada en este entorno (requiere el Chrome real del usuario con su sesión de Google). Pendiente: el usuario conecta la extensión, o comparte manualmente el reporte de "Pages and screens" para que se interprete.
+
+**3. Badges en el sidebar:** se agregó `badge: {text: 'Más usado', variant: 'success'}` a WhatsApp y `badge: {text: 'Secundario', variant: 'note'}` a Otros canales, dentro del grupo Integraciones en `astro.config.mjs` — usa el campo nativo `badge` de Starlight (`I18nBadgeConfigSchema`), no requirió CSS nuevo. Verificado en `dist/`.
+
+**4. Revisión de profundidad de anidación:** Integraciones y CRM y Gestión tienen la misma profundidad (grupo → subgrupo → artículo, 3 clics hasta el contenido). Es consistente entre ambos y "Otros canales" — contenido genuinamente secundario — es exactamente lo que debería estar más escondido. Conclusión: no se necesita restructurar, la profundidad actual es apropiada.
+
+**Revisión de redacción — enlaces rotos por la reorganización de la sesión anterior:**
+- `01-primeros-pasos/index.md` e `01-primeros-pasos/bienvenido-a-peaking.md` — el tip/paso "Conecta tus canales" enlazaba a `/02-canales/`, que ya no cubre WhatsApp (ahora es "Otros canales"). Corregido para enlazar WhatsApp y Otros canales por separado.
+- `17-soporte/bug-vs-implementacion.md` — 5 links a la ruta vieja `/18-how-to/configuraciones-frecuentes/` (funcionaban por el redirect, pero no apuntaban a la ruta canónica) y una mención a la "sección How To" que ya no existe como tal. Corregidos.
+- Se descartaron como falsos positivos varias menciones de "Canales › ..." — son breadcrumbs del producto real (dónde está un botón dentro de la app), no links de esta documentación, y no cambiaron.
+- Barrido adicional sin hallazgos: sin placeholders/TODOs de desarrollo olvidados, sin restos de `16-guia-devs`/`18-how-to`/`15-envios-whatsapp` fuera de los redirects y el historial de este archivo.
+
+**Glosario actualizado** (`01-primeros-pasos/glosario-de-terminos.md`): términos nuevos **Audiencia**, **Campaña (Broadcast)**, **Funcionalidades**, **MCP (Peaking MCP)**, **Token de acceso**. Entradas revisadas: **Integración** (ahora describe las 3 áreas reales del panel, no solo "herramienta externa"), **Auto Assignment** (menciona explícitamente Round Robin vs. AI-Powered).
+
+Build de Astro verificado sin errores (88 páginas). Pusheado a `main` a pedido del usuario.
 
 ---
 

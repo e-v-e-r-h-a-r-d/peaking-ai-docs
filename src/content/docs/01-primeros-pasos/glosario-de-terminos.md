@@ -20,8 +20,11 @@ Sección del Panel de Control que lista las conversaciones que tu agente de IA n
 **Agente de Voz** *(Voice Agent)*
 Agente de IA especializado en conversaciones telefónicas. A diferencia del agente de mensajería, el Voice Agent atiende llamadas de voz en tiempo real — puede hablar con clientes, recopilar información y ejecutar herramientas (consultar el catálogo, crear tareas, etc.) durante la llamada. Se configura en **Integraciones › Agentes de Voz** y se conecta a flujos de Workflows con el nodo Voice Agent.
 
+**Audiencia**
+Grupo de contactos reunidos por atributos compartidos (etiquetas, canal, actividad, campos personalizados) para dirigir una campaña de mensajería masiva. Puede ser estática (lista fija) o dinámica (se actualiza sola según las reglas que definas). Se gestiona en **Integraciones › Audiencias y Campañas**.
+
 **Auto Assignment**
-Configuración que distribuye automáticamente las nuevas oportunidades de CRM o los TODOs entre los miembros del equipo, sin que nadie tenga que asignarlos manualmente.
+Configuración que distribuye automáticamente las nuevas oportunidades de CRM o los TODOs entre los miembros del equipo, sin que nadie tenga que asignarlos manualmente. Puede usar **Round Robin** (rotación equitativa) o **AI-Powered / Intelligent Rules** (la IA decide según las reglas que definas).
 
 **Auto-tagging**
 Función de etiquetado automático de conversaciones. Puedes definir un criterio en lenguaje natural (ej. "cuando el cliente mencione un problema con su pedido") y la IA aplicará la etiqueta correspondiente en cuanto detecte que la conversación cumple ese criterio. Se configura en el **Estudio de Prompts**, dentro de cada prompt.
@@ -39,6 +42,9 @@ Vista principal del Estudio de Prompts. Muestra todos los prompts creados en tu 
 ---
 
 ## C
+
+**Campaña** *(Broadcast)*
+Envío masivo de una plantilla de WhatsApp a una audiencia completa, para reactivación, prospección o marketing. Se crea en **Integraciones › Audiencias y Campañas** sobre una **audiencia** previamente definida. El resultado (entregados, no entregados, reenvío) se revisa en el Histórico de envíos masivos de WhatsApp.
 
 **Canal**
 Plataforma de mensajería conectada a Peaking. Los canales disponibles son: **WhatsApp**, **Instagram**, **Facebook Messenger** y el **Widget** de chat para sitios web.
@@ -78,6 +84,9 @@ Módulo donde configuras el comportamiento, personalidad, tono e instrucciones d
 **Fuera de Ventana (24h)**
 Etiqueta que aparece en conversaciones donde ya venció la ventana de 24 horas de Meta. Significa que el negocio no puede enviar mensajes de texto libre hasta que el cliente vuelva a escribir primero o hasta usar una plantilla de mensaje aprobada.
 
+**Funcionalidades**
+Pestaña de Configuración donde activas o desactivas módulos completos de la plataforma (CRM, TODOs, Workflows, API pública, Agentes de Voz, Plantillas y envío masivo de WhatsApp, y más) según lo que tu operación necesite. Cada módulo activo puede desbloquear pestañas o campos adicionales en otras partes de Peaking.
+
 ---
 
 ## I
@@ -86,7 +95,7 @@ Etiqueta que aparece en conversaciones donde ya venció la ventana de 24 horas d
 Módulo de analítica avanzada de Peaking. Muestra reportes detallados de conversaciones, rendimiento del agente de IA, actividad del equipo y tendencias en el tiempo.
 
 **Integración**
-Conexión entre Peaking y una herramienta externa: Zapier, Make, n8n, Odoo, HubSpot, Zoho u otras. Las integraciones permiten sincronizar datos o automatizar flujos entre sistemas.
+Conexión entre Peaking y un sistema externo o canal de mensajería. El panel de **Integraciones** agrupa tres áreas: canales de mensajería (WhatsApp y Otros canales), catálogos de datos externos, y herramientas como CRMs, calendarios o pasarelas de pago (Zapier, Make, n8n, Odoo, HubSpot, Zoho, Google Calendar, Stripe, entre otras).
 
 ---
 
@@ -108,6 +117,9 @@ Contacto que la IA identificó como un prospecto con intención de compra o inte
 
 **Manage Variables**
 Nodo de Workflows que manipula variables del flujo de forma explícita: asigna un valor fijo, copia el valor de una variable a otra, o resetea (borra) una variable. Úsalo para controlar el estado interno del flow entre nodos.
+
+**MCP** *(Model Context Protocol · Peaking MCP)*
+Servidor remoto que conecta **Claude Code** a una organización de Peaking, con acceso acotado a esa cuenta. Permite diagnosticar conversaciones, editar y versionar prompts, y ajustar workflows desde la terminal. Es una herramienta técnica para el equipo de Peaking o partners que implementan cuentas — no un módulo de Funcionalidades. Se conecta con la misma API key que gestionas en la pestaña **API** de Configuración.
 
 **Mensajes**
 Módulo de bandeja unificada de Peaking. Centraliza en un solo lugar todos los mensajes entrantes de WhatsApp, Instagram, Messenger y Widget, sin importar desde qué canal lleguen.
@@ -164,6 +176,9 @@ Categoría de una actividad registrada en el Timeline de una oportunidad del CRM
 
 **TODO**
 Tarea creada a partir de una conversación para dar seguimiento posterior. Puede asignarse a un miembro del equipo, tener prioridad y fecha límite. Se gestiona en el módulo de Mensajes.
+
+**Token de acceso**
+Credencial que usan Instagram y Facebook Messenger para mantener el canal conectado a Peaking. Vence aproximadamente cada 60 días — cuando expira, el canal muestra el badge **Token expirado - Reconectar** en Integraciones. WhatsApp usa un mecanismo distinto y normalmente no requiere esta reconexión.
 
 ---
 
