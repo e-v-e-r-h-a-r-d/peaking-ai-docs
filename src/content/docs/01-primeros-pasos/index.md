@@ -19,5 +19,5 @@ Si acabas de crear tu cuenta, sigue este orden:
 ---
 
 :::tip[¿Ya completaste el onboarding?]
-Pasa directamente a [Conecta tus canales](/02-canales/) para vincular WhatsApp, Instagram o tu sitio web.
+Pasa directamente a [Conecta WhatsApp](/15-whatsapp/) — o si buscas Instagram, Messenger o el Widget web, ve a [Otros canales](/02-canales/).
 :::

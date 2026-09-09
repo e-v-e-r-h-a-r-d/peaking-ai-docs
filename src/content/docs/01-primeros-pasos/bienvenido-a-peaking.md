@@ -68,7 +68,7 @@ Peaking tiene módulos separados para cada parte de tu operación. Todos accesib
 Si es tu primera vez en Peaking, este es el orden que te recomendamos seguir:
 
 1. **Completa la configuración de tu cuenta** — invita a tu equipo, configura tu perfil y revisa los módulos activos. ([Configuración general de la cuenta](/01-primeros-pasos/configuraciones-iniciales/))
-2. **Conecta tus canales** — vincula WhatsApp, Instagram o Messenger para empezar a recibir mensajes. ([Conecta tus canales](/02-canales/))
+2. **Conecta tus canales** — vincula WhatsApp ([WhatsApp](/15-whatsapp/)) y, si los usas, Instagram o Messenger ([Otros canales](/02-canales/)) para empezar a recibir mensajes.
 3. **Configura tu agente de IA** — crea tu prompt en Prompt Studio y alimenta la Base de Conocimientos con información de tu negocio. ([Prompt Studio](/03-prompt-studio/))
 4. **Verifica que todo funciona** — envíate un mensaje de prueba y confirma que tu IA responde como esperas.
 5. **Opera y crece** — gestiona conversaciones, analiza métricas e integra tus herramientas.

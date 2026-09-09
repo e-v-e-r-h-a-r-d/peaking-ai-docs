@@ -91,6 +91,7 @@ export default defineConfig({
 					items: [
 						{
 							label: 'WhatsApp',
+							badge: { text: 'Más usado', variant: 'success' },
 							autogenerate: { directory: '15-whatsapp' },
 						},
 						{
@@ -99,6 +100,7 @@ export default defineConfig({
 						},
 						{
 							label: 'Otros canales',
+							badge: { text: 'Secundario', variant: 'note' },
 							autogenerate: { directory: '02-canales' },
 						},
 						{
