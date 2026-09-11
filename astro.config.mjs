@@ -13,6 +13,10 @@ export default defineConfig({
 		'/09-integraciones-partner/reconexion-tokens/': '/02-canales/reconexion-tokens/',
 		'/18-how-to/configuraciones-frecuentes/': '/17-soporte/configuraciones-frecuentes/',
 		'/16-guia-devs/peaking-mcp/': '/01-primeros-pasos/configuraciones-iniciales/',
+		'/00-novedades/septiembre-2026/': '/00-novedades/#septiembre-2026',
+		'/00-novedades/agosto-2026/': '/00-novedades/#agosto-2026',
+		'/00-novedades/julio-2026/': '/00-novedades/#julio-2026',
+		'/00-novedades/junio-2026/': '/00-novedades/#junio-2026',
 	},
 	integrations: [
 		starlight({

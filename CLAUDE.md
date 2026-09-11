@@ -325,6 +325,23 @@ Build de Astro verificado sin errores (92 páginas, antes 91).
 
 ---
 
+### Sesión 2026-09-11 — Novedades consolidado en una sola página
+
+El usuario pidió que Novedades dejara de ser 4 páginas separadas (una por mes) y pasara a ser **una sola página** navegable con el menú lateral derecho ("On this page" nativo de Starlight), con resúmenes de una línea por función que enlazan directo al artículo correspondiente — mostró un boceto en Excalidraw con "Mes → segmentos" anidados en el menú. Se preguntó primero (`AskUserQuestion`, 4 preguntas) antes de ejecutar.
+
+**Cambios:**
+- `junio-2026.md`, `julio-2026.md`, `agosto-2026.md` y `septiembre-2026.md` se eliminaron y su contenido se fusionó dentro de `00-novedades/index.md`, un mes por sección `## Mes Año` (ancla estable, ej. `#agosto-2026` — igual a la URL vieja) con los segmentos de producto como `### Segmento` anidados debajo. El TOC nativo de Starlight (min/maxHeadingLevel por defecto: H2–H3) arma automáticamente el menú "Mes → segmentos" del boceto, sin componentes nuevos.
+- Cada función se condensó a **una línea** (`🆕/🔧/🐛 **Nombre** — qué cambió. [Ver cómo →](enlace#ancla)`), en vez de los párrafos de 2-4 líneas que tenía cada archivo mensual. Cuando varias funciones de un mismo segmento apuntan al mismo artículo sin ancla propia (ej. Bandeja de entrada v2, 9 funciones → un solo artículo), el link queda una sola vez junto al encabezado del segmento en vez de repetirse en cada bullet.
+- Al inicio de la página, una línea compacta `Ir a: [Septiembre 2026](#septiembre-2026) · ...` sirve de índice rápido en vista móvil (donde el TOC lateral se colapsa arriba de la página).
+- 4 redirects nuevos en `astro.config.mjs` (`/00-novedades/agosto-2026/` → `/00-novedades/#agosto-2026`, y lo mismo para los otros 3 meses) — mismo patrón de redirects que ya usa el proyecto. No se encontró ningún otro artículo del sitio enlazando a las URLs viejas de cada mes.
+- Como solo queda `index.md` en el directorio, el sidebar izquierdo (`autogenerate: { directory: '00-novedades' }`) pasó de mostrar 5 ítems a mostrar un solo link "Novedades", sin tocar `astro.config.mjs` para eso.
+
+**Convención para futuros releases (reemplaza la de la sesión 2026-09-03):** cada entrega nueva es una sección `## Mes Año` agregada **arriba** dentro de `00-novedades/index.md` (justo después de la línea "Ir a: ..."), no un archivo nuevo. El mes más reciente siempre queda primero (orden cronológico inverso dentro del mismo archivo, ya no vía `sidebar.order` por archivo).
+
+Build de Astro verificado sin errores (88 páginas, antes 92 — los 4 archivos fusionados). Anchors y redirects verificados en `dist/`.
+
+---
+
 ## Google Analytics 4
 
 GA4 está configurado en `astro.config.mjs` con el ID real:
