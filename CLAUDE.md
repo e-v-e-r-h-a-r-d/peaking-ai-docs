@@ -16,7 +16,7 @@ Help Center de **Peaking AI** — documentación orientada al usuario final (en 
 ```
 src/content/docs/
 ├── index.mdx                    ← Landing page del Help Center
-├── 00-novedades/                ← Release notes: anuncios de features nuevas, mejoras y correcciones
+├── 00-novedades/                ← Release notes: anuncios de features nuevas y mejoras (NUNCA correcciones de bugs)
 ├── 01-primeros-pasos/           ← Onboarding (bienvenida, dashboard, config, glosario)
 ├── 02-canales/                  ← "Otros canales" (nested bajo Integraciones): Instagram, Messenger, Widget web, verificación, reconexión de tokens
 ├── 03-prompt-studio/            ← Prompt Studio: prompt, variables, herramientas, test
@@ -337,6 +337,8 @@ El usuario pidió que Novedades dejara de ser 4 páginas separadas (una por mes)
 - Como solo queda `index.md` en el directorio, el sidebar izquierdo (`autogenerate: { directory: '00-novedades' }`) pasó de mostrar 5 ítems a mostrar un solo link "Novedades", sin tocar `astro.config.mjs` para eso.
 
 **Convención para futuros releases (reemplaza la de la sesión 2026-09-03):** cada entrega nueva es una sección `## Mes Año` agregada **arriba** dentro de `00-novedades/index.md` (justo después de la línea "Ir a: ..."), no un archivo nuevo. El mes más reciente siempre queda primero (orden cronológico inverso dentro del mismo archivo, ya no vía `sidebar.order` por archivo).
+
+**Regla: Novedades no publica correcciones de bugs (2026-09-28).** El usuario pidió quitar todas las entradas 🐛 Corrección — no se anuncia a los clientes qué errores se arreglaron. Solo existen las etiquetas 🆕 Nuevo y 🔧 Mejora. Al convertir el changelog oficial (`novedades-peaking-2026-Q3.html` u otro futuro) a `index.md`, descartar todo ítem etiquetado como corrección/bug fix. Si un ítem ya viene como «Mejora» pero su descripción cuenta un arreglo ("ya no duplica…", "dejó de fallar…"), reescribirlo por el beneficio que gana el usuario ("cada cotización se genera una sola vez"), sin mencionar qué estaba roto. Se retiraron 13 entradas 🐛 de los 4 meses y el segmento «Mensajes y canales» de Junio, que solo contenía correcciones.
 
 Build de Astro verificado sin errores (88 páginas, antes 92 — los 4 archivos fusionados). Anchors y redirects verificados en `dist/`.
 

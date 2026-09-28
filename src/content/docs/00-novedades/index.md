@@ -1,11 +1,11 @@
 ---
 title: Novedades
-description: Anuncios oficiales de Peaking — funciones nuevas, mejoras y correcciones, para que siempre sepas qué cambió en la plataforma.
+description: Anuncios oficiales de Peaking — funciones nuevas y mejoras, para que siempre sepas qué cambió en la plataforma.
 sidebar:
   order: 0
 ---
 
-Esta sección reúne los anuncios oficiales de Peaking: cada vez que lanzamos una función nueva, mejoramos algo existente o corregimos un problema reportado, queda documentado aquí. La idea es simple — si algo cambió en tu cuenta, lo puedes verificar en un solo lugar en vez de tener que preguntarnos.
+Esta sección reúne los anuncios oficiales de Peaking: cada vez que lanzamos una función nueva o mejoramos algo existente, queda documentado aquí. La idea es simple — si algo cambió en tu cuenta, lo puedes verificar en un solo lugar en vez de tener que preguntarnos.
 
 ---
 
@@ -15,7 +15,6 @@ Cada entrega agrupa los cambios por área de producto (CRM, WhatsApp, Tareas, et
 
 - **🆕 Nuevo** — una función que no existía antes.
 - **🔧 Mejora** — un cambio sobre algo que ya existía (más campos, mejor rendimiento, una vista adicional).
-- **🐛 Corrección** — un problema reportado que ya está resuelto.
 
 Las entregas se listan de la más reciente a la más antigua. Usa el menú de esta página (arriba en móvil, a la derecha en escritorio) para saltar directo al mes o al área que te interesa.
 
@@ -50,7 +49,6 @@ Ir a: [Septiembre 2026](#septiembre-2026) · [Agosto 2026](#agosto-2026) · [Jul
 ### Insights y agente de IA
 
 - 🔧 **Información de Conversaciones en tu idioma** — responde en el idioma de la interfaz, cuenta conversaciones (no mensajes) y nombra a cada cliente. [Ver cómo →](/08-analytics/peaking-insights/)
-- 🐛 Sin fugas de razonamiento interno — ya no aparece planeación en inglés/spanglish ni nombres de herramientas en las respuestas al cliente.
 - 🔧 Cotizadores industriales a la medida — niveles de precio por tipo de cliente, cargos por urgencia y cálculo determinista de servicios de planta.
 
 ---
@@ -71,13 +69,11 @@ Rediseño completo del Panel de Mensajes. [Ver el panel →](/05-conversaciones/
 - 🆕 **Bandeja compartida** como permiso independiente de la visibilidad del CRM.
 - 🔧 Filtros usables en ventana no maximizada; en móvil, panel inferior con un solo scroll.
 - 🔧 El rol usuario ya puede reasignar y tomar control de conversaciones (antes solo admins/managers).
-- 🐛 Notificaciones bajan al leer, no solo al responder; los adjuntos del agente ya se ven en la conversación.
 
 ### CRM
 
 - 🆕 **Papelera con restauración** — lista lo eliminado con quién y cuándo, búsqueda y botón Restaurar, para admins y managers. [Ver cómo →](/06-crm-audiencias/crm-vista-general/)
 - 🔧 **Tablero que carga por scroll** — cada columna trae más tarjetas al bajar en vez de mostrar «96 de 13,104»; carga inicial 4 veces más liviana.
-- 🐛 Corregidos el «borrado fantasma» de oportunidades y la pantalla en negro al abrir el CRM en organizaciones grandes.
 
 ### WhatsApp
 
@@ -85,11 +81,10 @@ Rediseño completo del Panel de Mensajes. [Ver el panel →](/05-conversaciones/
 - 🆕 Calidad y límite de mensajería visibles en la tarjeta de conexión — explica por qué un envío masivo no llega completo.
 - 🆕 «Escribiendo…» en WhatsApp mientras la IA prepara la respuesta.
 - 🔧 PDF de cotización por WhatsApp con entrega confiable aunque el ERP tarde en generarlo.
-- 🐛 Acuse de lectura restaurado en números en coexistencia; corregido un error que impedía enviar plantillas.
 
 ### Agente y voz
 
-- 🔧 Búsquedas largas ya no agotan el turno — el agente tiene un tope por turno y responde aunque la consulta se alargue.
+- 🔧 **Respuesta asegurada en búsquedas largas** — el agente maneja un tope de búsqueda por turno, así que siempre responde aunque la consulta sea extensa.
 - 🆕 **Panel de uso de voz**, con medición por llamada. [Ver cómo →](/09-integraciones-partner/agentes-de-voz/)
 
 ### Exportaciones, búsqueda y cotización
@@ -101,8 +96,7 @@ Rediseño completo del Panel de Mensajes. [Ver el panel →](/05-conversaciones/
 
 ### Plataforma
 
-- 🐛 Zona horaria de tu organización corregida en analíticas y fechas de correo.
-- 🔧 La plataforma se siente más rápida — el aviso de mensajes sin responder dejó de sobrecargar la base de datos.
+- 🔧 **La plataforma se siente más rápida** — el aviso de mensajes sin responder ahora consume menos recursos.
 
 ### Help Center
 
@@ -141,17 +135,13 @@ Rediseño completo del Panel de Mensajes. [Ver el panel →](/05-conversaciones/
 - 🆕 **Lee Excel y PDF renglón por renglón** — las tablas de un pedido llegan limpias, línea por línea.
 - 🆕 **El agente recuerda a tus clientes** — razón social, correo, RFC y código postal no se vuelven a preguntar.
 - 🆕 Consulta de contacto y factura desde el agente (requiere Odoo); vuelve a ver fotos recientes del historial.
-- 🔧 Auto-envío del correo de cotización respeta el umbral de revisión humana; un doble clic ya no duplica cotizaciones.
-- 🐛 Sin cotizaciones inventadas ni productos fantasma; un carrito vacío no se puede cerrar.
-- 🐛 Mensajes duplicados, fugas de idioma y de razonamiento interno eliminados.
-- 🐛 Instagram con varias páginas conecta la página correcta; el widget dejó de parpadear al ajustar tamaño.
+- 🔧 **Auto-envío del correo de cotización** — respeta el umbral de revisión humana, permite configurar el vendedor del pedido y genera cada cotización una sola vez.
 
 ### Meta e integraciones
 
 - 🆕 **Meta Conversions API por auto-etiquetas** — elige qué etiquetas automáticas disparan una conversión hacia Meta. [Ver cómo →](/09-integraciones-partner/meta-conversions-api/)
 - 🆕 Conversión a Meta por etapa del CRM — marca «Enviar conversión a Meta» en Gestionar Etapas.
 - 🆕 **Adjuntos en el widget web** — tus visitantes pueden enviar fotos y documentos. [Ver cómo →](/02-canales/widget-sitio-web/)
-- 🐛 Auto-etiquetado ya no mezcla sucursales; exportar contactos ya no expira en organizaciones grandes.
 
 ---
 
@@ -170,7 +160,6 @@ Rediseño completo del Panel de Mensajes. [Ver el panel →](/05-conversaciones/
 - 🆕 **Exportar contactos a Excel** — con filtros de fecha, canal y fuente, y columnas de etiquetas, oportunidad y etapa. [Ver cómo →](/13-contactos/gestion-de-contactos/)
 - 🆕 **Visibilidad por asignación** — el rol usuario ve solo sus contactos y conversaciones asignadas. [Ver cómo →](/06-crm-audiencias/crm-vista-general/)
 - 🆕 Filtros Fuente y Canal en el pipeline del CRM.
-- 🐛 Formulario web embebible corregido — ya no se recorta en algunos sitios.
 
 ### Agente de IA
 
@@ -179,13 +168,8 @@ Rediseño completo del Panel de Mensajes. [Ver el panel →](/05-conversaciones/
 - 🆕 **Auto-etiquetado para todas las organizaciones** — barrido automático cada 20 minutos; sin costo si no tienes reglas configuradas.
 - 🔧 El agente ve las imágenes de verdad (visión real, no un resumen de texto).
 - 🆕 Comando `/reset` por WhatsApp para reiniciar la conversación de prueba.
-- 🔧 El carrito muestra exactamente el producto, color y talla a cotizar; la búsqueda ya no confunde teléfonos con productos.
-- 🐛 Checkout fallido ya no inventa un número de cotización; las fracciones (½, ¼, ¾) ya se buscan bien en el catálogo.
-
-### Mensajes y canales
-
-- 🐛 Instagram y Messenger sin retraso por el procesamiento del agente.
-- 🐛 Con varios números de WhatsApp, la respuesta siempre sale por el número que recibió el mensaje original. [Ver cómo →](/15-whatsapp/)
+- 🔧 El carrito muestra exactamente el producto, color y talla a cotizar.
+- 🔧 **Búsqueda con filtro de calidad siempre activo** — los códigos de producto se buscan como tal y los números de teléfono no se toman por producto.
 
 ---
 
