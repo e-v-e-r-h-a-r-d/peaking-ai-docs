@@ -128,6 +128,14 @@ Por defecto, el agente de IA maneja las conversaciones de forma autónoma. Cuand
 Cuando el agente de IA retoma una conversación que fue atendida por un humano, continúa con el historial completo disponible. No "olvida" lo que se dijo antes.
 :::
 
+### Cuando varias personas atienden el mismo chat
+
+Si varias personas de tu equipo tienen abierta la misma conversación y escriben mensajes, cada mensaje enviado muestra **quién lo escribió**: debajo de la burbuja aparece el nombre de la persona junto con la fecha y la hora. Tus propios mensajes aparecen como **Tú**.
+
+![Hilo de conversación donde cada mensaje del equipo muestra el nombre de quien lo envió, la fecha y la hora](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/main/screenshots_peaking/05-conversaciones/mensajes-atribucion-multiples-agentes.png)
+
+Así, cualquiera del equipo puede ver de un vistazo quién está dando seguimiento al cliente y quién respondió cada mensaje, sin preguntarlo por otro canal ni responder dos veces lo mismo.
+
 ---
 
 ## Conversaciones recientes vs. historial
