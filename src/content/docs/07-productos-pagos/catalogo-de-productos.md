@@ -46,6 +46,14 @@ Cada fila muestra:
 | **Categoría** | Grupo al que pertenece el producto |
 | **Estado** | Activo · Inactivo |
 
+### Filtrar por Categoría o Familia
+
+En el panel lateral **Filtros** puedes alternar entre dos pestañas: **Categoría** y **Familia**. Cada opción muestra a su derecha cuántos productos contiene, y al hacer clic en una la tabla se limita a esos productos.
+
+![Panel Filtros con las pestañas Categoría y Familia y el conteo de productos por categoría](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/main/screenshots_peaking/07-productos-pagos/catalogo-filtro-categoria-familia.png)
+
+Si tu catálogo está sincronizado con Odoo, las categorías se traen directamente desde Odoo, así que el filtro refleja la misma organización que ya usas allá y no tienes que recrearla en Peaking. Ver [Odoo, HubSpot y Zoho](/09-integraciones-partner/odoo-hubspot-zoho/).
+
 ### Funciones de gestión superior
 
 En la parte superior del panel encontrarás:
@@ -124,6 +132,10 @@ Peso (kg), Largo, Ancho y Alto (cm) — todos opcionales. Útiles si calculas en
 ## Organizar por Categorías
 
 Las categorías agrupan productos para que el agente pueda responder preguntas como "¿qué tienen en la categoría Plomería?".
+
+:::note[Catálogo sincronizado con Odoo]
+Si importas tus productos desde Odoo, sus categorías llegan automáticamente y aparecen en el filtro **Categoría** del panel (ver [Filtrar por Categoría o Familia](#filtrar-por-categoría-o-familia)). Los pasos de abajo aplican a categorías que creas directamente en Peaking.
+:::
 
 ### Crear una categoría
 
