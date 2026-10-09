@@ -65,6 +65,18 @@ Si ya estás revisando una oportunidad en el CRM, el botón **Cotizar con Copilo
 
 ---
 
+## Avisos cuando una cotización queda sin terminar
+
+Si abres Copilot, empiezas a cotizar y pasa un día completo o más sin que termines la cotización, Peaking avisa de forma escalonada para que nadie pierda de vista la oportunidad:
+
+| Cuándo | A quién le llega | Qué recibe |
+|--------|------------------|------------|
+| Al día siguiente | El **vendedor** que empezó la cotización | Aviso de que no terminó de cotizar |
+| Un día después del aviso al vendedor | El **manager** | Aviso de que la cotización sigue pendiente |
+| Semanalmente | El **admin de la organización master** | Resumen semanal por correo electrónico |
+
+---
+
 ## Preguntas frecuentes
 
 **¿El agente de IA puede usar Copilot automáticamente?**
