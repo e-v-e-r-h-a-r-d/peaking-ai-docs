@@ -33,7 +33,7 @@ Si el módulo no aparece en el panel lateral:
 
 Al hacer clic en **Productos** verás la tabla principal con todos tus productos.
 
-![Panel del Catálogo de Productos con filtros por familia, KPIs de total/activos y tabla de productos](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-productos-panel.png)
+[CAPTURA PENDIENTE: Panel del Catálogo de Productos con filtros por familia, KPIs de total/activos y tabla de productos]
 
 Cada fila muestra:
 
@@ -50,7 +50,7 @@ Cada fila muestra:
 
 En el panel lateral **Filtros** puedes alternar entre dos pestañas: **Categoría** y **Familia**. Cada opción muestra a su derecha cuántos productos contiene, y al hacer clic en una la tabla se limita a esos productos.
 
-![Panel Filtros con las pestañas Categoría y Familia y el conteo de productos por categoría](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/main/screenshots_peaking/07-productos-pagos/catalogo-filtro-categoria-familia.png)
+[CAPTURA PENDIENTE: Panel Filtros con las pestañas Categoría y Familia y el conteo de productos por categoría]
 
 Si tu catálogo está sincronizado con Odoo, las categorías se traen directamente desde Odoo, así que el filtro refleja la misma organización que ya usas allá y no tienes que recrearla en Peaking. Ver [Odoo, HubSpot y Zoho](/09-integraciones-partner/odoo-hubspot-zoho/).
 
@@ -74,7 +74,7 @@ Haz clic en **+ Agregar Producto**. Se abrirá el formulario de creación con la
 
 ### Información Básica
 
-![Sección Información Básica: Nombre del Producto, Tipo de Producto, SKU y Categoría](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-crear-producto-info-basica.png)
+[CAPTURA PENDIENTE: Sección Información Básica: Nombre del Producto, Tipo de Producto, SKU y Categoría]
 
 | Campo | Obligatorio | Descripción |
 |-------|:-----------:|-------------|
@@ -98,7 +98,7 @@ El agente encuentra mejor los productos mientras más completa sea la descripci�
 
 ### Precio
 
-![Sección Precio: Precio, Moneda, Costo y Unidad de Medida](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-crear-producto-precio.png)
+[CAPTURA PENDIENTE: Sección Precio: Precio, Moneda, Costo y Unidad de Medida]
 
 | Campo | Obligatorio | Descripción |
 |-------|:-----------:|-------------|
@@ -109,13 +109,13 @@ El agente encuentra mejor los productos mientras más completa sea la descripci�
 
 ### Dimensiones
 
-![Sección Dimensiones: Peso, Largo, Ancho y Alto](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-crear-producto-dimensiones.png)
+[CAPTURA PENDIENTE: Sección Dimensiones: Peso, Largo, Ancho y Alto]
 
 Peso (kg), Largo, Ancho y Alto (cm) — todos opcionales. Útiles si calculas envíos según las medidas del producto.
 
 ### Configuración, Atributos y Productos Opcionales
 
-![Sección Configuración con switches Producto Activo y Control de inventario, más Atributos y Productos Opcionales](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/07-productos-pagos/catalogo-crear-producto-atributos.png)
+[CAPTURA PENDIENTE: Sección Configuración con switches Producto Activo y Control de inventario, más Atributos y Productos Opcionales]
 
 | Campo | Descripción |
 |-------|-------------|

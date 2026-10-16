@@ -61,7 +61,7 @@ En la sección de configuración puedes ajustar cómo se ve el Widget en tu siti
 
 Los cambios se reflejan en la **Vista previa** en tiempo real del lado derecho — verás exactamente cómo quedará el Widget antes de instalarlo.
 
-![Configuración del Widget con vista previa en tiempo real](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/widget-personalizacion.png)
+[CAPTURA PENDIENTE: Configuración del Widget con vista previa en tiempo real]
 
 ---
 
@@ -101,7 +101,7 @@ Peaking ofrece dos modos de instalación:
 
 Cada cuenta tiene un **Widget Key único** visible en la configuración — no compartas este código públicamente, ya que identifica tu cuenta de Peaking.
 
-![Sección de Código de Instalación con modo Flotante y modo Embebido](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/canal-widget-codigo.png)
+[CAPTURA PENDIENTE: Sección de Código de Instalación con modo Flotante y modo Embebido]
 
 ---
 

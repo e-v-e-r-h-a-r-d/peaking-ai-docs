@@ -7,7 +7,7 @@ sidebar:
 
 Los **Workflows** de Peaking son flujos de conversación construidos visualmente con un editor de nodos. Defines qué ocurre paso a paso cuando un cliente escribe: qué agente de IA responde, qué condición evalúa la intención, cuánto tiempo espera antes de hacer seguimiento, y cuándo se pasa a otro nodo del flujo.
 
-![Vista general del canvas de Workflows con nodos conectados](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-canvas-overview.png)
+[CAPTURA PENDIENTE: Vista general del canvas de Workflows con nodos conectados]
 
 ---
 
@@ -20,7 +20,7 @@ La sección de Workflows está organizada en dos niveles:
 
 Para agregar un flow dentro de un proyecto, haz clic en **+ Add flow** bajo el nombre del proyecto.
 
-![Panel de Proyectos con múltiples flows](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-proyects.png)
+[CAPTURA PENDIENTE: Panel de Proyectos con múltiples flows]
 
 :::tip[Cuándo crear múltiples flows]
 Si tienes WhatsApp y Messenger activos, puedes tener un flow por canal. Esto te permite personalizar el comportamiento de cada canal por separado sin mezclar lógica en un solo flujo.
@@ -56,7 +56,7 @@ A la derecha de los íconos de nodos:
 | **Test** | Abre el panel de prueba del flujo completo |
 | **Ejecuciones** *(ícono pulso)* | Abre el panel de Execution Runs |
 
-![Barra de herramientas del editor de Workflows](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-toolbar.png)
+[CAPTURA PENDIENTE: Barra de herramientas del editor de Workflows]
 
 ---
 
@@ -93,7 +93,7 @@ El nodo **Agent** ejecuta un agente de IA — lee el mensaje del usuario, proces
 | **Variables to Collect** | Define las variables que el agente puede guardar durante la conversación. Si el campo está vacío, el agente puede guardar cualquier variable |
 | **Mensaje mientras se ejecuta** | Texto que se envía al usuario si el nodo tarda más de lo esperado (solo aplica en WhatsApp e Instagram, no en widget ni en Test) |
 
-![Configuración del nodo Agent — prompt, herramientas disponibles y modo silencioso](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-agent-config.png)
+[CAPTURA PENDIENTE: Configuración del nodo Agent — prompt, herramientas disponibles y modo silencioso]
 
 :::note[Silent mode para clasificar intención]
 Un patrón común es usar un agente en silent mode al inicio del flujo para que detecte la intención del usuario y guarde una variable (ej. `tipo_cliente = Existente`). El siguiente nodo Condition lee esa variable para ramificar el flujo.
@@ -120,7 +120,7 @@ El nodo **Condition** evalúa una expresión y ramifica el flow según el result
 
 El nodo se activa cuando la variable `tipo_cliente` tiene exactamente el valor `Existente`. Puedes agregar múltiples condiciones con **+ Add condition**.
 
-![Configuración del nodo Condition con los tres modos de evaluación](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-condition-modos.png)
+[CAPTURA PENDIENTE: Configuración del nodo Condition con los tres modos de evaluación]
 
 ---
 
@@ -152,7 +152,7 @@ El nodo **Delay** pausa el flujo por un tiempo definido antes de continuar al si
 | **Cancel if user replies** | Si está activo, el delay se cancela automáticamente si el usuario envía un mensaje antes de que se cumpla el tiempo |
 | **Fallback Template ID** | Plantilla de WhatsApp que se envía si la ventana de 24h de Meta expiró mientras el flujo estaba en pausa |
 
-![Configuración del nodo Delay con "Cancel if user replies" activo](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-delay-config.png)
+[CAPTURA PENDIENTE: Configuración del nodo Delay con "Cancel if user replies" activo]
 
 :::tip[Cuándo usar Delay]
 Combina Delay + Outbound para flujos de seguimiento: si el cliente no responde en el tiempo configurado, el flow continúa y envía un recordatorio automático.
@@ -181,7 +181,7 @@ El nodo **Contact Lookup** busca un contacto en la base de datos de Peaking y ca
 | **Reference** | Código de referencia interna |
 | **Name** | Nombre del contacto |
 
-![Configuración del nodo Contact Lookup con el dropdown de búsqueda](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-contact-lookup.png)
+[CAPTURA PENDIENTE: Configuración del nodo Contact Lookup con el dropdown de búsqueda]
 
 ---
 
@@ -200,7 +200,7 @@ El nodo **Voice Agent** conecta el flujo a un agente de IA de voz, permitiendo i
 | **Herramientas Disponibles** | Herramientas que el agente de voz puede usar durante la llamada: Tareas Peaking, Catálogo de Productos, Odoo, Peaking CRM |
 | **Variables a Recolectar** | Variables que el agente debe capturar durante la llamada (ej. `customer_id`, `motivo_llamada`). Si el campo está vacío, el agente puede guardar cualquier variable |
 
-![Configuración del nodo Voice Agent — agente, dirección y duración máxima](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-voice-agent.png)
+[CAPTURA PENDIENTE: Configuración del nodo Voice Agent — agente, dirección y duración máxima]
 
 :::tip[Agentes de Voz en Integraciones]
 Los agentes de voz se crean y configuran en **Integraciones › Agentes de Voz**, no en el canvas. Desde el canvas solo seleccionas cuál usar. Crea primero el agente de voz antes de agregar este nodo al flow.
@@ -228,7 +228,7 @@ El nodo **Manage Variables** manipula las variables del flujo de forma explícit
 
 Haz clic en **+ Agregar operación** para añadir múltiples operaciones en un mismo nodo — todas se ejecutan en orden cuando el flujo pasa por él.
 
-![Configuración del nodo Manage Variables con operaciones de reset y custom](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-manage-variables.png)
+[CAPTURA PENDIENTE: Configuración del nodo Manage Variables con operaciones de reset y custom]
 
 :::note[Cuándo usar Manage Variables]
 Úsalo después de una rama de Condition para "limpiar" variables de estado antes de reiniciar un tramo del flujo, o para forzar valores conocidos antes de un nodo Agent que depende de esas variables.
@@ -269,7 +269,7 @@ El panel de **Execution Runs** muestra el historial reciente de ejecuciones del 
 
 Haz clic en cualquier ejecución para expandir el detalle y ver qué nodos se ejecutaron, en qué orden y cuánto tardó cada uno.
 
-![Panel de Execution Runs con ejecuciones Completed y Paused](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-execution-runs.png)
+[CAPTURA PENDIENTE: Panel de Execution Runs con ejecuciones Completed y Paused]
 
 ---
 

@@ -17,7 +17,7 @@ Este artículo cubre el resultado de campañas ya enviadas. Para armar una campa
 
 En el panel lateral, haz clic en **Envíos WhatsApp**.
 
-![Histórico de envíos masivos con lista de campañas, status Completado y Fallido, y contadores de destinatarios](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/15-envios-whatsapp/envios-whatsapp.png)
+[CAPTURA PENDIENTE: Histórico de envíos masivos con lista de campañas, status Completado y Fallido, y contadores de destinatarios]
 
 ---
 
@@ -53,7 +53,7 @@ Un envío puede tener status "Completado" pero con entregas parciales — por ej
 
 Haz clic en **Detalle** para abrir el desglose completo de ese envío.
 
-![Vista de detalle de envío con KPIs Total/Enviados/Fallidos, opción Reenviar fallidos y tabla por contacto con motivo de error](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/15-envios-whatsapp/fallidos-completados-reenvio-whatsapp.png)
+[CAPTURA PENDIENTE: Vista de detalle de envío con KPIs Total/Enviados/Fallidos, opción Reenviar fallidos y tabla por contacto con motivo de error]
 
 ### KPIs del detalle
 

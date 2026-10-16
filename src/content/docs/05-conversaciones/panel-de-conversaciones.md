@@ -7,7 +7,7 @@ sidebar:
 
 El **Panel de Mensajes** es el centro de operaciones de tu equipo. Aquí llegan todos los mensajes entrantes de todos los canales conectados — WhatsApp, Instagram, Messenger y Sitio Web — organizados en una sola vista. El agente de IA responde automáticamente, pero tu equipo puede monitorear, intervenir y tomar control en cualquier momento.
 
-![Vista completa del Panel de Mensajes con lista de conversaciones, hilo activo y Contexto del Lead](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-panel-completo.png)
+[CAPTURA PENDIENTE: Vista completa del Panel de Mensajes con lista de conversaciones, hilo activo y Contexto del Lead]
 
 ---
 
@@ -38,7 +38,7 @@ Muestra todas las conversaciones en una lista compacta. Cada fila incluye:
 
 Haz clic en el círculo que aparece dentro del avatar de un contacto (a la izquierda de la tarjeta) para activar el modo de selección múltiple. Puedes marcar varias conversaciones y aplicar una acción en lote a todas al mismo tiempo:
 
-![Barra de acciones en lote al seleccionar varias conversaciones](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-seleccion-multiple.png)
+[CAPTURA PENDIENTE: Barra de acciones en lote al seleccionar varias conversaciones]
 
 | Ícono | Acción |
 |-------|--------|
@@ -65,7 +65,7 @@ Al hacer clic en cualquier conversación de la lista, se abre el hilo completo e
 
 A la derecha del hilo aparece el panel de **Contexto del Lead** — el perfil del contacto vinculado a esa conversación:
 
-![Panel de Contexto del Lead con resumen IA, notas y etiquetas](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-contexto-lead-detalle.png)
+[CAPTURA PENDIENTE: Panel de Contexto del Lead con resumen IA, notas y etiquetas]
 
 | Sección | Qué muestra |
 |---------|-------------|
@@ -94,7 +94,7 @@ En la parte superior del panel encontrarás las opciones de filtrado para encont
 | **Tag** | Filtra por etiqueta aplicada |
 | **Búsqueda** | Busca por nombre, tag, lead o tipo de escalamiento |
 
-![Filtros de canal en la parte superior del Panel de Mensajes](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/mensajes-filtros.png)
+[CAPTURA PENDIENTE: Filtros de canal en la parte superior del Panel de Mensajes]
 
 ---
 
@@ -132,7 +132,7 @@ Cuando el agente de IA retoma una conversación que fue atendida por un humano, 
 
 Si varias personas de tu equipo tienen abierta la misma conversación y escriben mensajes, cada mensaje enviado muestra **quién lo escribió**: debajo de la burbuja aparece el nombre de la persona junto con la fecha y la hora. Tus propios mensajes aparecen como **Tú**.
 
-![Hilo de conversación donde cada mensaje del equipo muestra el nombre de quien lo envió, la fecha y la hora](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/main/screenshots_peaking/05-conversaciones/mensajes-atribucion-multiples-agentes.png)
+[CAPTURA PENDIENTE: Hilo de conversación donde cada mensaje del equipo muestra el nombre de quien lo envió, la fecha y la hora]
 
 Así, cualquiera del equipo puede ver de un vistazo quién está dando seguimiento al cliente y quién respondió cada mensaje, sin preguntarlo por otro canal ni responder dos veces lo mismo.
 

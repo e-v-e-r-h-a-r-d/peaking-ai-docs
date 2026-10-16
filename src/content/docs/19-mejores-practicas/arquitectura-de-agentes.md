@@ -25,7 +25,7 @@ En más de una implementación real, la arquitectura empezó como varios agentes
 Detectar el tema o el segmento de un cliente es trabajo de **lógica interna del prompt**, no de un agente aparte. El propio nodo Agent puede usar **Silent mode** para clasificar en silencio y guardar una variable (ej. `tipo_cliente = Existente`) que un nodo Condition posterior lee para ramificar solo lo estrictamente necesario — ver [Cómo funcionan los Workflows](/11-workflows/como-funcionan-los-workflows/#agent). Eso no cuenta como un segundo agente principal: es el mismo agente resolviendo su propia clasificación antes de responder.
 :::
 
-![Configuración del nodo Agent — prompt, herramientas disponibles y modo silencioso](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-agent-config.png)
+[CAPTURA PENDIENTE: Configuración del nodo Agent — prompt, herramientas disponibles y modo silencioso]
 
 ---
 

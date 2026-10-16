@@ -24,7 +24,7 @@ En el panel lateral, haz clic en **Pedidos y Carritos**. Verás dos pestañas:
 
 La pestaña **Órdenes Stripe** muestra el resumen financiero y la lista de órdenes procesadas a través de Stripe.
 
-![Vista de Órdenes Stripe con KPIs de revenue y tabla de Customer Orders](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/12-pedidos-carritos/ordenes-stripe.png)
+[CAPTURA PENDIENTE: Vista de Órdenes Stripe con KPIs de revenue y tabla de Customer Orders]
 
 ### KPIs principales
 
@@ -64,7 +64,7 @@ Al hacer clic en una orden verás:
 
 ## Vista de Carritos
 
-![Vista de Carritos con KPIs de carritos activos, completados, abandonados y valor potencial](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/12-pedidos-carritos/carrito-compras.png)
+[CAPTURA PENDIENTE: Vista de Carritos con KPIs de carritos activos, completados, abandonados y valor potencial]
 
 Los carritos representan sesiones de compra que el cliente inició pero no completó.
 

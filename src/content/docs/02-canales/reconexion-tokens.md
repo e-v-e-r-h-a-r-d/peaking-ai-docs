@@ -19,7 +19,7 @@ Si tu agente deja de responder en Instagram o Facebook Messenger sin ningún otr
 2. Selecciona la pestaña **Canales de Mensajería**.
 3. Revisa el panel **Estado de Conexión**.
 
-![Panel de Estado de Conexión con badges de Token expirado en Instagram y Facebook Messenger](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/tokens-expirados.png)
+[CAPTURA PENDIENTE: Panel de Estado de Conexión con badges de Token expirado en Instagram y Facebook Messenger]
 
 Cuando un token está vencido, el canal muestra dos badges simultáneos:
 - **Conectado** — la configuración del canal sigue activa en Peaking

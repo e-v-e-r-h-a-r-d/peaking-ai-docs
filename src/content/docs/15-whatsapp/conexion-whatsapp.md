@@ -31,7 +31,7 @@ Si en cambio quieres seguir usando la app de WhatsApp Business en el teléfono *
 2. Selecciona la pestaña **Canales de Mensajería**.
 3. Haz clic en el canal **WhatsApp Business**.
 
-![Panel de Integraciones mostrando el estado de conexión de WhatsApp, Instagram y Messenger](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/canal-wa-conectado.png)
+[CAPTURA PENDIENTE: Panel de Integraciones mostrando el estado de conexión de WhatsApp, Instagram y Messenger]
 
 ### 2. Inicia la conexión con Meta
 

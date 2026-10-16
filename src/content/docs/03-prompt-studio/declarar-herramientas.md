@@ -9,7 +9,7 @@ La verdadera potencia del agente de IA no está solo en su capacidad de conversa
 
 Este proceso se llama **declaración de herramientas** y se hace en el Estudio de Prompts.
 
-![Vista del Estudio de Prompts — Prompt Library con todos los prompts de la cuenta](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/03-prompt-studio/prompt-studio-editor.png)
+[CAPTURA PENDIENTE: Vista del Estudio de Prompts — Prompt Library con todos los prompts de la cuenta]
 
 :::note[Conectar ≠ Activar]
 Conectar una integración en **Configuración › Integraciones** la hace disponible para el agente, pero no la activa automáticamente. Sin una declaración clara en el Prompt, el agente no sabrá cuándo ni cómo usarla.
@@ -39,7 +39,7 @@ Navega al **Estudio de Prompts** y selecciona el prompt donde deseas habilitar l
 
 Dentro del editor del prompt, verás dos pestañas: **Tools** y **Documents**. Selecciona **Tools**. Aquí aparecen todas las herramientas disponibles para este prompt.
 
-![Sección Tools Configuration con las herramientas disponibles para el prompt](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/03-prompt-studio/prompt-studio-herramientas.png)
+[CAPTURA PENDIENTE: Sección Tools Configuration con las herramientas disponibles para el prompt]
 
 ### Paso 4 — Selecciona la herramienta
 
@@ -89,7 +89,7 @@ No crees el lead hasta tener todos estos datos confirmados.
 
 Después de declarar la herramienta, usa el **Peaking Lab** para simular una conversación real y verificar que el agente la ejecuta en el momento correcto con los datos correctos.
 
-![Peaking Lab — panel de prueba integrado en el Estudio de Prompts](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/03-prompt-studio/prompt-studio-lab.png)
+[CAPTURA PENDIENTE: Peaking Lab — panel de prueba integrado en el Estudio de Prompts]
 
 El Peaking Lab ejecuta el prompt activo con todas sus herramientas declaradas. Puedes ver en tiempo real si el agente consulta la herramienta y con qué datos.
 

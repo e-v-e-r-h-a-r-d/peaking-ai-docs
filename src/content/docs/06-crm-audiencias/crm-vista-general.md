@@ -23,7 +23,7 @@ El CRM aparece en la navegación solo cuando está activado.
 
 En el panel lateral, haz clic en **CRM**. Verás el dashboard principal con el pipeline de oportunidades.
 
-![Panel principal del CRM con KPIs, filtros y Vista Kanban con las etapas del pipeline](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-panel-general.png)
+[CAPTURA PENDIENTE: Panel principal del CRM con KPIs, filtros y Vista Kanban con las etapas del pipeline]
 
 ---
 
@@ -50,7 +50,7 @@ Cambia entre Y y O según la lógica de búsqueda que necesites.
 
 Al hacer clic en **Filtros** se despliega el panel completo de búsqueda avanzada:
 
-![Panel de filtros avanzados del CRM con combinador Y/O y todos los campos disponibles](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-busqueda-avanzada.png)
+[CAPTURA PENDIENTE: Panel de filtros avanzados del CRM con combinador Y/O y todos los campos disponibles]
 
 | Filtro | Descripción |
 |--------|-------------|
@@ -82,7 +82,7 @@ Las oportunidades se muestran como tarjetas organizadas en columnas, donde cada 
 - Cada tarjeta muestra: nombre del lead, empresa, prioridad, fecha de creación, vendedor asignado y la etapa actual.
 - La vista Kanban es ideal para sesiones de revisión del pipeline en equipo.
 
-![Ejemplo de una tarjeta individual del Kanban con nombre, prioridad, fecha y etapa](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-tarjeta-kanban-ejemplo.png)
+[CAPTURA PENDIENTE: Ejemplo de una tarjeta individual del Kanban con nombre, prioridad, fecha y etapa]
 
 ### Vista Lista
 
@@ -98,7 +98,7 @@ Usa el ícono de **Kanban / Lista** en la esquina superior del panel para cambia
 
 Muestra las actividades programadas del pipeline (demostraciones, reuniones, llamadas, etc.) en un calendario mensual, semanal o diario — en lugar de las oportunidades mismas.
 
-![Vista Calendario del CRM con filtros por tipo de actividad y por vendedor](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-vista-calendario.png)
+[CAPTURA PENDIENTE: Vista Calendario del CRM con filtros por tipo de actividad y por vendedor]
 
 - Cambia entre **Mes · Semana · Día** en la esquina superior derecha.
 - Filtra por **tipo de actividad** (ej. Demostración, Reunión) usando los chips superiores.
@@ -112,7 +112,7 @@ Es la forma más rápida de ver qué actividades tiene agendadas tu equipo de ve
 
 Al hacer clic en una tarjeta del Kanban o en una fila de la lista, se abre el panel de detalle de la oportunidad. En la esquina superior encontrarás el botón **Cotizar con Copilot**, que abre el panel de [Copilot](/05-conversaciones/copilot-cotizaciones/) para armar una cotización sin salir de la ficha del lead.
 
-![Ficha de una oportunidad con el botón Cotizar con Copilot en la esquina superior derecha](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-lead-cotizar-copilot.png)
+[CAPTURA PENDIENTE: Ficha de una oportunidad con el botón Cotizar con Copilot en la esquina superior derecha]
 
 El panel tiene dos áreas:
 
@@ -155,7 +155,7 @@ No necesitas ir al Panel de Mensajes para atender al lead. Desde la tarjeta del 
 
 El CRM permite registrar distintos tipos de actividad en la pestaña **Timeline › Actividad** de cada oportunidad. Puedes gestionar y crear tus propios tipos desde el botón **Gestionar Tipos de Actividad** dentro del CRM.
 
-![Panel Gestionar Tipos de Actividad con la lista de tipos existentes y el botón Crear Nuevo Tipo](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-gestionar-tipos-actividad.png)
+[CAPTURA PENDIENTE: Panel Gestionar Tipos de Actividad con la lista de tipos existentes y el botón Crear Nuevo Tipo]
 
 Los tipos predeterminados disponibles son:
 
@@ -178,7 +178,7 @@ Para agregar una actividad a una oportunidad:
 4. Completa el formulario: **Título** (obligatorio), **Tipo de actividad**, **Descripción**, **Fecha y hora programada** y **Asignado a**.
 5. Haz clic en **Crear Actividad**.
 
-![Modal Nueva Actividad con los campos Título, Tipo de actividad, Descripción, Fecha y hora programada y Asignado a](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-nueva-actividad.png)
+[CAPTURA PENDIENTE: Modal Nueva Actividad con los campos Título, Tipo de actividad, Descripción, Fecha y hora programada y Asignado a]
 
 La actividad queda en el log con fecha y autor.
 
@@ -188,7 +188,7 @@ La actividad queda en el log con fecha y autor.
 
 Cuando se elimina una oportunidad, no desaparece de inmediato — pasa a la **Papelera**, donde puedes ver quién la eliminó y cuándo, y restaurarla si fue un error.
 
-![Papelera de oportunidades eliminadas, con buscador por nombre, empresa, teléfono o quién la eliminó](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/06-crm-audiencias/crm-papelera.png)
+[CAPTURA PENDIENTE: Papelera de oportunidades eliminadas, con buscador por nombre, empresa, teléfono o quién la eliminó]
 
 :::caution[La restauración no es completa]
 Al restaurar una oportunidad desde la Papelera, **no vuelven las actividades ni las etiquetas** que tenía antes de eliminarse. Solo se recupera la oportunidad en sí.

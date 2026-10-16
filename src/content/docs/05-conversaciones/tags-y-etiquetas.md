@@ -46,7 +46,7 @@ Un sistema de 5–8 tags bien definidos es más poderoso que una lista de 30 que
 
 Desde el mismo panel puedes también hacer clic en **Convertir a Lead** para registrar la conversación como una oportunidad en el CRM.
 
-![Panel de Gestionar Etiquetas de Conversación con etiquetas populares y opción Lead Conversion](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/gestion-etiquetas-conversacion.png)
+[CAPTURA PENDIENTE: Panel de Gestionar Etiquetas de Conversación con etiquetas populares y opción Lead Conversion]
 
 Una conversación puede tener **múltiples tags** simultáneamente.
 
@@ -87,7 +87,7 @@ El **Auto-tagging** permite que el agente aplique etiquetas de forma automática
 
 Las reglas de auto-tagging se configuran dentro del panel **Gestionar Etiquetas de Conversación**, en la sección **Auto-tagging**:
 
-![Panel Gestionar Etiquetas de Conversación mostrando la sección Auto-tagging con etiquetas configuradas y sus criterios](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/autotagging.png)
+[CAPTURA PENDIENTE: Panel Gestionar Etiquetas de Conversación mostrando la sección Auto-tagging con etiquetas configuradas y sus criterios]
 
 Cada etiqueta de auto-tagging tiene:
 - **Nombre** — el tag que se aplicará (ej. "Cliente listo para comprar")

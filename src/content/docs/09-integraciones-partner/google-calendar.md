@@ -52,7 +52,7 @@ Asegúrate de que la cuenta de Google que conectas corresponda al calendario de 
 
 Una vez conectado, define **cómo** el agente gestiona la disponibilidad del calendario. Esto se configura en la misma pantalla de la integración, debajo del estado de conexión:
 
-![Selector de Modo de Agendamiento con las opciones Estricto, Flexible y AI Calendar Routing](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones-partner/google-calendar-modos-agendamiento.png)
+[CAPTURA PENDIENTE: Selector de Modo de Agendamiento con las opciones Estricto, Flexible y AI Calendar Routing]
 
 | Modo | Cómo funciona |
 |------|----------------|
@@ -66,11 +66,11 @@ En **Estricto** y **Flexible** también configuras la **duración de la cita** y
 
 Con AI Calendar Routing activo, aparece la lista de calendarios disponibles para enrutamiento:
 
-![Lista de calendarios para AI Calendar Routing, cada uno con su etiqueta (Principal, Google Primary) y botón Configurar](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones-partner/google-calendar-routing-calendarios.png)
+[CAPTURA PENDIENTE: Lista de calendarios para AI Calendar Routing, cada uno con su etiqueta (Principal, Google Primary) y botón Configurar]
 
 Haz clic en **Configurar** sobre cualquier calendario para definir cómo lo usa el agente:
 
-![Modal de configuración de un calendario: para qué sirve, palabras clave y quién recibe las citas](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones-partner/google-calendar-configurar-calendario.png)
+[CAPTURA PENDIENTE: Modal de configuración de un calendario: para qué sirve, palabras clave y quién recibe las citas]
 
 | Campo | Para qué sirve |
 |-------|-----------------|

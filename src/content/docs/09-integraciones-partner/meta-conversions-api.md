@@ -27,7 +27,7 @@ Son dos integraciones distintas que se complementan. Esta (**Meta Conversions AP
 
 ## Conectar Meta Conversions API
 
-![Tarjeta de Meta Conversions API en Integraciones › Herramientas, con el botón Conectar dataset](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones-partner/meta-conversions-api.png)
+[CAPTURA PENDIENTE: Tarjeta de Meta Conversions API en Integraciones › Herramientas, con el botón Conectar dataset]
 
 ### Paso 1 — Obtén el Dataset ID y el token de acceso
 

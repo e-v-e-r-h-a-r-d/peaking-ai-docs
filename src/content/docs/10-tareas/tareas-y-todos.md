@@ -30,7 +30,7 @@ Una vez activo, el ícono de **TODOs** aparece en el panel lateral izquierdo.
 
 ## Vista general del módulo
 
-![Panel de TODOs con métricas superiores, filtros, Vista Kanban con columnas Pendiente, En Progreso, En Revisión y Completado](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/todos-panel-kanban.png)
+[CAPTURA PENDIENTE: Panel de TODOs con métricas superiores, filtros, Vista Kanban con columnas Pendiente, En Progreso, En Revisión y Completado]
 
 Al abrir TODOs desde el panel lateral verás:
 
@@ -51,7 +51,7 @@ El campo de búsqueda busca en tiempo real dentro de: título, descripción, com
 
 Haz clic en **Filtros** para desplegar el panel de búsqueda avanzada:
 
-![Panel de filtros avanzados de TODOs con combinador Y/O, Etapa, Prioridad, Estado, Asignado a y Sucursal](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/tareas-busqueda-avanzada.png)
+[CAPTURA PENDIENTE: Panel de filtros avanzados de TODOs con combinador Y/O, Etapa, Prioridad, Estado, Asignado a y Sucursal]
 
 Igual que en el CRM, puedes combinar los filtros con **Y (todos)** o **O (cualquiera)**. Los filtros disponibles son: **Sin responder**, **Etapa**, **Prioridad**, **Estado**, **Asignado a** y **Sucursal** (si tu organización tiene sucursales activadas).
 
@@ -108,7 +108,7 @@ En la parte superior del detalle encontrarás los botones:
 
 El panel derecho del TODO muestra la **conversación de origen** — el hilo de mensajes con el cliente que generó esta tarea. Puedes ver el contexto completo y, si la ventana de 24 horas de WhatsApp sigue activa, también responder directamente al cliente desde ahí.
 
-![TODO generado por el agente de IA con Timeline, conversación de WhatsApp vinculada y botón Cotizar con Copilot](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/tareas-todo-conversacion-vinculada.png)
+[CAPTURA PENDIENTE: TODO generado por el agente de IA con Timeline, conversación de WhatsApp vinculada y botón Cotizar con Copilot]
 
 En el ejemplo anterior, el agente de IA creó el TODO automáticamente al detectar una solicitud de cotización — la descripción y la razón quedan pre-llenadas con el contexto de la conversación, y el botón **Cotizar con Copilot** permite generar la cotización sin salir del TODO. Ver [Copilot — cotizaciones desde la conversación](/05-conversaciones/copilot-cotizaciones/).
 
@@ -135,7 +135,7 @@ Define tipos que reflejen el trabajo real de tu equipo — por ejemplo: "Llamada
 3. Completa los campos: título, estado, prioridad, asignado a, departamento, fecha de vencimiento y descripción.
 4. Guarda.
 
-![Formulario Nuevo TODO con los campos Título, Estado, Prioridad, Asignado a, Departamento, Fecha de vencimiento, Descripción y Razón](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/tareas-nuevo-todo-formulario.png)
+[CAPTURA PENDIENTE: Formulario Nuevo TODO con los campos Título, Estado, Prioridad, Asignado a, Departamento, Fecha de vencimiento, Descripción y Razón]
 
 ### Desde una conversación
 
@@ -152,7 +152,7 @@ La forma más frecuente: directamente desde el hilo de mensajes con el cliente.
 
 Si tienes configurada la asignación automática, cuando se crea un TODO el sistema lo asigna al miembro correcto sin intervención manual.
 
-![Configuración de Asignación TODO con estrategia AI-Powered (Intelligent Rules) y botón Create First Rule](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/config-asignacion-todo.png)
+[CAPTURA PENDIENTE: Configuración de Asignación TODO con estrategia AI-Powered (Intelligent Rules) y botón Create First Rule]
 
 Esta configuración vive en **TODO Auto-Assignment**, dentro de la configuración del módulo — sus campos aparecen en inglés en la interfaz actual. Actívala con el toggle **Enable Auto-Assignment** y elige la estrategia:
 
@@ -166,15 +166,15 @@ El formulario **Create Assignment Rule** (también en inglés en la interfaz act
 
 **1. Basic Information** — nombre y descripción de la regla, y el switch **"Aplicar a todas las tareas"**: si lo activas, ignora las palabras clave y la prioridad, y asigna *toda* tarea directamente al usuario o equipo elegido.
 
-![Formulario Create Assignment Rule, sección Basic Information con nombre, descripción y switch Aplicar a todas las tareas](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/tareas-regla-asignacion-basica.png)
+[CAPTURA PENDIENTE: Formulario Create Assignment Rule, sección Basic Information con nombre, descripción y switch Aplicar a todas las tareas]
 
 **2. Matching Conditions** — las condiciones que la IA evalúa para decidir si la regla aplica: palabras clave (busca coincidencias en título y descripción del TODO), niveles de prioridad (`low` · `medium` · `high` · `urgent`) y una pista de equipo/departamento en texto libre.
 
-![Sección Matching Conditions con palabras clave, niveles de prioridad y pista de equipo/departamento](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/tareas-regla-asignacion-condiciones.png)
+[CAPTURA PENDIENTE: Sección Matching Conditions con palabras clave, niveles de prioridad y pista de equipo/departamento]
 
 **3. Assignment Target** — a quién se asigna cuando la regla aplica: a un **Team/Department** completo o a un **Specific User** en particular.
 
-![Sección Assignment Target con las opciones Team/Department y Specific User](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/10-tareas/tareas-regla-asignacion-destino.png)
+[CAPTURA PENDIENTE: Sección Assignment Target con las opciones Team/Department y Specific User]
 
 Haz clic en **Create Rule** para guardar. Puedes crear varias reglas — la IA las evalúa en orden hasta encontrar una que aplique.
 

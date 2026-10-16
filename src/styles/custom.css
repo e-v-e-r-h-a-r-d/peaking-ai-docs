@@ -8,93 +8,94 @@
 
 /* --- Light mode (default) --- */
 :root {
-  /* Accent — Blue */
-  --sl-color-accent-low: #dbeafe;
-  --sl-color-accent: #2563EB;
-  --sl-color-accent-high: #1d4ed8;
+  /* Accent — Peaking orange (New_UI "Fusión": --acc #F05A28 / --acc-text #C2410C) */
+  --sl-color-accent-low: #FDE8DF;
+  --sl-color-accent: #C2410C;
+  --sl-color-accent-high: #9A3412;
 
-  /* Neutral scale — light (Starlight convention: white=light end, black=dark end) */
-  --sl-color-white: #0f172a;
-  --sl-color-gray-1: #1e293b;
-  --sl-color-gray-2: #334155;
-  --sl-color-gray-3: #64748b;
-  --sl-color-gray-4: #94a3b8;
-  --sl-color-gray-5: #cbd5e1;
-  --sl-color-gray-6: #e2e8f0;
-  --sl-color-black: #f8fafc;
+  /* Neutral scale — light, Fusión ink/bone (Starlight: white=ink end, black=bg end) */
+  --sl-color-white: #1B1B1B;
+  --sl-color-gray-1: #333333;
+  --sl-color-gray-2: #4A4A47;
+  --sl-color-gray-3: #5A5A5A;
+  --sl-color-gray-4: #8A8A82;
+  --sl-color-gray-5: #D8D8D3;
+  --sl-color-gray-6: #ECECEA;
+  --sl-color-black: #FFFFFF;
 
-  /* Typography */
-  --sl-font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Typography — Manrope, same as the product */
+  --sl-font: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --sl-font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', ui-monospace, monospace;
   --__sl-font: var(--sl-font);
   --__sl-font-mono: var(--sl-font-mono);
 
   /* Brand gradient — shared decorative (orange-pink stays for hero/buttons) */
-  --pk-gradient: linear-gradient(135deg, #FF8A3D, #E91E63);
-  --pk-gradient-text: linear-gradient(135deg, #FF8A3D 0%, #FF5C2B 40%, #E91E63 100%);
-  --pk-gradient-subtle: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0.04));
+  --pk-gradient: linear-gradient(135deg, #FBB52B 0%, #F05A28 100%);
+  --pk-gradient-text: linear-gradient(135deg, #FBB52B 0%, #F05A28 100%);
+  --pk-gradient-subtle: linear-gradient(135deg, rgba(251, 181, 43, 0.14), rgba(240, 90, 40, 0.08));
+  --pk-on-gradient: #1B1B1B;
 
-  /* Glass — light (white-tinted cards que "flotan" sobre el fondo gris) */
-  --pk-glass-bg: rgba(255, 255, 255, 0.88);
-  --pk-glass-bg-hover: rgba(255, 255, 255, 0.98);
-  --pk-glass-border: rgba(0, 0, 0, 0.07);
-  --pk-glass-border-hover: rgba(37, 99, 235, 0.35);
-  --pk-glass-blur: blur(16px);
+  /* Surfaces — light. Fusión is flat: solid cards, no blur (kept as vars for compat) */
+  --pk-glass-bg: #FFFFFF;
+  --pk-glass-bg-hover: #FFFFFF;
+  --pk-glass-border: #ECECEB;
+  --pk-glass-border-hover: rgba(240, 90, 40, 0.55);
+  --pk-glass-blur: blur(0px);
 
-  /* Sizing / motion */
-  --pk-radius: 12px;
-  --pk-radius-sm: 8px;
-  --pk-radius-lg: 16px;
+  /* Sizing / motion — product radii (cards 24px, controls 10-14px) */
+  --pk-radius: 14px;
+  --pk-radius-sm: 10px;
+  --pk-radius-lg: 24px;
   --pk-ease: cubic-bezier(0.16, 1, 0.3, 1);
   --pk-transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 
   /* Shadows */
-  --pk-shadow-glow: 0 0 40px rgba(37, 99, 235, 0.08);
-  --pk-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --pk-shadow-glow: 0 0 40px rgba(240, 90, 40, 0.08);
+  --pk-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.03);
 
   /* Theme-specific tokens — light */
-  --pk-body-bg: #f1f5f9;
-  --pk-header-bg: rgba(241, 245, 249, 0.92);
-  --pk-sidebar-pane-bg: rgba(226, 232, 240, 0.72);
-  --pk-orb-1-color: rgba(37, 99, 235, 0.04);
-  --pk-orb-2-color: rgba(139, 92, 246, 0.02);
+  --pk-body-bg: #F1F1F0;
+  --pk-path: #F7B896;
+  --pk-header-bg: rgba(241, 241, 240, 0.92);
+  --pk-sidebar-pane-bg: #F5F5F4;
+  --pk-orb-1-color: rgba(240, 90, 40, 0.035);
+  --pk-orb-2-color: rgba(251, 181, 43, 0.03);
   --pk-code-pre-bg: rgba(15, 14, 13, 0.92);
   --pk-code-header-bg: rgba(0, 0, 0, 0.06);
-  --pk-table-header-bg: #eef3fb;
-  --pk-table-row-hover: #f6f9ff;
-  --pk-table-divider: #c8d3e0;
-  --pk-hr-color: #c8d3e0;
+  --pk-table-header-bg: #F5F5F4;
+  --pk-table-row-hover: #F8F8F7;
+  --pk-table-divider: #DEDEDC;
+  --pk-hr-color: #DEDEDC;
   --pk-scrollbar-thumb: rgba(0, 0, 0, 0.12);
   --pk-scrollbar-thumb-hover: rgba(0, 0, 0, 0.22);
-  --pk-selection-bg: rgba(37, 99, 235, 0.18);
-  --pk-inline-code-bg: rgba(37, 99, 235, 0.06);
-  --pk-inline-code-border: rgba(37, 99, 235, 0.12);
-  --pk-inline-code-color: #1d4ed8;
-  --pk-link-underline: rgba(37, 99, 235, 0.3);
+  --pk-selection-bg: rgba(240, 90, 40, 0.2);
+  --pk-inline-code-bg: rgba(240, 90, 40, 0.07);
+  --pk-inline-code-border: rgba(240, 90, 40, 0.16);
+  --pk-inline-code-color: #C2410C;
+  --pk-link-underline: rgba(194, 65, 12, 0.35);
   --pk-tabs-list-bg: rgba(0, 0, 0, 0.02);
   --pk-minimal-btn-border: rgba(0, 0, 0, 0.14);
   --pk-minimal-btn-bg: rgba(0, 0, 0, 0.03);
   --pk-minimal-btn-border-hover: rgba(0, 0, 0, 0.35);
   --pk-minimal-btn-bg-hover: rgba(0, 0, 0, 0.06);
   --pk-feature-card-hover-shadow:
-    0 0 0 1px rgba(37, 99, 235, 0.08),
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  --pk-step-hover-border: rgba(0, 0, 0, 0.12);
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 16px 32px -18px rgba(0, 0, 0, 0.22);
+  --pk-step-hover-border: rgba(240, 90, 40, 0.45);
 
   /* Elevación y sombras base (solo visibles en light) */
-  --pk-shadow-base: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 20px rgba(0, 0, 0, 0.03);
-  --pk-header-shadow: 0 1px 0 rgba(0, 0, 0, 0.07), 0 2px 16px rgba(0, 0, 0, 0.04);
+  --pk-shadow-base: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --pk-header-shadow: 0 1px 0 #ECECEB;
 
   /* Active sidebar link */
-  --pk-active-link-bg: rgba(37, 99, 235, 0.1);
-  --pk-active-link-color: #2563EB;
+  --pk-active-link-bg: rgba(240, 90, 40, 0.1);
+  --pk-active-link-color: #C2410C;
 
   /* Sidebar link hover */
-  --pk-sidebar-link-hover: rgba(37, 99, 235, 0.05);
+  --pk-sidebar-link-hover: rgba(0, 0, 0, 0.04);
 
   /* Blockquote */
-  --pk-blockquote-bg: rgba(37, 99, 235, 0.04);
+  --pk-blockquote-bg: rgba(240, 90, 40, 0.04);
 
   /* Image */
   --pk-img-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 8px 32px rgba(0, 0, 0, 0.06);
@@ -104,40 +105,41 @@
 
 /* --- Dark mode override --- */
 :root[data-theme='dark'] {
-  /* Accent — Peaking Orange */
-  --sl-color-accent-low: #1f0d05;
-  --sl-color-accent: #FF5C2B;
-  --sl-color-accent-high: #ffb299;
+  /* Accent — Peaking orange (New_UI dark: --acc #FF6A33 / --acc-text #FF8F57) */
+  --sl-color-accent-low: #2A1209;
+  --sl-color-accent: #FF6A33;
+  --sl-color-accent-high: #FF9A66;
 
-  /* Neutral scale — dark */
-  --sl-color-white: #F5F3F0;
-  --sl-color-gray-1: #e8e6e1;
-  --sl-color-gray-2: #b8b4ad;
-  --sl-color-gray-3: #8a8680;
-  --sl-color-gray-4: #5c5852;
-  --sl-color-gray-5: #332f2b;
-  --sl-color-gray-6: #1c1a17;
-  --sl-color-black: #0A0908;
+  /* Neutral scale — dark, Fusión (bg #0F0F0E, card #1A1A19, line #262625) */
+  --sl-color-white: #F3F3F1;
+  --sl-color-gray-1: #E4E4E1;
+  --sl-color-gray-2: #BDBDB8;
+  --sl-color-gray-3: #8D8D87;
+  --sl-color-gray-4: #5B5B57;
+  --sl-color-gray-5: #2E2E2C;
+  --sl-color-gray-6: #1A1A19;
+  --sl-color-black: #0F0F0E;
 
   /* Brand gradient subtle — warm for dark */
-  --pk-gradient-subtle: linear-gradient(135deg, rgba(255, 138, 61, 0.12), rgba(233, 30, 99, 0.08));
+  --pk-gradient-subtle: linear-gradient(135deg, rgba(251, 181, 43, 0.14), rgba(240, 90, 40, 0.1));
 
-  /* Glass — dark */
-  --pk-glass-bg: rgba(255, 255, 255, 0.025);
-  --pk-glass-bg-hover: rgba(255, 255, 255, 0.055);
-  --pk-glass-border: rgba(255, 255, 255, 0.07);
-  --pk-glass-border-hover: rgba(255, 92, 43, 0.3);
+  /* Surfaces — dark, solid (opaque cards so nothing shows through) */
+  --pk-glass-bg: #1A1A19;
+  --pk-glass-bg-hover: #202020;
+  --pk-glass-border: #262625;
+  --pk-glass-border-hover: rgba(255, 106, 51, 0.55);
 
   /* Shadows */
-  --pk-shadow-glow: 0 0 40px rgba(255, 92, 43, 0.06);
+  --pk-shadow-glow: 0 0 40px rgba(255, 106, 51, 0.06);
   --pk-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.25);
 
   /* Theme-specific tokens — dark */
-  --pk-body-bg: #0A0908;
-  --pk-header-bg: rgba(10, 9, 8, 0.78);
-  --pk-sidebar-pane-bg: rgba(10, 9, 8, 0.35);
-  --pk-orb-1-color: rgba(255, 92, 43, 0.055);
-  --pk-orb-2-color: rgba(233, 30, 99, 0.035);
+  --pk-body-bg: #0F0F0E;
+  --pk-path: #9A5232;
+  --pk-header-bg: rgba(15, 15, 14, 0.85);
+  --pk-sidebar-pane-bg: #141413;
+  --pk-orb-1-color: rgba(255, 106, 51, 0.045);
+  --pk-orb-2-color: rgba(251, 181, 43, 0.025);
   --pk-code-pre-bg: rgba(12, 11, 10, 0.85);
   --pk-code-header-bg: rgba(255, 255, 255, 0.025);
   --pk-table-header-bg: rgba(255, 255, 255, 0.07);
@@ -616,8 +618,8 @@ a[data-type='primary'] {
   border: none !important;
   border-radius: 10px !important;
   padding: 0.7rem 1.5rem !important;
-  font-weight: 600 !important;
-  color: white !important;
+  font-weight: 700 !important;
+  color: var(--pk-on-gradient) !important;
   transition: var(--pk-transition);
   box-shadow: 0 2px 16px rgba(255, 92, 43, 0.2);
   text-decoration: none !important;
@@ -884,17 +886,18 @@ starlight-toc a[aria-current='true'] {
   height: 100%;
   z-index: 0;
   overflow: visible;
+  pointer-events: none;
 }
 
 .timeline-path path {
   fill: none;
-  stroke: var(--sl-color-gray-4);
+  stroke: var(--pk-path);
   stroke-width: 2;
   stroke-dasharray: 7 6;
 }
 
 .timeline-path polygon {
-  fill: var(--sl-color-gray-4);
+  fill: var(--pk-path);
 }
 
 /* nth-of-type (not nth-child) — the SVG path is also a child of
@@ -927,25 +930,32 @@ starlight-toc a[aria-current='true'] {
   height: 30px;
   border-radius: 50%;
   background: var(--pk-gradient);
-  color: white;
+  color: var(--pk-on-gradient);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.85rem;
-  z-index: 1;
+  z-index: 2;
+  box-shadow: 0 0 0 5px var(--pk-body-bg);
   transition: var(--pk-transition);
 }
 
 .journey-node .node-card {
+  position: relative;
+  z-index: 1;
   background: var(--pk-glass-bg);
-  backdrop-filter: var(--pk-glass-blur);
-  -webkit-backdrop-filter: var(--pk-glass-blur);
   border: 1px solid var(--pk-glass-border);
   border-radius: var(--pk-radius);
   padding: 1.1rem 1rem 1.2rem;
   min-height: 112px;
   transition: var(--pk-transition);
+}
+
+/* Hovered/focused card always sits above the path and its neighbours */
+.journey-node:hover,
+.journey-node:focus-visible {
+  z-index: 3;
 }
 
 .journey-node:hover .node-card {
@@ -1005,8 +1015,8 @@ starlight-toc a[aria-current='true'] {
 
 .sl-steps > li::before {
   background: var(--pk-gradient) !important;
-  color: white !important;
-  font-weight: 700;
+  color: var(--pk-on-gradient) !important;
+  font-weight: 800;
 }
 
 .sl-steps > li::after {
@@ -1164,6 +1174,73 @@ header.header {
 
 starlight-toc a[aria-current='true'] {
   background: var(--pk-active-link-bg);
+}
+
+/* Notes use the brand accent instead of Starlight's default blue */
+.starlight-aside--note {
+  --sl-color-asides-text-accent: var(--sl-color-accent-high);
+  --sl-color-asides-bg: var(--pk-blockquote-bg);
+}
+
+/* ===== PENDING SCREENSHOT PLACEHOLDER (draft pages) ===== */
+
+.pending-shot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 150px;
+  margin: 1.4rem 0;
+  padding: 1.4rem 1.2rem;
+  border: 2px dashed var(--sl-color-gray-4);
+  border-radius: var(--pk-radius-lg);
+  background:
+    repeating-linear-gradient(
+      135deg,
+      transparent 0 14px,
+      var(--pk-gradient-subtle) 14px 15px
+    ),
+    var(--pk-glass-bg);
+  text-align: center;
+}
+
+.pending-shot__label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--pk-gradient);
+  color: var(--pk-on-gradient);
+}
+
+/* Tags / badges: cápsula redonda. Donde el navegador lo soporta usan
+   esquinas continuas (curvatura G2, tipo "squircle" de iOS) en vez del
+   arco circular simple, que se ve más suave. */
+.sl-badge,
+.pending-shot__label {
+  border-radius: 999px;
+  padding-inline: 0.75em;
+  padding-block: 0.15em;
+  border-width: 0;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+@supports (corner-shape: squircle) {
+  .sl-badge,
+  .pending-shot__label {
+    border-radius: 1.4em;
+    corner-shape: squircle;
+  }
+}
+
+.pending-shot__text {
+  font-size: 0.9rem;
+  color: var(--sl-color-gray-2);
+  max-width: 60ch;
 }
 
 /* ===== RESPONSIVE ===== */

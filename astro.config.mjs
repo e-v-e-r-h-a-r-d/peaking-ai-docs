@@ -1,11 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import rehypePendingShot from './src/plugins/pending-shot.mjs';
 
 const GA_MEASUREMENT_ID = 'G-XTN1FD69HK';
 
 export default defineConfig({
 	site: 'https://docs.peaking.ai',
+	markdown: {
+		rehypePlugins: [rehypePendingShot],
+	},
 	redirects: {
 		'/02-canales/conexion-whatsapp/': '/15-whatsapp/conexion-whatsapp/',
 		'/02-canales/plantillas-whatsapp/': '/15-whatsapp/plantillas-whatsapp/',
@@ -21,6 +25,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Peaking AI',
+			// Interfaz de Starlight (buscador, "En esta página", paginación) en español
+			defaultLocale: 'root',
+			locales: { root: { label: 'Español', lang: 'es' } },
 			favicon: '/favicon.png',
 			logo: {
 				light: './src/assets/logo-light.png',
@@ -68,7 +75,7 @@ export default defineConfig({
 					tag: 'link',
 					attrs: {
 						rel: 'stylesheet',
-						href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap',
+						href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&family=JetBrains+Mono:wght@400;500;600;700&display=swap',
 					},
 				},
 			],

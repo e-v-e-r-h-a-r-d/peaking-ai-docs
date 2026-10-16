@@ -23,7 +23,7 @@ Al acceder al Estudio de Prompts verás la **Biblioteca de Prompts** — el list
 | **Última Actualización** | Fecha del último cambio guardado |
 | **Acciones** | Editar, duplicar o eliminar el prompt |
 
-![Biblioteca de Prompts con múltiples prompts por segmento de cliente](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/03-prompt-studio/prompt-studio-editor.png)
+[CAPTURA PENDIENTE: Biblioteca de Prompts con múltiples prompts por segmento de cliente]
 
 :::tip[Un prompt por segmento]
 Puedes crear prompts distintos para diferentes tipos de cliente o canal. Por ejemplo: un prompt para distribuidores mayoristas, otro para clientes finales y otro para soporte técnico. Asigna cada uno al canal correspondiente o selecciónalo en el nodo Agent de tus Workflows.
@@ -158,7 +158,7 @@ Dentro de cada prompt encontrarás tres configuraciones avanzadas que complement
 
 ### Agrupación de respuestas del agente
 
-![Configuración de la ventana de espera para agrupar respuestas del agente](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/03-prompt-studio/agrupacion-respuestas-agente.png)
+[CAPTURA PENDIENTE: Configuración de la ventana de espera para agrupar respuestas del agente]
 
 Controla cuánto espera el agente antes de responder cuando el cliente envía varios mensajes seguidos, para juntarlos en una sola respuesta en lugar de contestar cada uno por separado.
 
@@ -188,7 +188,7 @@ Define el criterio que determina cuándo el agente debe transferir la conversaci
 - Puedes escribir un **criterio personalizado** para ajustar cuándo ocurre el escalamiento (ej. "si el cliente menciona un pedido dañado o quiere una devolución mayor a $1,000").
 - Haz clic en **Guardar criterio** para aplicar el cambio.
 
-![Sección de Auto-tagging y criterio de Escalación a humano en la configuración del prompt](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/escalamiento-a-humano.png)
+[CAPTURA PENDIENTE: Sección de Auto-tagging y criterio de Escalación a humano en la configuración del prompt]
 
 :::tip[Usa el criterio por defecto primero]
 El criterio por defecto cubre la mayoría de los casos. Solo personalízalo si tienes reglas de negocio específicas que el agente no está detectando correctamente.

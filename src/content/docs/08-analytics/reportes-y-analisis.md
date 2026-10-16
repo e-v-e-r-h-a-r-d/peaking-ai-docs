@@ -19,7 +19,7 @@ La pestaña **Reportes** genera análisis automáticos con IA sobre la actividad
 
 ## Tipos de reporte disponibles
 
-![Tarjetas de reportes disponibles: Cotizaciones, Resumen de Conversaciones, Productos pedidos sin encontrar, Urgencias declaradas, Pidieron hablar con humano, Quejas o insatisfacción, Preguntas sin respuesta útil y Menciones de competencia](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/08-analytics/reportes-tipos.png)
+[CAPTURA PENDIENTE: Tarjetas de reportes disponibles: Cotizaciones, Resumen de Conversaciones, Productos pedidos sin encontrar, Urgencias declaradas, Pidieron hablar con humano, Quejas o insatisfacción, Preguntas sin respuesta útil y Menciones de competencia]
 
 Cada tarjeta representa un reporte distinto. Haz clic en **Generar** para que la IA analice el período seleccionado y produzca el resultado.
 
@@ -42,7 +42,7 @@ Son los dos reportes que dan una visión general más rápida de la salud de tu 
 
 ## Leer un reporte generado
 
-![Reportes guardados con KPIs, gráfica de cotizaciones por día, desglose por canal y resumen escrito por IA](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/08-analytics/reportes-guardados.png)
+[CAPTURA PENDIENTE: Reportes guardados con KPIs, gráfica de cotizaciones por día, desglose por canal y resumen escrito por IA]
 
 Cada reporte generado queda archivado en **Reportes guardados**, con:
 

@@ -33,7 +33,7 @@ El prompt define la personalidad, el tono y el objetivo del agente. La Base de C
 
 Para acceder: en el panel lateral izquierdo, haz clic en **Base de Conocimientos**.
 
-![Panel principal de la Base de Conocimientos con pestañas Documentos y Adjuntos, filtros de categoría y estado](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/panel-documentos-kb.png)
+[CAPTURA PENDIENTE: Panel principal de la Base de Conocimientos con pestañas Documentos y Adjuntos, filtros de categoría y estado]
 
 La pantalla tiene tres pestañas principales en la parte superior: **Documentos**, **Adjuntos** y **Fichas técnicas**.
 
@@ -59,7 +59,7 @@ La pestaña activa por defecto. Está dividida en tres áreas:
 
 ### Pestaña Adjuntos
 
-![Pestaña Adjuntos con el banner explicativo y un adjunto PNG de ejemplo](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/adjuntos-kb.png)
+[CAPTURA PENDIENTE: Pestaña Adjuntos con el banner explicativo y un adjunto PNG de ejemplo]
 
 Los **Adjuntos** son archivos (imágenes o PDFs) que el agente puede enviar al cliente durante una conversación. A diferencia de los documentos de texto —que el agente consulta para formular respuestas—, los adjuntos se envían directamente como archivos adjuntos en el chat.
 
@@ -73,7 +73,7 @@ Consulta [Añadir y gestionar documentos](/04-base-conocimientos/subir-documento
 
 ### Pestaña Fichas técnicas
 
-![Pestaña Fichas técnicas vacía, con el banner explicativo y los filtros Todas, Sin vincular, Por revisar y Confirmadas](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/fichas-tecnicas-vacio.png)
+[CAPTURA PENDIENTE: Pestaña Fichas técnicas vacía, con el banner explicativo y los filtros Todas, Sin vincular, Por revisar y Confirmadas]
 
 Las **Fichas técnicas** son documentos específicos de un producto — hojas de especificaciones, manuales o fichas comerciales — que el agente envía cuando el cliente pregunta por ese producto en particular. A diferencia de un documento general de la pestaña Documentos, cada ficha técnica se **vincula a un producto, una familia o una categoría** de tu catálogo.
 

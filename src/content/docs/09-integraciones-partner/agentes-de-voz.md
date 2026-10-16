@@ -18,7 +18,7 @@ Puedes usarlos para atención al cliente por teléfono, calificación de leads p
 
 Verás dos secciones: **Números de Teléfono** y **Agentes de Voz**.
 
-![Panel de Agentes de Voz mostrando números de Twilio y agentes de ElevenLabs configurados](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/agentes-voz.png)
+[CAPTURA PENDIENTE: Panel de Agentes de Voz mostrando números de Twilio y agentes de ElevenLabs configurados]
 
 ---
 

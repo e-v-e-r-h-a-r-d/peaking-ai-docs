@@ -63,7 +63,7 @@ Una vez que tus plantillas estén aprobadas en Meta:
 3. Haz clic en **Sincronizar Plantillas** (botón en la esquina superior derecha de la pantalla).
 4. Peaking cargará automáticamente todas las plantillas aprobadas de tu cuenta de WABA.
 
-![Panel de Plantillas de WhatsApp con filtros por idioma y categoría, mostrando plantilla aprobada](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/plantillas-whatsapp.png)
+[CAPTURA PENDIENTE: Panel de Plantillas de WhatsApp con filtros por idioma y categoría, mostrando plantilla aprobada]
 
 La tabla muestra las columnas: **Nombre**, **Idioma** (badge con código de idioma, ej. `es_MX`), **Categoría** (MARKETING, UTILITY, AUTHENTICATION), **Estado** (Aprobado / Pendiente / Rechazado), **Actualizado** y **Acciones** — desde donde puedes previsualizar la plantilla (👁) o enviarla directamente (✈).
 
@@ -97,7 +97,7 @@ En la parte superior del panel verás tres indicadores:
 | **Estado del número** (ej. `GREEN` · `6 msg/seg`) | La calidad de tu número de WhatsApp según Meta, y la velocidad máxima de envío que te permite |
 | **Límite de contactos/24h** | Cuántas plantillas puedes enviar en las próximas 24 horas y cuántas te quedan |
 
-![Panel Enviar Template mostrando idioma, estado del número y límite de 250 contactos por 24 horas](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/plantillas-envio-nuevos-contactos.png)
+[CAPTURA PENDIENTE: Panel Enviar Template mostrando idioma, estado del número y límite de 250 contactos por 24 horas]
 
 :::tip[El límite crece con tu reputación en Meta]
 Conforme Meta apruebe más plantillas y tu número mantenga buena calidad, el límite de 24 horas aumenta automáticamente. No es algo que configures en Peaking.
@@ -126,13 +126,13 @@ Las columnas del archivo deben ser exactamente **teléfono** (celda A1) y **nomb
 
 Si un contacto tiene un error (teléfono vacío o inválido), el panel lo marca en rojo y no te deja continuar hasta corregirlo:
 
-![Tabla de contactos con un error de teléfono vacío detectado antes del envío](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/plantillas-envio-validacion-errores.png)
+[CAPTURA PENDIENTE: Tabla de contactos con un error de teléfono vacío detectado antes del envío]
 
 #### Audiencias
 
 Filtra dinámicamente a quién le llega la plantilla, sin tener que armar una lista manualmente:
 
-![Filtros de audiencia: Oportunidades o Conversaciones, etiquetas, tiempo desde el último mensaje y tipo de contacto](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/plantillas-envio-audiencias.png)
+[CAPTURA PENDIENTE: Filtros de audiencia: Oportunidades o Conversaciones, etiquetas, tiempo desde el último mensaje y tipo de contacto]
 
 | Filtro | Opciones |
 |--------|----------|
@@ -147,17 +147,17 @@ Haz clic en **Calcular Audiencia** antes de continuar — el panel necesita sabe
 
 Si la plantilla tiene variables (`{{1}}`, `{{2}}`…), decides cómo se llena cada una: con el **nombre del contacto** (distinto para cada destinatario) o con un **valor fijo para todos**.
 
-![Mapeo de variables del template: nombre del contacto o valor fijo por cada parámetro](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/plantillas-envio-mapeo-variables.png)
+[CAPTURA PENDIENTE: Mapeo de variables del template: nombre del contacto o valor fijo por cada parámetro]
 
 Al final de cada pestaña puedes revisar la **Preview del Template** con los valores ya aplicados, antes de enviar:
 
-![Preview del template renderizado con los valores de las variables ya aplicados](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/plantillas-envio-preview.png)
+[CAPTURA PENDIENTE: Preview del template renderizado con los valores de las variables ya aplicados]
 
 ### Programar el envío
 
 En vez de enviar de inmediato, usa la pestaña **Programar** para elegir cuándo sale la plantilla:
 
-![Calendario para programar el envío con hora y zona horaria, por defecto Ciudad de México GMT-6](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/02-canales/plantillas-envio-programar.png)
+[CAPTURA PENDIENTE: Calendario para programar el envío con hora y zona horaria, por defecto Ciudad de México GMT-6]
 
 La zona horaria por defecto es **Ciudad de México (GMT-6)** — cámbiala si tu audiencia está en otro huso horario. El resumen del envío programado solo está disponible para **Nuevos Contactos** y **Contactos Existentes**, no para Audiencias.
 

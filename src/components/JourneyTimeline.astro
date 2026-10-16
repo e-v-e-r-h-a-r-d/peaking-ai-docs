@@ -1,0 +1,29 @@
+---
+// Línea de tiempo de la portada (trazo idéntico al de la versión anterior).
+const nodes = [
+  { href: '/01-primeros-pasos/', title: 'Arranca tu cuenta', text: 'Configura tu cuenta y recorre el dashboard.' },
+  { href: '/15-whatsapp/', title: 'Enciende WhatsApp', text: 'Conecta tu canal estrella — el de mayor volumen.' },
+  { href: '/03-prompt-studio/', title: 'Entrena tu agente', text: 'Dale personalidad y reglas en Prompt Studio.' },
+  { href: '/04-base-conocimientos/', title: 'Vuélvelo experto', text: 'Aliméntalo con la información de tu negocio.' },
+  { href: '/05-conversaciones/', title: 'Conversa sin límites', text: 'Atiende y escala a humanos cuando haga falta.' },
+  { href: '/06-crm-audiencias/', title: 'Convierte cada lead', text: 'Da seguimiento con CRM, Contactos y Tareas.' },
+  { href: '/07-productos-pagos/', title: 'Monta tu escaparate', text: 'Publica tu catálogo para que cotice y venda.' },
+  { href: '/08-analytics/', title: 'Domina tus números', text: 'Mide el rendimiento con KPIs y reportes.' },
+];
+---
+
+<div class="journey-timeline" >
+  <svg class="timeline-path" viewBox="0 0 400 331" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M50,15 L350,15 C405,50 335,95 200,106.5 C65,118 -5,163 50,198 L336,198"></path>
+    <polygon points="350,198 336,190 336,206"></polygon>
+  </svg>
+  {nodes.map((n, i) => (
+    <a class="journey-node" href={n.href}>
+      <span class="node-dot">{i + 1}</span>
+      <div class="node-card">
+        <h3>{n.title}</h3>
+        <p>{n.text}</p>
+      </div>
+    </a>
+  ))}
+</div>

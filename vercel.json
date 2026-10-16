@@ -1,0 +1,7 @@
+{
+  "git": {
+    "deploymentEnabled": {
+      "docs-v2-borradores": false
+    }
+  }
+}

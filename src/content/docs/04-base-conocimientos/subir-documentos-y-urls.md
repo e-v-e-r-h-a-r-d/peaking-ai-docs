@@ -19,7 +19,7 @@ En el panel lateral izquierdo, haz clic en **Base de Conocimientos**.
 
 El botón naranja **+ Añadir Documento** está en la esquina superior derecha. Al hacer clic se abrirá el formulario de creación.
 
-![Modal Crear Nuevo Documento con campos de título, estado, categorías y editor de contenido](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/crear-nuevo-documento-kb.png)
+[CAPTURA PENDIENTE: Modal Crear Nuevo Documento con campos de título, estado, categorías y editor de contenido]
 
 ### Paso 3 — Completa el formulario
 
@@ -122,14 +122,14 @@ Peaking extrae el contenido en el momento en que añades la URL. Los cambios pos
 
 Los **Adjuntos** son archivos (imágenes o PDFs) que el agente puede enviar al cliente directamente en el chat de WhatsApp — por ejemplo, una ficha técnica, un catálogo en PDF o una foto del producto.
 
-![Pestaña Adjuntos con un adjunto PNG de ejemplo y botón Agregar adjunto](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/adjuntos-kb.png)
+[CAPTURA PENDIENTE: Pestaña Adjuntos con un adjunto PNG de ejemplo y botón Agregar adjunto]
 
 Para agregar un adjunto:
 
 1. Ve a **Base de Conocimientos** y selecciona la pestaña **Adjuntos**.
 2. Haz clic en **+ Agregar adjunto**.
 
-![Modal Agregar adjunto con zona de carga, campos Nombre, Descripción y Cuándo enviar](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/04-base-conocimientos/menu-subir-adjuntos-kb.png)
+[CAPTURA PENDIENTE: Modal Agregar adjunto con zona de carga, campos Nombre, Descripción y Cuándo enviar]
 
 3. Completa el formulario:
 

@@ -21,7 +21,7 @@ Al hacer clic en **Contactos** en el panel lateral verás tres métricas en la p
 
 Debajo, la **barra de búsqueda** permite encontrar contactos por nombre, email o teléfono en tiempo real.
 
-![Panel principal de Contactos con KPIs y tabla de contactos](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/13-contactos/panel-contactos.png)
+[CAPTURA PENDIENTE: Panel principal de Contactos con KPIs y tabla de contactos]
 
 ### Tabla de contactos
 
@@ -51,7 +51,7 @@ Al hacer clic en cualquier contacto se abre su ficha completa. En la parte super
 | **Órdenes** | Órdenes de compra completadas o en proceso |
 | **Tareas** | TODOs y tareas de seguimiento asociadas a este contacto |
 
-![Ficha de contacto con pestañas de historial y acciones](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/13-contactos/carta-contacto.png)
+[CAPTURA PENDIENTE: Ficha de contacto con pestañas de historial y acciones]
 
 ### Campos del contacto
 
@@ -85,7 +85,7 @@ Las etiquetas asignadas al contacto aparecen al final de la ficha como chips de 
 **Dirección**
 - Calle · Calle 2 · Ciudad · Código Postal
 
-![Formulario de nuevo contacto con campos de información básica y dirección](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/13-contactos/nuevo-contacto.png)
+[CAPTURA PENDIENTE: Formulario de nuevo contacto con campos de información básica y dirección]
 
 3. Haz clic en **Crear**.
 
@@ -126,7 +126,7 @@ Haz clic en **Gestionar Etiquetas** (esquina superior derecha del panel). Desde 
 - **Ver** todas las etiquetas existentes con su color asignado.
 - **Eliminar** las que ya no uses.
 
-![Panel de gestión de etiquetas de contactos](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/13-contactos/gestion-etiquetas-contactos.png)
+[CAPTURA PENDIENTE: Panel de gestión de etiquetas de contactos]
 
 Los colores disponibles van de neutros (gris, blanco) a tonos pastel (lila, verde, amarillo, rosa, azul, morado, rojo, durazno, menta).
 

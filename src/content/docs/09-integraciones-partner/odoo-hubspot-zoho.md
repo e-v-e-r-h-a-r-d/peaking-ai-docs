@@ -170,7 +170,7 @@ Si tu herramienta no está en la lista de conectores nativos, puedes crear una *
 
 Una vez creada, la integración aparecerá en la tabla de **Integraciones Personalizadas**, disponible para declarar en el Estudio de Prompts:
 
-![Tabla de Integraciones Personalizadas conectadas, con nombre, tipo, estado y fecha de creación de cada una](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones/integraciones-personalizados.png)
+[CAPTURA PENDIENTE: Tabla de Integraciones Personalizadas conectadas, con nombre, tipo, estado y fecha de creación de cada una]
 
 :::caution[Permisos necesarios]
 La API Key que configures debe tener permisos suficientes en el sistema externo para las acciones que el agente ejecutará (crear registros, leer datos, actualizar campos).

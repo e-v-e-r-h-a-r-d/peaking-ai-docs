@@ -18,7 +18,7 @@ El criterio que define cuándo el agente escala se configura en el **Estudio de 
 
 Haz clic en **Guardar criterio** después de editarlo.
 
-![Sección de Auto-tagging y criterio de Escalación en la configuración del Prompt Studio](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/05-conversaciones/escalamiento-a-humano.png)
+[CAPTURA PENDIENTE: Sección de Auto-tagging y criterio de Escalación en la configuración del Prompt Studio]
 
 ---
 

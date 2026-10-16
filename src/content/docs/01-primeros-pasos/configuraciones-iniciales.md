@@ -20,7 +20,7 @@ Aquí defines la identidad y el contexto de tu negocio. Esta información es esp
 
 ### Datos generales
 
-![Pestaña Organización con Nombre, Moneda de la Plataforma, contexto del negocio e Industria del catálogo](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-organizacion-industria.png)
+[CAPTURA PENDIENTE: Pestaña Organización con Nombre, Moneda de la Plataforma, contexto del negocio e Industria del catálogo]
 
 | Campo | Descripción |
 |-------|-------------|
@@ -47,7 +47,7 @@ Este campo complementa al prompt del agente — cuanto más preciso sea, mejores
 
 ### Horario de Operación
 
-![Configuración del Horario de Operación con toggles por día y rangos de hora editables](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-horario-operacion.png)
+[CAPTURA PENDIENTE: Configuración del Horario de Operación con toggles por día y rangos de hora editables]
 
 Define los días y horarios en que tu negocio está disponible. El agente puede usar esta información para orientar al cliente sobre cuándo puede recibir atención humana.
 
@@ -66,7 +66,7 @@ Administra los miembros que tienen acceso a Peaking y organízalos en departamen
 
 ### Departamentos
 
-![Sección Departamentos vacía, con el botón + Nuevo Departamento](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-team-departamentos.png)
+[CAPTURA PENDIENTE: Sección Departamentos vacía, con el botón + Nuevo Departamento]
 
 Los departamentos te permiten agrupar a tu equipo por área (Ventas, Soporte, Operaciones, etc.) y usarlos como criterio de asignación en los módulos de CRM y TODOs.
 
@@ -81,7 +81,7 @@ Si configuras los departamentos primero, puedes asignar a cada nuevo miembro a s
 
 La tabla **Team Members** muestra todos los usuarios con acceso a tu organización:
 
-![Tabla Team Members con nombre, rol, departamento y vendedor — columna de correo oculta por privacidad](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-team-miembros.png)
+[CAPTURA PENDIENTE: Tabla Team Members con nombre, rol, departamento y vendedor — columna de correo oculta por privacidad]
 
 | Columna | Descripción |
 |---------|-------------|
@@ -109,7 +109,7 @@ La persona recibirá un correo con el enlace de acceso a la plataforma.
 
 Actualiza tu información de usuario dentro de la plataforma.
 
-![Pestaña Profile con Avatar, First Name, Last Name, Email, Phone Number, Job Title y WhatsApp para notificaciones](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-profile-informacion.png)
+[CAPTURA PENDIENTE: Pestaña Profile con Avatar, First Name, Last Name, Email, Phone Number, Job Title y WhatsApp para notificaciones]
 
 | Campo | Notas |
 |-------|-------|
@@ -126,7 +126,7 @@ Cuando termines los cambios, haz clic en **Save Changes**.
 
 ## Pestaña: Security — Seguridad de la cuenta
 
-![Pestaña Security con Current Password, New Password, Confirm New Password y la sección Onboarding](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-security-password.png)
+[CAPTURA PENDIENTE: Pestaña Security con Current Password, New Password, Confirm New Password y la sección Onboarding]
 
 ### Cambiar contraseña
 
@@ -168,7 +168,7 @@ Desde aquí puedes revisar los **Términos y Condiciones** y la **Política de P
 
 Define qué información quieres que el agente capture automáticamente cuando un cliente la menciona dentro de una conversación, sin que tengas que pedirla manualmente en el prompt.
 
-![Sección Información a extraer de conversaciones, con el campo de ejemplo Fecha de Nacimiento](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-contactos-extraccion.png)
+[CAPTURA PENDIENTE: Sección Información a extraer de conversaciones, con el campo de ejemplo Fecha de Nacimiento]
 
 Cada campo se guarda en el perfil del contacto y queda disponible como contexto para futuras interacciones — incluso si el cliente lo mencionó en una conversación anterior. Consulta esos datos capturados en la ficha del contacto — ver [Gestión de Contactos](/13-contactos/gestion-de-contactos/).
 
@@ -185,7 +185,7 @@ El agente solo extrae información que el cliente menciona espontáneamente — 
 5. Agrega **Ejemplos** (uno por línea) de frases que el cliente podría usar, para ayudar al agente a reconocer variaciones (ej. "mi cumple es el 5 de marzo → 1990-03-05").
 6. Activa el toggle **Campo activo** y haz clic en **Guardar**.
 
-![Formulario Nuevo campo con Clave, Etiqueta visible, Tipo de dato, Descripción para el agente IA y Ejemplos](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-contactos-nuevo-campo-modal.png)
+[CAPTURA PENDIENTE: Formulario Nuevo campo con Clave, Etiqueta visible, Tipo de dato, Descripción para el agente IA y Ejemplos]
 
 ---
 
@@ -199,13 +199,13 @@ Esta pestaña solo ajusta comportamiento y campos. Para gestionar oportunidades 
 
 ### Etiquetas de campos
 
-![Formulario de Etiquetas de campos para renombrar los campos estándar de las oportunidades](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-crm-etiquetas-campos.png)
+[CAPTURA PENDIENTE: Formulario de Etiquetas de campos para renombrar los campos estándar de las oportunidades]
 
 Cambia cómo aparecen los campos estándar de las oportunidades en tus formularios — por ejemplo, renombrar "Empresa" como "Sucursal" si así se conoce en tu negocio. Aplica a los campos **Nombre, Empresa, Industria, Email, Teléfono, Etapa, Prioridad y Asignado a**.
 
 ### Campos personalizados
 
-![Sección Campos personalizados sin campos creados, con el botón + Agregar campo](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-crm-campos-personalizados.png)
+[CAPTURA PENDIENTE: Sección Campos personalizados sin campos creados, con el botón + Agregar campo]
 
 Agrega campos adicionales a tus oportunidades más allá de los estándar. Aparecen automáticamente en los formularios de creación y detalle, y se guardan en cada oportunidad — útil para capturar datos propios de tu proceso de ventas (ej. "Número de cotización interna").
 
@@ -213,7 +213,7 @@ Agrega campos adicionales a tus oportunidades más allá de los estándar. Apare
 
 Avisa automáticamente al vendedor cuando se le asigna una oportunidad nueva:
 
-![Notificaciones de asignación con los toggles Correo electrónico y WhatsApp](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-crm-notificaciones-asignacion.png)
+[CAPTURA PENDIENTE: Notificaciones de asignación con los toggles Correo electrónico y WhatsApp]
 
 | Canal | Comportamiento |
 |-------|-----------------|
@@ -222,7 +222,7 @@ Avisa automáticamente al vendedor cuando se le asigna una oportunidad nueva:
 
 ### Configuración de Asignación CRM (Round Robin)
 
-![Configuración de Round Robin Assignment con el toggle Auto Assignment activado](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-crm-round-robin.png)
+[CAPTURA PENDIENTE: Configuración de Round Robin Assignment con el toggle Auto Assignment activado]
 
 Activa la **asignación automática** para que las oportunidades nuevas se repartan entre tu equipo de ventas sin intervención manual:
 
@@ -240,13 +240,13 @@ Algunos campos de esta sección (**Auto Assignment**, **Assignment Strategy**) a
 
 Activa o desactiva módulos completos de la plataforma según lo que tu operación necesite. Cada módulo tiene un badge **Activo** o **Inactivo** y un toggle para cambiarlo.
 
-![Funcionalidades: Módulo CRM, Visibilidad por asignación, Ver todo el CRM editar solo lo propio, Módulo TODOs, Sucursales/Ubicaciones, Time Blocks/Reservaciones](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-1.png)
+[CAPTURA PENDIENTE: Funcionalidades: Módulo CRM, Visibilidad por asignación, Ver todo el CRM editar solo lo propio, Módulo TODOs, Sucursales/Ubicaciones, Time Blocks/Reservaciones]
 
-![Funcionalidades: Workflows, Formularios de captación, API pública, Plantillas y envío masivo de WhatsApp, Odoo Sync, Enriquecimiento IA](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-2.png)
+[CAPTURA PENDIENTE: Funcionalidades: Workflows, Formularios de captación, API pública, Plantillas y envío masivo de WhatsApp, Odoo Sync, Enriquecimiento IA]
 
-![Funcionalidades: Enriquecimiento IA, Agentes de Voz, Variantes de producto](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-3.png)
+[CAPTURA PENDIENTE: Funcionalidades: Enriquecimiento IA, Agentes de Voz, Variantes de producto]
 
-![Funcionalidades: Variantes de producto y Configuración de Asignación CRM (Round Robin)](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-4.png)
+[CAPTURA PENDIENTE: Funcionalidades: Variantes de producto y Configuración de Asignación CRM (Round Robin)]
 
 | Módulo | Qué habilita |
 |--------|---------------|
@@ -273,7 +273,7 @@ Activa o desactiva módulos completos de la plataforma según lo que tu operaci�
 
 Con el **Módulo TODOs** activo, más abajo en Funcionalidades encontrarás su propia configuración de asignación automática — igual que el Round Robin del CRM, pero para tareas:
 
-![Configuración de Asignación TODO con estrategia AI-Powered y reglas inteligentes de asignación](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/01-primeros-pasos/config-funcionalidades-asignacion-todo.png)
+[CAPTURA PENDIENTE: Configuración de Asignación TODO con estrategia AI-Powered y reglas inteligentes de asignación]
 
 Activa **Enable Auto-Assignment** y elige la **Assignment Strategy**: **Round Robin** (rotación equitativa) o **AI-Powered (Intelligent Rules)**, donde la IA analiza cada TODO y lo asigna según las reglas que definas. Para crear esas reglas paso a paso, ver [Crear una regla inteligente de asignación](/10-tareas/tareas-y-todos/#crear-una-regla-inteligente-de-asignación).
 

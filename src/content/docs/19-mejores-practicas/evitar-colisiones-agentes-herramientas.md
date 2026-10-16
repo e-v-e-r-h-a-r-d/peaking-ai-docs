@@ -24,7 +24,7 @@ El problema: esas mismas frases aparecen todo el tiempo **en medio de una venta 
 - Si tienes el mismo nodo Condition duplicado en más de una rama del workflow (por ejemplo, una rama para cliente identificado y otra para cliente nuevo), cualquier corrección se aplica a **todas** las instancias — no asumas que una sola edición cubre el resto.
 - Prueba el Condition específicamente con confirmaciones cortas ("ok", "va", "sale", "gracias") **en medio de un flujo activo**, no solo con mensajes de despedida reales, antes de publicar.
 
-![Modos de evaluación de un nodo Condition — Simple, AI y Variable](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/11-workflows/workflow-condition-modos.png)
+[CAPTURA PENDIENTE: Modos de evaluación de un nodo Condition — Simple, AI y Variable]
 
 ---
 

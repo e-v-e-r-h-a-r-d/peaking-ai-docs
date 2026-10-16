@@ -7,7 +7,7 @@ sidebar:
 
 La integraci贸n de **Correo** conecta tu buz贸n de email a Peaking para que el agente de IA pueda leer, cotizar y responder correos igual que lo hace con WhatsApp, Instagram o el Widget.
 
-![Tarjeta Correo (Gmail / Outlook) con las opciones Conectar Gmail, Conectar Outlook y Conectar otro correo (IMAP)](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones-partner/correo-conectar-plataformas.png)
+[CAPTURA PENDIENTE: Tarjeta Correo (Gmail / Outlook) con las opciones Conectar Gmail, Conectar Outlook y Conectar otro correo (IMAP)]
 
 ---
 
@@ -33,7 +33,7 @@ Haz clic en **Conectar Outlook**. Ver谩s la pantalla de permisos de Microsoft 鈥
 
 脷salo para buzones de hosting (cPanel/HostGator), Zoho u otros correos corporativos que no sean Gmail ni Outlook.
 
-![Formulario Conectar correo por IMAP con los campos Correo y Contrase帽a del buz贸n](https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/09-integraciones-partner/correo-imap-conectar.png)
+[CAPTURA PENDIENTE: Formulario Conectar correo por IMAP con los campos Correo y Contrase帽a del buz贸n]
 
 1. Haz clic en **Conectar otro correo (IMAP)**.
 2. Ingresa el **Correo** completo (ej. `ventas@tuempresa.com.mx`).
