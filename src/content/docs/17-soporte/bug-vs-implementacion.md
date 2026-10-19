@@ -35,7 +35,7 @@ Es un error cuando algo que funcionaba **deja de funcionar solo**, sin cambios t
 
 Son proyectos de mejora que diseñamos y probamos contigo: un workflow nuevo, una integración con tu CRM o ERP, una estrategia de campañas y audiencias, catálogos de datos externos o capacitación a tu equipo.
 
-Un proyecto de implementación se apoya en el [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/): toda la información de tu negocio en ocho plantillas validadas antes de cargarse.
+Un proyecto de implementación recolecta y valida la información de tu negocio antes de cargarla en tu cuenta.
 
 **[Contactar al equipo de implementación →](mailto:vrr@peaking.ai)**
 

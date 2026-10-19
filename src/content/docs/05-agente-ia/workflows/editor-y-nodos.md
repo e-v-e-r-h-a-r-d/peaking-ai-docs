@@ -123,6 +123,10 @@ Con **Agregar Herramienta** creas una herramienta propia:
 | **Parámetros** | Los datos que recibe |
 | **Webhook (opcional)** | Una URL a la que se envía la llamada |
 
+### Mensaje mientras se ejecuta
+
+Campo opcional del nodo **Agente** (**Mensaje mientras se ejecuta**): un texto que se envía al cliente por **WhatsApp o Instagram** si el nodo tarda más de lo normal, por ejemplo *«⏳ Preparando tu cotización…»*. Con él aparece **Enviar después de (segundos)**, de **2 a 30** (5 por defecto). No aplica en el widget web ni en el chat de prueba.
+
 ### Variables a recolectar
 
 Define qué variables puede guardar el agente. **Solo esas claves serán aceptadas.** Si dejas la lista vacía, el agente puede guardar cualquier variable.
@@ -131,7 +135,6 @@ Define qué variables puede guardar el agente. **Solo esas claves serán aceptad
 Un patrón común: un agente en modo silencioso al inicio detecta la intención del cliente y guarda una variable (por ejemplo, `tipo_cliente = Existente`). Una **Condición** posterior lee esa variable para elegir el camino.
 :::
 
-<!-- VERIFICAR: el campo "Mensaje mientras se ejecuta" (envía un texto si el nodo tarda; solo WhatsApp e Instagram) estaba en el artículo anterior; no se encontró su traducción en el UI nuevo. Confirmar si sigue existiendo. -->
 
 ---
 
@@ -159,14 +162,13 @@ La **Salida** envía un mensaje al cliente **sin pasar por el agente de IA**.
 
 | Campo | Descripción |
 |-------|-------------|
-| **Tipo de Salida** | Mensaje estático o plantilla |
+| **Tipo de Salida** | Las dos opciones: **Static Message** (mensaje estático) o **WhatsApp Template** (plantilla) |
 | **Mensaje** | El texto que recibirá el cliente (si es mensaje estático) |
 | **Plantilla / Idioma** | La plantilla de WhatsApp aprobada y su idioma (si envías plantilla) |
 | **Canal de Salida** | Por dónde se envía |
 
-Si no ves plantillas, aparecerá *"No se encontraron plantillas aprobadas. Sincroniza desde Integraciones"*. Consulta [Plantillas de WhatsApp](/14-audiencias/plantillas/).
+Si no ves plantillas, aparecerá *"No se encontraron plantillas aprobadas"*. Sincronízalas en [Campañas › Plantillas](/14-audiencias/plantillas/).
 
-<!-- VERIFICAR: lista completa de opciones de "Tipo de Salida" (solo se confirmó mensaje estático y plantilla) y a qué ruta apunta "Sincroniza desde Integraciones" en el UI nuevo. -->
 
 ---
 
@@ -227,8 +229,9 @@ Conecta el flujo con un agente de voz para iniciar o recibir una llamada.
 | Campo | Descripción |
 |-------|-------------|
 | **Agente de voz** | El agente de voz a usar. Se configura aparte, en [Integraciones](/08-configuracion/canales-e-integraciones/integraciones/) |
-| **Dirección** | Entrante (el cliente llama) o saliente (el sistema llama) |
-| **Duración máxima (minutos)** | Tiempo máximo de la llamada |
+| **Dirección** | **Inbound** (llamada entrante: el cliente llama) u **Outbound** (llamada saliente: el sistema llama) |
+| **Número destino** | Solo en llamadas salientes: el teléfono al que se llama (por ejemplo `{{phone}}` o `+1234567890`) |
+| **Duración máxima (minutos)** | Tiempo máximo de la llamada, de 1 a 60 (10 por defecto) |
 | **Herramientas disponibles** | Qué puede usar el agente durante la llamada |
 | **Variables a recolectar** | Qué datos debe capturar |
 
@@ -236,7 +239,6 @@ Conecta el flujo con un agente de voz para iniciar o recibir una llamada.
 Desde el lienzo solo eliges cuál usar. El agente de voz se crea y configura fuera del editor. Ver [Agente de voz](/05-agente-ia/agente-de-voz/).
 :::
 
-<!-- VERIFICAR: este nodo se documentó con el artículo anterior; los commits de voz del 10–11 oct (plan asignado por Peaking, tope de minutos, fuente de instrucciones) pueden haber cambiado sus campos. Leer NodeConfigPanel para VoiceAgentNode. Duración por defecto "10 minutos" no confirmada. -->
 
 ---
 

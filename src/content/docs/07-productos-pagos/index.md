@@ -13,10 +13,6 @@ Si conectaste Odoo, tus productos y categorías llegan **solos** al sincronizar 
 
 [CAPTURA PENDIENTE: pantalla Productos con la tabla, los filtros, la barra de selección y el panel lateral de un producto abierto]
 
-:::tip[¿Prefieres que lo configuremos contigo?]
-Con el [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) puedes cargar todo tu catálogo, fichas técnicas e imágenes de una vez, validando SKU y precios antes de cargar.
-:::
-
 ## Qué quieres hacer
 
 | Quiero… | Ve a… |
@@ -57,9 +53,10 @@ El panel del producto se organiza en pestañas:
 | **Envío y más** | **Peso (kg)** y dimensiones **Largo**, **Ancho**, **Alto** (cm), las **sucursales** donde está disponible y los **Productos Opcionales** que el agente puede ofrecer como complemento. Los servicios no pueden tener dimensiones físicas |
 | **Variantes** | Combinaciones del producto (si las usa) |
 
+El interruptor **Activo / Inactivo** está en el **encabezado** del panel del producto; un producto nuevo se crea **activo**. Un producto inactivo deja de estar visible para tus clientes.
+
 Si cierras con cambios sin guardar, el panel pregunta *«¿Descartar los cambios?»*.
 
-<!-- VERIFICAR: dónde queda el interruptor «Producto Activo» y el formato esperado de «Importar Excel». La distribución de campos por pestaña está confirmada en dev1 (productFormTabs.ts). -->
 
 ## Variantes
 
@@ -89,6 +86,12 @@ La columna **Prioritario** marca un producto para que **el agente lo recomiende 
 ## Importar Excel
 
 **Importar Excel** carga muchos productos a la vez desde un archivo.
+
+1. Haz clic en **Importar Excel** y arrastra tu archivo, o haz clic para elegirlo. Se aceptan **.xlsx**, **.xls** y **.csv**, de hasta **10 MB**.
+2. Peaking relaciona las columnas con los campos de producto por su nombre (nombre, SKU, precio, categoría…). En el paso siguiente puedes **corregir la relación a mano** o marcar una columna como **No importar**.
+3. Revisa y confirma la importación.
+
+Los únicos campos obligatorios son **Nombre** y **Precio**. También se pueden importar SKU, costo, descripciones, categoría, **Tipo** (producto o servicio), **Estado** (activo o inactivo), unidad de medida, código de barras, stock, etiquetas, URL de imagen, peso y medidas, impuestos y sucursales (separadas por comas).
 
 ## Enriquecer con IA
 

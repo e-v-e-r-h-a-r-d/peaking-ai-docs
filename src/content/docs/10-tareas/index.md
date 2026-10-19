@@ -46,7 +46,6 @@ Bajo el título **Tareas** verás una línea de resumen con **N para hoy**, **N 
 
 Los filtros avanzados combinan estos campos: **Estado**, **Prioridad**, **Asignado a** (incluye **Sin asignar**), **Etapa**, **Departamento** (incluye **Sin departamento**), **Sucursal** y **Sin responder**. Puedes quitar cada filtro con **Quitar**.
 
-<!-- VERIFICAR: nombres exactos de los botones de filtros guardados (vistas) en la pantalla; los filtros se leyeron del código. -->
 
 ## Crear una tarea
 

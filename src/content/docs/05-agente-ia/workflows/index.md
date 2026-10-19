@@ -35,11 +35,10 @@ Arriba de la lista verás un resumen de cómo está funcionando tu automatizaci�
 | Indicador | Qué te dice |
 |-----------|-------------|
 | **Flujos activos** | Cuántos de tus flujos están activos, del total que tienes |
-| **Ejecuciones este mes** | Cuántas veces se ejecutaron tus flujos, comparado con el mes pasado |
-| **Terminaron con éxito** | Porcentaje de ejecuciones terminadas que llegaron al final (completadas ÷ completadas + fallidas). Indica también cuántas están en espera o detenidas por respuesta del cliente |
+| **Ejecuciones este mes** | Cuántas veces se ejecutaron tus flujos desde el día 1 del mes en curso, comparado con el mes pasado |
+| **Terminaron con éxito** | Porcentaje de ejecuciones terminadas que llegaron al final (completadas ÷ completadas + fallidas), contando desde el día 1 del mes en curso. Indica también cuántas están en espera o detenidas por respuesta del cliente |
 | **Última ejecución** | Qué flujo se ejecutó más recientemente |
 
-<!-- VERIFICAR: periodo exacto de «este mes» (calendario o últimos 30 días); la fórmula del porcentaje está confirmada en dev1. -->
 
 ### Proyectos y flujos
 
@@ -158,9 +157,8 @@ El chat de prueba ejecuta el workflow **tal como está publicado**. Si cambiaste
 - Si el flujo llega a un Delay, el chat indica **"Workflow pausado por un nodo de delay"**.
 - La **Traza de Nodos** muestra por qué nodos pasó la conversación.
 
-El chat de prueba es una conversación de prueba aislada (no escribe a clientes reales) y conserva las variables que el flujo va capturando durante la sesión; no hay un formulario para definirlas a mano. Con el botón de reiniciar empiezas una conversación nueva, sin variables.
+El chat de prueba es una conversación de prueba aislada (no escribe a clientes reales) y conserva **en memoria** las variables que el flujo va capturando durante la sesión (no se guardan en tu cuenta); no hay un formulario para definirlas a mano. Con el botón de reiniciar empiezas una conversación nueva, sin variables.
 
-<!-- VERIFICAR: reinicio del chat y que no envía por el canal real (se infirió de platform «workflow_test» en dev1; el motor es una función de servidor que no está en pkui). -->
 
 ### Ejecuciones
 

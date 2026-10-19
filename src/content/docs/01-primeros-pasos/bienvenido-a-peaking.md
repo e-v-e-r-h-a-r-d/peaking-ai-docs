@@ -12,7 +12,6 @@ sidebar:
 | Quiero… | Ve a… |
 |---|---|
 | Dar mis primeros pasos | [Configuración inicial](/01-primeros-pasos/configuracion-inicial/) |
-| Que Peaking lo configure conmigo | [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) |
 | Saber dónde está cada pantalla | [Mapa del menú](#mapa-del-menú) |
 | Conectar WhatsApp u otro canal | [Canales](/08-configuracion/canales-e-integraciones/canales/) |
 | Enseñarle a mi agente cómo hablar | [Estudio de Prompts](/05-agente-ia/estudio-de-prompts/) |
@@ -50,7 +49,7 @@ Lo que aparece depende de tu **rol** (Master, Administrador o Usuario) y de los 
 
 ## El camino recomendado
 
-1. **Sigue la [Configuración inicial](/01-primeros-pasos/configuracion-inicial/)**: lo mínimo básico en siete pasos (o deja que el [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) lo haga contigo).
+1. **Sigue la [Configuración inicial](/01-primeros-pasos/configuracion-inicial/)**: lo mínimo básico en siete pasos.
 2. **Conecta tus canales** en [Configuración › Canales](/08-configuracion/canales-e-integraciones/canales/).
 3. **Entrena a tu agente**: crea tu prompt en el [Estudio de Prompts](/05-agente-ia/estudio-de-prompts/) y sube información a la [Base de Conocimientos](/04-base-conocimientos/).
 4. **Prueba**: escríbele a tu propio número y confirma que responde como esperas.

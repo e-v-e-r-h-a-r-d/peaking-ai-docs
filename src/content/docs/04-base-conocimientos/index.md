@@ -9,10 +9,6 @@ La **Base de Conocimientos** es la información de tu negocio que el agente lee 
 
 [CAPTURA PENDIENTE: Base de Conocimientos con las tres pestañas, la lista de documentos con categorías y la vista previa]
 
-:::tip[¿Prefieres que lo configuremos contigo?]
-Con el [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) puedes cargar de una vez tus **preguntas frecuentes**, documentos y **fichas técnicas** ya validados.
-:::
-
 ## Qué quieres hacer
 
 | Quiero… | Ve a… |

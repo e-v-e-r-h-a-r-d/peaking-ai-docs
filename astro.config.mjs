@@ -11,6 +11,7 @@ export default defineConfig({
 		rehypePlugins: [rehypePendingShot],
 	},
 	redirects: {
+		'/01-primeros-pasos/paquete-de-implementacion/': '/17-soporte/bug-vs-implementacion/#implementaciones',
 		'/01-primeros-pasos/onboarding-guiado/': '/01-primeros-pasos/configuracion-inicial/#el-asistente-de-bienvenida',
 		'/01-primeros-pasos/activa-tus-modulos/': '/08-configuracion/cuenta/#módulos',
 		'/08-configuracion/empresa-y-equipo/organizacion/': '/08-configuracion/empresa-y-equipo/',

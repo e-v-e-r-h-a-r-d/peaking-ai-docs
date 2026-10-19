@@ -126,6 +126,10 @@ Verás el aviso *"No hay plantillas aprobadas"*. Conecta WhatsApp y sincroniza t
 
 ### Departamentos
 
+:::note[Requiere el módulo TODOs]
+Los departamentos y las reglas de asignación de tareas solo aparecen cuando el módulo **TODOs** está activo. Actívalo en [Módulos](/08-configuracion/cuenta/).
+:::
+
 Los departamentos agrupan a tu equipo por área (Ventas, Soporte, Operaciones…) y se usan como criterio para asignar tareas de forma inteligente.
 
 #### Crear un departamento
@@ -157,13 +161,15 @@ El ajuste **Ventana de espera** controla cuánto espera:
 | Opción | Efecto |
 |--------|--------|
 | **Inmediato (sin espera)** | El agente responde en cuanto llega cada mensaje |
-| **Un número de segundos** | El agente espera ese tiempo tras el último mensaje antes de contestar |
+| **3, 5, 8, 10, 15, 20 o 30 segundos** | El agente espera ese tiempo tras el último mensaje antes de contestar. Si nunca lo has cambiado, la espera por defecto es de **6 segundos** |
+
+Este ajuste solo se configura aquí, en **Configuración › Operación**.
 
 :::tip[¿Qué valor elegir?]
 Si tus clientes suelen escribir varios mensajes seguidos, una ventana de **8 a 20 segundos** evita que el agente conteste fragmentos de una idea que aún no terminó.
 :::
 
-<!-- VERIFICAR: (1) "Departamento" requiere el módulo TODOs? el texto dice "para asignación inteligente de tareas"; (2) rango mínimo/máximo de segundos permitido; (3) que esta ventana NO esté duplicada también en Estudio de Prompts del UI nuevo — el artículo crea-tu-primer-prompt la documenta ahí. Si sigue en ambos lugares, enlazar en vez de repetir. -->
+<!-- VERIFICAR: rango permitido de la ventana de espera más allá de las opciones predefinidas. -->
 
 ## Extracción de datos
 
@@ -220,9 +226,10 @@ nací en 1985 → 1985
 - Usa el interruptor de cada campo para **activarlo o desactivarlo** sin perderlo.
 - Haz clic en **Editar campo** para cambiar su descripción o sus ejemplos.
 
+La **clave** del campo (por ejemplo, `birthday`) solo se define al crearlo y **no se puede cambiar después**; lo demás sí se puede editar.
+
 Si no tienes ningún campo configurado, la extracción automática está inactiva: verás *"Agrega un campo para empezar"*.
 
-<!-- VERIFICAR: ejemplo "Fecha de nacimiento" tomado del UI (placeholders del formulario). Confirmar si hay campos precargados por defecto o por industria, y si la clave se puede editar después de crear el campo. -->
 
 ## Campos del CRM
 
@@ -244,11 +251,12 @@ Cambia cómo aparecen los campos estándar de las oportunidades en tus formulari
 
 Los cambios aplican a los formularios de **crear** y de **detalle** de las oportunidades.
 
+Los campos que puedes renombrar son: **Nombre de la oportunidad**, **Empresa**, **Industria**, **Correo**, **Teléfono**, **Etapa**, **Prioridad**, **Asignado a**, **Monto esperado**, **Probabilidad de cierre**, **Origen**, **Campaña** y **Notas**. El nombre que elijas para **Monto esperado** se refleja en todo el sistema.
+
 #### Convertir un campo en lista desplegable
 
-Si agregas **opciones** a un campo, este se mostrará como una **lista desplegable** en los formularios, en lugar de texto libre. Es útil para estandarizar respuestas, como una lista fija de sucursales o de orígenes.
+Si agregas **opciones** a un campo, este se mostrará como una **lista desplegable** en los formularios, en lugar de texto libre. Es útil para estandarizar respuestas, como una lista fija de sucursales o de orígenes. Pueden ser listas desplegables los campos **Empresa**, **Industria**, **Origen** y **Campaña**.
 
-<!-- VERIFICAR: lista exacta de campos estándar renombrables. El artículo anterior decía: Nombre, Empresa, Industria, Email, Teléfono, Etapa, Prioridad y Asignado a. Confirmar contra el UI nuevo. También confirmar que el cambio de "Monto esperado" se refleja en todo el sistema (reportes, kanban). -->
 
 ### Campos personalizados
 
@@ -275,9 +283,8 @@ Agrega campos adicionales a tus oportunidades para capturar datos propios de tu 
 
 #### Elegir la pestaña de la ficha
 
-El campo **Pestaña de la ficha** define dónde ve tu equipo el dato al abrir una oportunidad. Por ejemplo, **Financiero** lo muestra junto al monto y la probabilidad de cierre.
+El campo **Pestaña de la ficha** define dónde ve tu equipo el dato al abrir una oportunidad. Las opciones son **Financiero** (junto al monto y la probabilidad de cierre), **Detalles (Información extra)**, **Dirección** y **Campos personalizados** (la predeterminada).
 
-<!-- VERIFICAR: lista completa de pestañas de la ficha disponibles en el selector (solo se confirmó "Financiero"). Leer el componente CrmCustomFieldsManager y la ficha de CRM. -->
 
 ### Qué cambió de lugar
 

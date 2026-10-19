@@ -13,7 +13,6 @@ Esta sección te lleva de tu primer acceso a un agente de IA atendiendo clientes
 |---|---|
 | Entender qué es Peaking y dónde está cada pantalla | [Bienvenido a Peaking](/01-primeros-pasos/bienvenido-a-peaking/) |
 | Dejar lo mínimo configurado, rápido | [Configuración inicial](/01-primeros-pasos/configuracion-inicial/) |
-| Que Peaking lo configure conmigo | [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) |
 | Ver mi pantalla de inicio | [Panel de control](/01-primeros-pasos/tour-del-dashboard/) |
 | Configurar mi empresa, equipo, operación o cuenta | [Empresa y equipo](/08-configuracion/empresa-y-equipo/) · [Operación](/08-configuracion/operacion/) · [Cuenta](/08-configuracion/cuenta/) |
 | Conectar WhatsApp, Instagram, correo… | [Canales](/08-configuracion/canales-e-integraciones/canales/) |
@@ -29,6 +28,3 @@ Esta sección te lleva de tu primer acceso a un agente de IA atendiendo clientes
 | **4. Atiende y vende** | Conversaciones, CRM, productos, pedidos | [Mensajes](/05-conversaciones/) · [CRM](/06-crm-audiencias/) · [Productos](/07-productos-pagos/) |
 | **5. Crece** | Campañas y análisis | [Campañas](/14-audiencias/) · [Insights](/08-analytics/) |
 
-:::tip[¿Prefieres que lo dejemos listo contigo?]
-El [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) reúne toda la información de tu negocio en ocho plantillas, la valida y la carga en tu cuenta.
-:::

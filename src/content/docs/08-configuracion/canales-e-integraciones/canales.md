@@ -9,10 +9,6 @@ sidebar:
 
 [CAPTURA PENDIENTE: pantalla Canales con "Estado de conexión", "Conectar nueva plataforma" y el bloque de plantillas]
 
-:::tip[¿Prefieres que lo configuremos contigo?]
-Los canales se conectan siempre a mano, también cuando usas el [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/).
-:::
-
 ## Qué quieres hacer
 
 | Quiero… | Ve a… |

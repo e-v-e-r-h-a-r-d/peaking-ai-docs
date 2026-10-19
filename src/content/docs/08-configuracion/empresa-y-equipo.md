@@ -13,10 +13,6 @@ Esta sección solo la ven y editan los usuarios con rol **Master**. Para entende
 
 [CAPTURA PENDIENTE: pantalla Organización completa — Nombre, Moneda, descripción del negocio, Industria del catálogo y Horario de operación]
 
-:::tip[¿Prefieres que lo configuremos contigo?]
-La **Ficha del cliente** del [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) reúne empresa, sucursales, horarios y equipo en una sola plantilla validada.
-:::
-
 ## Qué quieres hacer
 
 | Quiero… | Ve a… |
@@ -71,7 +67,6 @@ Define los días y las horas en que tu negocio está disponible. El agente puede
 Si la hora final es anterior a la inicial, el horario se considera inválido y no se guardará.
 :::
 
-<!-- VERIFICAR: ejemplo de horario por defecto "Lunes a Viernes 09:00–18:00" tomado del artículo anterior; confirmar valores iniciales en el UI nuevo. -->
 
 :::tip[No confundas el horario de operación con los turnos]
 El **horario de operación** describe cuándo está abierto tu negocio. Los **turnos** deciden *qué persona* recibe las conversaciones de cada número de WhatsApp. Se configuran en [Turnos y horario](/08-configuracion/empresa-y-equipo/#turnos-y-horario).
@@ -108,11 +103,14 @@ Si aún no tienes ninguna, verás el mensaje *"Crea tu primera sucursal para com
 - Para cambiar el nombre o la descripción, abre la sucursal y haz clic en **Editar Sucursal**.
 - Para dejar de usarla sin perder su historial, cámbiala a **Inactivo**. Puedes volver a activarla en cualquier momento.
 
+### Para qué sirven
+
+Las sucursales se usan como **filtro** en el CRM y en las métricas del Panel de control e Insights, para ver cada ubicación por separado.
+
 ### Asignar personas a una sucursal
 
 Las personas se asignan desde [Equipo y roles](/08-configuracion/empresa-y-equipo/#equipo-y-roles): cada miembro tiene un selector de **Sucursales** donde eliges una o varias.
 
-<!-- VERIFICAR: alcance exacto del "control de acceso" por sucursal (qué datos filtra: conversaciones, contactos, CRM). El texto del módulo dice "gestión multi-ubicación y control de acceso" pero no se leyó la lógica. No afirmar nada más hasta confirmarlo. -->
 
 ## Equipo y roles
 
@@ -140,10 +138,12 @@ Asigna **Master** solo a quien realmente administre la cuenta. Para la operació
 |---------|-------------|
 | **Usuario** | Nombre del miembro |
 | **Correo** | Dirección con la que accede |
-| **Rol** | Master, Administrador o Usuario |
+| **Rol** | Master (insignia fija), Administrador o Usuario. Solo un Master ve el selector para cambiarlo |
 | **Departamento** | Área a la que pertenece (se crean en [Organización interna](/08-configuracion/operacion/#organización-interna)) |
-| **Vendedor** | Indica si la persona puede recibir oportunidades del CRM |
 | **Sucursales** | Ubicaciones donde trabaja. Solo aparece si el módulo Sucursales está activo |
+| **Números** | Solo si tienes varios números de WhatsApp: con aislamiento por número es **Números que puede ver**; sin él, **Vista predeterminada** (el número que se abre primero en Mensajes, sin restringir el acceso) |
+| **Vendedor** | Casilla que indica si la persona puede recibir oportunidades del CRM. La edita un Master |
+| **Correo conectado** | Estado del buzón de correo de cada persona (lo ve un Master) |
 | **Acciones** | Eliminar al usuario o cancelar una invitación pendiente |
 
 ### Invitar a un miembro
@@ -160,7 +160,6 @@ La persona recibe un correo con el enlace para unirse. Mientras no lo acepte, ap
 En la invitación solo puedes elegir **Usuario** o **Administrador**. Para dar rol Master, primero invita a la persona y luego cámbiale el rol (ver abajo).
 :::
 
-<!-- VERIFICAR: el diálogo de invitación en el código ofrece "Usuario" y "Administrador"; confirmar en pantalla que Master no aparece como opción. -->
 
 ### Cambiar el rol de alguien
 
@@ -185,7 +184,6 @@ Eliminar a alguien **revoca su acceso** a la organización. Si solo quieres camb
 - [Módulos](/08-configuracion/cuenta/): activa **Visibilidad por asignación** o **Aislamiento por número de WhatsApp** para limitar lo que ve cada Usuario.
 - [Asignación](/08-configuracion/operacion/): define cómo se reparten las oportunidades entre los **Vendedores**.
 
-<!-- VERIFICAR: (1) orden real de columnas; (2) comportamiento del toggle "Vendedor" (¿es un interruptor editable en la tabla o solo una indicación?); (3) si el rol Administrador puede o no invitar usuarios; (4) si el Master propietario muestra una insignia sin selector. En código el rol "admin" de base de datos se muestra como Master y "manager" como Administrador. -->
 
 ## Turnos y horario
 
@@ -227,13 +225,16 @@ Un turno de **15:00 a 23:00** cubre hasta las **22:59**. Para cubrir la noche co
 ### Cosas que conviene saber
 
 - Si no hay usuarios en la organización, no habrá a quién asignar un turno. Invita primero a tu equipo en [Equipo y roles](/08-configuracion/empresa-y-equipo/#equipo-y-roles).
+- Los turnos funcionan **solo con WhatsApp**, por número. No aplican a Instagram, Messenger, correo ni chat web.
+- Con cada mensaje entrante, si la conversación **no tiene responsable**, se asigna a quien cubre el turno. Si ya tiene responsable pero lleva **más de 24 horas sin actividad**, se reasigna a quien cubre el turno en ese momento.
+- No necesitas el **aislamiento por número** para usar turnos; si lo activas, cada Administrador solo ve y edita los turnos de sus números.
 - Una franja sin turno deja la conversación sin responsable: la columna **Ahora atiende** mostrará **nadie (sin turno)**. Cubre todas las horas en las que recibes mensajes.
 
 :::tip[No lo confundas con el horario de operación]
 El [horario de operación](/08-configuracion/empresa-y-equipo/#horario-de-operación) indica cuándo está abierto tu negocio. Los turnos indican **qué persona** atiende en cada franja.
 :::
 
-<!-- VERIFICAR: (1) si el turno asigna también a los números de Instagram/Messenger o solo WhatsApp (el texto del UI dice "por número de WhatsApp"); (2) si requiere "Aislamiento por número" para que cada persona vea solo sus números; (3) qué ocurre si hay dos usuarios con turnos superpuestos. No se leyó la lógica de asignación. -->
+<!-- VERIFICAR: qué ocurre si dos turnos del mismo número se superponen en la misma franja. -->
 
 ## Mi perfil
 
@@ -259,10 +260,13 @@ Cuando termines, haz clic en **Guardar Cambios**.
 
 Si tu organización tiene activadas las notificaciones de asignación, recibirás un mensaje de WhatsApp en el número que escribas en **WhatsApp para notificaciones** cada vez que te asignen una oportunidad nueva del CRM.
 
-Si dejas el campo vacío, no recibirás ese aviso por WhatsApp. Para que tu organización lo active, consulta [Asignación](/08-configuracion/operacion/).
+Incluye el código de país (por ejemplo, `+52 444 123 4567`). Si dejas el campo vacío, no recibirás ese aviso por WhatsApp. Para que tu organización lo active, consulta [Asignación](/08-configuracion/operacion/).
+
+### Tu foto
+
+Sube una imagen de tu foto de perfil: cualquier formato de imagen, de **menos de 5 MB**.
 
 ### Cambiar tu contraseña
 
 La contraseña no se cambia aquí. Ve a [Seguridad y privacidad](/08-configuracion/cuenta/#seguridad-y-privacidad).
 
-<!-- VERIFICAR: tamaño máximo y formatos del avatar (el artículo anterior decía "máximo 5 MB"; no confirmado en el UI nuevo). Formato del número de WhatsApp (con código de país). -->

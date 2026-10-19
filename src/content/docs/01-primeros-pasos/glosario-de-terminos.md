@@ -90,8 +90,6 @@ Las palabras más usadas en Peaking, ordenadas de la A a la Z. Cada término enl
 
 ## P
 
-**Paquete de implementación** — Conjunto de ocho plantillas que reúne la información de tu negocio, se valida y se carga en tu cuenta. Ver [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/).
-
 **Panel de Control** — Tu pantalla de inicio. Ver [Panel de control](/01-primeros-pasos/tour-del-dashboard/).
 
 **Pasarela de pago** — Servicio con el que cobra el agente (Stripe o Mercado Pago). Solo una puede estar activa a la vez. Ver [Pagos](/08-configuracion/canales-e-integraciones/pagos/).

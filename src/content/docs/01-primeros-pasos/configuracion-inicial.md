@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-Esta es la ruta más corta de una cuenta vacía a un agente atendiendo clientes. Son **siete pasos** y cada uno te dice dónde hacerlo y cómo saber que quedó listo. Si prefieres que alguien lo deje listo contigo, mira el [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/).
+Esta es la ruta más corta de una cuenta vacía a un agente atendiendo clientes. Son **siete pasos** y cada uno te dice dónde hacerlo y cómo saber que quedó listo.
 
 [CAPTURA PENDIENTE: Panel de control de una cuenta recién configurada, con canal conectado y agente activo]
 
@@ -16,7 +16,6 @@ Esta es la ruta más corta de una cuenta vacía a un agente atendiendo clientes.
 | Ver todo lo mínimo en una lista | [Checklist mínimo](#checklist-mínimo) |
 | Seguir el asistente de la primera vez | [El asistente de bienvenida](#el-asistente-de-bienvenida) |
 | Saber qué más activar según lo que vendo o hago | [Según tu objetivo](#según-tu-objetivo) |
-| Que Peaking lo configure por mí | [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) |
 | Revisar que todo funcione antes de abrir al público | [Prueba final](#prueba-final) |
 
 ## Checklist mínimo
@@ -92,7 +91,9 @@ No. Peaking recuerda el último paso en el que estabas.
 **No quiero invitar a nadie todavía.**
 Avanza con **Ir al panel** e invita después desde [Equipo y roles](/08-configuracion/empresa-y-equipo/#equipo-y-roles).
 
+**¿Puedo cambiar el idioma después?**
+Sí, con el **selector de idioma** de la barra superior.
+
 **¿Cuánto tarda?**
 Con la información de tu negocio a la mano, una o dos horas; lo que más tiempo toma es escribir las preguntas frecuentes y cargar los productos.
 
-<!-- VERIFICAR: que «Idioma predeterminado» se pueda cambiar luego desde Mi perfil y que «Omitir» exista solo en el paso 3 (dev1: OnboardingV2.tsx). -->

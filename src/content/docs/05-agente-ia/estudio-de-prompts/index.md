@@ -13,10 +13,6 @@ Solo los usuarios **Master** y **Administrador** pueden crear, editar, asignar o
 
 [CAPTURA PENDIENTE: pantalla Estudio de Prompts con la lista de tarjetas, el buscador, los filtros y el botón Nuevo prompt]
 
-:::tip[¿Prefieres que lo configuremos contigo?]
-El **Guion del agente** del [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) reúne identidad, flujo, objeciones, límites y ejemplos, y se convierte en tu prompt ya estructurado.
-:::
-
 ## Qué quieres hacer
 
 | Quiero… | Ve a… |
@@ -283,9 +279,8 @@ Líneas que empiezan con `#`, con un número de lista o con «Cliente:» pueden 
 ### Plantillas de prompt: preguntas
 
 **No encuentro una plantilla para mi negocio.**
-Prueba otra palabra clave o parte de una por objetivo. También puedes usar **Generar con IA**, que arma el prompt conversando contigo.
+El buscador revisa las palabras clave de cada plantilla (por ejemplo *clínica*, *citas*, *tienda*): prueba otra palabra o parte de una plantilla por objetivo. También puedes usar **Generar con IA**, que arma el prompt conversando contigo.
 
 **¿Puedo guardar mis propias plantillas?**
 En esta pantalla se usan las plantillas de Peaking. Para reutilizar uno de tus prompts, copia su contenido con **Ver Markdown** y pégalo en uno nuevo.
 
-<!-- VERIFICAR: que el buscador filtre por las palabras clave de cada plantilla y si hoy existe una acción para crear un prompt a partir de uno existente (commit del 22 de septiembre). -->

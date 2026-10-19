@@ -53,10 +53,9 @@ Asigna número(s) a cada usuario primero. Si activas el aislamiento sin hacerlo,
 :::
 
 :::caution[Visibilidad por asignación y "Ver todo, editar solo lo propio" son excluyentes]
-Controlan el mismo tipo de permiso de formas opuestas. No actives ambos a la vez: uno anula la lógica del otro.
+Controlan el mismo tipo de permiso de formas opuestas. Al encender uno, Peaking **apaga el otro automáticamente**.
 :::
 
-<!-- VERIFICAR: la exclusión mutua entre "Visibilidad por asignación" y "Ver todo el CRM, editar solo lo propio" viene del artículo anterior, no se confirmó en el código nuevo. Verificar en el UI. -->
 
 #### Clientes y ventas
 
@@ -71,8 +70,10 @@ Controlan el mismo tipo de permiso de formas opuestas. No actives ambos a la vez
 | Módulo | Qué habilita |
 |--------|--------------|
 | **Workflows** | Flujos de automatización visual para enrutar y procesar mensajes con agentes, herramientas y condiciones. Ver [Workflows](/05-agente-ia/workflows/) |
+| **Odoo Sync** | Habilita la sincronización de productos y contactos con Odoo. Ver [Conectar Odoo](/08-configuracion/canales-e-integraciones/odoo/) |
+| **Variantes de producto** | Para productos que vienen en versiones (tallas, colores…). Si lo apagas teniendo productos con variantes, Peaking te pide confirmar antes. Ver [Productos](/07-productos-pagos/) |
 | **Enriquecimiento IA** | Genera descripciones automáticas con IA para los productos que no tienen una, mejorando la búsqueda |
-| **Agentes de Voz** | Habilita agentes telefónicos con IA para conversaciones de voz. **Peaking lo activa según tu plan de voz**: escríbenos para contratarlo o cambiarlo |
+| **Agentes de Voz** | Habilita agentes telefónicos con IA para conversaciones de voz. **Solo Peaking lo activa** (el interruptor está bloqueado para ti): se acuerda con Ventas. Ver [Plan de voz](#plan-de-voz) |
 
 #### Integraciones y desarrolladores
 
@@ -80,8 +81,6 @@ Controlan el mismo tipo de permiso de formas opuestas. No actives ambos a la vez
 |--------|--------------|
 | **API pública** | Habilita la API de Peaking para recibir leads desde sistemas externos (formularios web, Zapier, tu propio backend) con claves de API. Ver [Claves de API](/08-configuracion/canales-e-integraciones/formularios-webhooks-y-api/#claves-de-api-y-peaking-mcp) |
 
-<!-- VERIFICAR / PENDIENTE: el código también controla "Odoo Sync" (odoo_sync_enabled) y "Variantes de producto" (variants_enabled) en esta pantalla; aparecen en el artículo anterior pero no se extrajeron sus textos en el UI nuevo. Confirmar si siguen visibles como interruptores o si pasaron a otra sección (Herramientas / Productos). -->
-<!-- VERIFICAR: qué módulos están visibles solo para ciertos planes u organizaciones. El interruptor de Agentes de Voz está bloqueado ("Peaking activa este módulo según tu plan de voz"); confirmar si otros se bloquean también. -->
 
 ### Qué cambió respecto a "Funcionalidades"
 
