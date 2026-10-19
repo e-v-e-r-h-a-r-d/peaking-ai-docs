@@ -47,6 +47,10 @@ Puedes buscar con **Buscar por título, categoría o contenido…**. Para actuar
 3. Elige el **Modo de Contenido**: **Editor de Texto** (escribes ahí) o **Subir Archivo**.
 4. Guarda.
 
+:::tip[Texto directo = mejores respuestas]
+El **Editor de Texto** da los mejores resultados porque el agente puede encontrar fragmentos exactos. **Subir Archivo** sirve para documentos largos que ya tienes listos; para preguntas frecuentes, políticas y catálogos conviene el texto estructurado.
+:::
+
 ### Subir un archivo
 
 Con **Subir Archivo**, arrastra tu archivo o haz clic para seleccionarlo. Se aceptan **PDF, Word, PowerPoint, TXT, Markdown y JSON**, hasta **20 MB**. Peaking lo procesa en segundo plano (*«Procesando documento en segundo plano…»*); puedes cerrar el diálogo. Si tarda de más verás *«El procesamiento está tomando más tiempo del esperado»*; revisa más tarde.
