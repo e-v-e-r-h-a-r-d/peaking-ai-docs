@@ -32,7 +32,7 @@ El problema: esas mismas frases aparecen todo el tiempo **en medio de una venta 
 
 Cuando dos agentes distintos tienen acceso a la misma herramienta (por ejemplo, la misma integración de CRM u órdenes), declarar la misma instrucción genérica en ambos abre la puerta a que cualquiera de los dos ejecute una operación que en realidad le corresponde solo al otro.
 
-El patrón correcto: **la instrucción de una herramienta no es fija — se declara distinta para cada agente que la usa**, restringida exactamente a lo que ese agente debe poder hacer en ese punto del flujo. Un agente que solo captura datos de contacto debe tener la herramienta de integración limitada a la operación de registro — nunca a crear cotizaciones ni completar una compra, aunque técnicamente la herramienta pueda hacerlo. Ver [Declarar herramientas en el Prompt](/03-prompt-studio/declarar-herramientas/) para el mecanismo — este artículo es sobre la decisión de diseño detrás de esa instrucción.
+El patrón correcto: **la instrucción de una herramienta no es fija — se declara distinta para cada agente que la usa**, restringida exactamente a lo que ese agente debe poder hacer en ese punto del flujo. Un agente que solo captura datos de contacto debe tener la herramienta de integración limitada a la operación de registro — nunca a crear cotizaciones ni completar una compra, aunque técnicamente la herramienta pueda hacerlo. Ver [Declarar herramientas en el Prompt](/05-agente-ia/instrucciones-del-agente/) para el mecanismo — este artículo es sobre la decisión de diseño detrás de esa instrucción.
 
 **Cómo evitarlo:**
 - Revisa, herramienta por herramienta, si la instrucción que declaraste en cada agente permite operaciones que en realidad son responsabilidad de otro agente. Si es así, restríngela.
@@ -59,8 +59,8 @@ El tercer tipo de colisión es más sutil: el prompt del agente intenta resolver
 - [ ] Para cada dato sensible (precio, disponibilidad, clasificación), ¿hay una sola fuente de verdad, o el agente y la herramienta pueden calcularlo cada uno por su lado?
 - [ ] ¿Probaste ambas ramas (verdadero/falso) de cada Condition con mensajes ambiguos reales, no solo con el caso obvio?
 
-:::tip[Usa el panel de Test antes de publicar]
-El botón **Test** del editor de Workflows abre el panel de prueba del flujo completo — es el lugar para simular justo los mensajes ambiguos que suelen exponer estas colisiones (confirmaciones cortas a medio flujo, datos de contacto que podrían confundirse con una búsqueda de producto) antes de publicar en producción.
+:::tip[Usa el Chat de Prueba antes de publicar]
+El botón **Probar** del editor de Workflows abre el Chat de Prueba del flujo completo — es el lugar para simular justo los mensajes ambiguos que suelen exponer estas colisiones (confirmaciones cortas a medio flujo, datos de contacto que podrían confundirse con una búsqueda de producto) antes de publicar en producción.
 :::
 
 → Sigue con [Cómo escribir prompts efectivos](/19-mejores-practicas/escribir-prompts-efectivos/)

@@ -1,6 +1,6 @@
 ---
 title: Ciclo de mejora y versionado de prompts
-description: Cómo iterar sobre un agente en producción sin romper lo que ya funciona — diagnóstico, cambios aditivos, prueba en Peaking Lab y documentación.
+description: Cómo iterar sobre un agente en producción sin romper lo que ya funciona — diagnóstico, cambios aditivos, prueba en Laboratorio de Pruebas y documentación.
 sidebar:
   order: 5
 ---
@@ -27,7 +27,7 @@ Antes de sobrescribir la versión publicada, guarda una copia de la versión ant
 
 ## 4. Prueba antes de aplicar en producción
 
-Usa el **Peaking Lab** (dentro del Estudio de Prompts) o el panel **Test** del editor de Workflows para simular la conversación real que falló — y también su contraparte de "esto no debería activarse" — con el cambio propuesto, antes de publicarlo. Un prompt mal editado afecta a todos los clientes que conversen con ese agente desde el momento en que se publica.
+Usa el **Laboratorio de Pruebas** (dentro del Estudio de Prompts) o el **Chat de Prueba** del editor de Workflows para simular la conversación real que falló — y también su contraparte de "esto no debería activarse" — con el cambio propuesto, antes de publicarlo. Un prompt mal editado afecta a todos los clientes que conversen con ese agente desde el momento en que se publica.
 
 ## 5. Documenta el porqué
 

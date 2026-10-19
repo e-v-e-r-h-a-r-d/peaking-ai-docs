@@ -18,13 +18,69 @@ Cada entrega agrupa los cambios por área de producto (CRM, WhatsApp, Tareas, et
 
 Las entregas se listan de la más reciente a la más antigua. Usa el menú de esta página (arriba en móvil, a la derecha en escritorio) para saltar directo al mes o al área que te interesa.
 
-Ir a: [Septiembre 2026](#septiembre-2026) · [Agosto 2026](#agosto-2026) · [Julio 2026](#julio-2026) · [Junio 2026](#junio-2026)
+Ir a: [Octubre 2026](#octubre-2026) · [Septiembre 2026](#septiembre-2026) · [Agosto 2026](#agosto-2026) · [Julio 2026](#julio-2026) · [Junio 2026](#junio-2026)
+
+---
+
+## Octubre 2026
+
+**Nueva interfaz Fusión, agente de voz y CRM a tu medida** · 1–16 de octubre
+
+### Nueva interfaz Fusión
+
+- 🆕 **Peaking estrena diseño** — nuevo menú lateral por grupos (Operación, Clientes, Catálogo, Agente IA, Campañas y Plataforma), buscador global en la barra superior, vistas a todo el ancho y tema claro/oscuro. [Ver el mapa →](/01-primeros-pasos/bienvenido-a-peaking/#mapa-del-menú)
+- 🆕 **Recorrido guiado con Sparks** — el botón **Recorrido** de la barra superior te explica cada pantalla paso a paso. [Ver cómo →](/01-primeros-pasos/configuracion-inicial/#el-asistente-de-bienvenida)
+- 🆕 **Panel de control renovado** — «Lo que necesita tu atención hoy», tu cola de trabajo y el desempeño del agente en la semana. [Ver cómo →](/01-primeros-pasos/tour-del-dashboard/)
+- 🔧 **Mensajes y Correos rediseñados** — burbujas nuevas, color por canal, canal activo visible y cierre de la conversación con **X** o **Esc**. [Ver cómo →](/05-conversaciones/)
+- 🔧 **Contactos** — vista simple, **Audiencias y acciones**, ficha rápida fija al hacer scroll y doble clic para abrir la ficha completa. [Ver cómo →](/13-contactos/)
+- 🔧 **Productos** — vista de tarjetas, ficha a pantalla completa con pestañas (General, Para el agente, Precio e inventario, Ficha técnica, Envío y más) y un solo formulario para productos simples o con variantes. [Ver cómo →](/07-productos-pagos/)
+- 🔧 **Pedidos y Carritos, Insights y Workflows** con el nuevo diseño. [Pedidos →](/12-pedidos-carritos/) · [Insights →](/08-analytics/) · [Workflows →](/05-agente-ia/workflows/)
+
+### Configuración e integraciones
+
+- 🔧 **Integraciones pasa a Configuración** — galería de integraciones con filtro por categoría, estado por tarjeta y panel lateral para configurar. [Ver cómo →](/08-configuracion/canales-e-integraciones/integraciones/)
+- 🔧 **Configuración ordenada por grupos** — Canales e integraciones, Empresa y equipo, Operación y Cuenta. [Ver cómo →](/08-configuracion/empresa-y-equipo/)
+- 🆕 **Seguridad** — cambia tu contraseña y cierra otras sesiones desde Configuración. [Ver cómo →](/08-configuracion/cuenta/#seguridad-y-privacidad)
+- 🔧 **Herramientas** — guía clara para conectar Odoo. [Ver cómo →](/08-configuracion/canales-e-integraciones/integraciones/#herramientas-y-odoo)
+- 🔧 **Roles Master, Administrador y Usuario** — solo un Master puede nombrar a otro Master. [Ver cómo →](/08-configuracion/empresa-y-equipo/#equipo-y-roles)
+- 🆕 **Formularios de leads con redirección** — envía al visitante a tu página de agradecimiento (`/gracias`) tras guardar el lead y registrar la conversión. [Ver cómo →](/08-configuracion/canales-e-integraciones/formularios-webhooks-y-api/)
+
+### CRM y Tareas
+
+- 🆕 **Campos personalizados por pestaña** de la ficha. [Ver cómo →](/08-configuracion/operacion/#campos-del-crm)
+- 🆕 **Correo obligatorio por etapa** — exige el correo del cliente antes de mover una oportunidad a ciertas etapas. [Ver cómo →](/06-crm-audiencias/#ajustes-del-pipeline)
+- 🆕 **Motivos de pérdida configurables** y motivo de ganada por cuenta. [Ver cómo →](/06-crm-audiencias/#ajustes-del-pipeline)
+- 🔧 **Etiqueta de «Monto esperado» personalizable** — el nombre que elijas se refleja en todo el sistema.
+- 🆕 **Reporte comercial en Excel** desde el CRM. [Ver cómo →](/06-crm-audiencias/)
+- 🔧 **CRM y Tareas con vistas nuevas** — calendario con oportunidades, ficha en pantalla completa, búsqueda con filtros, arrastre fluido de tarjetas, prioridad editable desde la lista y etiquetas con color e ícono. [CRM →](/06-crm-audiencias/) · [Tareas →](/10-tareas/)
+- 🆕 **Insights en Excel** — descarga el reporte con métricas, gráficas y el análisis de la IA. [Ver cómo →](/08-analytics/)
+- 🔧 **Contactos exporta el clic de anuncio de primer contacto** (`ctwa_clid`), útil para medir campañas de Meta. [Ver cómo →](/13-contactos/)
+
+### Agente de IA
+
+- 🆕 **Control de versiones en el Estudio de Prompts** — historial de versiones y reversión. [Ver cómo →](/05-agente-ia/estudio-de-prompts/probar-publicar-y-versiones/)
+- 🔧 **Editor de prompts por pestañas** con Laboratorio lateral; el flujo de la conversación ahora es un bloque de **Instrucciones**. [Ver cómo →](/05-agente-ia/estudio-de-prompts/#crear-y-editar-un-prompt)
+- 🔧 **Plantillas de prompts con búsqueda** y creación de nuevos prompts a partir de tus proyectos existentes. [Ver cómo →](/05-agente-ia/estudio-de-prompts/)
+- 🔧 **Base de Conocimientos rediseñada** — lista de documentos, acciones en lote, categorías en columna con buscador, edición directa y filtros en adjuntos. Cada adjunto tiene su instrucción de uso. [Ver cómo →](/04-base-conocimientos/#adjuntos-y-fichas-técnicas)
+- 🔧 **Orden personalizado de atributos** de producto y de sus valores. [Ver cómo →](/07-productos-pagos/#ficha-técnica-y-atributos)
+- 🔧 **Workflows** — crea y edita prompts desde el editor y revisa mejor las corridas del chat de prueba. [Ver cómo →](/05-agente-ia/workflows/#publicar-probar-y-revisar-ejecuciones)
+
+### Agente de voz
+
+- 🆕 **Llamadas dentro de Mensajes** con el transcript completo y resumen en español al colgar.
+- 🆕 **Mismas herramientas que el chat** — el agente de voz consulta tu Base de Conocimientos y herramientas, y avisa antes de buscar.
+- 🆕 **Fuente de instrucciones a elegir** — texto propio, Estudio de Prompts o un workflow; se resincroniza solo al guardar o publicar.
+- 🆕 **Números de México y planes de voz** — compra de números con paquete regulatorio y tope mensual de minutos por organización. Los planes de voz se acuerdan con Ventas de Peaking, que los activa en tu cuenta. [Ver cómo →](/05-agente-ia/agente-de-voz/)
+
+### Campañas
+
+- 🔧 **Grupo Campañas** — **Plantillas** y **Envíos masivos** con el nuevo diseño; el botón **Nuevo envío** abre un selector de plantilla aprobada y la lista muestra una barra de entrega. [Ver cómo →](/14-audiencias/envios-masivos/)
 
 ---
 
 ## Septiembre 2026
 
-**WhatsApp multi-cuenta, Meta Ads y correo compartido** · 1–8 de septiembre, entrega parcial
+**WhatsApp multi-cuenta, Meta Ads, correo compartido y simulador de demo** · 1–30 de septiembre
 
 ### WhatsApp
 
@@ -50,6 +106,22 @@ Ir a: [Septiembre 2026](#septiembre-2026) · [Agosto 2026](#agosto-2026) · [Jul
 
 - 🔧 **Información de Conversaciones en tu idioma** — responde en el idioma de la interfaz, cuenta conversaciones (no mensajes) y nombra a cada cliente. [Ver cómo →](/08-analytics/peaking-insights/)
 - 🔧 Cotizadores industriales a la medida — niveles de precio por tipo de cliente, cargos por urgencia y cálculo determinista de servicios de planta.
+
+### Correo electrónico (segunda quincena)
+
+- 🆕 **CC y CCO al responder** — copia a más personas, usa **Responder a todos** y recibe sugerencias de contactos mientras escribes. [Ver cómo →](/05-conversaciones/correo/)
+
+### WhatsApp (segunda quincena)
+
+- 🆕 **Aviso de cambios de cobro de Meta** — Peaking avisa por correo a las organizaciones que deben cargar un método de pago en su cuenta de WhatsApp Business antes del 1 de octubre, cuando Meta empezó a cobrar los mensajes de servicio. [Ver cómo →](/08-configuracion/canales-e-integraciones/canales/)
+
+### Demo
+
+- 🆕 **Simulador de WhatsApp para cuentas de demostración** — conversa como en el teléfono, con fotos, cámara, emojis, notas de voz y modo escritorio, sin conectar un número real.
+
+### Para equipos técnicos
+
+- 🔧 **Peaking MCP lee periodos completos** — consulta conversaciones por rango de fechas y mide su volumen. [Ver cómo →](/08-configuracion/canales-e-integraciones/formularios-webhooks-y-api/#claves-de-api-y-peaking-mcp)
 
 ---
 

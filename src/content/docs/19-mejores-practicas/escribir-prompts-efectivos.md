@@ -35,7 +35,7 @@ un mensaje de "espera" antes del enlace.
 No basta con decir "sé amable y cotiza cuando corresponda" — eso es interpretable. "Genera la cotización de inmediato, sin pedir otra confirmación" no lo es.
 
 :::note[Esto no es el nodo Trigger de un Workflow]
-El nodo **Trigger** de un Workflow es otra cosa: el punto de entrada del flow, el canal que arranca la conversación (ver [Cómo funcionan los Workflows](/11-workflows/como-funcionan-los-workflows/#trigger)). Un **CASO DE USO** dentro de una regla de prompt vive en otra capa — es la condición puntual, dentro de una conversación que ya está en curso, que activa esa regla específica del agente. Para no mezclar los dos conceptos, esta sección usa "caso de uso" (algunos equipos lo llaman "path") en vez de "trigger" para referirse a la parte de la regla del prompt.
+El nodo **Trigger** de un Workflow es otra cosa: el punto de entrada del flow, el canal que arranca la conversación (ver [Cómo funcionan los Workflows](/05-agente-ia/workflows/editor-y-nodos/#trigger)). Un **CASO DE USO** dentro de una regla de prompt vive en otra capa — es la condición puntual, dentro de una conversación que ya está en curso, que activa esa regla específica del agente. Para no mezclar los dos conceptos, esta sección usa "caso de uso" (algunos equipos lo llaman "path") en vez de "trigger" para referirse a la parte de la regla del prompt.
 :::
 
 ---

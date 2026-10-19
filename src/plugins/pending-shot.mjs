@@ -1,7 +1,9 @@
 // Rehype plugin: turns a standalone paragraph "[CAPTURA PENDIENTE: descripción]"
 // into a visible placeholder box (<div class="pending-shot">), so draft pages
 // show clearly where a real screenshot still has to go.
-// Published articles don't contain this marker, so it is a no-op there.
+// In production builds (what gets published) the marker is REMOVED, so the
+// placeholders are only visible in local development (`astro dev`).
+const IS_PRODUCTION = !process.argv.includes('dev');
 
 const MARKER = /^\[\s*CAPTURA PENDIENTE\s*:\s*([\s\S]*?)\s*\]$/i;
 
@@ -12,10 +14,22 @@ function textOf(node) {
 
 function transform(node) {
 	if (!node.children) return;
-	for (const child of node.children) {
+	for (let i = 0; i < node.children.length; i++) {
+		const child = node.children[i];
+		if (IS_PRODUCTION && (child.type === 'comment' || (child.type === 'raw' && /^\s*<!--/.test(child.value ?? '')))) {
+			// Notas internas (<!-- VERIFICAR … -->): solo visibles en local
+			node.children.splice(i, 1);
+			i--;
+			continue;
+		}
 		if (child.type === 'element' && child.tagName === 'p') {
 			const match = textOf(child).trim().match(MARKER);
 			if (match) {
+				if (IS_PRODUCTION) {
+					node.children.splice(i, 1);
+					i--;
+					continue;
+				}
 				child.tagName = 'div';
 				child.properties = { className: ['pending-shot'] };
 				child.children = [

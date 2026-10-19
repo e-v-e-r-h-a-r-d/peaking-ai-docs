@@ -1,102 +1,68 @@
 ---
 title: Bienvenido a Peaking
-description: Conoce qué es Peaking, para qué sirve y cómo puede transformar la atención al cliente y las ventas de tu negocio.
+description: Qué es Peaking, qué puede hacer por tu negocio y dónde está cada cosa en el menú lateral.
 sidebar:
   order: 1
 ---
 
-**Peaking** es una plataforma de inteligencia comercial que automatiza ventas, pagos y agendamiento de citas a través de los canales de mensajería que tus clientes ya usan: WhatsApp, Instagram, Messenger y tu sitio web.
+**Peaking** es una plataforma que atiende, vende y agenda por ti en los canales que tus clientes ya usan: WhatsApp, Instagram, Messenger, correo y el chat de tu sitio web. Un **agente de IA** conversa con tus clientes las 24 horas; tu equipo entra solo cuando hace falta.
 
-A diferencia de un chatbot tradicional que solo responde preguntas, Peaking ejecuta transacciones completas: recomienda productos, resuelve dudas, cobra con Stripe o Mercado Pago y agenda citas en Google Calendar — todo dentro de la misma conversación, sin que el cliente tenga que salir del chat.
+## Qué quieres hacer
 
----
+| Quiero… | Ve a… |
+|---|---|
+| Dar mis primeros pasos | [Configuración inicial](/01-primeros-pasos/configuracion-inicial/) |
+| Que Peaking lo configure conmigo | [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) |
+| Saber dónde está cada pantalla | [Mapa del menú](#mapa-del-menú) |
+| Conectar WhatsApp u otro canal | [Canales](/08-configuracion/canales-e-integraciones/canales/) |
+| Enseñarle a mi agente cómo hablar | [Estudio de Prompts](/05-agente-ia/estudio-de-prompts/) |
+| Darle información de mi negocio | [Base de Conocimientos](/04-base-conocimientos/) |
+| Entender una palabra | [Glosario](/01-primeros-pasos/glosario-de-terminos/) |
 
-## ¿Qué puede hacer Peaking por tu negocio?
+## Qué puede hacer Peaking por tu negocio
 
 | Capacidad | Lo que logras |
-|-----------|---------------|
-| **Agente de IA conversacional** | Atiendes clientes las 24 horas sin intervención de tu equipo |
-| **Ventas dentro del chat** | El cliente elige un producto y paga sin salir de WhatsApp o Instagram |
-| **Agendamiento automático** | Clientes reservan citas en horarios reales sin llamadas ni mensajes manuales |
-| **Omnichannel unificado** | Todas las conversaciones de todos tus canales en un solo panel |
-| **CRM integrado** | Cada contacto queda registrado con su historial, etiquetas y oportunidades |
-| **Analytics en tiempo real** | Ves cuántas conversaciones atendió tu IA, cuánto vendió y cómo está respondiendo |
+|---|---|
+| **Agente de IA** | Responde y da seguimiento a tus clientes sin que tu equipo esté conectado |
+| **Ventas en el chat** | Recomienda productos, arma cotizaciones y cobra con una pasarela conectada |
+| **Agendamiento** | Reserva citas en tu calendario con horarios reales |
+| **Todos los canales en un lugar** | Mensajes y correos de cada canal en una sola bandeja |
+| **CRM** | Cada contacto, oportunidad y tarea queda registrado |
+| **Campañas** | Envíos masivos de WhatsApp con plantillas y audiencias |
+| **Insights** | Qué atendió la IA, qué escaló y cuánto vendió |
 
----
+## Mapa del menú
 
-## ¿Para qué tipo de negocio es Peaking?
+El menú lateral de Peaking se organiza en grupos. Esta tabla te dice dónde vive cada cosa:
 
-Peaking está diseñado para pequeñas y medianas empresas que reciben consultas por mensajería y quieren convertirlas en ventas o citas sin ampliar su equipo de atención.
+| Grupo | Pantallas | Para qué sirve |
+|---|---|---|
+| **Operación** | Panel de Control · Mensajes · Correos · Tareas | Tu día a día: lo urgente, tus conversaciones y tus pendientes |
+| **Clientes** | CRM · Contactos | Oportunidades, pipeline y tu base de clientes |
+| **Catálogo** | Productos · Pedidos y Carritos | Lo que vendes y lo que ya se pidió |
+| **Agente IA** | Estudio de Prompts · Base de Conocimientos · Workflows | Cómo piensa, qué sabe y cómo actúa tu agente |
+| **Campañas** | Envíos masivos · Plantillas | Mensajes masivos de WhatsApp (solo Master y Administrador) |
+| **Plataforma** | Insights · Portal de Partners · Implementación · Configuración | Resultados, ajustes y conexión de canales e integraciones |
 
-Negocios que lo usan con más frecuencia:
-
-- Tiendas y e-commerce
-- Clínicas y consultorios médicos
-- Academias y centros educativos
-- Inmobiliarias
-- Restaurantes y hoteles
-- Despachos legales y de servicios profesionales
-
-:::tip[El principio detrás de Peaking]
-"Esperar enfría la compra." Peaking captura la intención de compra en el momento en que ocurre, antes de que el cliente se distraiga o se vaya con la competencia.
+:::note[No ves todo el menú]
+Lo que aparece depende de tu **rol** (Master, Administrador o Usuario) y de los módulos activos de tu organización. Algunas organizaciones también restringen el menú de los usuarios. Ver [Módulos](/08-configuracion/cuenta/) y [Equipo y roles](/08-configuracion/empresa-y-equipo/#equipo-y-roles).
 :::
 
----
+## El camino recomendado
 
-## Cómo está organizada la plataforma
-
-Peaking tiene módulos separados para cada parte de tu operación. Todos accesibles desde el panel lateral izquierdo:
-
-| Módulo | Para qué sirve |
-|--------|----------------|
-| **Panel de Control** | Vista rápida de métricas: conversaciones, mensajes, % de IA y contactos nuevos |
-| **Mensajes** | Bandeja unificada de mensajes de todos los canales |
-| **Estudio de Prompts** | Donde configuras el comportamiento y personalidad de tu agente de IA |
-| **Base de Conocimientos** | Sube documentos, PDFs y URLs para que tu IA responda con precisión |
-| **CRM** | Pipeline de ventas, oportunidades y seguimiento comercial por etapas |
-| **Contactos** | Base de datos de tus clientes con historial de conversaciones, etiquetas y campañas de mensajería |
-| **Productos** | Catálogo de productos y gestión de órdenes |
-| **Pedidos y Carritos** | Seguimiento de órdenes en curso y carritos activos de tus clientes |
-| **Insights** | Reportes detallados de conversaciones, IA y rendimiento del equipo |
-| **Integraciones** | Conecta Zapier, Odoo, HubSpot y otras herramientas |
-| **Configuración** | Equipo, roles, facturación, privacidad y módulos activos |
-
----
-
-## El camino recomendado para empezar
-
-Si es tu primera vez en Peaking, este es el orden que te recomendamos seguir:
-
-1. **Completa la configuración de tu cuenta** — invita a tu equipo, configura tu perfil y revisa los módulos activos. ([Configuración general de la cuenta](/01-primeros-pasos/configuraciones-iniciales/))
-2. **Conecta tus canales** — vincula WhatsApp ([WhatsApp](/15-whatsapp/)) y, si los usas, Instagram o Messenger ([Otros canales](/02-canales/)) para empezar a recibir mensajes.
-3. **Configura tu agente de IA** — crea tu prompt en Prompt Studio y alimenta la Base de Conocimientos con información de tu negocio. ([Prompt Studio](/03-prompt-studio/))
-4. **Verifica que todo funciona** — envíate un mensaje de prueba y confirma que tu IA responde como esperas.
-5. **Opera y crece** — gestiona conversaciones, analiza métricas e integra tus herramientas.
-
----
+1. **Sigue la [Configuración inicial](/01-primeros-pasos/configuracion-inicial/)**: lo mínimo básico en siete pasos (o deja que el [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) lo haga contigo).
+2. **Conecta tus canales** en [Configuración › Canales](/08-configuracion/canales-e-integraciones/canales/).
+3. **Entrena a tu agente**: crea tu prompt en el [Estudio de Prompts](/05-agente-ia/estudio-de-prompts/) y sube información a la [Base de Conocimientos](/04-base-conocimientos/).
+4. **Prueba**: escríbele a tu propio número y confirma que responde como esperas.
+5. **Opera y crece**: atiende en [Mensajes](/05-conversaciones/), da seguimiento en el [CRM](/06-crm-audiencias/) y revisa [Insights](/08-analytics/).
 
 ## Preguntas frecuentes
 
-**¿Necesito saber programar para usar Peaking?**
+**¿Necesito saber programar?**
+No. Todo se configura desde la interfaz.
 
-No. La configuración del agente de IA se hace desde Prompt Studio con lenguaje natural — describes cómo quieres que se comporte tu agente y Peaking lo interpreta. No hay código.
+**¿La IA atiende todas las conversaciones?**
+Tú decides. Puedes tomar una conversación cuando quieras y devolvérsela a la IA. Ver [Etiquetas y escalamiento](/05-conversaciones/etiquetas-y-escalamiento/).
 
-**¿En qué canales funciona Peaking?**
-
-WhatsApp Business, Instagram Direct, Facebook Messenger y un widget de chat embebible en cualquier sitio web.
-
-**¿Peaking reemplaza a mi equipo de atención al cliente?**
-
-No necesariamente — lo complementa. Tu agente de IA atiende las consultas repetitivas y transacciones estándar; tu equipo puede enfocarse en los casos que realmente requieren atención humana. Puedes activar el escalamiento a un agente humano en cualquier momento.
-
-**¿Los pagos son seguros?**
-
-Sí. Peaking procesa pagos a través de Stripe y Mercado Pago, plataformas certificadas con estándares de seguridad PCI-DSS. Peaking no almacena datos de tarjetas.
-
-**¿Puedo usar Peaking si tengo más de una sucursal o ubicación?**
-
-Sí. El módulo de **Sucursales / Ubicaciones** (activable en _Configuración › Funcionalidades_) permite gestionar múltiples puntos de venta con control de acceso por equipo.
-
-**¿Dónde puedo pedir ayuda si me trabo en la configuración?**
-
-Desde cualquier página de este Help Center puedes contactar al equipo de soporte de Peaking. También puedes explorar cada sección de esta documentación — cada módulo tiene su propia guía paso a paso.
+**¿Dónde pido ayuda?**
+En [Soporte y Soluciones](/17-soporte/).

@@ -1,96 +1,91 @@
 ---
-title: Copilot — cotizaciones desde la conversación
-description: Cómo usar el panel Copilot para armar cotizaciones desde el Panel de Mensajes o desde una oportunidad del CRM, sin salir de Peaking.
+title: Copilot de cotizaciones
+description: "Toma el control de una conversación y arma tú una cotización con ayuda del catálogo, créala en Odoo y envíala al cliente."
 sidebar:
-  order: 5
+  order: 4
 ---
 
-**Copilot** es un panel de apoyo para que tu equipo de ventas arme una cotización mientras atiende a un cliente — busca productos, arma el carrito y genera la cotización sin salir de la conversación ni del CRM. Es una herramienta **manual para el agente humano**: el agente de IA no la invoca por sí solo.
+El **Copilot** es el panel con el que **tú** armas una cotización mientras atiendes una conversación: la IA se pone en pausa, buscas productos, los agregas a un carrito, creas la cotización en Odoo y la envías al cliente. Es una herramienta **manual**: no cotiza sola.
 
-:::note[No es lo mismo que el agente de IA cotizando]
-Si tu prompt ya instruye al agente de IA para armar cotizaciones automáticamente durante la conversación, eso es un comportamiento distinto y configurado en el **Estudio de Prompts**. Copilot es el panel que usa una persona del equipo para hacer lo mismo manualmente, con control total sobre lo que se cotiza.
+:::note[Cuándo está disponible]
+Se ve solo si eres **Master** o **Administrador**, tu organización tiene el Copilot de cotización habilitado y **Odoo está conectado** en [Herramientas](/08-configuracion/canales-e-integraciones/integraciones/#herramientas-y-odoo). También aparece en una oportunidad del CRM como **Cotizar con Copilot**. Si no ves el botón, pídele a Peaking que lo habilite.
 :::
 
----
+[CAPTURA PENDIENTE: panel «Cotización (Copilot)» junto a una conversación, con buscador, carrito, cliente, total y botón «Crear cotización en Odoo»]
 
-## Dónde aparece Copilot
+## Qué quieres hacer
 
-Copilot vive en dos lugares de la plataforma — es el mismo panel en ambos:
+| Quiero… | Ve a… |
+|---|---|
+| Empezar a cotizar | [Tomar control](#1-tomar-control) |
+| Buscar productos | [Buscar productos](#2-buscar-productos) |
+| Ver el total y quitar productos | [Carrito](#3-carrito) |
+| Elegir el cliente y la lista de precios | [Cliente](#4-cliente-y-lista-de-precios) |
+| Crear la cotización en Odoo | [Crear](#5-crear-la-cotización) |
+| Mandarla al cliente | [Enviar](#6-enviar-al-cliente) |
+| Devolver la conversación a la IA | [Soltar el control](#soltar-el-control) |
 
-| Ubicación | Cómo se abre |
-|-----------|--------------|
-| **Panel de Mensajes** | Aparece en el panel derecho de la conversación, con la etiqueta **COPILOT** junto al título de la cotización activa |
-| **Ficha de una oportunidad del CRM** | Botón **Cotizar con Copilot** en la esquina superior de la ficha del lead |
-| **Un TODO generado automáticamente** | Si el agente de IA detecta que un cliente pidió una cotización, crea un TODO con el contexto ya armado — ese TODO también tiene su propio botón **Cotizar con Copilot**. Ver [Tareas y TODOs](/10-tareas/tareas-y-todos/#conversación-vinculada) |
+## 1. Tomar control
 
-[CAPTURA PENDIENTE: Panel Copilot dentro de una conversación de Mensajes, con carrito, cliente y botón para crear la cotización]
+En una conversación de [Mensajes](/05-conversaciones/), haz clic en **Tomar control**. La IA deja de responder y se abre el panel **Cotización (Copilot)**. Verás la etiqueta **Cotizando** mientras estés en ello. Si la conversación ya está en Copilot, el botón no aparece y usas el panel directamente (**Abrir panel de cotización**).
 
----
+## 2. Buscar productos
 
-## Qué puedes hacer con Copilot
+En **Buscar productos** hay dos modos:
 
-- **Buscar productos** por nombre, SKU o descripción libre de lo que pide el cliente.
-- **Armar un carrito** agregando los productos encontrados, con cantidades.
-- **Seleccionar el contacto** al que corresponde la cotización (o crear uno nuevo si no existe).
-- **Elegir una lista de precios** específica, si tu organización maneja varias.
-- **Agregar datos adicionales** como categoría del cliente u otros campos configurados en tu catálogo.
-- **Generar la cotización** con el botón **Crear cotización en Odoo**.
+| Modo | Cómo se usa |
+|---|---|
+| **Buscar** | Escribe nombre o SKU |
+| **IA** | Describe lo que pide el cliente, **una línea por producto** |
 
----
+Los resultados muestran **Variantes para** cada producto, los **No encontrados** y un acceso a la **Ficha técnica**. Agrégalos con **Agregar**.
 
-## De dónde salen los productos que busca Copilot
+## 3. Carrito
 
-Copilot busca en el mismo **catálogo de productos** que usa el resto de Peaking — no importa cómo llegaron esos productos ahí:
+El **Carrito** lista los productos elegidos. Si está vacío: *«El carrito está vacío. Busca productos y agrégalos.»* El **Total** se actualiza abajo.
 
-- Si tu organización tiene **Odoo Sync** activo, el catálogo se sincroniza automáticamente desde Odoo.
-- Si administras el catálogo por **importación de Excel**, Copilot cotiza igual con esos productos.
+## 4. Cliente y lista de precios
 
-El botón dice **"Crear cotización en Odoo"** porque la cotización final se registra como documento en Odoo — pero el origen de los productos que la componen puede ser cualquiera de los dos métodos. Consulta [Catálogo de Productos](/07-productos-pagos/catalogo-de-productos/) para ver cómo se administra el catálogo.
+En **Cliente**:
 
----
+- **Selecciona un contacto** (**Buscar contacto…**), o **Crear contacto** (**Nuevo contacto**: **Nombre** obligatorio, **Teléfono**, **Correo**).
+- **Lista de precios (opcional)**.
+- Si tu workflow pide datos extra, aparecen en **Datos adicionales** (con **Guardar datos**).
 
-## Cómo armar una cotización con Copilot
+## 5. Crear la cotización
 
-1. Abre la conversación del cliente en **Mensajes**, o abre su oportunidad en el **CRM** y haz clic en **Cotizar con Copilot**.
-2. En el buscador de Copilot, escribe el nombre, SKU o una descripción de lo que el cliente pide.
-3. Agrega los productos encontrados al carrito con la cantidad correspondiente.
-4. Selecciona el **contacto** — si la conversación ya tiene un lead vinculado, aparece preseleccionado.
-5. Si aplica, elige la **lista de precios** y completa los **datos adicionales** del cliente.
-6. Revisa el **total** en la parte inferior del panel.
-7. Haz clic en **Crear cotización en Odoo**.
+Haz clic en **Crear cotización en Odoo**. Verás *«Cotización creada»* con un enlace **Ver cotización**. Si falla: *«No se pudo crear la cotización. Revisa los productos/Odoo e inténtalo de nuevo.»*
 
-:::tip[Usa Copilot sin salir del CRM]
-Si ya estás revisando una oportunidad en el CRM, el botón **Cotizar con Copilot** de la ficha del lead abre el mismo panel — no necesitas ir al Panel de Mensajes para cotizar.
-:::
+## 6. Enviar al cliente
 
----
+Tras crearla puedes enviarla:
 
-## Avisos cuando una cotización queda sin terminar
+| Botón | Qué hace |
+|---|---|
+| **Enviar al cliente** | Manda la cotización por el chat (*«Aquí está tu cotización:»*) |
+| **Enviar por correo** | Envía el correo de cotización al cliente (usa el correo de Odoo) |
+| **Enviar cotización por Odoo** | En conversaciones de correo: envía con el mailer de Odoo |
 
-Si abres Copilot, empiezas a cotizar y pasa un día completo o más sin que termines la cotización, Peaking avisa de forma escalonada para que nadie pierda de vista la oportunidad:
+En correo, el envío **desde Peaking con PDF y link** se hace en la respuesta del hilo; ver [Correo](/05-conversaciones/correo/#cotizaciones-por-correo).
 
-| Cuándo | A quién le llega | Qué recibe |
-|--------|------------------|------------|
-| Al día siguiente | El **vendedor** que empezó la cotización | Aviso de que no terminó de cotizar |
-| Un día después del aviso al vendedor | El **manager** | Aviso de que la cotización sigue pendiente |
-| Semanalmente | El **admin de la organización master** | Resumen semanal por correo electrónico |
+## Soltar el control
 
----
+Al terminar, **Soltar control** ofrece dos salidas:
+
+| Opción | Qué pasa |
+|---|---|
+| **Reactivar IA** | La IA vuelve a responder. Es seguro: solo si el Copilot fue quien la silenció y no hay tareas abiertas |
+| **Dejar en pausa** | La IA sigue callada; la reactivas a mano cuando quieras |
+
+Si hay tareas abiertas verás *«La IA sigue en pausa»* y la reactivas tú.
 
 ## Preguntas frecuentes
 
-**¿El agente de IA puede usar Copilot automáticamente?**
+**No veo «Tomar control».**
+Requiere rol Master o Administrador, el Copilot habilitado para tu organización y Odoo conectado.
 
-No. Copilot es una herramienta de uso manual para el equipo humano. Si quieres que el agente de IA arme cotizaciones por sí solo durante la conversación, esa es una capacidad distinta que se configura en el Estudio de Prompts.
+**La cotización no se crea.**
+Revisa que los productos existan en Odoo y que la conexión de [Herramientas](/08-configuracion/canales-e-integraciones/integraciones/#herramientas-y-odoo) esté activa.
 
-**¿Necesito tener Odoo conectado para usar Copilot?**
-
-No necesariamente para buscar y armar el carrito — Copilot trabaja con el catálogo de productos de tu organización, sin importar si lo administras por Odoo Sync o por importación de Excel. El botón final crea el documento de cotización en Odoo.
-
-**¿Puedo editar una cotización después de crearla?**
-
-Las ediciones posteriores a la creación se hacen desde Odoo, ya que ahí queda registrado el documento final.
-
-**¿Copilot reemplaza a Pedidos y Carritos?**
-
-No. [Pedidos y Carritos](/12-pedidos-carritos/pedidos-y-carritos/) muestra las órdenes y carritos generados por el flujo de compra del cliente (vía Stripe o Mercado Pago). Copilot es una herramienta previa, para que el equipo de ventas arme y envíe una cotización manualmente durante la atención.
+**¿El Copilot cotiza solo?**
+No. Es un panel manual; la cotización automática del agente es otra función.

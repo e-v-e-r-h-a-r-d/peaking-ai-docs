@@ -1,23 +1,34 @@
 ---
 title: Primeros pasos
-description: Todo lo que necesitas para ir de cero a tu primera IA activa en Peaking. Empieza aquí.
+description: De cero a tu primer agente de IA atendiendo clientes. Empieza aquí.
 sidebar:
   order: 0
 ---
 
-Bienvenido al Centro de Ayuda de Peaking. Esta sección te lleva, paso a paso, desde el primer acceso hasta tener tu agente de IA funcionando y atendiendo clientes.
+Esta sección te lleva de tu primer acceso a un agente de IA atendiendo clientes. Todo el Help Center sigue esta misma ruta: cada sección es una pieza de ese camino.
 
-## ¿Por dónde empezar?
+## Qué quieres hacer
 
-Si acabas de crear tu cuenta, sigue este orden:
+| Quiero… | Ve a… |
+|---|---|
+| Entender qué es Peaking y dónde está cada pantalla | [Bienvenido a Peaking](/01-primeros-pasos/bienvenido-a-peaking/) |
+| Dejar lo mínimo configurado, rápido | [Configuración inicial](/01-primeros-pasos/configuracion-inicial/) |
+| Que Peaking lo configure conmigo | [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) |
+| Ver mi pantalla de inicio | [Panel de control](/01-primeros-pasos/tour-del-dashboard/) |
+| Configurar mi empresa, equipo, operación o cuenta | [Empresa y equipo](/08-configuracion/empresa-y-equipo/) · [Operación](/08-configuracion/operacion/) · [Cuenta](/08-configuracion/cuenta/) |
+| Conectar WhatsApp, Instagram, correo… | [Canales](/08-configuracion/canales-e-integraciones/canales/) |
+| Buscar el significado de un término | [Glosario](/01-primeros-pasos/glosario-de-terminos/) |
 
-1. **[Bienvenido a Peaking](/01-primeros-pasos/bienvenido-a-peaking/)** — Entiende qué es la plataforma y para qué sirve.
-2. **[Tour del dashboard](/01-primeros-pasos/tour-del-dashboard/)** — Familiarízate con cada sección de la interfaz.
-3. **[Lista de configuraciones iniciales](/01-primeros-pasos/configuraciones-iniciales/)** — Sigue el checklist para dejar tu cuenta lista.
-4. **[Glosario de términos](/01-primeros-pasos/glosario-de-terminos/)** — Consulta los conceptos clave cuando los necesites.
+## El camino completo
 
----
+| Etapa | Qué haces | Sección |
+|---|---|---|
+| **1. Prepara tu cuenta** | Empresa, equipo, módulos | [Configuración inicial](/01-primeros-pasos/configuracion-inicial/) |
+| **2. Conecta tus canales** | WhatsApp, Instagram, Messenger, correo, sitio web | [Integraciones](/08-configuracion/canales-e-integraciones/canales/) |
+| **3. Entrena a tu agente** | Prompt, instrucciones y conocimiento | [Agente de IA](/05-agente-ia/estudio-de-prompts/) · [Base de Conocimientos](/04-base-conocimientos/) |
+| **4. Atiende y vende** | Conversaciones, CRM, productos, pedidos | [Mensajes](/05-conversaciones/) · [CRM](/06-crm-audiencias/) · [Productos](/07-productos-pagos/) |
+| **5. Crece** | Campañas y análisis | [Campañas](/14-audiencias/) · [Insights](/08-analytics/) |
 
-:::tip[¿Ya completaste el onboarding?]
-Pasa directamente a [Conecta WhatsApp](/15-whatsapp/) — o si buscas Instagram, Messenger o el Widget web, ve a [Otros canales](/02-canales/).
+:::tip[¿Prefieres que lo dejemos listo contigo?]
+El [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/) reúne toda la información de tu negocio en ocho plantillas, la valida y la carga en tu cuenta.
 :::

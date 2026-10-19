@@ -1,213 +1,129 @@
 ---
 title: Glosario de términos
-description: "Definición de los términos más usados en Peaking: agentes, prompts, canales, Knowledge Base, leads y más."
+description: "Los términos de Peaking explicados en una línea, con enlace a la página donde se usan."
 sidebar:
-  order: 4
+  order: 5
 ---
 
-Este glosario reúne los términos que aparecen con más frecuencia en la plataforma Peaking y en esta documentación. Si estás empezando, léelo una vez antes de configurar tu cuenta — te ahorrará confusiones.
+Las palabras más usadas en Peaking, ordenadas de la A a la Z. Cada término enlaza a la página donde se explica a fondo.
 
----
+## Qué quieres hacer
+
+| Quiero… | Ve a… |
+|---|---|
+| Entender cómo se enseña al agente cuándo usar algo | [Mini prompts («cuándo»)](#m) |
+| Entender las etiquetas automáticas | [Auto-tagging](#a) |
+| Saber qué es cada rol | [Master, Administrador y Usuario](#m) |
+| Entender por qué no puedo escribir libremente | [Ventana de 24 horas](#v) |
 
 ## A
 
-**Agente de IA**
-El asistente virtual que atiende a tus clientes de forma automática. Lo configuras en el **Estudio de Prompts** y lo alimentas con la **Base de Conocimientos**. Es el "empleado digital" de tu negocio.
+**Administrador** — Rol con acceso a la operación (mensajes, CRM, prompts, campañas) pero sin Configuración. En algunas pantallas se muestra como *«gerente»*. Ver [Equipo y roles](/08-configuracion/empresa-y-equipo/#equipo-y-roles).
 
-**Asistencia Requerida**
-Sección del Panel de Control que lista las conversaciones que tu agente de IA no pudo resolver de forma autónoma y que necesitan revisión de un miembro del equipo.
+**Agente de IA** — El asistente que atiende a tus clientes. Se define con un prompt en el [Estudio de Prompts](/05-agente-ia/estudio-de-prompts/) y se alimenta con la [Base de Conocimientos](/04-base-conocimientos/).
 
-**Agente de Voz** *(Voice Agent)*
-Agente de IA especializado en conversaciones telefónicas. A diferencia del agente de mensajería, el Voice Agent atiende llamadas de voz en tiempo real — puede hablar con clientes, recopilar información y ejecutar herramientas (consultar el catálogo, crear tareas, etc.) durante la llamada. Se configura en **Integraciones › Agentes de Voz** y se conecta a flujos de Workflows con el nodo Voice Agent.
+**Agente de voz** — Agente de IA que atiende llamadas. Ver [Agente de voz](/05-agente-ia/agente-de-voz/).
 
-**Audiencia**
-Grupo de contactos reunidos por atributos compartidos (etiquetas, canal, actividad, campos personalizados) para dirigir una campaña de mensajería masiva. Puede ser estática (lista fija) o dinámica (se actualiza sola según las reglas que definas). Se gestiona en **Integraciones › Audiencias y Campañas**.
+**Asignación** — Reparto automático de conversaciones, oportunidades y tareas entre tu equipo (rotación o con IA). Ver [Asignación](/08-configuracion/operacion/).
 
-**Auto Assignment**
-Configuración que distribuye automáticamente las nuevas oportunidades de CRM o los TODOs entre los miembros del equipo, sin que nadie tenga que asignarlos manualmente. Puede usar **Round Robin** (rotación equitativa) o **AI-Powered / Intelligent Rules** (la IA decide según las reglas que definas).
+**Audiencia** — Grupo de contactos al que envías una campaña. Puede ser estática o dinámica. Ver [Audiencias](/14-audiencias/).
 
-**Auto-tagging**
-Función de etiquetado automático de conversaciones. Puedes definir un criterio en lenguaje natural (ej. "cuando el cliente mencione un problema con su pedido") y la IA aplicará la etiqueta correspondiente en cuanto detecte que la conversación cumple ese criterio. Se configura en el **Estudio de Prompts**, dentro de cada prompt.
-
----
+**Auto-tagging** — Etiquetado automático de conversaciones: describes en lenguaje natural **cuándo aplicar** una etiqueta y la IA la pone sola. Ver [Etiquetas y escalamiento](/05-conversaciones/etiquetas-y-escalamiento/).
 
 ## B
 
-**Bandeja compartida**
-Buzón de correo (o número de WhatsApp con aislamiento desactivado) al que varios usuarios tienen acceso al mismo tiempo. Cada respuesta manual queda marcada con quién la envió, para que el equipo no duplique esfuerzos.
+**Bandeja compartida** — Buzón de correo al que varias personas responden; cada respuesta indica quién la envió. Ver [Correo](/05-conversaciones/correo/).
 
-**Base de Conocimientos**
-Repositorio de información que entrena a tu agente de IA: documentos PDF, páginas web, preguntas frecuentes, listas de productos y cualquier otro contenido relevante de tu negocio. Mientras más completa, más precisas serán las respuestas del agente.
-
-**Biblioteca de Prompts**
-Vista principal del Estudio de Prompts. Muestra todos los prompts creados en tu cuenta en forma de lista, con su título, descripción, canales asignados y fecha de última actualización. Desde aquí puedes crear nuevos prompts, editarlos o asignarlos a canales específicos.
-
----
+**Base de Conocimientos** — Documentos, páginas y adjuntos con los que tu agente responde con precisión. Ver [Base de Conocimientos](/04-base-conocimientos/).
 
 ## C
 
-**Campaña** *(Broadcast)*
-Envío masivo de una plantilla de WhatsApp a una audiencia completa, para reactivación, prospección o marketing. Se crea en **Integraciones › Audiencias y Campañas** sobre una **audiencia** previamente definida. El resultado (entregados, no entregados, reenvío) se revisa en el Histórico de envíos masivos de WhatsApp.
+**Campaña (envío masivo)** — Mensaje de WhatsApp con plantilla enviado a una audiencia. Se gestiona en el grupo **Campañas** del menú. Ver [Envíos masivos](/14-audiencias/envios-masivos/).
 
-**Canal**
-Plataforma de mensajería conectada a Peaking. Los canales disponibles son: **WhatsApp**, **Instagram**, **Facebook Messenger** y el **Widget** de chat para sitios web.
+**Canal** — Vía por la que te escriben tus clientes: WhatsApp, Instagram, Messenger, correo o el chat de tu sitio web. Ver [Canales](/08-configuracion/canales-e-integraciones/canales/).
 
-**Coexistencia** *(WhatsApp)*
-Modo de conexión de WhatsApp alternativo al estándar: conecta el número a Peaking sin desvincularlo de la app de WhatsApp Business en el teléfono, para que ambos operen a la vez. Permite importar hasta 180 días de historial.
+**Coexistencia (WhatsApp)** — Modo que mantiene tu número conectado a Peaking **y** a la app de WhatsApp Business del teléfono. Ver [Canales](/08-configuracion/canales-e-integraciones/canales/).
 
-**Contacto**
-Perfil de un cliente o prospecto en Peaking. Se crea automáticamente la primera vez que alguien escribe a cualquier canal conectado. Agrupa el historial de conversaciones, oportunidades, órdenes, cotizaciones y tareas de esa persona en un solo lugar.
+**Contacto** — Perfil de una persona que te escribió. Reúne su historial, oportunidades y tareas. Ver [Contactos](/13-contactos/).
 
-**Conversación**
-Un hilo de mensajes entre tu negocio y un contacto. Cada conversación queda registrada con canal de origen, historial completo de mensajes, etiquetas y estado.
+**Copilot** — Panel manual para armar una cotización desde una conversación o una oportunidad. Ver [Copilot](/05-conversaciones/copilot-cotizaciones/).
 
-**Conversaciones Respondidas**
-Conversaciones que tu agente de IA atendió de principio a fin sin intervención humana. En la gráfica de Análisis de Conversaciones aparecen en azul claro.
-
-**Copilot**
-Panel de apoyo para que un agente humano arme una cotización desde la conversación (Panel de Mensajes) o desde una oportunidad (CRM), sin salir de donde está atendiendo al cliente. Es una herramienta manual — a diferencia de un agente de IA que cotiza automáticamente por instrucción del prompt.
-
-**Correo electrónico** *(integración)*
-Canal adicional que se conecta vía Gmail, Outlook o IMAP para que el agente de IA lea, cotice y responda correos igual que en WhatsApp, Instagram o el Widget. Se conecta desde **Integraciones › Herramientas**.
-
-**CRM**
-Módulo de gestión de relaciones con clientes. Aquí se registran las oportunidades de venta con su etapa en el pipeline (prospecto, negociación, cerrado, etc.) y se asignan a miembros del equipo.
-
----
+**CRM** — Pipeline de oportunidades por etapas. Ver [CRM](/06-crm-audiencias/).
 
 ## E
 
-**Escalamiento**
-Acción de transferir una conversación desde el agente de IA a un agente humano. Puede ser automático (cuando la IA no puede resolver la consulta) o manual (cuando el cliente lo solicita o un miembro del equipo lo decide).
+**Escalamiento** — Paso de una conversación del agente de IA a una persona de tu equipo. Ver [Etiquetas y escalamiento](/05-conversaciones/etiquetas-y-escalamiento/).
 
-**Estudio de Prompts** *(Prompt Studio)*
-Módulo donde configuras el comportamiento, personalidad, tono e instrucciones de tu agente de IA. Usas lenguaje natural para describir cómo quieres que responda — sin código.
-
----
-
-## F
-
-**Fuera de Ventana (24h)**
-Etiqueta que aparece en conversaciones donde ya venció la ventana de 24 horas de Meta. Significa que el negocio no puede enviar mensajes de texto libre hasta que el cliente vuelva a escribir primero o hasta usar una plantilla de mensaje aprobada.
-
-**Funcionalidades**
-Pestaña de Configuración donde activas o desactivas módulos completos de la plataforma (CRM, TODOs, Workflows, API pública, Agentes de Voz, Plantillas y envío masivo de WhatsApp, y más) según lo que tu operación necesite. Cada módulo activo puede desbloquear pestañas o campos adicionales en otras partes de Peaking.
-
----
+**Estudio de Prompts** — Donde escribes y publicas las instrucciones del agente. Ver [Estudio de Prompts](/05-agente-ia/estudio-de-prompts/).
 
 ## I
 
-**Insights**
-Módulo de analítica avanzada de Peaking. Muestra reportes detallados de conversaciones, rendimiento del agente de IA, actividad del equipo y tendencias en el tiempo.
+**Insights** — Reportes de conversaciones, desempeño de la IA y ventas. Ver [Insights](/08-analytics/).
 
-**Integración**
-Conexión entre Peaking y un sistema externo o canal de mensajería. El panel de **Integraciones** agrupa tres áreas: canales de mensajería (WhatsApp y Otros canales), catálogos de datos externos, y herramientas como CRMs, calendarios o pasarelas de pago (Zapier, Make, n8n, Odoo, HubSpot, Zoho, Google Calendar, Stripe, entre otras).
+**Instrucciones del agente** — Los campos «cuándo» repartidos por Peaking que le dicen al agente cuándo usar una herramienta, un documento o un adjunto. Ver [Instrucciones del agente](/05-agente-ia/instrucciones-del-agente/).
 
----
-
-## K
-
-**KPI** *(Key Performance Indicator)*
-Indicador clave de rendimiento. En Peaking, los KPIs principales son: Conversaciones Totales, Preguntas Respondidas, Leads Generados, Tasa de Conversión y Conversaciones que Requirieron Asistencia.
-
----
+**Integración** — Conexión con un sistema externo (Odoo, Google Calendar, pasarelas de pago, Meta…). Ver [Integraciones](/08-configuracion/canales-e-integraciones/integraciones/).
 
 ## L
 
-**Lead**
-Contacto que la IA identificó como un prospecto con intención de compra o interés real en tu producto o servicio. Los leads se contabilizan en el Panel de Control y se gestionan en el módulo de CRM.
-
----
+**Lead** — Contacto con interés real de compra. Se gestiona en el [CRM](/06-crm-audiencias/).
 
 ## M
 
-**Manage Variables**
-Nodo de Workflows que manipula variables del flujo de forma explícita: asigna un valor fijo, copia el valor de una variable a otra, o resetea (borra) una variable. Úsalo para controlar el estado interno del flow entre nodos.
+**Master** — Rol con acceso total, incluida Configuración. Ver [Equipo y roles](/08-configuracion/empresa-y-equipo/#equipo-y-roles).
 
-**MCP** *(Model Context Protocol · Peaking MCP)*
-Servidor remoto que conecta **Claude Code** a una organización de Peaking, con acceso acotado a esa cuenta. Permite diagnosticar conversaciones, editar y versionar prompts, y ajustar workflows desde la terminal. Es una herramienta técnica para el equipo de Peaking o partners que implementan cuentas — no un módulo de Funcionalidades. Se conecta con la misma API key que gestionas en la pestaña **API** de Configuración.
+**Meta Ads** — Integración que trae a Peaking la campaña y el anuncio que originó cada lead. Se sincroniza cada 10 minutos. Ver [Meta Ads y CAPI](/08-configuracion/canales-e-integraciones/meta-ads-y-capi/).
 
-**Mensajes**
-Módulo de bandeja unificada de Peaking. Centraliza en un solo lugar todos los mensajes entrantes de WhatsApp, Instagram, Messenger y Widget, sin importar desde qué canal lleguen.
+**Meta CAPI (API de Conversiones)** — Envía a Meta las conversiones que ocurren en tus conversaciones. Es el sentido contrario a Meta Ads. Ver [Meta Ads y CAPI](/08-configuracion/canales-e-integraciones/meta-ads-y-capi/).
 
-**Meta Ads**
-Integración que conecta tu cuenta publicitaria de Meta (Facebook e Instagram Ads) a Peaking, para que cada lead que llegue por un anuncio muestre la campaña y el conjunto de anuncios reales que lo trajo. No debe confundirse con Meta Conversions API, que envía información en sentido contrario (de Peaking hacia Meta).
+**Mini prompts («cuándo»)** — Campos donde escribes en una frase **cuándo** debe actuar el agente: al usar una herramienta, un documento del prompt, un adjunto, una etiqueta, un escalamiento o una regla. Ver [Instrucciones del agente](/05-agente-ia/instrucciones-del-agente/).
 
----
-
-## O
-
-**Oportunidad**
-Registro dentro del CRM que representa una posible venta o negocio en curso. Tiene etapas (ej. Prospecto → Propuesta → Negociación → Cerrado) y puede asignarse a un miembro del equipo.
-
----
+**Módulos** — Funciones que activas o desactivas en Configuración. Ver [Módulos](/08-configuracion/cuenta/).
 
 ## N
 
-**Nodo**
-Bloque visual individual dentro de un Workflow. Cada nodo representa una acción o decisión en el flujo: Trigger, Agent, Condition, Outbound, Delay, Webhook, Contact Lookup, Voice Agent o Manage Variables. Los nodos se conectan entre sí para construir el flujo completo.
+**Nodo** — Bloque de un Workflow (disparador, agente, condición, envío, espera, webhook…). Ver [Workflows](/05-agente-ia/workflows/).
 
----
+## O
+
+**Oportunidad** — Posible venta dentro del CRM, con etapa y responsable.
 
 ## P
 
-**Peaking Lab**
-Simulador de conversaciones integrado en el Estudio de Prompts. Permite probar cómo responde tu agente con un prompt específico antes de activarlo en producción. Las conversaciones del Lab son efímeras — no quedan guardadas en el módulo de Mensajes. Se abre desde el ícono de matraz (🧪) en la esquina inferior de la pantalla del Estudio de Prompts.
+**Paquete de implementación** — Conjunto de ocho plantillas que reúne la información de tu negocio, se valida y se carga en tu cuenta. Ver [Paquete de implementación](/01-primeros-pasos/paquete-de-implementacion/).
 
-**Panel de Control** *(Dashboard)*
-Pantalla principal de Peaking. Muestra un resumen en tiempo real de las métricas más importantes: conversaciones, leads, tasa de conversión y asistencia requerida.
+**Panel de Control** — Tu pantalla de inicio. Ver [Panel de control](/01-primeros-pasos/tour-del-dashboard/).
 
-**Pedidos y Carritos**
-Módulo que muestra los pedidos completados y los carritos de compra activos de tus clientes. Se genera automáticamente cuando un cliente inicia o completa una compra dentro del chat.
+**Pasarela de pago** — Servicio con el que cobra el agente (Stripe o Mercado Pago). Solo una puede estar activa a la vez. Ver [Pagos](/08-configuracion/canales-e-integraciones/pagos/).
 
-**Plantilla de Mensaje** *(Message Template)*
-Mensaje pre-aprobado por Meta que permite contactar a clientes fuera de la ventana de 24 horas en WhatsApp, Instagram y Messenger. Las plantillas deben ser aprobadas por Meta antes de usarse. Se gestionan en **Canales › Plantillas de WhatsApp** y se pueden enviar directamente desde el Panel de Mensajes o usar como Fallback Template en nodos Delay de Workflows.
+**Pedidos y Carritos** — Compras hechas y carritos abandonados. Ver [Pedidos y Carritos](/12-pedidos-carritos/).
 
-**% IA**
-Porcentaje de conversaciones que tu agente de IA atendió de forma completamente autónoma, sin intervención humana. Un % IA alto indica que tu agente está bien configurado.
+**Peaking Lab** — Simulador del Estudio de Prompts para probar al agente sin afectar clientes reales.
 
----
+**Plantilla de mensaje** — Mensaje de WhatsApp aprobado por Meta para escribir fuera de la ventana de 24 horas. Ver [Plantillas](/14-audiencias/plantillas/).
+
+**Prioritario** — Marca de un producto para que el agente lo recomiende primero. Ver [Productos](/07-productos-pagos/).
 
 ## R
 
-**Round Robin**
-Estrategia de asignación automática que distribuye conversaciones, oportunidades o TODOs de forma equitativa y en rotación entre los miembros del equipo.
-
----
+**Round Robin** — Reparto en rotación entre el equipo. Ver [Asignación](/08-configuracion/operacion/).
 
 ## T
 
-**Tasa de Conversión**
-Porcentaje de conversaciones que terminaron en una acción concreta: una venta completada o una cita agendada. Es el indicador más directo del impacto comercial de tu agente de IA.
+**Tarea (TODO)** — Pendiente asignable, con prioridad y fecha. Ver [Tareas](/10-tareas/).
 
-**Tipo de Actividad**
-Categoría de una actividad registrada en el Timeline de una oportunidad del CRM (ej. Llamada, Email, Demostración, Propuesta). Se gestionan desde el botón **Gestionar Tipos de Actividad** dentro del CRM.
+**Token de acceso** — Credencial que mantiene conectados Instagram y Messenger; vence cada cierto tiempo y se reconecta desde Canales.
 
-**TODO**
-Tarea creada a partir de una conversación para dar seguimiento posterior. Puede asignarse a un miembro del equipo, tener prioridad y fecha límite. Se gestiona en el módulo de Mensajes.
+## U
 
-**Token de acceso**
-Credencial que usan Instagram y Facebook Messenger para mantener el canal conectado a Peaking. Vence aproximadamente cada 60 días — cuando expira, el canal muestra el badge **Token expirado - Reconectar** en Integraciones. WhatsApp usa un mecanismo distinto y normalmente no requiere esta reconexión.
-
----
+**Usuario** — Rol con acceso limitado a lo que se le asigne. Ver [Equipo y roles](/08-configuracion/empresa-y-equipo/#equipo-y-roles).
 
 ## V
 
-**Variable de flujo**
-Dato que un nodo Agent o Voice Agent captura durante una conversación y guarda para que otros nodos del Workflow puedan usarlo (ej. `tipo_cliente = Distribuidor`). Las variables se pueden leer en nodos Condition y manipular con el nodo Manage Variables.
-
-**Ventana de 24 horas**
-Restricción de las plataformas de Meta (WhatsApp, Instagram, Messenger): un negocio puede responder libremente a un cliente solo dentro de las 24 horas siguientes al último mensaje que ese cliente envió. Después de ese plazo, solo se pueden usar plantillas de mensaje aprobadas.
-
-**Vista Calendario**
-Una de las vistas del pipeline del CRM. Muestra las actividades programadas (demostraciones, reuniones, llamadas) en un calendario mensual, semanal o diario, filtrable por tipo de actividad y por vendedor — en lugar de mostrar las oportunidades como en la Vista Kanban o Vista Lista.
-
----
+**Ventana de 24 horas** — Plazo desde el último mensaje del cliente durante el cual puedes responder con texto libre. Después, solo con plantillas aprobadas.
 
 ## W
 
-**Widget**
-Botón de chat embebible en cualquier sitio web. Al hacer clic, los visitantes abren una conversación directamente con tu agente de IA de Peaking, sin salir del sitio. Tiene dos modos de instalación: **flotante** (botón en la esquina de la pantalla) y **embebido** (integrado dentro de un contenedor HTML de tu página).
+**Widget** — Chat embebible para tu sitio web. Ver [Canales](/08-configuracion/canales-e-integraciones/canales/).
 
-**Workflow**
-Flujo de conversación automatizado construido con un editor visual de nodos. Define paso a paso qué ocurre cuando un cliente escribe o llama: qué agente responde, qué condición evalúa la intención, cuánto tiempo espera, qué mensaje envía. Un Workflow contiene uno o varios **Flows**, agrupados dentro de un **Proyecto**.
+**Workflow** — Flujo automatizado que se arma con nodos en un editor visual. Ver [Workflows](/05-agente-ia/workflows/).

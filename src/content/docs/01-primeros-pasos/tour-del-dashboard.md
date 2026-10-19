@@ -1,119 +1,75 @@
 ---
-title: Tour del Panel de Control
-description: "Guía completa del Panel de Control de Peaking: métricas clave, análisis de conversaciones, asistencia requerida y conversaciones recientes."
+title: Panel de control
+description: "Tu pantalla de inicio: lo que necesita atención hoy, tu cola de trabajo, cómo va el agente esta semana, tu pipeline, tus tareas y el estado de tus canales."
 sidebar:
-  order: 2
+  order: 3
 ---
 
-El **Panel de Control** es la primera pantalla que ves al ingresar a Peaking. Desde aquí tienes una vista de todo lo que está sucediendo con tu asistente de IA: cuántas conversaciones está atendiendo, cuántos leads generó, qué conversaciones necesitan tu atención y cómo evolucionaron tus resultados en el tiempo.
+El **Panel de Control** es la pantalla de inicio de Peaking: te dice **qué necesita tu atención hoy** y cómo va tu agente. Lo abres con **Operación › Panel de Control** (el primer elemento del menú lateral). Los usuarios con navegación restringida ven un menú más corto.
 
-:::tip[Acceso rápido]
-Para volver al Panel de Control en cualquier momento, haz clic en el ícono de inicio en el panel lateral izquierdo de Peaking.
-:::
+[CAPTURA PENDIENTE: Panel de Control con «Lo que necesita tu atención hoy», «Tu cola de hoy», «El agente, esta semana», pipeline, tareas e integraciones]
 
-Este es el menú de navegación completo — el punto de partida para moverte por toda la plataforma. Los módulos que ves dependen de cuáles tengas activados en _Configuración › Funcionalidades_ (ver [Configuración general de la cuenta](/01-primeros-pasos/configuraciones-iniciales/#pestaña-funcionalidades--módulos-activables)).
+## Qué quieres hacer
 
-[CAPTURA PENDIENTE: Menú de navegación completo de Peaking con todos los módulos disponibles en el panel lateral]
+| Quiero… | Ve a… |
+|---|---|
+| Saber qué atender primero | [Lo que necesita tu atención](#lo-que-necesita-tu-atención-hoy) |
+| Responder o abrir lo pendiente | [Tu cola](#tu-cola) |
+| Ver cómo va el agente | [El agente, esta semana](#el-agente-esta-semana) |
+| Revisar oportunidades | [Tu pipeline](#tu-pipeline) |
+| Ver tareas vencidas | [Tareas](#tareas) |
+| Ver si mis canales funcionan | [Integraciones](#estado-de-canales) |
 
----
+## Lo que necesita tu atención hoy
 
-## Resumen del Panel
+Una fila de indicadores bajo el saludo. Con el interruptor **Mío / Organización** eliges si ves lo asignado a ti o todo el equipo:
 
-La sección **Resumen del Panel** concentra las métricas más importantes de tu operación. En la esquina superior derecha encontrarás dos filtros:
+| Indicador | Qué cuenta |
+|---|---|
+| **Requieren humano** | Conversaciones escaladas, con cuánto espera la más antigua |
+| **Sin leer** | Conversaciones sin leer (las tuyas, o de todos los canales) |
+| **To-dos pendientes** | Tareas vencidas y para hoy |
+| **Oportunidades estancadas** | Sin movimiento en varios días ni próximo paso |
 
-| Filtro | Descripción |
-|--------|-------------|
-| **Canal** ("Todos los...") | Filtra las métricas por canal: WhatsApp, Instagram, Messenger o Widget |
-| **Período** ("Esta Semana") | Selecciona el rango de tiempo: esta semana, este mes, personalizado, etc. |
+Si no hay nada pendiente verás **Todo al día**.
 
-### Tarjetas de métricas (KPIs)
+## Tu cola
 
-Debajo de los filtros verás cinco tarjetas con los indicadores principales. Cada una muestra el valor del período actual y una comparación **vs. previous** (vs. período anterior) en color rojo (bajó) o verde (subió).
+**Tu cola de hoy** (o de la **semana** / el **mes**, con el selector de horizonte) lista lo que debes atender, en orden:
 
-| Métrica | Ícono | Qué mide |
-|---------|-------|----------|
-| **Conversaciones Totales** | Burbuja de chat | Total de conversaciones iniciadas en el período seleccionado |
-| **Preguntas Respondidas** | Gráfica de barras | Preguntas que tu agente de IA respondió de forma autónoma |
-| **Leads Generados** | Personas | Contactos que la IA identificó como prospectos calificados |
-| **Tasa de Conversión** | Círculo con check | Porcentaje de conversaciones que resultaron en una venta o cita agendada |
-| **Requirió Asistencia** | Persona con menos | Conversaciones en las que el cliente solicitó o necesitó atención humana |
+- **Filtrar**: **Todo**, **Mensajes** o **Tareas**.
+- **Ordenar**: **Más antiguo** o **Más reciente**.
+- Cada elemento muestra su tipo (**Escalada**, **Llamada**, **Correo**, **Reunión**, **Seguimiento**, **Nota**, **To-do**), cuándo (Hoy, Ayer, Hace N d) y acciones **Responder** o **Abrir**.
 
-:::note[Nota sobre Leads Generados]
-La tarjeta de **Leads Generados** tiene una flecha `>` que te lleva directamente al listado de leads en el módulo de CRM.
-:::
+Si no hay nada: *«Nada pendiente para hoy.»*
 
----
+## El agente, esta semana
 
-## Análisis de Conversaciones
+Tarjeta con el desempeño del agente: el porcentaje de conversaciones de la semana que **no requirieron a un humano**, las conversaciones nuevas por día y los totales de **Conversaciones**, **Cotizaciones**, **Leads** y **Escaladas**. **Reporte completo** abre [Insights](/08-analytics/).
 
-La sección **Análisis de Conversaciones** muestra una gráfica de área con la evolución de tus conversaciones a lo largo del tiempo. En la esquina superior derecha puedes cambiar el tipo de visualización (Área, Línea, Barras).
+## Tu pipeline
 
-La gráfica tiene tres series de datos:
+Resumen de tus oportunidades abiertas (o **Pipeline del equipo**). **Abrir CRM** lleva al [CRM](/06-crm-audiencias/).
 
-| Serie | Color | Qué representa |
-|-------|-------|----------------|
-| **Conversaciones** | Azul oscuro | Total de conversaciones iniciadas |
-| **Respondidas** | Azul claro | Conversaciones que la IA respondió sin intervención humana |
-| **Leads** | Rojo | Conversaciones en las que se identificó un prospecto calificado |
+## Tareas
 
-Al pasar el cursor sobre la gráfica verás el detalle de cada fecha. Usa esta vista para identificar picos de actividad, caídas en el volumen y el impacto de cambios en la configuración de tu agente.
+Resumen de tus tareas: **Pendientes**, **Vencidas**, **Completadas**, **Canceladas**, cuántas **creó la IA** y el **tiempo para completar** (mediana). **Revisar to-dos vencidos** abre [Tareas](/10-tareas/).
 
----
+## Estado de canales
 
-## Asistencia Requerida
+La tarjeta **Integraciones › Estado de canales** muestra tus canales conectados y el **último envío**. Si no hay: *«Sin canales conectados»*. Para conectar, ver [Canales](/08-configuracion/canales-e-integraciones/canales/).
 
-El panel **Asistencia Requerida** (esquina inferior izquierda) lista las conversaciones que tu agente de IA no pudo resolver de forma autónoma y que necesitan revisión de tu equipo.
+## Filtros y periodos
 
-Cada fila muestra:
-- **Nombre del contacto** y el canal desde el que escribió (Instagram, Messenger, WhatsApp)
-- **Tiempo transcurrido** desde el último mensaje ("1d ago", "46d ago"…)
-- **Estado** — la etiqueta `Fuera de Ventana (24h)` indica que ya venció el período de respuesta libre de Meta y la conversación no puede retomarse con mensajes de texto libre sin usar una plantilla aprobada
-
-Haz clic en la flecha `→` de cualquier fila para ir directamente a esa conversación en el módulo de Mensajes.
-
-:::caution[Atiende las conversaciones con etiqueta "Fuera de Ventana"]
-Una vez vencida la ventana de 24 horas, solo puedes contactar al cliente usando una **plantilla de mensaje aprobada** por Meta. Si no tienes plantillas configuradas, el contacto queda bloqueado hasta que el cliente te vuelva a escribir.
-:::
-
----
-
-## Conversaciones Recientes
-
-El panel **Conversaciones Recientes** (esquina inferior derecha) muestra el flujo en tiempo real de los últimos chats que llegaron a tu bandeja.
-
-Cada fila muestra:
-- **Nombre del contacto**
-- **Ícono del canal** — verde (WhatsApp), rosa/morado (Instagram), azul (Messenger)
-- **Estado** — "New conversation" cuando es la primera vez que ese contacto escribe
-- **Tiempo** desde el último mensaje
-- **Check verde** — indica que la conversación fue atendida o cerrada
-
-Haz clic en **Ver Todas las Conversaciones** al final del panel para ir al módulo de Mensajes con la vista completa.
-
----
+Las métricas se pueden ver por **Hoy**, **Esta Semana**, **Este Mes**, **Este Año**, **Semana Pasada**, **Mes Pasado**, **Todo el Tiempo** o un **Rango Personalizado** (**Desde / Hasta**), y por **Sucursal** (**Todas las Sucursales**). La gráfica de conversaciones puede ser de **Área**, **Línea** o **Barras**.
 
 ## Preguntas frecuentes
 
-**¿Cada cuánto se actualizan los datos del panel?**
+**No veo Mensajes en el menú.**
+Algunas organizaciones restringen el menú para usuarios que no son Master ni Administrador.
 
-Los datos se actualizan en tiempo real. Si no ves los cambios más recientes, recarga la página.
+**¿Qué diferencia hay entre «Mío» y «Organización»?**
+«Mío» cuenta solo lo asignado a ti; «Organización» cuenta a todo el equipo.
 
-**¿Puedo filtrar las métricas por canal específico?**
-
-Sí. Usa el filtro **"Todos los..."** en la esquina superior derecha del Resumen del Panel para ver métricas separadas por WhatsApp, Instagram, Messenger o Widget.
-
-**¿Qué significa "Tasa de Conversión"?**
-
-Es el porcentaje de conversaciones que terminaron en una acción concreta: una compra completada o una cita agendada. Una tasa alta indica que tu agente está logrando convertir interés en resultados reales.
-
-**¿Por qué hay conversaciones en "Asistencia Requerida" con muchos días de antigüedad?**
-
-Esas son conversaciones que nunca fueron atendidas o resueltas. El contador sigue corriendo desde el último mensaje del cliente. Es recomendable revisarlas y, si ya no tienen vigencia, cerrarlas manualmente.
-
-**¿El dashboard muestra datos de todos mis canales juntos?**
-
-Por defecto sí. Usa el filtro de canal para ver las métricas separadas por WhatsApp, Instagram, Messenger o Widget.
-
-**¿Por qué no veo datos recién configuré mi cuenta?**
-
-Los datos aparecen cuando empiezan a llegar conversaciones. Si acabas de conectar un canal, el panel mostrará ceros hasta que llegue el primer mensaje.
+**¿Dónde veo análisis más profundos?**
+En [Insights](/08-analytics/).

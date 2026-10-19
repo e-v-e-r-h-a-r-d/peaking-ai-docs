@@ -11,6 +11,15 @@ Help Center de **Peaking AI** — documentación orientada al usuario final (en 
 
 ---
 
+## Reescritura v2 (2026-10-19) — estructura vigente en el árbol de trabajo
+
+> Las tablas «Estructura de contenido» y «Sidebar actual» de más abajo describen la versión **anterior** (aún desplegada en `main`). El árbol de trabajo (rama `docs-v2-borradores`, sin desplegar) ya está fusionado con la v2, alineada al producto Fusión (dev1):
+> - Carpetas: `00-novedades`, `01-primeros-pasos`, `04-base-conocimientos`, `05-agente-ia` (estudio-de-prompts, instrucciones-del-agente, agente-de-voz, workflows), `05-conversaciones`, `06-crm-audiencias`, `07-productos-pagos`, `08-analytics`, `08-configuracion` (empresa-y-equipo, operacion, cuenta, canales-e-integraciones), `10-tareas`, `12-pedidos-carritos`, `13-contactos`, `14-audiencias` (Campañas), `17-soporte`, `19-mejores-practicas`, `admin-interno`.
+> - Sidebar de 13 secciones: Novedades · Primeros pasos (+ subgrupo Configuración) · Integraciones · Agente de IA · Base de Conocimientos · Mensajes · CRM y Gestión · Productos · Pedidos y Carritos · Campañas · Insights · Mejores Prácticas · Soporte y Soluciones.
+> - Las URLs viejas redirigen (ver `redirects` en `astro.config.mjs`). Capturas: marcadores `[CAPTURA PENDIENTE: …]` (plugin `src/plugins/pending-shot.mjs`); plan en `PLAN-CAPTURAS-V2.md`. Planes de redacción en `PLAN-REDACCION-V2.md`.
+> - Consolidación (2026-10-19): páginas pequeñas fusionadas en guías (`08-configuracion/{empresa-y-equipo,operacion,cuenta}.md`, `canales-e-integraciones/{integraciones,calendario-y-crm,formularios-webhooks-y-api}`, Estudio de Prompts, Workflows, KB, CRM). Primeros pasos: Bienvenida, Configuración inicial (checklist mínimo), Paquete de implementación, Panel de control y Glosario.
+> - Reglas: no documentar Time Blocks, no poner precios, Meta Ads sincroniza cada 10 minutos, los planes de voz se acuerdan con Ventas. Git: commit/push solo cuando el usuario lo pida.
+
 ## Estructura de contenido
 
 ```

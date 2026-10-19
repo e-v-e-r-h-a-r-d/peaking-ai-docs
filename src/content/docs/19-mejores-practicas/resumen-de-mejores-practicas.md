@@ -11,6 +11,15 @@ Si vas a diseñar o corregir un agente de IA en Peaking, estas cuatro reglas son
 
 ---
 
+## Qué quieres hacer
+
+| Quiero… | Ve a… |
+|---|---|
+| Decidir cuántos agentes crear | [Arquitectura de agentes](/19-mejores-practicas/arquitectura-de-agentes/) |
+| Evitar que agentes y herramientas se pisen | [Evitar colisiones](/19-mejores-practicas/evitar-colisiones-agentes-herramientas/) |
+| Escribir reglas que sí se cumplen | [Escribir prompts efectivos](/19-mejores-practicas/escribir-prompts-efectivos/) |
+| Corregir un agente en producción | [Ciclo de mejora y versionado](/19-mejores-practicas/ciclo-de-mejora-y-versionado/) |
+
 ## 1. Máximo 2 agentes principales + 1 agente de seguimiento
 
 La tentación natural es crear un agente distinto por cada tema, segmento o tipo de cliente. En la práctica, cada agente adicional significa un nodo de ruteo adicional (un **Condition**) — y cada nodo de ruteo es un punto donde la conversación se puede perder o caer en el agente equivocado.
@@ -35,12 +44,12 @@ Un modelo de IA no infiere reglas de negocio por sentido común — las sigue de
 
 ## 4. Diagnosticar → un cambio a la vez → probar → documentar
 
-Un prompt publicado en Peaking es producción inmediata. La forma segura de corregir un agente que ya está en vivo no es reescribirlo completo — es diagnosticar con una conversación real, aplicar un cambio quirúrgico, probarlo en el Peaking Lab, y dejar constancia de por qué se hizo el cambio.
+Un prompt publicado en Peaking es producción inmediata. La forma segura de corregir un agente que ya está en vivo no es reescribirlo completo — es diagnosticar con una conversación real, aplicar un cambio quirúrgico, probarlo en el Laboratorio de Pruebas, y dejar constancia de por qué se hizo el cambio.
 
 → Ver [Ciclo de mejora y versionado de prompts](/19-mejores-practicas/ciclo-de-mejora-y-versionado/)
 
 ---
 
 :::tip[Esto complementa, no reemplaza, la documentación de producto]
-Si todavía no sabes cómo declarar una herramienta en un Prompt o cómo funcionan los nodos de un Workflow, empieza por [Declarar herramientas en el Prompt](/03-prompt-studio/declarar-herramientas/) y [Cómo funcionan los Workflows](/11-workflows/como-funcionan-los-workflows/). Esta sección asume que ya conoces esa mecánica y se enfoca en las decisiones de diseño alrededor de ella.
+Si todavía no sabes cómo declarar una herramienta en un Prompt o cómo funcionan los nodos de un Workflow, empieza por [Declarar herramientas en el Prompt](/05-agente-ia/instrucciones-del-agente/) y [Cómo funcionan los Workflows](/05-agente-ia/workflows/). Esta sección asume que ya conoces esa mecánica y se enfoca en las decisiones de diseño alrededor de ella.
 :::
