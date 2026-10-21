@@ -7,7 +7,7 @@ Help Center de **Peaking AI** — documentación orientada al usuario final (en 
 **Stack:** Astro + Starlight · Hosting: GitHub Pages · CI/CD: GitHub Actions
 
 **Repo:** `https://github.com/e-v-e-r-h-a-r-d/peaking-ai-docs`
-**Rama de trabajo activa:** `main` (desde 2026-09-08). `max's-branch` quedó igualada a `main` en el commit `b7adf4f` y se dejó inactiva — el deploy se sigue activando en `main` y `max's-branch`, pero el trabajo nuevo va directo a `main` para simplificar el flujo.
+**Rama de trabajo activa:** `main` (desde 2026-09-08). `max's-branch` y `docs-v2-borradores` se eliminaron (2026-10-21): el deploy se activa **solo** en `main` y el trabajo va directo a `main`.
 
 ---
 
@@ -16,7 +16,7 @@ Help Center de **Peaking AI** — documentación orientada al usuario final (en 
 > Las tablas «Estructura de contenido» y «Sidebar actual» de más abajo describen la versión **anterior** (aún desplegada en `main`). El árbol de trabajo (rama `docs-v2-borradores`, sin desplegar) ya está fusionado con la v2, alineada al producto Fusión (dev1):
 > - Carpetas: `00-novedades`, `01-primeros-pasos`, `04-base-conocimientos`, `05-agente-ia` (estudio-de-prompts, instrucciones-del-agente, agente-de-voz, workflows), `05-conversaciones`, `06-crm-audiencias`, `07-productos-pagos`, `08-analytics`, `08-configuracion` (empresa-y-equipo, operacion, cuenta, canales-e-integraciones), `10-tareas`, `12-pedidos-carritos`, `13-contactos`, `14-audiencias` (Campañas), `17-soporte`, `19-mejores-practicas`.
 > - Sidebar de 13 secciones: Novedades · Primeros pasos (+ subgrupo Configuración) · Integraciones · Agente de IA · Base de Conocimientos · Mensajes · CRM y Gestión · Productos · Pedidos y Carritos · Campañas · Insights · Mejores Prácticas · Soporte y Soluciones.
-> - Las URLs viejas redirigen (ver `redirects` en `astro.config.mjs`). Capturas: marcadores `[CAPTURA PENDIENTE: …]` (plugin `src/plugins/pending-shot.mjs`); plan en `PLAN-CAPTURAS-V2.md`. Planes de redacción en `PLAN-REDACCION-V2.md`.
+> - Las URLs viejas redirigen (ver `redirects` en `astro.config.mjs`). Capturas: marcadores `[CAPTURA PENDIENTE: …]` (plugin `src/plugins/pending-shot.mjs`); los planes de capturas y de redacción son material interno y ya no viven en este repo público.
 > - Consolidación (2026-10-19): páginas pequeñas fusionadas en guías (`08-configuracion/{empresa-y-equipo,operacion,cuenta}.md`, `canales-e-integraciones/{integraciones,calendario-y-crm,formularios-webhooks-y-api}`, Estudio de Prompts, Workflows, KB, CRM). Primeros pasos: Bienvenida, Configuración inicial (checklist mínimo), Paquete de implementación, Panel de control y Glosario.
 > - Reglas: no documentar Time Blocks, no poner precios, Meta Ads sincroniza cada 10 minutos, los planes de voz se acuerdan con Ventas. Git: commit/push solo cuando el usuario lo pida.
 
@@ -201,7 +201,7 @@ Build de Astro verificado sin errores tras los cambios (80 páginas). Cambios co
 
 ### Sesión 2026-08-28 — Sección nueva: Mejores Prácticas (arquitectura de agentes, prompts, workflows)
 
-Se creó la sección pública `19-mejores-practicas/` (sidebar: **Mejores Prácticas**, entre Workflows y Pedidos y Carritos) con 5 artículos, generalizando aprendizajes de implementaciones reales de clientes de Peaking ([cliente], [cliente], [cliente], [cliente], [cliente] — revisadas en `[ruta-local]`, fuera de este repo) sin usar nombres de cliente, marcas, precios ni texto de prompt copiado literal:
+Se creó la sección pública `19-mejores-practicas/` (sidebar: **Mejores Prácticas**, entre Workflows y Pedidos y Carritos) con 5 artículos, generalizando aprendizajes de implementaciones reales de clientes de Peaking (revisadas fuera de este repo) sin usar nombres de cliente, marcas, precios ni texto de prompt copiado literal:
 
 - `resumen-de-mejores-practicas.md` — cheat sheet de entrada con las 4 reglas madre
 - `arquitectura-de-agentes.md` — patrón de máximo 2 agentes principales + 1 de seguimiento; cuándo consolidar vs. separar
@@ -357,7 +357,7 @@ const GA_MEASUREMENT_ID = 'G-XTN1FD69HK';
 1. Tomar screenshot de la plataforma Peaking (Win+Shift+S → clipboard)
 2. Guardar con `.\guardar-screenshot.ps1 -seccion "XX-nombre" -nombre "descripcion"`
 3. Ejecutar `/generate-docs` en Claude Code con el screenshot como contexto
-4. Revisar el `.md` generado, hacer commit y push a `max's-branch`
+4. Revisar el `.md` generado, hacer commit y push a `main`
 5. GitHub Actions despliega automáticamente
 
 **Script de screenshots:** `guardar-screenshot.ps1` — guarda como JPEG comprimido (85% calidad, max 1440px). Parámetros: `-calidad 90`, `-png` (fuerza PNG), `-maxAncho 1920`.
@@ -372,7 +372,7 @@ const GA_MEASUREMENT_ID = 'G-XTN1FD69HK';
 - **Voz:** "Experto empático" — directo, orientado a tareas, sin jerga innecesaria
 - **Frontmatter obligatorio:** `title`, `description`, `sidebar.order` en todos los artículos públicos
 - **Regla de contenido interno:** este repo y `docs.peaking.ai` son **públicos**. `sidebar.hidden` solo oculta del menú — la página sigue en el buscador, el sitemap y el HTML. **Nunca** publicar aquí material de ventas, herramientas internas, mapas de clientes, contraseñas ni nada para uso exclusivo del equipo; ese material vive fuera de este repo.
-- **Imágenes:** URL pública GitHub Raw → `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/[seccion]/[imagen.png]`
+- **Imágenes:** URL pública GitHub Raw → `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/main/screenshots_peaking/[seccion]/[imagen.png]`
 - **Extensión de imágenes:** `.png` por defecto en las capturas actuales. Usar `.jpg` solo si vienen del flujo antiguo de `guardar-screenshot.ps1` sin el flag `-png`
 - **Nombres propios respetados:** Prompt Studio, Command Center, Knowledge Base, Pedidos y Carritos, TODOs, Tareas, Stripe (nunca "Stipe"), Mercado Pago, Workflows, Go HighLevel
 

@@ -2,7 +2,7 @@
 
 Mapa completo de capturas para enriquecer la documentación con imágenes reales.
 Flujo: `Win+Shift+S` → clipboard → `.\guardar-screenshot.ps1 -seccion "XX-nombre" -nombre "descripcion"`
-URL final: `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots/[seccion]/[imagen.jpg]`
+URL final: `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/main/screenshots/[seccion]/[imagen.jpg]`
 
 ---
 

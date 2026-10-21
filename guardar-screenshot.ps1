@@ -82,4 +82,4 @@ Write-Host "Screenshot guardado ($tamano KB):" -ForegroundColor Green
 Write-Host "  $archivo" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "URL para el markdown:" -ForegroundColor Green
-Write-Host "  https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots/$seccion/$nombre.$ext" -ForegroundColor Cyan
+Write-Host "  https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/main/screenshots/$seccion/$nombre.$ext" -ForegroundColor Cyan

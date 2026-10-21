@@ -19,3 +19,8 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# documentos internos de trabajo — NO publicar: este repo es público
+ANALISIS-*.md
+PLAN-*.md
+PROPUESTA-*.md
