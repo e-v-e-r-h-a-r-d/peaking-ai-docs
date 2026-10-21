@@ -40,16 +40,7 @@ sidebar:
 ---
 ```
 
-**Artículos de la sección `admin-interno` (solo equipo Peaking):**
-```yaml
----
-title: [Título]
-description: [Descripción]
-sidebar:
-  hidden: true
-  order: [número]
----
-```
+**Contenido interno:** no existe sección interna. El sitio y el repo son públicos y `sidebar.hidden` no oculta la página del buscador ni del HTML — no generes aquí material de ventas, herramientas internas ni nada exclusivo del equipo.
 
 ---
 
@@ -66,7 +57,6 @@ sidebar:
 | Productos, Órdenes y Pagos | `src/content/docs/07-productos-pagos/` |
 | Analytics e Insights | `src/content/docs/08-analytics/` |
 | Integraciones y Partner Portal | `src/content/docs/09-integraciones-partner/` |
-| Admin interno (equipo Peaking) | `src/content/docs/admin-interno/` |
 
 ---
 

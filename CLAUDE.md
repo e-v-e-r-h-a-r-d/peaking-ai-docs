@@ -14,7 +14,7 @@ Help Center de **Peaking AI** — documentación orientada al usuario final (en 
 ## Reescritura v2 (2026-10-19) — estructura vigente en el árbol de trabajo
 
 > Las tablas «Estructura de contenido» y «Sidebar actual» de más abajo describen la versión **anterior** (aún desplegada en `main`). El árbol de trabajo (rama `docs-v2-borradores`, sin desplegar) ya está fusionado con la v2, alineada al producto Fusión (dev1):
-> - Carpetas: `00-novedades`, `01-primeros-pasos`, `04-base-conocimientos`, `05-agente-ia` (estudio-de-prompts, instrucciones-del-agente, agente-de-voz, workflows), `05-conversaciones`, `06-crm-audiencias`, `07-productos-pagos`, `08-analytics`, `08-configuracion` (empresa-y-equipo, operacion, cuenta, canales-e-integraciones), `10-tareas`, `12-pedidos-carritos`, `13-contactos`, `14-audiencias` (Campañas), `17-soporte`, `19-mejores-practicas`, `admin-interno`.
+> - Carpetas: `00-novedades`, `01-primeros-pasos`, `04-base-conocimientos`, `05-agente-ia` (estudio-de-prompts, instrucciones-del-agente, agente-de-voz, workflows), `05-conversaciones`, `06-crm-audiencias`, `07-productos-pagos`, `08-analytics`, `08-configuracion` (empresa-y-equipo, operacion, cuenta, canales-e-integraciones), `10-tareas`, `12-pedidos-carritos`, `13-contactos`, `14-audiencias` (Campañas), `17-soporte`, `19-mejores-practicas`.
 > - Sidebar de 13 secciones: Novedades · Primeros pasos (+ subgrupo Configuración) · Integraciones · Agente de IA · Base de Conocimientos · Mensajes · CRM y Gestión · Productos · Pedidos y Carritos · Campañas · Insights · Mejores Prácticas · Soporte y Soluciones.
 > - Las URLs viejas redirigen (ver `redirects` en `astro.config.mjs`). Capturas: marcadores `[CAPTURA PENDIENTE: …]` (plugin `src/plugins/pending-shot.mjs`); plan en `PLAN-CAPTURAS-V2.md`. Planes de redacción en `PLAN-REDACCION-V2.md`.
 > - Consolidación (2026-10-19): páginas pequeñas fusionadas en guías (`08-configuracion/{empresa-y-equipo,operacion,cuenta}.md`, `canales-e-integraciones/{integraciones,calendario-y-crm,formularios-webhooks-y-api}`, Estudio de Prompts, Workflows, KB, CRM). Primeros pasos: Bienvenida, Configuración inicial (checklist mínimo), Paquete de implementación, Panel de control y Glosario.
@@ -42,8 +42,7 @@ src/content/docs/
 ├── 14-audiencias/               ← "Audiencias y Campañas" (nested bajo Integraciones, junto a WhatsApp — los broadcasts son casi siempre por WhatsApp)
 ├── 15-whatsapp/                 ← "WhatsApp" (nested bajo Integraciones): conexión, plantillas, histórico de envíos masivos — antes repartido entre 02-canales y 15-envios-whatsapp
 ├── 17-soporte/                  ← "Soporte y Soluciones": bug vs. solicitud de implementación + configuraciones frecuentes (antes 18-how-to, fusionado aquí)
-├── 19-mejores-practicas/        ← Mejores prácticas de arquitectura de agentes, prompts y workflows
-└── admin-interno/               ← Solo equipo Peaking (sidebar.hidden: true)
+└── 19-mejores-practicas/        ← Mejores prácticas de arquitectura de agentes, prompts y workflows
 ```
 
 **Secciones retiradas (2026-09-08):** `16-guia-devs/` (Peaking MCP) — su contenido se movió a `01-primeros-pasos/configuraciones-iniciales.md` (subsección "Conexión MCP con Claude Code", dentro de la pestaña API). `18-how-to/` — su único artículo se movió a `17-soporte/`.
@@ -79,20 +78,13 @@ Reordenado el 2026-09-08 (dos pasadas, ver sesión de esa fecha más abajo) sigu
 | 12 | Mejores Prácticas | `19-mejores-practicas` |
 | 13 | Soporte y Soluciones | `17-soporte` |
 
-`admin-interno/` no aparece en el sidebar — artículos ocultos con `sidebar.hidden: true`.
+No hay artículos ocultos: todo lo que está en `src/content/docs/` es público (ver «Regla de contenido interno» en Convenciones).
 
 **Nota sobre grupos anidados sin landing propia:** "Integraciones" (como ya pasaba con "CRM y Gestión") es una etiqueta paraguas sin página propia de un clic — al hacer clic solo expande sus subgrupos. El `index.md` de `09-integraciones-partner` sigue existiendo y es el primer artículo dentro de su subgrupo "Catálogos y Herramientas", un nivel más adentro que antes. "Mensajes" sí volvió a tener landing directa de un clic (se le quitó el subgrupo "Otros canales" en la segunda pasada de reordenamiento).
 
 **Por qué Reconexión de tokens y Otros canales viven en Integraciones y no en Mensajes:** en la primera pasada de reordenamiento se habían puesto ahí porque conceptualmente "sirven a Mensajes". El usuario corrigió esto — en el producto real, conectar canales (incluida la reconexión de tokens) es parte del panel de **Integraciones**, no de Mensajes. Aplica también a por qué Audiencias y Campañas quedó anidada junto a WhatsApp: los broadcasts casi siempre se envían por WhatsApp.
 
 **Nota sobre labels anidados vía Starlight `autogenerate`:** cuando un `autogenerate` va dentro de un `items: []` (subgrupo), el `label` que le pongas en `astro.config.mjs` SIEMPRE se respeta — no hace falta (ni funciona de forma confiable) nombrar la carpeta física igual al label deseado.
-
-**Artículos ocultos dentro de secciones públicas** (sidebar.hidden: true):
-- `09-integraciones-partner/zapier-make-n8n.md` — desactualizado, guardado por si se necesita
-- `09-integraciones-partner/api-de-peaking.md` — interno/técnico
-- `09-integraciones-partner/partner-portal-que-es.md` — para resellers
-- `09-integraciones-partner/gestion-de-clientes-como-partner.md` — para resellers
-- `08-analytics/reporteria-de-conversaciones.md` — cubierto en 05-conversaciones
 
 ---
 
@@ -179,19 +171,14 @@ Cambios de las sesiones 2026-08-20 y 2026-08-21 (Copilot, integración de Correo
 | `05-conversaciones/tags-y-etiquetas.md` | Mensajes | Completo |
 | `05-conversaciones/escalamiento-a-humano.md` | Mensajes | Completo |
 | `05-conversaciones/bandeja-de-mensajes.md` | Mensajes | Completo |
-| `admin-interno/` (7 archivos) | Interno | Todos con `sidebar.hidden: true` + admin gate de contraseña |
 
 ### Único placeholder real público (`:::note[Artículo en construcción]`)
 
 - `12-pedidos-carritos/flujo-de-compra-con-ia.md` — pendiente de screenshots y contenido
 
-### Admin gate (contraseña)
+### Sección admin-interno retirada (2026-10-21)
 
-- Implementado en `src/components/MarkdownContent.astro`
-- Páginas de `admin-interno/` requieren contraseña para ver el contenido
-- **Contraseña actual:** `[contraseña-retirada]` — editar la constante `PASSWORD` en el componente
-- Token almacenado en `localStorage` (o `sessionStorage` si no se activa "Recordar")
-- Botón "Bloquear" visible en páginas admin para cerrar sesión
+Se eliminó `admin-interno/` (cheat sheet de ventas, Command Center, Data Editor, etc.), el candado de contraseña del header y el override `MarkdownContent`. El «candado» era solo del lado del cliente: el contenido viajaba completo en el HTML público, entraba al buscador (Pagefind) y al sitemap, y la contraseña estaba en el JS. También se borraron las páginas ocultas de `09-integraciones-partner/` (partner portal, API, Zapier/Make/n8n, paquete de implementación) y `08-analytics/reporteria-de-conversaciones.md`. Siguen en el historial de git.
 
 ### Sesión 2026-08-26 — Recap del founder + 40 screenshots nuevas
 
@@ -384,28 +371,10 @@ const GA_MEASUREMENT_ID = 'G-XTN1FD69HK';
 - **Idioma:** Español neutro latinoamericano
 - **Voz:** "Experto empático" — directo, orientado a tareas, sin jerga innecesaria
 - **Frontmatter obligatorio:** `title`, `description`, `sidebar.order` en todos los artículos públicos
-- **Admin interno:** añadir `sidebar.hidden: true` en el frontmatter
+- **Regla de contenido interno:** este repo y `docs.peaking.ai` son **públicos**. `sidebar.hidden` solo oculta del menú — la página sigue en el buscador, el sitemap y el HTML. **Nunca** publicar aquí material de ventas, herramientas internas, mapas de clientes, contraseñas ni nada para uso exclusivo del equipo; ese material vive fuera de este repo.
 - **Imágenes:** URL pública GitHub Raw → `https://raw.githubusercontent.com/e-v-e-r-h-a-r-d/peaking-ai-docs/max's-branch/screenshots_peaking/[seccion]/[imagen.png]`
 - **Extensión de imágenes:** `.png` por defecto en las capturas actuales. Usar `.jpg` solo si vienen del flujo antiguo de `guardar-screenshot.ps1` sin el flag `-png`
 - **Nombres propios respetados:** Prompt Studio, Command Center, Knowledge Base, Pedidos y Carritos, TODOs, Tareas, Stripe (nunca "Stipe"), Mercado Pago, Workflows, Go HighLevel
-
----
-
-## Secciones internas (admin-interno)
-
-Estos artículos existen pero **no son visibles en el sidebar público**:
-
-| Archivo | Propósito |
-|---------|-----------|
-| `command-center.md` | Panel maestro de operaciones internas |
-| `admin-organizations.md` | Gestión de organizaciones desde el lado admin |
-| `sales-trials.md` | Gestión de trials y demos de ventas |
-| `data-editor.md` | Editor de datos internos |
-| `announcements.md` | Sistema de anuncios internos |
-| `settings-internos.md` | Configuraciones solo visibles para el equipo |
-
-También ocultos (en `09-integraciones-partner/`):
-- `api-de-peaking.md`, `partner-portal-que-es.md`, `gestion-de-clientes-como-partner.md`, `zapier-make-n8n.md`
 
 ---
 
@@ -415,7 +384,7 @@ También ocultos (en `09-integraciones-partner/`):
 
 ### Abril 27-30 (cierre del mes)
 - [x] Light/dark toggle implementado y afinado (sombras, transiciones, tokens por tema)
-- [x] Admin gate con contraseña para sección `admin-interno/`
+- [x] ~~Admin gate con contraseña para sección `admin-interno/`~~ — retirado 2026-10-21 (ver arriba)
 - [ ] Auditoría de `02-canales/`: verificar instagram, messenger, widget (pueden ya estar completos)
 - [ ] Verificar `01-primeros-pasos/activa-tus-modulos.md` y `glosario.md`
 - [ ] Tomar screenshots de Workflows y Prompt Studio (SCREENSHOTS-PENDIENTES.md — 🔴)

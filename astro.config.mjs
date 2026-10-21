@@ -157,8 +157,6 @@ export default defineConfig({
 			customCss: ['./src/styles/custom.css'],
 			components: {
 				ThemeSelect: './src/components/ThemeSelect.astro',
-				MarkdownContent: './src/components/MarkdownContent.astro',
-				SocialIcons: './src/components/SocialIcons.astro',
 			},
 			expressiveCode: {
 				themes: ['github-dark-dimmed'],
@@ -205,7 +203,6 @@ export default defineConfig({
 				{ label: 'Insights', autogenerate: { directory: '08-analytics' } },
 				{ label: 'Mejores Prácticas', autogenerate: { directory: '19-mejores-practicas' } },
 				{ label: 'Soporte y Soluciones', autogenerate: { directory: '17-soporte' } },
-				// admin-interno: NO incluido aquí — oculto con sidebar.hidden: true en cada página
 			],
 		}),
 	],
