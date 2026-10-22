@@ -11,7 +11,7 @@ sidebar:
 Solo los usuarios **Master** y **Administrador** pueden crear, editar, asignar o eliminar prompts. Si tu rol es Usuario verás el aviso *«Se requieren permisos de administrador»*.
 :::
 
-[CAPTURA PENDIENTE: pantalla Estudio de Prompts con la lista de tarjetas, el buscador, los filtros y el botón Nuevo prompt]
+![Estudio de Prompts con la lista de tarjetas, el buscador, los filtros y el botón Nuevo prompt](/screenshots/v2/05-agente-ia/estudio-de-prompts-lista.png)
 
 ## Qué quieres hacer
 
@@ -95,7 +95,13 @@ En la tarjeta, **Editar** abre el editor. El menú **Más acciones** (⋯) ofrec
 
 El **editor de prompts** arma tu prompt por secciones y las une en un solo Markdown. Para abrirlo, haz clic en **Nuevo prompt** o en **Editar** desde [Estudio de Prompts](/05-agente-ia/estudio-de-prompts/).
 
-[CAPTURA PENDIENTE: editor de prompts con las cuatro pestañas, el botón Publicar y el panel «Para publicar»]
+![Editor de prompts con las cuatro pestañas, el botón Publicar y el panel «Para publicar»](/screenshots/v2/05-agente-ia/editor-general.png)
+
+![Pestaña Instrucciones con Generar con IA, Usar plantilla y Mejorar con IA](/screenshots/v2/05-agente-ia/editor-instrucciones.png)
+
+![Pestaña Canales y herramientas](/screenshots/v2/05-agente-ia/editor-canales-y-herramientas.png)
+
+![Vista Ver Markdown con el prompt completo](/screenshots/v2/05-agente-ia/editor-ver-markdown.png)
 
 ### El editor de un vistazo
 

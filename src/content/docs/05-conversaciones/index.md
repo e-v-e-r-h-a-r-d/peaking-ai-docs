@@ -7,7 +7,7 @@ sidebar:
 
 **Mensajes** es la bandeja donde llegan las conversaciones de todos tus canales. Desde aquí ves quién está atendiendo cada una (la IA o una persona), respondes, asignas, etiquetas y tomas el control cuando hace falta. Lo encuentras en el menú lateral como **Mensajes** (título de la pantalla: **Conversaciones**).
 
-[CAPTURA PENDIENTE: pantalla Mensajes con la lista de conversaciones, los filtros rápidos, la conversación abierta y el resumen del contacto]
+![Mensajes con la lista de conversaciones, los filtros rápidos, la conversación abierta y el resumen del contacto](/screenshots/v2/05-conversaciones/mensajes.png)
 
 ## Qué quieres hacer
 

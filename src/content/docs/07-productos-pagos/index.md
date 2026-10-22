@@ -11,7 +11,11 @@ sidebar:
 Si conectaste Odoo, tus productos y categorías llegan **solos** al sincronizar y no necesitas capturarlos aquí. Ver [Herramientas y Odoo](/08-configuracion/canales-e-integraciones/odoo/#paso-3-sincroniza-productos-y-contactos).
 :::
 
-[CAPTURA PENDIENTE: pantalla Productos con la tabla, los filtros, la barra de selección y el panel lateral de un producto abierto]
+![Catálogo de Productos con filtros, buscador y tarjetas](/screenshots/v2/07-productos-pagos/productos.png)
+
+![Detalle de un producto con sus pestañas General, Para el agente, Precio e inventario, Ficha técnica y Envío](/screenshots/v2/07-productos-pagos/producto-detalle.png)
+
+[CAPTURA PENDIENTE: barra de selección en lote y panel lateral del producto]
 
 ## Qué quieres hacer
 

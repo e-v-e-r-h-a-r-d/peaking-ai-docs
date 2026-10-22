@@ -11,7 +11,9 @@ El **CRM** (*Gestiona tus oportunidades y pipeline de ventas*) es donde das segu
 El CRM es un módulo. Si ves *«CRM No Disponible — El módulo CRM no está habilitado para tu organización»*, actívalo en [Módulos](/08-configuracion/cuenta/).
 :::
 
-[CAPTURA PENDIENTE: pipeline en vista Kanban con las métricas arriba, el selector de vistas, los filtros y una oportunidad abierta en el panel de detalle]
+![Pipeline en vista Kanban con las métricas arriba, el selector de vistas y las oportunidades por etapa](/screenshots/v2/06-crm-audiencias/pipeline-kanban.png)
+
+![Oportunidad abierta en el panel de detalle, con timeline, etapa y notas internas](/screenshots/v2/06-crm-audiencias/oportunidad-detalle.png)
 
 ## Qué quieres hacer
 

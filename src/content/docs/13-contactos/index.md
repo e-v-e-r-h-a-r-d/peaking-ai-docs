@@ -7,7 +7,11 @@ sidebar:
 
 **Contactos** (*Gestiona tu catálogo de contactos*) guarda a las personas y empresas con las que hablas. Se crean solos cuando alguien escribe, o a mano. Lo encuentras en el menú lateral como **Contactos**.
 
-[CAPTURA PENDIENTE: pantalla Contactos en vista simple con la lista, el panel de detalle y lo que la IA extrajo]
+![Contactos en vista simple con la lista y el panel de detalle](/screenshots/v2/13-contactos/vista-simple.png)
+
+![Contactos en Audiencias y acciones, con el bloque «Lo que la IA extrajo»](/screenshots/v2/13-contactos/audiencias-y-acciones.png)
+
+![Panel del contacto con «Lo último» y «Lo que la IA extrajo»](/screenshots/v2/13-contactos/panel-lo-que-la-ia-extrajo.png)
 
 ## Qué quieres hacer
 

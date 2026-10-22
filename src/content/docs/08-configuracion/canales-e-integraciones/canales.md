@@ -7,7 +7,11 @@ sidebar:
 
 **Canales** es donde conectas por dónde te escriben tus clientes: **WhatsApp**, **Instagram**, **Messenger**, **correo** y el **chat de tu sitio web**. Lo abres desde **Configuración › Canales** (o desde la tarjeta **Canales** de [Integraciones](/08-configuracion/canales-e-integraciones/integraciones/)).
 
-[CAPTURA PENDIENTE: pantalla Canales con "Estado de conexión", "Conectar nueva plataforma" y el bloque de plantillas]
+![Estado de conexión de los canales](/screenshots/v2/08-configuracion/canales-estado-conexion.png)
+
+![Conectar nueva plataforma](/screenshots/v2/08-configuracion/canales-conectar-plataforma.png)
+
+[CAPTURA PENDIENTE: bloque de plantillas dentro de Canales]
 
 ## Qué quieres hacer
 

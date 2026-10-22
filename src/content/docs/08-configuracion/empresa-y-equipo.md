@@ -11,7 +11,7 @@ sidebar:
 Esta sección solo la ven y editan los usuarios con rol **Master**. Para entender los roles, consulta [Equipo y roles](/08-configuracion/empresa-y-equipo/#equipo-y-roles).
 :::
 
-[CAPTURA PENDIENTE: pantalla Organización completa — Nombre, Moneda, descripción del negocio, Industria del catálogo y Horario de operación]
+![Pantalla Organización con nombre, moneda, descripción del negocio e industria del catálogo](/screenshots/v2/08-configuracion/organizacion.png)
 
 ## Qué quieres hacer
 
@@ -57,7 +57,7 @@ Si no aplica a tu negocio, déjalo en **Sin definir**.
 
 Define los días y las horas en que tu negocio está disponible. El agente puede usar esta información para orientar al cliente sobre cuándo recibirá atención humana.
 
-[CAPTURA PENDIENTE: editor de horario con un interruptor por día y rangos de hora]
+![Editor de horario con un interruptor por día y rangos de hora](/screenshots/v2/08-configuracion/horario-de-operacion.png)
 
 1. Activa el interruptor de cada día en el que operas. Los días desactivados aparecen como **Cerrado**.
 2. Ajusta la hora de inicio y la hora de fin de cada día activo.
@@ -118,7 +118,7 @@ Aquí administras a las personas que tienen acceso a tu organización en Peaking
 
 Esta sección la ven todos los usuarios, pero solo un **Master** puede cambiar roles.
 
-[CAPTURA PENDIENTE: tabla "Miembros del Equipo" con columnas de usuario, correo, rol, departamento, vendedor, sucursales y acciones]
+![Tabla Miembros del Equipo con rol, departamento, vendedor y correo conectado](/screenshots/v2/08-configuracion/equipo-miembros.png)
 
 ### Los tres roles
 

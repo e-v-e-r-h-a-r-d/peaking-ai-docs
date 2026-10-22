@@ -11,7 +11,9 @@ sidebar:
 Tareas es un módulo. Si ves *«TODOs No Disponibles — El módulo de TODOs no está habilitado para tu organización»*, actívalo en [Módulos](/08-configuracion/cuenta/).
 :::
 
-[CAPTURA PENDIENTE: Tareas en vista Kanban con el resumen del encabezado, el selector de vistas y una tarea abierta]
+![Tareas en vista Kanban con el resumen del encabezado y el selector de vistas](/screenshots/v2/10-tareas/tareas-kanban.png)
+
+![Una tarea abierta, con la conversación de WhatsApp a la derecha](/screenshots/v2/10-tareas/tarea-detalle.png)
 
 ## Qué quieres hacer
 

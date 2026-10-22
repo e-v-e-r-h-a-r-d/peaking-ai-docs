@@ -7,7 +7,9 @@ sidebar:
 
 La **Base de Conocimientos** es la información de tu negocio que el agente lee para responder: tus políticas, precios, preguntas frecuentes, catálogos y fichas. Lo encuentras en el menú lateral como **Base de Conocimientos**, con tres pestañas: **Documentos**, **Adjuntos** y **Fichas técnicas**.
 
-[CAPTURA PENDIENTE: Base de Conocimientos con las tres pestañas, la lista de documentos con categorías y la vista previa]
+![Base de Conocimientos con las tres pestañas y la lista de documentos con categorías](/screenshots/v2/04-base-conocimientos/documentos.png)
+
+![Documento abierto para editar, con título, categorías y modo de contenido](/screenshots/v2/04-base-conocimientos/documento-editar.png)
 
 ## Qué quieres hacer
 
@@ -92,7 +94,11 @@ En un documento: **Editar Documento**, **Copiar Contenido** y **Mover a la papel
 
 Además de los documentos que el agente **lee**, la [Base de Conocimientos](/04-base-conocimientos/) guarda archivos que el agente **envía**: los **Adjuntos** y las **Fichas técnicas**.
 
-[CAPTURA PENDIENTE: pestaña Adjuntos con la lista y la vista previa, y pestaña Fichas técnicas con la columna «Vinculada a»]
+![Pestaña Adjuntos con la lista de archivos que el agente puede enviar](/screenshots/v2/04-base-conocimientos/adjuntos.png)
+
+![Edición de un adjunto con el campo «Cuándo enviar»](/screenshots/v2/04-base-conocimientos/adjunto-editar.png)
+
+![Pestaña Fichas técnicas con la columna «Vinculada a»](/screenshots/v2/04-base-conocimientos/fichas-tecnicas.png)
 
 ### Adjuntos
 

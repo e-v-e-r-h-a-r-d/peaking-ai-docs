@@ -13,7 +13,7 @@ Esta página explica la **lista de workflows**: cómo se organizan, cómo se act
 Workflows aparece en el menú solo si el módulo **Workflows** está activo y tu rol es **Master** o **Administrador**. Un Master puede activarlo en [Módulos](/08-configuracion/cuenta/).
 :::
 
-[CAPTURA PENDIENTE: lista de workflows con los 4 indicadores arriba y los proyectos como carpetas]
+![Lista de workflows con los 4 indicadores arriba y los proyectos como carpetas](/screenshots/v2/05-agente-ia/workflows-lista.png)
 
 ## Qué quieres hacer
 
@@ -147,7 +147,7 @@ El historial te permite **ver** las versiones publicadas. No incluye una acción
 
 El botón **Probar** abre el **Chat de Prueba**, donde simulas una conversación sin afectar a clientes reales.
 
-[CAPTURA PENDIENTE: chat de prueba con el mensaje "Probando la versión publicada v{n}"]
+![Chat de prueba con el mensaje «Probando la versión publicada»](/screenshots/v2/05-agente-ia/workflow-chat-de-prueba.png)
 
 :::caution[Prueba la versión publicada, no el borrador]
 El chat de prueba ejecuta el workflow **tal como está publicado**. Si cambiaste algo en el editor, **publica antes de probar** o no verás tus cambios. El chat te recuerda qué versión estás probando: *"Probando la versión publicada v{n}"*.
@@ -173,7 +173,7 @@ El panel **Ejecuciones** muestra las ejecuciones recientes del workflow. Se abre
 
 Si todavía no hay ninguna, verás *"Las ejecuciones aparecerán aquí cuando los mensajes activen este workflow"*.
 
-[CAPTURA PENDIENTE: panel de ejecuciones con estados]
+![Panel de ejecuciones con estados](/screenshots/v2/05-agente-ia/workflow-ejecuciones.png)
 
 #### Dos formas de ver el detalle
 

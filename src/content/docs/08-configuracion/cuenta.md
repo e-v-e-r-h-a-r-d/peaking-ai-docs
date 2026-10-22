@@ -11,7 +11,7 @@ sidebar:
 Solo los usuarios con rol **Master** ven y modifican esta sección. Al activar un módulo, normalmente aparece una sección nueva en el menú o en [Configuración](/08-configuracion/empresa-y-equipo/).
 :::
 
-[CAPTURA PENDIENTE: pantalla Módulos con la lista de interruptores]
+![Pantalla Módulos con la lista de interruptores](/screenshots/v2/08-configuracion/cuenta-modulos.png)
 
 ## Qué quieres hacer
 

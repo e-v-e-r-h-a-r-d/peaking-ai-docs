@@ -7,7 +7,9 @@ sidebar:
 
 Las **Plantillas** (*Plantillas de WhatsApp aprobadas por Meta para tus envíos y campañas*) son los mensajes que sí puedes enviar fuera de la ventana de 24 horas. Las ves en **Campañas › Plantillas** y también al final de **Configuración › Canales**: es el mismo listado.
 
-[CAPTURA PENDIENTE: pantalla Plantillas con filtros, la tabla de plantillas y sus estados]
+![Pantalla Plantillas de WhatsApp sin plantillas todavía, con filtros y botones Nueva plantilla y Sincronizar](/screenshots/v2/14-audiencias/plantillas-vacia.png)
+
+[CAPTURA PENDIENTE: tabla de plantillas con sus estados]
 
 ## Qué quieres hacer
 

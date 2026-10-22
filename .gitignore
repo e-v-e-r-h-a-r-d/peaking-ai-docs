@@ -24,3 +24,12 @@ pnpm-debug.log*
 ANALISIS-*.md
 PLAN-*.md
 PROPUESTA-*.md
+
+graphify-out/
+
+# material interno de Peaking (nunca publicar: el repo es público)
+_interno-local/
+
+# capturas originales sin censurar (contienen datos reales; solo se publican las de public/screenshots/v2)
+nuevas_imagenes_peaking/
+nuevas_screenshots_peaking/

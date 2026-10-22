@@ -122,7 +122,9 @@ Verás el aviso *"No hay plantillas aprobadas"*. Conecta WhatsApp y sincroniza t
 
 **Organización interna** reúne dos ajustes sobre cómo funciona tu operación por dentro: los **departamentos** de tu equipo y la **agrupación de respuestas del agente**.
 
-[CAPTURA PENDIENTE: pantalla Organización interna con Departamentos y Agrupación de respuestas]
+![Organización interna con Departamentos](/screenshots/v2/08-configuracion/organizacion-interna.png)
+
+![Agrupación de respuestas del agente con la ventana de espera](/screenshots/v2/08-configuracion/agrupacion-de-respuestas.png)
 
 ### Departamentos
 
@@ -239,7 +241,9 @@ Si no tienes ningún campo configurado, la extracción automática está inactiv
 Esta sección aparece solo cuando el módulo **CRM** está activo y solo la editan los usuarios con rol **Master**. Para trabajar con las oportunidades día a día, consulta [CRM](/06-crm-audiencias/).
 :::
 
-[CAPTURA PENDIENTE: pantalla Campos del CRM con Etiquetas de campos y Campos personalizados]
+![Campos del CRM: Etiquetas de campos](/screenshots/v2/08-configuracion/crm-etiquetas-de-campos.png)
+
+![Campos personalizados, sin campos todavía](/screenshots/v2/08-configuracion/crm-campos-personalizados.png)
 
 ### Etiquetas de campos
 
@@ -279,7 +283,7 @@ Agrega campos adicionales a tus oportunidades para capturar datos propios de tu 
 
 3. Haz clic en **Guardar**.
 
-[CAPTURA PENDIENTE: formulario "Nuevo campo" con el selector Pestaña de la ficha]
+![Formulario Nuevo campo con el selector Pestaña de la ficha](/screenshots/v2/08-configuracion/crm-nuevo-campo.png)
 
 #### Elegir la pestaña de la ficha
 

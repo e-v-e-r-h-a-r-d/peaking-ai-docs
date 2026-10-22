@@ -7,7 +7,7 @@ sidebar:
 
 El editor de Workflows es un **lienzo** donde conectas nodos. Cada nodo hace una cosa: recibir un mensaje, responder con IA, decidir un camino, esperar o avisar a otro sistema. Al unirlos, defines paso a paso qué sucede cuando un cliente escribe.
 
-[CAPTURA PENDIENTE: editor con un flujo de ejemplo y la barra de herramientas]
+![Editor de workflows con un flujo de ejemplo y la barra de herramientas](/screenshots/v2/05-agente-ia/workflow-editor.png)
 
 ## Qué quieres hacer
 

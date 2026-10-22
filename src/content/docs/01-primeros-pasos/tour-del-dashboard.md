@@ -7,7 +7,7 @@ sidebar:
 
 El **Panel de Control** es la pantalla de inicio de Peaking: te dice **qué necesita tu atención hoy** y cómo va tu agente. Lo abres con **Operación › Panel de Control** (el primer elemento del menú lateral). Los usuarios con navegación restringida ven un menú más corto.
 
-[CAPTURA PENDIENTE: Panel de Control con «Lo que necesita tu atención hoy», «Tu cola de hoy», «El agente, esta semana», pipeline, tareas e integraciones]
+![Panel de Control con la atención del día, la cola, el agente de la semana, el pipeline, las tareas y las integraciones](/screenshots/v2/01-primeros-pasos/panel-de-control.png)
 
 ## Qué quieres hacer
 

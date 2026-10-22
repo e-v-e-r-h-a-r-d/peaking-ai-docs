@@ -7,7 +7,9 @@ sidebar:
 
 Antes y después de publicar un prompt puedes **probarlo** en el laboratorio y, si algo sale mal, **volver a una versión anterior**.
 
-[CAPTURA PENDIENTE: laboratorio de pruebas abierto sobre el editor y el historial de versiones con dos versiones comparadas]
+![Peaking Lab, el laboratorio de pruebas del prompt](/screenshots/v2/05-agente-ia/peaking-lab.png)
+
+![Historial de versiones con dos versiones comparadas](/screenshots/v2/05-agente-ia/historial-de-versiones.png)
 
 ## Qué quieres hacer
 

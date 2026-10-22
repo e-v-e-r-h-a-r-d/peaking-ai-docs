@@ -169,7 +169,7 @@ Las **Claves de API** (API Keys) son llaves de acceso de Peaking AI. Sirven para
 La **API pública** es un módulo que se activa en [Módulos](/08-configuracion/cuenta/) (*Habilita la API de Peaking AI para recibir leads desde sistemas externos*).
 :::
 
-[CAPTURA PENDIENTE: pantalla Claves de API con la lista de claves, los bloques «Conectar Claude Code (MCP)» y «Cómo usar la API pública (leads)»]
+![Claves de API con la lista de claves y los bloques Conectar Claude Code (MCP) y Cómo usar la API pública](/screenshots/v2/08-configuracion/claves-de-api-completa.png)
 
 ### Crear una clave
 

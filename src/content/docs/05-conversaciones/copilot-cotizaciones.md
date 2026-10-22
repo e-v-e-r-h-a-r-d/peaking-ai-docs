@@ -11,7 +11,7 @@ El **Copilot** es el panel con el que **tú** armas una cotización mientras ati
 Se ve solo si eres **Master** o **Administrador**, tu organización tiene el Copilot de cotización habilitado y **Odoo está conectado** en [Herramientas](/08-configuracion/canales-e-integraciones/integraciones/#herramientas-y-odoo). También aparece en una oportunidad del CRM como **Cotizar con Copilot**. Si no ves el botón, pídele a Peaking que lo habilite.
 :::
 
-[CAPTURA PENDIENTE: panel «Cotización (Copilot)» junto a una conversación, con buscador, carrito, cliente, total y botón «Crear cotización en Odoo»]
+![Panel Cotización (Copilot) junto a la conversación, con buscador, carrito, total y botón Crear cotización en Odoo](/screenshots/v2/05-conversaciones/copilot-cotizacion.png)
 
 ## Qué quieres hacer
 
